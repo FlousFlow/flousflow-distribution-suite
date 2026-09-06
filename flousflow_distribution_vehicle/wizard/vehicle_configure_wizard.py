@@ -227,3 +227,24 @@ class DistributionVehicleAssignmentLine(models.TransientModel):
     date_from = fields.Date(string='From', required=True,
                             default=fields.Date.context_today)
     notes = fields.Text(string='Notes')
+
+
+class DistributionVehicleConfigureWizardAnalytic(models.TransientModel):
+    _inherit = 'distribution.vehicle.configure.wizard'
+
+    create_analytic_account = fields.Boolean(
+        string='Create Vehicle Analytic Account', default=True,
+        help='Create a dedicated analytic account (profit center) for this '
+             'vehicle and attach it to its POS so sales and COGS are '
+             'reported per vehicle.')
+
+    def action_confirm(self):
+        res = super().action_confirm()
+        vehicle = self.vehicle_id
+        if self.create_analytic_account and vehicle.distribution_pos_config_id:
+            account = vehicle._ensure_vehicle_analytic_account()
+            pos = vehicle.distribution_pos_config_id
+            if not pos.analytic_account_id:
+                pos.analytic_account_id = account.id
+            pos._sync_vehicle_analytic()
+        return res

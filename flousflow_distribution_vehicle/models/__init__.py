@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from . import fleet_vehicle
+from . import fleet_vehicle_analytic
 from . import fleet_vehicle_employee_assignment
 from . import hr_employee
 from . import pos_config
