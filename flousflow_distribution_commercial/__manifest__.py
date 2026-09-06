@@ -11,7 +11,7 @@ FlousFlow Distribution Management - Commercial Integration
 Answers "what happened commercially during the visit?":
 
 * Quotation / Sale Order explicitly linked to the Visit
-  (standard sale.order — no custom sales engine)
+  (standard sale.order - no custom sales engine)
 * POS Order explicitly linked to the Visit (metadata survives
   offline order sync; historical snapshots)
 * Operational Customer Collection model with submit → validate →
