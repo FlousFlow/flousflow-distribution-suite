@@ -72,6 +72,7 @@ class TestGpsGeofence(GpsCommon):
 
     def test_outside_geofence_warning_mode(self):
         # ~605 m away — warning mode allows but records "outside"
+        self.set_param('geofence_mode', 'warning')
         route, visit = self._create_route()
         result = self._checkin(visit, 30.015440, 31.240000)
         self.assertEqual(result['status'], 'started', result)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Route GPS & Geofence',
-    'version': '19.0.1.0.0',
+    'version': '19.0.1.1.0',
     'category': 'Sales/Distribution',
     'summary': 'GPS capture, distance and geofence validation for route visits',
     'description': """
@@ -27,8 +27,7 @@ Context (HTTPS) in production.
     'license': 'LGPL-3',
     'depends': [
         'flousflow_distribution_route_management',
-        'web',
-    ],
+        'web', 'flousflow_partner_location',],
     'data': [
         'security/ir.model.access.csv',
         'security/security.xml',

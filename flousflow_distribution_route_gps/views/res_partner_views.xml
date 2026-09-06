@@ -14,6 +14,14 @@
                         <field name="distribution_latitude"/>
                         <field name="distribution_longitude"/>
                         <field name="distribution_location_accuracy"/>
+                        <field name="location_url"
+                               placeholder="Paste a Google Maps / WhatsApp location link..."
+                               groups="flousflow_partner_location.group_location_manager"/>
+                        <button name="action_extract_location" type="object"
+                                class="btn-secondary" icon="fa-magic"
+                                string="Extract from Link"
+                                groups="flousflow_partner_location.group_location_manager"
+                                colspan="2"/>
                         <button name="action_capture_gps_location" type="object"
                                 class="btn-secondary" icon="fa-crosshairs"
                                 string="Capture Current Location"
