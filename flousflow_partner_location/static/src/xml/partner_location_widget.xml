@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="flousflow_partner_location.PartnerLocationButtons" owl="1">
+        <div class="o_partner_location_buttons d-flex flex-wrap gap-2 mt-2">
+            <button type="button" class="btn btn-primary" t-on-click="onGetCurrentLocation">
+                <i class="fa fa-location-arrow me-1"/> Get Current Location
+            </button>
+            <button type="button" class="btn btn-secondary" t-on-click="onExtractLocation">
+                <i class="fa fa-magic me-1"/> Extract Location
+            </button>
+            <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onOpenLocation">
+                <i class="fa fa-external-link me-1"/> Open Location
+            </button>
+            <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onGetDirections">
+                <i class="fa fa-route me-1"/> Get Directions
+            </button>
+            <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onFillAddress">
+                <i class="fa fa-address-book me-1"/> Fill Address from Location
+            </button>
+            <button type="button" class="btn btn-link text-danger" t-if="hasCoords" t-on-click="onClearLocation">
+                <i class="fa fa-trash me-1"/> Clear Location
+            </button>
+        </div>
+    </t>
+</templates>

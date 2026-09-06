@@ -1,0 +1,298 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_partner_location
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-24 03:14+0000\n"
+"PO-Revision-Date: 2026-08-24 03:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_accuracy
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_accuracy
+msgid "Accuracy (m)"
+msgstr "الدقة (متر)"
+
+#. module: flousflow_partner_location
+#: model:res.groups,comment:flousflow_partner_location.group_location_manager
+msgid "Allows manually editing customer latitude/longitude coordinates."
+msgstr "يسمح بالتعديل اليدوي لإحداثيات خط العرض/خط الطول الخاصة بالعميل."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_can_edit
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_can_edit
+msgid "Can Edit Location"
+msgstr "يمكنه تعديل الموقع"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Clear"
+msgstr "مسح"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/xml/partner_location_widget.xml:0
+msgid "Clear Location"
+msgstr "مسح الموقع"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Clear this customer's location?"
+msgstr "هل تريد مسح موقع هذا العميل؟"
+
+#. module: flousflow_partner_location
+#: model:ir.model,name:flousflow_partner_location.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields.selection,name:flousflow_partner_location.selection__res_partner__location_source__gps
+msgid "Current Device"
+msgstr "الجهاز الحالي"
+
+#. module: flousflow_partner_location
+#: model:ir.module.category,name:flousflow_partner_location.module_category_flousflow_partner_location
+msgid "Customer Geo Location"
+msgstr "موقع العميل الجغرافي"
+
+#. module: flousflow_partner_location
+#: model:res.groups.privilege,name:flousflow_partner_location.res_groups_privilege_customer_location
+#: model_terms:ir.ui.view,arch_db:flousflow_partner_location.view_partner_form_inherit_location
+msgid "Customer Location"
+msgstr "موقع العميل"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Customer location has not been set yet."
+msgstr "لم يتم تحديد موقع العميل بعد."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,help:flousflow_partner_location.field_res_partner__location_accuracy
+#: model:ir.model.fields,help:flousflow_partner_location.field_res_users__location_accuracy
+msgid "Estimated accuracy of the captured position, in meters."
+msgstr "الدقة التقديرية للموقع الملتقط، بالمتر."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/xml/partner_location_widget.xml:0
+msgid "Extract Location"
+msgstr "استخراج الموقع"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid ""
+"Geolocation is not supported by this browser, or the page is not served over"
+" HTTPS."
+msgstr ""
+"تحديد الموقع غير مدعوم في هذا المتصفح، أو أن الصفحة لا تعمل عبر HTTPS."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/xml/partner_location_widget.xml:0
+msgid "Get Current Location"
+msgstr "الحصول على الموقع الحالي"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/xml/partner_location_widget.xml:0
+msgid "Get Directions"
+msgstr "الاتجاهات"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,help:flousflow_partner_location.field_res_partner__location_url
+#: model:ir.model.fields,help:flousflow_partner_location.field_res_users__location_url
+msgid "Google Maps / WhatsApp shared location link."
+msgstr "رابط موقع مشترك من Google Maps / واتساب."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid "Invalid latitude or longitude."
+msgstr "خط العرض أو خط الطول غير صالح."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_updated_at
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_updated_at
+msgid "Last Location Update"
+msgstr "آخر تحديث للموقع"
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid "Latitude must be between -90 and 90."
+msgstr "يجب أن يكون خط العرض بين -90 و 90."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_panel
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_panel
+msgid "Location Controls"
+msgstr "أزرار الموقع"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_url
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_url
+msgid "Location Link"
+msgstr "رابط الموقع"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_source
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_source
+msgid "Location Source"
+msgstr "مصدر الموقع"
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Location cleared."
+msgstr "تم مسح الموقع."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Location permission was denied."
+msgstr "تم رفض إذن تحديد الموقع."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Location saved successfully."
+msgstr "تم حفظ الموقع بنجاح."
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid "Longitude must be between -180 and 180."
+msgstr "يجب أن يكون خط الطول بين -180 و 180."
+
+#. module: flousflow_partner_location
+#: model:res.groups,name:flousflow_partner_location.group_location_manager
+msgid "Manage Customer Locations"
+msgstr "إدارة مواقع العملاء"
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields.selection,name:flousflow_partner_location.selection__res_partner__location_source__manual
+msgid "Manual"
+msgstr "يدوي"
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid "No valid coordinates were found in this link."
+msgstr "لم يتم العثور على إحداثيات صالحة في هذا الرابط."
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid ""
+"No valid coordinates were found in this link. Please open the link and copy "
+"the full Google Maps URL."
+msgstr ""
+"لم يتم العثور على إحداثيات صالحة في هذا الرابط. يرجى فتح الرابط ونسخ رابط "
+"Google Maps الكامل."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/xml/partner_location_widget.xml:0
+msgid "Open Location"
+msgstr "فتح الموقع"
+
+#. module: flousflow_partner_location
+#: model_terms:ir.ui.view,arch_db:flousflow_partner_location.view_partner_form_inherit_location
+msgid "Paste a Google Maps / WhatsApp location link..."
+msgstr "الصق رابط موقع من Google Maps / واتساب..."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Please enter a Google Maps location link."
+msgstr "يرجى إدخال رابط موقع من Google Maps."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields.selection,name:flousflow_partner_location.selection__res_partner__location_source__google_maps_link
+msgid "Shared Maps Link"
+msgstr "رابط خرائط مشترك"
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid "This location link has too many redirects."
+msgstr "رابط الموقع يحتوي على تحويلات كثيرة جدًا."
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid "This location link is not from a supported Google Maps domain."
+msgstr "رابط الموقع ليس من نطاق Google Maps مدعوم."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Unable to determine the current location."
+msgstr "تعذر تحديد الموقع الحالي."
+
+#. module: flousflow_partner_location
+#. odoo-javascript
+#: code:addons/flousflow_partner_location/static/src/js/partner_location_widget.js:0
+msgid "Unable to extract coordinates from this link."
+msgstr "تعذر استخراج الإحداثيات من هذا الرابط."
+
+#. module: flousflow_partner_location
+#. odoo-python
+#: code:addons/flousflow_partner_location/models/res_partner.py:0
+msgid ""
+"Unable to extract coordinates from this link. Please open the link and copy "
+"the full Google Maps URL."
+msgstr ""
+"تعذر استخراج الإحداثيات من هذا الرابط. يرجى فتح الرابط ونسخ رابط Google Maps"
+" الكامل."
+
+#. module: flousflow_partner_location
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_partner__location_updated_by
+#: model:ir.model.fields,field_description:flousflow_partner_location.field_res_users__location_updated_by
+msgid "Updated By"
+msgstr "تم التحديث بواسطة"
+
+msgid ""
+"Location request timed out. Try again or paste a Google Maps link instead."
+msgstr ""
+"انتهت مهلة طلب تحديد الموقع. حاول مرة أخرى أو الصق رابط Google Maps بدلاً من"
+" ذلك."
+
+msgid "Fill Address from Location"
+msgstr "ملء العنوان من الموقع"
+
+msgid "Address filled from location."
+msgstr "تم ملء العنوان من الموقع."
+
+msgid "Unable to determine the address from this location."
+msgstr "تعذر تحديد العنوان من هذا الموقع."

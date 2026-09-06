@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Geo Location — FlousFlow</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color: #212b36; margin: 0; background: #ffffff;">
+
+    <img src="thumbnail.png" alt="Customer Geo Location" style="width: 100%; max-width: 1280px; display: block; margin: 0 auto;"/>
+
+    <div style="text-align: center; padding: 20px 0 0;">
+        <img src="icon.png" alt="Customer Geo Location icon" style="width: 128px; height: 128px;"/>
+    </div>
+
+    <div style="max-width: 960px; margin: 0 auto; padding: 24px 24px 32px;">
+
+        <h1 style="font-size: 32px;">Customer Geo Location</h1>
+        <p style="font-size: 16px; line-height: 1.6; color: #4b5563;">
+            Save the exact geographic location of a customer / contact in Odoo 19 and reuse it
+            instantly — open it in Google Maps or get turn-by-turn directions. No Google Maps API key required.
+        </p>
+
+        <h2 style="font-size: 24px; margin-top: 32px;">Key Features</h2>
+        <ul style="font-size: 16px; line-height: 1.8; color: #4b5563;">
+            <li><strong>Get Current Location</strong> — captures latitude, longitude and accuracy using the browser Geolocation API.</li>
+            <li><strong>Extract Location</strong> — parses Google Maps / WhatsApp-shared links (including short <code>maps.app.goo.gl</code> links).</li>
+            <li><strong>Open Location</strong> — opens Google Maps at the saved coordinates.</li>
+            <li><strong>Get Directions</strong> — opens Google Maps turn-by-turn directions to the customer.</li>
+            <li><strong>Clear Location</strong> — clears the saved coordinates after confirmation.</li>
+            <li>Reuses the standard <code>res.partner</code> fields <code>partner_latitude</code> / <code>partner_longitude</code>.</li>
+            <li>Automatic audit of <em>Last Location Update</em> and <em>Updated By</em>.</li>
+            <li>Manual editing limited to the <em>Manage Customer Locations</em> group.</li>
+        </ul>
+
+        <h2 style="font-size: 24px; margin-top: 32px;">How it works</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #4b5563;">
+            Open a contact → <strong>Customer Location</strong> page →
+            <strong>Get Current Location</strong> (device GPS) or paste a shared link and click
+            <strong>Extract Location</strong>. Then use <strong>Open Location</strong> /
+            <strong>Get Directions</strong> to navigate.
+        </p>
+
+        <h2 style="font-size: 24px; margin-top: 32px;">Screenshots</h2>
+        <img src="screenshots/01_customer_location.png" alt="Customer Location section" style="width: 100%; max-width: 960px; border: 1px solid #e1e5ea; border-radius: 8px;"/>
+
+        <h2 style="font-size: 24px; margin-top: 32px;">Requirements</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #4b5563;">
+            Browser geolocation requires a secure context — serve Odoo over <strong>HTTPS</strong> in production.
+        </p>
+
+        <h2 style="font-size: 24px; margin-top: 32px;">Installation</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #4b5563;">
+            Copy the <code>flousflow_partner_location</code> folder to your addons path and install
+            the module from the Apps menu.
+        </p>
+
+        <h2 style="font-size: 24px; margin-top: 32px;">License</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #4b5563;">
+            LGPL-3 — <a href="https://flousflow.com" style="color: #0e9f8a;">FlousFlow</a>
+        </p>
+    </div>
+</body>
+</html>

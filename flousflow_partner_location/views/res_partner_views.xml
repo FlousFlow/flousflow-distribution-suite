@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_location" model="ir.ui.view">
+        <field name="name">res.partner.form.customer.location</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page string="Customer Location" name="location">
+                    <group>
+                        <group>
+                            <field name="location_url" placeholder="Paste a Google Maps / WhatsApp location link..."/>
+                            <field name="location_source"/>
+                            <field name="location_accuracy"/>
+                        </group>
+                        <group>
+                            <field name="partner_latitude" readonly="not location_can_edit"/>
+                            <field name="partner_longitude" readonly="not location_can_edit"/>
+                            <field name="location_updated_at"/>
+                            <field name="location_updated_by"/>
+                        </group>
+                    </group>
+                    <field name="location_can_edit" invisible="1"/>
+                    <field name="location_panel" widget="partner_location_buttons" nolabel="1"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
