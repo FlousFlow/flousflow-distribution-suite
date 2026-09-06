@@ -1,0 +1,142 @@
+/* Distribution Performance Dashboard - standard Odoo dashboard structure
+ * (same anatomy as account_journal_dashboard kanban: container-fluid rows of
+ * col / col-auto text-end pairs, fs-5 fw-bold titles, row mt-auto actions).
+ * Styled with the ica_web_responsive theme tokens:
+ *   accent $o-brand-primary (#714B67) - action #017e84 - $o-gray-* - radius 0. */
+
+.o_distribution_dashboard {
+    --dash-accent: #{$o-brand-primary};
+    --dash-action: #{$o-enterprise-action-color};
+    --dash-border: #{$o-gray-200};
+    background: $o-gray-100;
+
+    /* -- Filter bar ------------------------------------------------------- */
+    .o_dashboard_header {
+        background: $o-view-background-color;
+        border-bottom: 1px solid var(--dash-border);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .o_dash_period_btn {
+        --bs-btn-padding-y: 0.25rem;
+        --bs-btn-font-size: 0.8125rem;
+    }
+
+    /* -- Journal-style dashboard card -------------------------------------- */
+    .o_dash_card {
+        position: relative;   // stay above the grid row for pointer events
+        display: flex;
+        flex-flow: column nowrap;
+        background: $o-view-background-color; // same token as core cards ($card-bg)
+        border: 1px solid var(--dash-border);
+        border-radius: 0;              // theme: $card-border-radius 0
+        box-shadow: none;
+        padding: 1rem;
+
+        &:not(:first-child):hover,
+        &[role="button"]:hover {
+            border-color: var(--dash-accent);
+        }
+
+        &[role="button"] {
+            cursor: pointer;
+        }
+
+        .container-fluid {
+            flex: 0 0 auto;
+
+            .row {
+                --bs-gutter-x: 0;
+                padding: 0.1rem 0;
+
+                .col {
+                    color: $o-gray-600;
+                    font-size: 0.875rem;
+                }
+
+                .col-auto {
+                    color: $o-gray-900;
+                    font-variant-numeric: tabular-nums;
+                }
+            }
+        }
+
+        table {
+            // native list look inside cards
+            margin-bottom: 0;
+        }
+    }
+
+    .o_dash_card_attention {
+        border-color: $danger;
+    }
+
+    /* -- Bars: ONE accent ($o-brand-primary), theme neutrals, radius 0 ----- */
+    .o_bar_row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.2rem 0;
+
+        .o_bar_label {
+            min-width: 8.5rem;
+            max-width: 10rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 0.8125rem;
+            color: $o-gray-700;
+        }
+
+        .o_bar_track {
+            position: relative;
+            height: 0.7rem;
+            background: $o-gray-100;
+            border: 1px solid $o-gray-200;
+            overflow: hidden;
+            flex: 1 1 auto;
+        }
+
+        .o_bar_fill {
+            height: 100%;
+            background: var(--dash-accent);
+            border-radius: 0;
+            min-width: 1px;
+        }
+
+        .o_bar_fill_strong {
+            background: var(--dash-accent);
+        }
+
+        .o_bar_fill_muted {
+            background: mix($o-brand-primary, $o-white, 30%);
+        }
+
+        .o_bar_count {
+            min-width: 3.2rem;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+            color: $o-gray-600;
+        }
+    }
+
+    /* -- Tables: native list look ------------------------------------------- */
+    .o_dash_table thead th {
+        color: $o-gray-600;
+        font-weight: 400;
+        font-size: 0.8125rem;
+    }
+
+    .o_dash_table tbody tr[role="button"]:hover {
+        background: mix($o-enterprise-action-color, $o-white, 5%);
+        cursor: pointer;
+    }
+
+    /* Equal-height cards ONLY inside the summary/distribution grids.
+       Section cards (Route/Area/...) keep their natural content height. */
+    .row > div > .o_dash_card {
+        height: 100%;
+    }
+}

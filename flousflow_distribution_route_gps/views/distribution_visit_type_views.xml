@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Visit Types: GPS requirements -->
+    <record id="view_distribution_visit_type_form_gps" model="ir.ui.view">
+        <field name="name">distribution.visit.type.form.gps</field>
+        <field name="model">distribution.visit.type</field>
+        <field name="inherit_id"
+               ref="flousflow_distribution_route_base.view_distribution_visit_type_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='business_rules']" position="inside">
+                <field name="require_gps_checkin"/>
+                <field name="require_gps_checkout"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_distribution_visit_type_list_gps" model="ir.ui.view">
+        <field name="name">distribution.visit.type.list.gps</field>
+        <field name="model">distribution.visit.type</field>
+        <field name="inherit_id"
+               ref="flousflow_distribution_route_base.view_distribution_visit_type_list"/>
+        <field name="arch" type="xml">
+            <field name="require_customer" position="after">
+                <field name="require_gps_checkin" optional="show"/>
+                <field name="require_gps_checkout" optional="hide"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

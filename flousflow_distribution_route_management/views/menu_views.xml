@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Operations menu under the existing Distribution root menu -->
+    <menuitem id="menu_distribution_operations"
+              name="Operations"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              sequence="10"/>
+
+    <!-- User menus -->
+    <menuitem id="menu_distribution_my_routes"
+              name="My Routes"
+              parent="menu_distribution_operations"
+              action="action_my_route_plans"
+              groups="flousflow_distribution_route_base.group_distribution_route_user"
+              sequence="10"/>
+
+    <menuitem id="menu_distribution_my_visits"
+              name="My Visits"
+              parent="menu_distribution_operations"
+              action="action_my_visits"
+              groups="flousflow_distribution_route_base.group_distribution_route_user"
+              sequence="20"/>
+
+    <!-- Manager menus -->
+    <menuitem id="menu_distribution_route_plans"
+              name="Route Plans"
+              parent="menu_distribution_operations"
+              action="action_route_plans"
+              groups="flousflow_distribution_route_base.group_distribution_route_manager"
+              sequence="30"/>
+
+    <menuitem id="menu_distribution_all_visits"
+              name="All Visits"
+              parent="menu_distribution_operations"
+              action="action_all_visits"
+              groups="flousflow_distribution_route_base.group_distribution_route_manager"
+              sequence="40"/>
+
+    <!-- Configuration: Visit Results next to Areas / Visit Types -->
+    <menuitem id="menu_distribution_visit_result"
+              name="Visit Results"
+              parent="flousflow_distribution_route_base.menu_distribution_config"
+              action="action_distribution_visit_result"
+              groups="flousflow_distribution_route_base.group_distribution_route_manager"
+              sequence="15"/>
+
+</odoo>

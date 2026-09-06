@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Root Menu: Distribution -->
+    <menuitem id="menu_distribution_root"
+              name="Distribution"
+              web_icon="flousflow_distribution_route_base,static/description/icon.png"
+              sequence="45"/>
+
+    <!-- Configuration Menu -->
+    <menuitem id="menu_distribution_config"
+              name="Configuration"
+              parent="menu_distribution_root"
+              sequence="100"/>
+
+    <menuitem id="menu_distribution_area"
+              name="Distribution Areas"
+              parent="menu_distribution_config"
+              action="action_distribution_area"
+              sequence="10"/>
+
+    <menuitem id="menu_distribution_visit_type"
+              name="Visit Types"
+              parent="menu_distribution_config"
+              action="action_distribution_visit_type"
+              sequence="20"/>
+
+    <menuitem id="menu_distribution_settings"
+              name="Settings"
+              parent="menu_distribution_config"
+              action="action_distribution_config_settings"
+              groups="base.group_system"
+              sequence="30"/>
+
+</odoo>

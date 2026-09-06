@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Fleet Vehicle Form: Distribution Operations -->
+    <record id="view_vehicle_form_inherit_distribution" model="ir.ui.view">
+        <field name="name">fleet.vehicle.form.distribution</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button class="oe_stat_button" type="object" name="action_view_distribution_warehouse"
+                        icon="fa-warehouse" invisible="not distribution_warehouse_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Warehouse</span>
+                    </div>
+                </button>
+                <button class="oe_stat_button" type="object" name="action_view_vehicle_stock"
+                        icon="fa-dropbox" invisible="not distribution_warehouse_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Stock</span>
+                    </div>
+                </button>
+                <button class="oe_stat_button" type="object" name="action_view_vehicle_pos"
+                        icon="fa-shopping-cart" invisible="not distribution_pos_config_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">POS</span>
+                    </div>
+                </button>
+                <button class="oe_stat_button" type="object" name="action_view_vehicle_employees"
+                        icon="fa-users" invisible="not is_distribution_vehicle">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Employees</span>
+                    </div>
+                </button>
+                <button class="oe_stat_button" type="object" name="action_view_vehicle_transfers"
+                        icon="fa-exchange" invisible="not distribution_warehouse_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Transfers</span>
+                    </div>
+                </button>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Distribution Operations" name="distribution_operations">
+                    <group>
+                        <group string="Distribution" name="distribution_config">
+                            <field name="is_distribution_vehicle"/>
+                            <field name="distribution_active" readonly="is_distribution_vehicle and distribution_active and not user_has_vehicle_manager"/>
+                            <field name="distribution_status"/>
+                            <field name="distribution_warehouse_id"
+                                   readonly="is_distribution_vehicle and distribution_active and not user_has_vehicle_manager"/>
+                            <field name="distribution_pos_config_id"
+                                   readonly="is_distribution_vehicle and distribution_active and not user_has_vehicle_manager"/>
+                            <field name="distribution_main_warehouse_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="Current Team" name="distribution_team">
+                            <field name="current_salesman_id"/>
+                            <field name="current_driver_id"/>
+                            <button name="action_configure_distribution" type="object"
+                                    class="btn-secondary" icon="fa-cogs"
+                                    string="Configure Distribution Vehicle"
+                                    colspan="2"/>
+                        </group>
+                    </group>
+                    <separator string="Current Employees" colspan="2"/>
+                    <field name="distribution_employee_ids" widget="many2many_tags" colspan="2" nolabel="1"/>
+                    <separator string="Assignment History" colspan="2"/>
+                    <field name="distribution_employee_assignment_ids" colspan="2" nolabel="1">
+                        <list string="Assignments" editable="bottom">
+                            <field name="employee_id"/>
+                            <field name="role"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="company_id" column_invisible="1"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- helper flag on the form (user_has_vehicle_manager) -->
+    <record id="view_vehicle_form_inherit_distribution_helper" model="ir.ui.view">
+        <field name="name">fleet.vehicle.form.distribution.helper</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='model_id']" position="after">
+                <field name="user_has_vehicle_manager" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Fleet Vehicle list: distribution badge -->
+    <record id="view_vehicle_list_inherit_distribution" model="ir.ui.view">
+        <field name="name">fleet.vehicle.list.distribution</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_tree"/>
+        <field name="arch" type="xml">
+            <field name="license_plate" position="after">
+                <field name="distribution_warehouse_id" optional="show"/>
+                <field name="distribution_status" optional="hide" widget="badge"
+                       decoration-success="distribution_status == 'ready'"
+                       decoration-muted="distribution_status == 'inactive'"/>
+                <field name="is_distribution_vehicle" optional="hide"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Assignment views -->
+    <record id="view_vehicle_employee_assignment_list" model="ir.ui.view">
+        <field name="name">fleet.vehicle.employee.assignment.list</field>
+        <field name="model">fleet.vehicle.employee.assignment</field>
+        <field name="arch" type="xml">
+            <list string="Vehicle Assignments" sample="1">
+                <field name="employee_id"/>
+                <field name="vehicle_id"/>
+                <field name="role"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_vehicle_employee_assignment_form" model="ir.ui.view">
+        <field name="name">fleet.vehicle.employee.assignment.form</field>
+        <field name="model">fleet.vehicle.employee.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Vehicle Assignment">
+                <header>
+                    <button name="action_close" type="object" string="Close Assignment"
+                            class="btn-primary" invisible="date_to"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="employee_id"/>
+                            <field name="vehicle_id"/>
+                            <field name="role"/>
+                        </group>
+                        <group>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <group string="Notes">
+                        <field name="notes" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_vehicle_employee_assignment_search" model="ir.ui.view">
+        <field name="name">fleet.vehicle.employee.assignment.search</field>
+        <field name="model">fleet.vehicle.employee.assignment</field>
+        <field name="arch" type="xml">
+            <search string="Vehicle Assignments">
+                <field name="employee_id"/>
+                <field name="vehicle_id"/>
+                <field name="role"/>
+                <filter string="Current Assignments" name="filter_current"
+                        domain="[('date_to', '=', False)]"/>
+                <group>
+                    <filter string="Employee" name="group_employee" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Vehicle" name="group_vehicle" context="{'group_by': 'vehicle_id'}"/>
+                    <filter string="Role" name="group_role" context="{'group_by': 'role'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_vehicle_employee_assignment" model="ir.actions.act_window">
+        <field name="name">Vehicle Assignments</field>
+        <field name="res_model">fleet.vehicle.employee.assignment</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_vehicle_employee_assignment_search"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="flousflow_distribution_dashboard.Dashboard">
+        <div class="o_distribution_dashboard o_kanban_dashboard d-flex flex-column h-100 overflow-auto">
+            <!-- Header: title + period filters (control-panel style) -->
+            <div class="o_dashboard_header px-3 py-2">
+                <div class="d-flex flex-wrap align-items-center gap-2">
+                    <h5 class="my-0 me-2 fw-bold">Distribution Dashboard</h5>
+                    <t t-foreach="periods" t-as="p" t-key="p[0]">
+                        <button class="o_dash_period_btn btn btn-sm"
+                                t-att-class="state.filters.period === p[0] ? 'btn-primary' : 'btn-secondary'"
+                                t-on-click="() =&gt; this.setPeriod(p[0])"
+                                t-esc="p[1]"/>
+                    </t>
+                    <t t-if="state.filters.period === 'custom'">
+                        <input type="date" class="form-control form-control-sm w-auto"
+                               t-model="state.filters.date_from"
+                               t-on-change="() =&gt; this.load()"/>
+                        <input type="date" class="form-control form-control-sm w-auto"
+                               t-model="state.filters.date_to"
+                               t-on-change="() =&gt; this.load()"/>
+                    </t>
+                    <button class="btn btn-sm btn-secondary ms-auto"
+                            t-on-click="() =&gt; this.load()">Refresh</button>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-2" t-if="state.data">
+                    <select class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('employee_id', ev.target.value)">
+                        <option value="0" t-att-selected="!state.filters.employee_id">All Employees</option>
+                        <t t-foreach="state.data.options.employees" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.employee_id == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                    <select class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('supervisor_id', ev.target.value)">
+                        <option value="0" t-att-selected="!state.filters.supervisor_id">All Supervisors</option>
+                        <t t-foreach="state.data.options.supervisors" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.supervisor_id == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                    <select class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('area_id', ev.target.value)">
+                        <option value="0" t-att-selected="!state.filters.area_id">All Areas</option>
+                        <t t-foreach="state.data.options.areas" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.area_id == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                    <select class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('visit_type_id', ev.target.value)">
+                        <option value="0" t-att-selected="!state.filters.visit_type_id">All Visit Types</option>
+                        <t t-foreach="state.data.options.visit_types" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.visit_type_id == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                    <select class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('result_id', ev.target.value)">
+                        <option value="0" t-att-selected="!state.filters.result_id">All Results</option>
+                        <t t-foreach="state.data.options.results" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.result_id == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                    <select t-if="state.data.options.vehicles" class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('vehicle_id', ev.target.value)">
+                        <option value="0" t-att-selected="!state.filters.vehicle_id">All Vehicles</option>
+                        <t t-foreach="state.data.options.vehicles" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.vehicle_id == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                    <select class="form-select form-select-sm w-auto"
+                            t-on-change="(ev) =&gt; this.setFilter('route_state', ev.target.value)">
+                        <option value="" t-att-selected="!state.filters.route_state">All Route States</option>
+                        <t t-foreach="state.data.options.route_states" t-as="o" t-key="o.id">
+                            <option t-att-value="o.id" t-att-selected="state.filters.route_state == o.id" t-esc="o.name"/>
+                        </t>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Loading / Error / Empty states -->
+            <div t-if="state.loading" class="flex-fill d-flex align-items-center justify-content-center text-muted">
+                <i class="fa fa-circle-o-notch fa-spin fa-2x me-3" role="img" aria-label="Loading"/>Loading…
+            </div>
+            <div t-elif="state.error" class="flex-fill d-flex flex-column align-items-center justify-content-center text-muted">
+                <i class="fa fa-exclamation-triangle fa-2x mb-2" role="img" aria-label="Error"/>
+                <p>Could not load the dashboard. Please try again.</p>
+                <button class="btn btn-primary" t-on-click="() =&gt; this.load()">Retry</button>
+            </div>
+
+            <div t-elif="state.data" class="o_dashboard_body flex-fill p-3">
+                <div t-if="!this.hasData(state.data)" class="d-flex flex-column align-items-center justify-content-center text-muted py-5">
+                    <i class="fa fa-bar-chart fa-3x mb-3" role="img" aria-label="No data"/>
+                    <h5>No distribution activity found for the selected period.</h5>
+                    <p>Try another period or clear the filters.</p>
+                </div>
+
+                <t t-else="">
+                    <!-- ============================================== -->
+                    <!-- Summary cards — standard Odoo journal-card      -->
+                    <!-- anatomy: title + container-fluid label/value    -->
+                    <!-- rows + row mt-auto action button.               -->
+                    <!-- ============================================== -->
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="o_dash_card h-100" role="button" tabindex="0" t-on-click="() =&gt; this.drill('route_planned')">
+                                <div class="d-flex align-items-baseline"><div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Routes</span></div><i class="fa fa-arrow-right text-muted small ms-auto" role="img" aria-label="Open"/></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <div class="row"><div class="col">Planned</div><div class="col-auto text-end fw-bold" t-esc="state.data.kpi.routes.planned"/></div>
+                                    <div class="row"><div class="col">Started</div><div class="col-auto text-end" t-esc="state.data.kpi.routes.started"/></div>
+                                    <div class="row"><div class="col">Completed</div><div class="col-auto text-end" t-esc="state.data.kpi.routes.completed"/></div>
+                                    <div class="row"><div class="col">Not Started</div><div class="col-auto text-end" t-esc="state.data.kpi.routes.not_started"/></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="o_dash_card h-100" role="button" tabindex="0" t-on-click="() =&gt; this.drill('visit_planned')">
+                                <div class="d-flex align-items-baseline"><div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Visits</span></div><i class="fa fa-arrow-right text-muted small ms-auto" role="img" aria-label="Open"/></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <div class="row"><div class="col">Planned</div><div class="col-auto text-end fw-bold" t-esc="state.data.kpi.visits.planned"/></div>
+                                    <div class="row"><div class="col">Executed</div><div class="col-auto text-end" t-esc="state.data.kpi.visits.executed"/></div>
+                                    <div class="row"><div class="col">Pending</div><div class="col-auto text-end" t-esc="state.data.kpi.visits.pending"/></div>
+                                    <div class="row"><div class="col">Needs Revisit</div><div class="col-auto text-end" t-esc="state.data.kpi.visits.needs_revisit"/></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="o_dash_card h-100" role="button" tabindex="0" t-on-click="() =&gt; this.drill('visit_executed')">
+                                <div class="d-flex align-items-baseline"><div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Results</span></div><i class="fa fa-arrow-right text-muted small ms-auto" role="img" aria-label="Open"/></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <div class="row"><div class="col">Successful</div><div class="col-auto text-end fw-bold" t-esc="state.data.kpi.visits.successful"/></div>
+                                    <div class="row"><div class="col">Failed Results</div><div class="col-auto text-end" t-esc="state.data.kpi.visits.unsuccessful"/></div>
+                                    <div class="row"><div class="col">Execution Rate</div><div class="col-auto text-end" t-esc="pct(state.data.kpi.execution_rate) + '%'"/></div>
+                                    <div class="row"><div class="col">Success Rate</div><div class="col-auto text-end" t-esc="pct(state.data.kpi.success_rate) + '%'"/></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="o_dash_card h-100">
+                                <div class="d-flex align-items-baseline"><div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Timing</span></div></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <div class="row"><div class="col">Avg Visit Duration</div><div class="col-auto text-end" t-esc="num1(state.data.kpi.visits.avg_visit_duration) + ' min'"/></div>
+                                    <div class="row"><div class="col">Avg Arrival Variance</div><div class="col-auto text-end" t-esc="num1(state.data.kpi.visits.avg_arrival_variance) + ' min'"/></div>
+                                    <div class="row"><div class="col">Avg Late Delay</div><div class="col-auto text-end" t-esc="num1(state.data.kpi.visits.avg_late_delay) + ' min'"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Distributions + trend: journal-card anatomy too -->
+                    <div class="row g-3 mt-0">
+                        <div class="col-12 col-lg-4">
+                            <div class="o_dash_card h-100">
+                                <div class="d-flex align-items-baseline"><span class="fs-6 fw-bold">Visits by State</span></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <t t-foreach="state.data.visits_by_state" t-as="row" t-key="row.state">
+                                        <div class="o_bar_row" role="button" tabindex="0"
+                                             t-on-click="() =&gt; this.drill('visit_' + (row.state === 'done' ? 'executed' : (row.state === 'cancelled' ? 'planned' : 'pending')))"
+                                             t-att-aria-label="row.label">
+                                            <span class="o_bar_label" t-esc="row.label"/>
+                                            <div class="o_bar_track flex-fill"><div class="o_bar_fill" t-att-style="'width:' + (state.data.kpi.visits.planned ? (100.0 * row.count / state.data.kpi.visits.planned) : 0) + '%'"/></div>
+                                            <span class="o_bar_count" t-esc="row.count"/>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="o_dash_card h-100">
+                                <div class="d-flex align-items-baseline"><span class="fs-6 fw-bold">Visit Results (executed)</span></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <t t-if="!state.data.visits_by_result.length">
+                                        <div class="text-muted">No executed visits in this period.</div>
+                                    </t>
+                                    <t t-foreach="state.data.visits_by_result" t-as="row" t-key="row.id">
+                                        <div class="o_bar_row" role="button" tabindex="0" t-on-click="() =&gt; this.drill('visit_executed')">
+                                            <span class="o_bar_label" t-esc="row.name"/>
+                                            <div class="o_bar_track flex-fill"><div class="o_bar_fill" t-att-class="row.is_success ? 'o_bar_fill_strong' : 'o_bar_fill_muted'" t-att-style="'width:' + (state.data.kpi.visits.executed ? (100.0 * row.count / state.data.kpi.visits.executed) : 0) + '%'"/></div>
+                                            <span class="o_bar_count" t-esc="row.count"/>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="o_dash_card h-100">
+                                <div class="d-flex align-items-baseline"><span class="fs-6 fw-bold">Daily Trend</span></div>
+                                <div class="mt-2 p-0 container-fluid">
+                                    <t t-foreach="state.data.daily_trend" t-as="row" t-key="row.date">
+                                        <div class="o_bar_row small">
+                                            <span class="o_bar_label" t-esc="row.date"/>
+                                            <div class="o_bar_track flex-fill">
+                                                <div class="o_bar_fill o_bar_fill_muted" t-att-style="'width:' + (state.data.kpi.visits.planned ? (100.0 * row.planned / state.data.kpi.visits.planned) : 0) + '%'"/>
+                                                <div class="o_bar_fill o_bar_fill_strong position-absolute" t-att-style="'width:' + (state.data.kpi.visits.planned ? (100.0 * row.executed / state.data.kpi.visits.planned) : 0) + '%'"/>
+                                            </div>
+                                            <span class="o_bar_count"><t t-esc="row.executed"/>/<t t-esc="row.planned"/></span>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee performance -->
+                    <div class="o_dash_card mt-3">
+                        <div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Employee Performance</span>
+                        <span class="text-muted small ms-2">rankings require the configured minimum executed visits</span></div>
+                        <div class="mt-2 p-0 container-fluid table-responsive">
+                            <table class="table table-sm table-hover mb-0 o_dash_table">
+                                <thead><tr><th>Employee</th><th class="text-end">Routes</th><th class="text-end">Completed</th>
+                                    <th class="text-end">Planned</th><th class="text-end">Executed</th><th class="text-end">Execution</th>
+                                    <th class="text-end">Successful</th><th class="text-end">Success</th>
+                                    <th class="text-end">Avg Duration</th><th class="text-end">Avg Variance</th>
+                                    <t t-if="state.data.capabilities.gps"><th class="text-end">GPS Outside</th></t></tr></thead>
+                                <tbody>
+                                    <t t-foreach="state.data.employees" t-as="e" t-key="e.id">
+                                        <tr role="button" tabindex="0" t-on-click="() =&gt; this.setFilter('employee_id', e.id)">
+                                            <td><span t-esc="e.name"/><t t-if="e.rankable"><i class="fa fa-star text-warning ms-1" title="Meets ranking minimum"/></t></td>
+                                            <td class="text-end" t-esc="e.routes"/>
+                                            <td class="text-end" t-esc="e.routes_completed"/>
+                                            <td class="text-end" t-esc="e.planned"/>
+                                            <td class="text-end" t-esc="e.executed"/>
+                                            <td class="text-end fw-bold" t-esc="pct(e.execution_rate) + '%'"/>
+                                            <td class="text-end" t-esc="e.successful"/>
+                                            <td class="text-end fw-bold" t-esc="pct(e.success_rate) + '%'"/>
+                                            <td class="text-end" t-esc="num1(e.avg_duration)"/>
+                                            <td class="text-end" t-esc="num1(e.avg_variance)"/>
+                                            <t t-if="state.data.capabilities.gps"><td class="text-end" t-esc="e.gps_outside === undefined ? '—' : e.gps_outside"/></t>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Area performance -->
+                    <div class="o_dash_card mt-3">
+                        <div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Area Performance</span></div>
+                        <div class="mt-2 p-0 container-fluid table-responsive">
+                            <table class="table table-sm table-hover mb-0 o_dash_table">
+                                <thead><tr><th>Area</th><th class="text-end">Routes</th><th class="text-end">Completed</th>
+                                    <th class="text-end">Planned</th><th class="text-end">Executed</th><th class="text-end">Execution</th>
+                                    <th class="text-end">Successful</th><th class="text-end">Success</th></tr></thead>
+                                <tbody>
+                                    <t t-foreach="state.data.areas" t-as="a" t-key="a.id">
+                                        <tr role="button" tabindex="0" t-on-click="() =&gt; this.setFilter('area_id', a.id)">
+                                            <td t-esc="a.name"/>
+                                            <td class="text-end" t-esc="a.routes"/>
+                                            <td class="text-end" t-esc="a.routes_completed"/>
+                                            <td class="text-end" t-esc="a.planned"/>
+                                            <td class="text-end" t-esc="a.executed"/>
+                                            <td class="text-end fw-bold" t-esc="pct(a.execution_rate) + '%'"/>
+                                            <td class="text-end" t-esc="a.successful"/>
+                                            <td class="text-end fw-bold" t-esc="pct(a.success_rate) + '%'"/>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Visit types + customers -->
+                    <div class="row g-3 mt-0">
+                        <div class="col-12 col-lg-6">
+                            <div class="o_dash_card h-100">
+                                <div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Visit Type Analysis</span></div>
+                                <div class="mt-2 p-0 container-fluid table-responsive">
+                                    <table class="table table-sm mb-0 o_dash_table">
+                                        <thead><tr><th>Type</th><th class="text-end">Planned</th><th class="text-end">Executed</th>
+                                            <th class="text-end">Execution</th><th class="text-end">Success</th></tr></thead>
+                                        <tbody>
+                                            <t t-foreach="state.data.visit_types" t-as="t" t-key="t.id">
+                                                <tr>
+                                                    <td t-esc="t.name"/>
+                                                    <td class="text-end" t-esc="t.planned"/>
+                                                    <td class="text-end" t-esc="t.executed"/>
+                                                    <td class="text-end" t-esc="pct(t.execution_rate) + '%'"/>
+                                                    <td class="text-end" t-esc="pct(t.success_rate) + '%'"/>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="o_dash_card h-100">
+                                <div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Customer Visit Analysis</span>
+                                <span class="text-muted small ms-2">top 50</span></div>
+                                <div class="mt-2 p-0 container-fluid table-responsive">
+                                    <table class="table table-sm table-hover mb-0 o_dash_table">
+                                        <thead><tr><th>Customer</th><th class="text-end">Visits</th><th class="text-end">Successful</th>
+                                            <th class="text-end">Failed</th><th class="text-end">Revisit</th><th>Last Visit</th>
+                                            <th>Common Result</th></tr></thead>
+                                        <tbody>
+                                            <t t-foreach="state.data.customers" t-as="c" t-key="c.id">
+                                                <tr role="button" tabindex="0" t-on-click="() =&gt; this.openRecord('res.partner', c.id)">
+                                                    <td t-esc="c.name"/>
+                                                    <td class="text-end" t-esc="c.visits"/>
+                                                    <td class="text-end" t-esc="c.successful"/>
+                                                    <td class="text-end" t-esc="c.unsuccessful"/>
+                                                    <td class="text-end" t-esc="c.needs_revisit"/>
+                                                    <td t-esc="c.last_visit or '—'"/>
+                                                    <td t-esc="c.most_common_result or '—'"/>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Route performance -->
+                    <div class="o_dash_card mt-3">
+                        <div class="d-flex align-items-baseline"><span class="fs-5 fw-bold">Route Performance</span>
+                        <span class="text-muted small ms-2">latest 50 in period</span></div>
+                        <div class="mt-2 p-0 container-fluid table-responsive">
+                            <table class="table table-sm table-hover mb-0 o_dash_table">
+                                <thead><tr><th>Route</th><th>Date</th><th>Employee</th><th>Area</th>
+                                    <t t-if="state.data.capabilities.vehicle"><th>Vehicle</th></t>
+                                    <th>State</th><th class="text-end">Planned</th><th class="text-end">Executed</th>
+                                    <th class="text-end">Execution</th><th class="text-end">Success</th></tr></thead>
+                                <tbody>
+                                    <t t-foreach="state.data.routes" t-as="r" t-key="r.id">
+                                        <tr role="button" tabindex="0" t-on-click="() =&gt; this.drill('route_form', r.id)">
+                                            <td t-esc="r.name"/>
+                                            <td t-esc="r.date"/>
+                                            <td t-esc="r.employee"/>
+                                            <td t-esc="r.area"/>
+                                            <t t-if="state.data.capabilities.vehicle"><td t-esc="r.vehicle"/></t>
+                                            <td><span class="badge text-bg-light" t-esc="r.state"/></td>
+                                            <td class="text-end" t-esc="r.planned"/>
+                                            <td class="text-end" t-esc="r.executed"/>
+                                            <td class="text-end fw-bold" t-esc="pct(r.execution_rate) + '%'"/>
+                                            <td class="text-end" t-esc="pct(r.success_rate) + '%'"/>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Needs attention -->
+                    <div class="o_dash_card o_dash_card_attention mt-3 mb-3" t-if="state.data.attention.length">
+                        <span class="fs-5 fw-bold text-danger">Needs Attention</span>
+                        <div class="mt-2 p-0 container-fluid">
+                            <t t-foreach="state.data.attention" t-as="item" t-key="item_index">
+                                <div class="row" role="button" tabindex="0" t-if="item.res_id"
+                                     t-on-click="() =&gt; this.openRecord(item.model, item.res_id)">
+                                    <div class="col"><i class="fa fa-angle-right text-muted me-2" role="img" aria-label="Open"/><span t-esc="item.label"/></div>
+                                    <div class="col-auto text-end"><i class="fa fa-arrow-right text-muted" role="img" aria-label="Open"/></div>
+                                </div>
+                                <div class="row text-muted" t-else="">
+                                    <div class="col" t-esc="item.label"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+
+                    <!-- Optional sections (GPS / Vehicle extensions) -->
+                    <t t-foreach="state.data.sections" t-as="section" t-key="section.key">
+                        <div class="o_dash_card mt-3 mb-3">
+                            <span class="fs-5 fw-bold" t-esc="section.title"/>
+                            <div class="mt-2 p-0 container-fluid text-muted" t-if="section.unavailable"
+                                 t-esc="section.unavailable_reason or 'Section unavailable.'"/>
+                            <div class="mt-2 p-0 container-fluid table-responsive" t-elif="section.rows &amp;&amp; section.rows.length">
+                                <table class="table table-sm mb-0 o_dash_table">
+                                    <thead><tr>
+                                        <t t-foreach="section.columns" t-as="col" t-key="col.key">
+                                            <th t-att-class="col.align === 'end' ? 'text-end' : ''" t-esc="col.label"/>
+                                        </t>
+                                    </tr></thead>
+                                    <tbody>
+                                        <t t-foreach="section.rows" t-as="row" t-key="row_index">
+                                            <tr>
+                                                <t t-foreach="section.columns" t-as="col" t-key="col.key">
+                                                    <td t-att-class="col.align === 'end' ? 'text-end' : ''" t-esc="row[col.key]"/>
+                                                </t>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-2 p-0 container-fluid text-muted" t-else="">No data in this period.</div>
+                        </div>
+                    </t>
+
+                </t>
+            </div>
+        </div>
+    </t>
+
+</templates>

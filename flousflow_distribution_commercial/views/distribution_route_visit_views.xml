@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- Visit form: commercial actions + summary + smart buttons       -->
+    <!-- ============================================================ -->
+    <record id="view_distribution_route_visit_form_inherit_commercial"
+            model="ir.ui.view">
+        <field name="name">distribution.route.visit.form.commercial</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_visit_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_create_quotation" type="object"
+                        string="Create Quotation" icon="fa-file-text-o"
+                        invisible="not partner_id or state not in ('pending', 'in_progress') or route_state != 'in_progress'"/>
+                <button name="action_start_pos_sale" type="object"
+                        string="Start POS Sale" icon="fa-shopping-cart"
+                        invisible="not partner_id or state not in ('pending', 'in_progress') or route_state != 'in_progress'"/>
+                <button name="action_record_collection" type="object"
+                        string="Record Collection" icon="fa-money"
+                        invisible="not partner_id or state not in ('pending', 'in_progress') or route_state != 'in_progress'"/>
+            </xpath>
+            <xpath expr="//sheet" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_view_quotations" type="object"
+                            class="oe_stat_button" icon="fa-file-text-o"
+                            invisible="sale_order_count == 0">
+                        <field name="sale_order_count" widget="statinfo" string="Quotations"/>
+                    </button>
+                    <button name="action_view_sale_orders" type="object"
+                            class="oe_stat_button" icon="fa-check-square-o"
+                            invisible="not has_confirmed_sale">
+                        <field name="confirmed_sale_amount_total" widget="statinfo" string="Confirmed"/>
+                    </button>
+                    <button name="action_view_pos_orders" type="object"
+                            class="oe_stat_button" icon="fa-shopping-cart"
+                            invisible="pos_order_count == 0">
+                        <field name="pos_order_count" widget="statinfo" string="POS Orders"/>
+                    </button>
+                    <button name="action_view_collections" type="object"
+                            class="oe_stat_button" icon="fa-money"
+                            invisible="collection_count == 0">
+                        <field name="collection_count" widget="statinfo" string="Collections"/>
+                    </button>
+                </div>
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <group name="commercial_summary" string="Commercial Summary">
+                    <group>
+                        <field name="quotation_amount_total"/>
+                        <field name="confirmed_sale_amount_total"/>
+                        <field name="pos_sales_amount_total"/>
+                    </group>
+                    <group>
+                        <field name="submitted_collection_amount"/>
+                        <field name="validated_collection_amount"/>
+                        <field name="company_currency_id" invisible="1"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Visit list: commercial indicators -->
+    <record id="view_distribution_route_visit_list_inherit_commercial"
+            model="ir.ui.view">
+        <field name="name">distribution.route.visit.list.commercial</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_visit_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="has_sale" optional="hide" widget="boolean_fa_icon"/>
+                <field name="has_collection" optional="hide" widget="boolean_fa_icon"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

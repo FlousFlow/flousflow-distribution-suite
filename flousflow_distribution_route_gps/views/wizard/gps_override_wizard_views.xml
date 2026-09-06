@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Manager Override Wizard -->
+    <record id="view_distribution_gps_override_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.gps.override.wizard.form</field>
+        <field name="model">distribution.gps.override.wizard</field>
+        <field name="arch" type="xml">
+            <form string="GPS Override">
+                <group>
+                    <group>
+                        <field name="visit_id" readonly="1"/>
+                        <field name="operation" readonly="1"/>
+                        <field name="latitude" readonly="1"/>
+                        <field name="longitude" readonly="1"/>
+                        <field name="accuracy" readonly="1"/>
+                        <field name="gps_timestamp" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="reason"
+                               placeholder="Why is GPS validation being overridden? (e.g. customer moved temporarily, GPS signal unavailable at site...)"
+                               colspan="2"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_confirm" type="object" string="Override &amp; Continue"
+                            class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

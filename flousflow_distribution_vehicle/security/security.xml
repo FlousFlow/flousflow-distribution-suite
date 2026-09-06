@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Privilege -->
+    <record model="res.groups.privilege" id="res_groups_privilege_distribution_vehicle">
+        <field name="name">Distribution Vehicle</field>
+        <field name="sequence">27</field>
+        <field name="category_id" ref="base.module_category_sales"/>
+    </record>
+
+    <!-- Groups -->
+    <record id="group_distribution_vehicle_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="sequence">10</field>
+        <field name="privilege_id" ref="res_groups_privilege_distribution_vehicle"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('base.group_user')])]"/>
+        <field name="comment">Distribution vehicle users: work only on the vehicle they are assigned to (POS + warehouse).</field>
+    </record>
+
+    <record id="group_distribution_vehicle_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="sequence">20</field>
+        <field name="privilege_id" ref="res_groups_privilege_distribution_vehicle"/>
+        <field name="implied_ids" eval="[(4, ref('group_distribution_vehicle_user')), (4, ref('fleet.fleet_group_manager'))]"/>
+        <field name="comment">Distribution vehicle managers: configure vehicles, warehouses, POS, assignments and load/unload operations.</field>
+    </record>
+
+    <!-- Multi-company rules -->
+    <record id="rule_vehicle_assignment_company" model="ir.rule">
+        <field name="name">Vehicle Assignment: multi-company</field>
+        <field name="model_id" ref="model_fleet_vehicle_employee_assignment"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Record rules: a distribution vehicle user sees only their     -->
+    <!-- own vehicle's warehouse and POS (managers see everything).    -->
+    <!-- ============================================================ -->
+    <record id="rule_pos_config_own_vehicle" model="ir.rule">
+        <field name="name">POS Config: own vehicle POS only</field>
+        <field name="model_id" ref="model_pos_config"/>
+        <field name="groups" eval="[(4, ref('group_distribution_vehicle_user'))]"/>
+        <field name="domain_force">['|',
+            ('distribution_vehicle_id', '=', False),
+            '&amp;',
+                ('distribution_vehicle_id.distribution_employee_ids', 'in', user.employee_ids.ids),
+                ('distribution_vehicle_id.distribution_active', '=', True)]</field>
+    </record>
+
+    <record id="rule_stock_warehouse_own_vehicle" model="ir.rule">
+        <field name="name">Warehouse: own vehicle warehouse only</field>
+        <field name="model_id" ref="stock.model_stock_warehouse"/>
+        <field name="groups" eval="[(4, ref('group_distribution_vehicle_user'))]"/>
+        <field name="domain_force">['|',
+            ('distribution_vehicle_ids', '=', False),
+            '&amp;',
+                ('distribution_vehicle_ids.distribution_employee_ids', 'in', user.employee_ids.ids),
+                ('distribution_vehicle_ids.distribution_active', '=', True)]</field>
+    </record>
+
+    <!-- Manager sees everything within companies (no extra rule needed:
+         the base multi-company rules already apply; without a group rule
+         the user-group rules above would also apply to managers since the
+         manager group implies the user group — so add a permissive one). -->
+    <record id="rule_pos_config_manager" model="ir.rule">
+        <field name="name">POS Config: vehicle manager full access</field>
+        <field name="model_id" ref="model_pos_config"/>
+        <field name="groups" eval="[(4, ref('group_distribution_vehicle_manager'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+    <record id="rule_stock_warehouse_manager" model="ir.rule">
+        <field name="name">Warehouse: vehicle manager full access</field>
+        <field name="model_id" ref="stock.model_stock_warehouse"/>
+        <field name="groups" eval="[(4, ref('group_distribution_vehicle_manager'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+</odoo>

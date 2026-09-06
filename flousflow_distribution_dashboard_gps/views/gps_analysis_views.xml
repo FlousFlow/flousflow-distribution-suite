@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_dashboard_visit_search_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.search.dashboard.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id" ref="flousflow_distribution_dashboard.view_dashboard_visit_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter string="Outside Geofence" name="filter_outside_geofence"
+                        domain="[('checkin_geofence_status', '=', 'outside')]"/>
+                <filter string="Inside Geofence" name="filter_inside_geofence"
+                        domain="[('checkin_geofence_status', '=', 'inside')]"/>
+            </xpath>
+            <xpath expr="//group" position="inside">
+                <filter string="GPS Status" name="group_gps_status"
+                        context="{'group_by': 'checkin_geofence_status'}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_dashboard_visit_pivot_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.pivot.dashboard.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id" ref="flousflow_distribution_dashboard.view_dashboard_visit_pivot"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="checkin_geofence_status"/>
+                <field name="checkin_distance"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="action_dashboard_gps_analysis" model="ir.actions.act_window">
+        <field name="name">GPS Analysis</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('flousflow_distribution_dashboard.view_dashboard_visit_pivot')})]"/>
+        <field name="search_view_id" ref="flousflow_distribution_route_management.view_distribution_route_visit_search"/>
+        <field name="context">{'group_by': ['checkin_geofence_status', 'employee_id'], 'search_default_filter_this_month': 1}</field>
+    </record>
+
+    <menuitem id="menu_dashboard_gps_analysis"
+              name="GPS Analysis"
+              parent="flousflow_distribution_dashboard.menu_distribution_reporting"
+              action="action_dashboard_gps_analysis"
+              sequence="60"
+              groups="flousflow_distribution_dashboard.group_distribution_dashboard_user"/>
+
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vehicle dimension in the dashboard analysis: routes are the
+         vehicle-aware model (visits reach the vehicle through the route,
+         which is not a stored column on visits and cannot be grouped). -->
+    <record id="view_dashboard_plan_list_vehicle" model="ir.ui.view">
+        <field name="name">distribution.route.plan.list.dashboard.vehicle</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_plan_list"/>
+        <field name="arch" type="xml">
+            <field name="vehicle_id" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="action_dashboard_vehicle_analysis" model="ir.actions.act_window">
+        <field name="name">Vehicle Analysis</field>
+        <field name="res_model">distribution.route.plan</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('flousflow_distribution_route_management.view_distribution_route_plan_pivot')})]"/>
+        <field name="context">{'group_by': ['vehicle_id', 'state'], 'search_default_filter_this_month': 1}</field>
+    </record>
+
+    <menuitem id="menu_dashboard_vehicle_analysis"
+              name="Vehicle Analysis"
+              parent="flousflow_distribution_dashboard.menu_distribution_reporting"
+              action="action_dashboard_vehicle_analysis"
+              sequence="70"
+              groups="flousflow_distribution_dashboard.group_distribution_dashboard_user"/>
+
+</odoo>

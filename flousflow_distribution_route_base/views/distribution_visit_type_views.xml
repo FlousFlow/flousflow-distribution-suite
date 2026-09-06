@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- List View: Visit Types -->
+    <record id="view_distribution_visit_type_list" model="ir.ui.view">
+        <field name="name">distribution.visit.type.list</field>
+        <field name="model">distribution.visit.type</field>
+        <field name="arch" type="xml">
+            <list string="Visit Types" sample="1">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="require_customer"/>
+                <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                <field name="active" invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View: Visit Types -->
+    <record id="view_distribution_visit_type_form" model="ir.ui.view">
+        <field name="name">distribution.visit.type.form</field>
+        <field name="model">distribution.visit.type</field>
+        <field name="arch" type="xml">
+            <form string="Visit Type">
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="e.g. Sales Visit"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group name="general_info" string="General Information">
+                            <field name="code" placeholder="e.g. sales"/>
+                            <field name="sequence"/>
+                            <field name="color" widget="color_picker"/>
+                            <field name="icon" placeholder="e.g. fa-money"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group name="business_rules" string="Business Rules">
+                            <field name="require_customer"/>
+                            <field name="require_notes"/>
+                            <field name="allow_completion_without_customer"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description" name="description">
+                            <group>
+                                <field name="description" nolabel="1" placeholder="When should this visit type be used..."/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View: Visit Types -->
+    <record id="view_distribution_visit_type_search" model="ir.ui.view">
+        <field name="name">distribution.visit.type.search</field>
+        <field name="model">distribution.visit.type</field>
+        <field name="arch" type="xml">
+            <search string="Visit Types">
+                <field name="name" filter_domain="['|', ('name', 'ilike', self), ('code', 'ilike', self)]" string="Name or Code"/>
+                <field name="code"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <filter string="Active" name="filter_active" domain="[('active', '=', True)]"/>
+                <filter string="Archived" name="filter_archived" domain="[('active', '=', False)]"/>
+                <separator/>
+                <filter string="Require Customer" name="filter_require_customer" domain="[('require_customer', '=', True)]"/>
+                <group>
+                    <filter string="Company" name="group_by_company" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_distribution_visit_type" model="ir.actions.act_window">
+        <field name="name">Visit Types</field>
+        <field name="res_model">distribution.visit.type</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_distribution_visit_type_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first visit type
+            </p>
+            <p>
+                Define the types of visits your representatives will perform
+                (Sales, Collection, Follow-up...). These types will be used by
+                future route planning modules.
+            </p>
+        </field>
+    </record>
+
+</odoo>

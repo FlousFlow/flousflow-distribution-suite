@@ -1,0 +1,491 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_distribution_vehicle_route
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-06 15:59+0000\n"
+"PO-Revision-Date: 2026-09-06 15:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "'%(record)s' does not belong to the route company '%(company)s'."
+msgstr "'%(record)s' does not belong to the المسار company '%(company)s'."
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
+msgid "<span class=\"o_stat_text\">POS Orders</span>"
+msgstr "<span class=\"o_stat_text\">POS Orders</span>"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
+msgid "<span class=\"o_stat_text\">Vehicle Stock</span>"
+msgstr "<span class=\"o_stat_text\">المركبة المخزون</span>"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_res_config_settings
+msgid "Config Settings"
+msgstr "تهيئة الإعدادات"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_warehouse_id
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_warehouse_id
+msgid "Dedicated warehouse of the route vehicle (snapshot)."
+msgstr "Dedicated warehouse of the المسار vehicle (snapshot)."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__display_name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__display_name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle__display_name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle_employee_assignment__display_name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__display_name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_distribution_route_plan
+msgid "Distribution Route Plan"
+msgstr "Distribution المسار Plan"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_distribution_route_visit
+msgid "Distribution Route Visit"
+msgstr "Distribution المسار الزيارة"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle__distribution_route_ids
+msgid "Distribution Routes"
+msgstr "Distribution المسارs"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Employee '%(employee)s' already has route '%(conflict)s' in progress. One "
+"route in progress per employee is allowed."
+msgstr ""
+"Employee '%(employee)s' already has المسار '%(conflict)s' in progress. One "
+"المسار in progress per employee is allowed."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s."
+" Choose the assignment in the 'Vehicle & Distribution' section before "
+"confirming the route."
+msgstr ""
+"Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s."
+" Choose the assignment in the 'Vehicle & Distribution' section before "
+"confirming the المسار."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s."
+" Choose the assignment in the 'Vehicle & Distribution' section before "
+"confirming."
+msgstr ""
+"الموظف '%(الموظف)s' has %(العدد)s valid المركبة assignments on %(التاريخ)s. "
+"Choose the assignment in the 'المركبة & Distribution' section before "
+"confirming."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_fleet_vehicle_employee_assignment
+msgid "Fleet Vehicle Employee Assignment"
+msgstr "Fleet المركبة الموظف Assignment"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
+msgid "Has Vehicle"
+msgstr "Has المركبة"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle__id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle_employee_assignment__id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_hr_employee__id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__multiple_vehicle_assignments
+msgid "Multiple Vehicle Assignments"
+msgstr "Multiple المركبة Assignments"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
+msgid "No Vehicle"
+msgstr "No المركبة"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__no_vehicle_assignment
+msgid "No Vehicle Assignment"
+msgstr "No المركبة Assignment"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"No active vehicle assignment found for '%(employee)s' on %(date)s. Assign "
+"the employee to a distribution vehicle first, or disable 'Require Vehicle on"
+" Route' in the distribution settings."
+msgstr ""
+"No active المركبة assignment found for '%(الموظف)s' on %(التاريخ)s. Assign "
+"the الموظف to a distribution المركبة first, or disable 'Require المركبة on "
+"المسار' in the distribution settings."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Only distribution managers may adjust the vehicle data of confirmed route "
+"%(route)s."
+msgstr ""
+"Only distribution managers may adjust the vehicle data of confirmed المسار "
+"%(المسار)s."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_pos_config_id
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_pos_config_id
+msgid "POS configuration of the route vehicle (snapshot)."
+msgstr "POS configuration of the المسار vehicle (snapshot)."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_pos_on_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_pos_on_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
+msgid "Require Vehicle POS on Route"
+msgstr "Require المركبة POS on المسار"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_on_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_on_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
+msgid "Require Vehicle on Route"
+msgstr "Require المركبة on المسار"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Route %(route)s is %(state)s: its vehicle, warehouse and POS are a "
+"historical snapshot and can no longer be changed."
+msgstr ""
+"Route %(المسار)s is %(state)s: its vehicle, warehouse and POS are a "
+"historical snapshot and can no longer be changed."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "Route POS Orders (%s)"
+msgstr "المسار POS Orders (%s)"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/fleet_vehicle.py:0
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle__distribution_route_count
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle_employee_assignment__distribution_route_count
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_hr_employee__distribution_route_ids
+msgid "Route Plans"
+msgstr "خطط المسارات"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle_employee_assignment__distribution_route_ids
+msgid "Route Plans using this Assignment"
+msgstr "المسار Plans using this Assignment"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_id
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_id
+msgid "Route Vehicle"
+msgstr "المسار المركبة"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_pos_config_id
+msgid "Route Vehicle POS"
+msgstr "المسار المركبة POS"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_warehouse_id
+msgid "Route Vehicle Warehouse"
+msgstr "المسار المركبة المخزن"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
+msgid ""
+"Route plans cannot be confirmed unless the employee has an active vehicle "
+"assignment"
+msgstr ""
+"المسار plans لا يمكن be المؤكدة unless the الموظف has an active المركبة "
+"assignment"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_on_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_on_route
+msgid ""
+"Route plans cannot be confirmed unless the employee has an active vehicle "
+"assignment (resolved vehicle becomes the route snapshot)."
+msgstr ""
+"Route plans cannot be confirmed unless the employee has an active vehicle "
+"assignment (resolved vehicle becomes the المسار snapshot)."
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
+msgid ""
+"Route vehicles must have a POS configuration before the route can be "
+"confirmed or started"
+msgstr ""
+"Route vehicles must have a POS configuration before the المسار can be "
+"confirmed or started"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_pos_on_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_pos_on_route
+msgid ""
+"Route vehicles must have a POS configuration before the route can be "
+"confirmed or started."
+msgstr ""
+"Route vehicles must have a POS configuration before the المسار can be "
+"confirmed or started."
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_vehicle_assignment_form_inherit_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_vehicle_form_inherit_route
+msgid "Routes"
+msgstr "المسارات"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/fleet_vehicle_employee_assignment.py:0
+msgid "Routes using this Assignment"
+msgstr "المسارs using this Assignment"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
+msgid ""
+"The employee has <b>multiple valid vehicle assignments</b>\n"
+"                    on the route date. Choose the assignment below — the\n"
+"                    system will never pick one automatically."
+msgstr ""
+"The employee has <b>multiple valid vehicle assignments</b>\n"
+"                    on the المسار date. Choose the assignment below — the\n"
+"                    system will never pick one automatically."
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
+msgid ""
+"The employee has <b>no active vehicle assignment</b> on\n"
+"                    the route date. Assign a vehicle first, or confirm is\n"
+"                    only allowed when \"Require Vehicle on Route\" is disabled."
+msgstr ""
+"The employee has <b>no active vehicle assignment</b> on\n"
+"                    the المسار date. Assign a vehicle first, or confirm is\n"
+"                    only allowed when \"Require Vehicle on Route\" is disabled."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "The vehicle assignment does not belong to the route company."
+msgstr "The vehicle assignment does not belong to the المسار company."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "The vehicle assignment does not belong to the route employee."
+msgstr "The vehicle assignment does not belong to the المسار employee."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "The vehicle assignment does not cover the route date %(date)s."
+msgstr "The vehicle assignment does not cover the المسار date %(date)s."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "The vehicle assignment does not match the route vehicle."
+msgstr "The vehicle assignment does not match the المسار vehicle."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_assignment_id
+msgid ""
+"The vehicle assignment this route was planned against. Resolved "
+"automatically from the employee and the route date."
+msgstr ""
+"The vehicle assignment this المسار was planned against. Resolved "
+"automatically from the employee and the المسار date."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "This route has no vehicle / vehicle warehouse."
+msgstr "This المسار has no vehicle / vehicle warehouse."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "This route has no vehicle."
+msgstr "This المسار has no vehicle."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model,name:flousflow_distribution_vehicle_route.model_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
+msgid "Vehicle"
+msgstr "المركبة"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
+msgid "Vehicle & Distribution"
+msgstr "المركبة & Distribution"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle '%(vehicle)s' has no POS configuration. Configure it before "
+"confirming the route."
+msgstr ""
+"Vehicle '%(vehicle)s' has no POS configuration. Configure it before "
+"confirming the المسار."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle '%(vehicle)s' has no POS configuration. The route cannot start."
+msgstr ""
+"Vehicle '%(vehicle)s' has no POS configuration. The المسار cannot start."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle '%(vehicle)s' has no dedicated warehouse. Configure it before "
+"confirming the route."
+msgstr ""
+"Vehicle '%(vehicle)s' has no dedicated warehouse. Configure it before "
+"confirming the المسار."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle '%(vehicle)s' is already operating route '%(conflict)s' in progress."
+" A vehicle cannot run two routes at the same time."
+msgstr ""
+"Vehicle '%(vehicle)s' is already operating المسار '%(conflict)s' in "
+"progress. A vehicle cannot run two المسارs at the same time."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "Vehicle '%(vehicle)s' is not a distribution vehicle."
+msgstr "المركبة '%(المركبة)s' is not a distribution المركبة."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle '%(vehicle)s' is not distribution active anymore. The route cannot "
+"start."
+msgstr ""
+"Vehicle '%(vehicle)s' is not distribution active anymore. The المسار cannot "
+"start."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "Vehicle '%(vehicle)s' is not distribution active."
+msgstr "المركبة '%(المركبة)s' is not distribution active."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle '%(vehicle)s' lost its dedicated warehouse. The route cannot start."
+msgstr ""
+"Vehicle '%(vehicle)s' lost its dedicated warehouse. The المسار cannot start."
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_assignment_id
+msgid "Vehicle Assignment"
+msgstr "المركبة Assignment"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_pos_config_id
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
+msgid "Vehicle POS"
+msgstr "المركبة POS"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid "Vehicle Stock (%s)"
+msgstr "المركبة المخزون (%s)"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_warehouse_id
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
+msgid "Vehicle Warehouse"
+msgstr "المركبة المخزن"
+
+#. module: flousflow_distribution_vehicle_route
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
+msgid "Vehicle on Routes"
+msgstr "المركبة on المسارs"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
+msgid ""
+"Vehicle snapshot: %(vehicle)s | Warehouse: %(warehouse)s | POS: %(pos)s"
+msgstr "المركبة snapshot: %(المركبة)s | المخزن: %(المخزن)s | POS: %(pos)s"
+
+#. module: flousflow_distribution_vehicle_route
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_id
+#: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_id
+msgid ""
+"Vehicle the representative operates during this route. Snapshotted at "
+"confirm and kept for history."
+msgstr ""
+"Vehicle the representative operates during this المسار. Snapshotted at "
+"confirm and kept for history."
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/fleet_vehicle_employee_assignment.py:0
+msgid "vehicle_assignment_id"
+msgstr "المركبة_assignment_id"
+
+#. module: flousflow_distribution_vehicle_route
+#. odoo-python
+#: code:addons/flousflow_distribution_vehicle_route/models/fleet_vehicle.py:0
+msgid "vehicle_id"
+msgstr "المركبة_id"

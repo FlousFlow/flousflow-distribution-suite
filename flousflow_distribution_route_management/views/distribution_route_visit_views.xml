@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form View: Route Visit (mobile-friendly, key actions in header) -->
+    <record id="view_distribution_route_visit_form" model="ir.ui.view">
+        <field name="name">distribution.route.visit.form</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <form string="Route Visit">
+                <header>
+                    <button name="action_start_visit" type="object" string="Start Visit"
+                            class="btn-primary" invisible="state != 'pending' or route_state != 'in_progress'"/>
+                    <button name="action_complete_visit_wizard" type="object" string="Complete Visit"
+                            class="btn-primary" invisible="state != 'in_progress'"/>
+                    <button name="action_skip_visit_wizard" type="object" string="Skip Visit"
+                            invisible="state not in ('pending', 'in_progress')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="pending,in_progress,done"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-danger" invisible="state != 'cancelled'"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="partner_id" readonly="1" placeholder="Customer"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group name="planning" string="Planning">
+                            <field name="visit_type_id" readonly="1"/>
+                            <field name="planned_datetime"/>
+                            <field name="planned_duration"/>
+                            <field name="objective" readonly="1"/>
+                            <field name="route_id"/>
+                            <field name="sequence" invisible="1"/>
+                        </group>
+                        <group name="execution" string="Execution">
+                            <field name="actual_start_datetime"/>
+                            <field name="actual_end_datetime"/>
+                            <field name="actual_duration"/>
+                            <field name="arrival_variance_minutes"/>
+                            <field name="route_state" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Result" name="result">
+                            <group>
+                                <group string="Outcome">
+                                    <field name="result_id" readonly="state != 'done'"/>
+                                    <field name="result_notes" readonly="state != 'done'"/>
+                                    <field name="failure_reason" readonly="state != 'done'"
+                                           invisible="not failure_reason"/>
+                                </group>
+                                <group string="Follow-up">
+                                    <field name="requires_revisit" readonly="state == 'done'"/>
+                                    <field name="suggested_revisit_date" invisible="not requires_revisit" readonly="state == 'done'"/>
+                                    <field name="completion_datetime"/>
+                                </group>
+                            </group>
+                            <group string="Employee Notes">
+                                <field name="employee_notes" nolabel="1" placeholder="What happened during the visit..."/>
+                            </group>
+                        </page>
+                        <page string="Preparation" name="preparation">
+                            <field name="notes" nolabel="1" placeholder="Notes entered at planning time..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- List View: Route Visits -->
+    <record id="view_distribution_route_visit_list" model="ir.ui.view">
+        <field name="name">distribution.route.visit.list</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <list string="Route Visits" sample="1" decoration-muted="state == 'cancelled'">
+                <field name="route_id" optional="show"/>
+                <field name="sequence" widget="handle"/>
+                <field name="partner_id"/>
+                <field name="visit_type_id"/>
+                <field name="planned_datetime" optional="show"/>
+                <field name="actual_start_datetime" optional="hide"/>
+                <field name="actual_duration" optional="hide"/>
+                <field name="arrival_variance_minutes" optional="hide"/>
+                <field name="result_id" optional="show"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'done'"
+                       decoration-info="state == 'in_progress'"
+                       decoration-danger="state == 'cancelled'"/>
+                <field name="area_id" optional="hide"/>
+                <field name="employee_id" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Kanban View: Route Visits -->
+    <record id="view_distribution_route_visit_kanban" model="ir.ui.view">
+        <field name="name">distribution.route.visit.kanban</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state" sample="1" class="o_kanban_small_column">
+                <field name="partner_id"/>
+                <field name="visit_type_id"/>
+                <field name="planned_datetime"/>
+                <field name="result_id"/>
+                <field name="state"/>
+                <templates>
+                    <t t-name="card">
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <strong t-esc="record.partner_id.value or 'No customer'"/>
+                        </div>
+                        <div class="text-muted small mb-2">
+                            <t t-esc="record.visit_type_id.value"/>
+                        </div>
+                        <div class="small">
+                            <t t-if="record.planned_datetime.value">
+                                <t t-esc="record.planned_datetime.value"/>
+                            </t>
+                        </div>
+                        <div class="small mt-1" t-if="record.result_id.value">
+                            Result: <t t-esc="record.result_id.value"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Calendar View: Route Visits -->
+    <record id="view_distribution_route_visit_calendar" model="ir.ui.view">
+        <field name="name">distribution.route.visit.calendar</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <calendar string="Route Visits" date_start="planned_datetime" mode="day" color="visit_type_id">
+                <field name="partner_id"/>
+                <field name="employee_id"/>
+                <field name="visit_type_id"/>
+                <field name="state"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- Search View: Route Visits -->
+    <record id="view_distribution_route_visit_search" model="ir.ui.view">
+        <field name="name">distribution.route.visit.search</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <search string="Route Visits">
+                <field name="partner_id" string="Customer"/>
+                <field name="route_id"/>
+                <field name="employee_id"/>
+                <field name="result_id"/>
+                <filter string="My Visits" name="filter_my_visits" domain="[('employee_id.user_id', '=', uid)]"/>
+                <filter string="Today" name="filter_today" domain="[('planned_datetime', '&gt;=', datetime.datetime.combine(context_today(), datetime.time(0, 0, 0)).strftime('%Y-%m-%d %H:%M:%S')), ('planned_datetime', '&lt;=', datetime.datetime.combine(context_today() + datetime.timedelta(days=1), datetime.time(0, 0, 0)).strftime('%Y-%m-%d %H:%M:%S'))]"/>
+                <separator/>
+                <filter string="Pending" name="filter_pending" domain="[('state', '=', 'pending')]"/>
+                <filter string="In Progress" name="filter_in_progress" domain="[('state', '=', 'in_progress')]"/>
+                <filter string="Done" name="filter_done" domain="[('state', '=', 'done')]"/>
+                <filter string="Cancelled" name="filter_cancelled" domain="[('state', '=', 'cancelled')]"/>
+                <separator/>
+                <filter string="Revisit Required" name="filter_revisit" domain="[('requires_revisit', '=', True)]"/>
+                <group>
+                    <filter string="Route" name="group_route" context="{'group_by': 'route_id'}"/>
+                    <filter string="Customer" name="group_partner" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Visit Type" name="group_visit_type" context="{'group_by': 'visit_type_id'}"/>
+                    <filter string="State" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Area" name="group_area" context="{'group_by': 'area_id'}"/>
+                    <filter string="Employee" name="group_employee" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Result" name="group_result" context="{'group_by': 'result_id'}"/>
+                    <filter string="Planned Day" name="group_planned_day" context="{'group_by': 'planned_datetime:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Pivot View: Visits Analysis -->
+    <record id="view_distribution_route_visit_pivot" model="ir.ui.view">
+        <field name="name">distribution.route.visit.pivot</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <pivot string="Visits Analysis" sample="1">
+                <field name="planned_datetime" interval="day" type="col"/>
+                <field name="employee_id" type="row"/>
+                <field name="actual_duration" type="measure"/>
+                <field name="arrival_variance_minutes" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Graph View: Visits Analysis -->
+    <record id="view_distribution_route_visit_graph" model="ir.ui.view">
+        <field name="name">distribution.route.visit.graph</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <graph string="Visits Analysis" sample="1">
+                <field name="visit_type_id"/>
+                <field name="state"/>
+                <field name="actual_duration" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Actions -->
+    <record id="action_all_visits" model="ir.actions.act_window">
+        <field name="name">All Visits</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">list,form,kanban,calendar,pivot,graph</field>
+        <field name="search_view_id" ref="view_distribution_route_visit_search"/>
+        <field name="context">{'search_default_filter_today': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No visits scheduled yet
+            </p>
+            <p>
+                Visits are created inside route plans. Analyze execution by
+                employee, area, type, result or customer.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_my_visits" model="ir.actions.act_window">
+        <field name="name">My Visits</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">list,form,calendar,kanban</field>
+        <field name="domain">[('employee_id.user_id', '=', uid)]</field>
+        <field name="search_view_id" ref="view_distribution_route_visit_search"/>
+        <field name="context">{'search_default_filter_today': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No visits assigned to you yet
+            </p>
+            <p>
+                Open today's route from My Routes and start your visits.
+            </p>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- POS order form: distribution links (#101) -->
+    <record id="view_pos_order_form_inherit_commercial" model="ir.ui.view">
+        <field name="name">pos.order.form.commercial</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='order_fields']" position="inside">
+                <field name="distribution_visit_id"/>
+                <field name="distribution_route_id"/>
+                <field name="distribution_employee_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- POS order list: distribution dimensions -->
+    <record id="view_pos_order_list_inherit_commercial" model="ir.ui.view">
+        <field name="name">pos.order.list.commercial</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="distribution_visit_id" optional="hide"/>
+                <field name="distribution_route_id" optional="hide"/>
+                <field name="distribution_employee_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

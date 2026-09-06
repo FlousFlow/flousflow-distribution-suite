@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form View: Route Plan -->
+    <record id="view_distribution_route_plan_form" model="ir.ui.view">
+        <field name="name">distribution.route.plan.form</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <form string="Route Plan">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm Route"
+                            class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_start_route" type="object" string="Start Route"
+                            class="btn-primary" invisible="state != 'confirmed'"/>
+                    <button name="action_complete_route" type="object" string="Complete Route"
+                            class="btn-primary" invisible="state != 'in_progress' or not can_complete"/>
+                    <button name="action_force_complete_route" type="object" string="Force Complete"
+                            invisible="state != 'in_progress' or can_complete"/>
+                    <button name="action_cancel_route_wizard" type="object" string="Cancel"
+                            invisible="state in ('cancelled', 'completed')"/>
+                    <button name="action_reopen_draft" type="object" string="Reopen to Draft"
+                            invisible="state != 'cancelled'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,in_progress,completed"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-danger" invisible="state != 'cancelled'"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" readonly="state != 'draft'"/>
+                        </h1>
+                    </div>
+                    <group name="main_info">
+                        <group name="assignment" string="Assignment">
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="employee_id" readonly="state != 'draft'"/>
+                            <field name="user_id" invisible="1"/>
+                            <field name="supervisor_id" readonly="state != 'draft'"/>
+                            <field name="area_id" readonly="state != 'draft'"/>
+                            <field name="company_id" groups="base.group_multi_company" readonly="state != 'draft'"/>
+                        </group>
+                        <group name="planning" string="Planning">
+                            <field name="planned_start_time" readonly="state != 'draft'"/>
+                            <field name="planned_end_time" readonly="state != 'draft'"/>
+                            <field name="actual_start_datetime"/>
+                            <field name="actual_end_datetime"/>
+                            <field name="duration"/>
+                            <field name="can_complete" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Visits" name="visits">
+                            <field name="visit_ids" readonly="state != 'draft'"
+                                   context="{'default_route_id': id}">
+                                <list string="Visits" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="partner_id"/>
+                                    <field name="visit_type_id"/>
+                                    <field name="planned_datetime"/>
+                                    <field name="planned_duration"/>
+                                    <field name="objective" optional="show"/>
+                                    <field name="state" widget="badge"
+                                           decoration-success="state == 'done'"
+                                           decoration-info="state == 'in_progress'"
+                                           decoration-muted="state == 'cancelled'"
+                                           optional="show"/>
+                                    <field name="company_id" column_invisible="1"/>
+                                    <field name="area_id" column_invisible="1"/>
+                                    <field name="employee_id" column_invisible="1"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Execution Summary" name="summary">
+                            <group>
+                                <group string="Visit Counts">
+                                    <field name="visit_count"/>
+                                    <field name="done_visit_count"/>
+                                    <field name="cancelled_visit_count"/>
+                                    <field name="remaining_visit_count"/>
+                                </group>
+                                <group string="Rates">
+                                    <field name="execution_rate" widget="progressbar"/>
+                                    <field name="success_rate" widget="progressbar"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Notes" name="notes">
+                            <field name="notes" placeholder="Internal notes about this route plan..." readonly="state != 'draft'"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- List View: Route Plans -->
+    <record id="view_distribution_route_plan_list" model="ir.ui.view">
+        <field name="name">distribution.route.plan.list</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <list string="Route Plans" sample="1">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="employee_id"/>
+                <field name="area_id"/>
+                <field name="visit_count"/>
+                <field name="done_visit_count" optional="show"/>
+                <field name="remaining_visit_count" optional="hide"/>
+                <field name="execution_rate" widget="progressbar" optional="show"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'completed'"
+                       decoration-info="state == 'in_progress'"
+                       decoration-danger="state == 'cancelled'"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Kanban View: Route Plans (My Routes) -->
+    <record id="view_distribution_route_plan_kanban" model="ir.ui.view">
+        <field name="name">distribution.route.plan.kanban</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state" sample="1">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="employee_id"/>
+                <field name="area_id"/>
+                <field name="visit_count"/>
+                <field name="done_visit_count"/>
+                <field name="execution_rate"/>
+                <field name="state"/>
+                <templates>
+                    <t t-name="card">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <strong t-esc="record.name.value"/>
+                        </div>
+                        <div class="text-muted small mb-2">
+                            <t t-esc="record.employee_id.value"/>
+                            <t t-if="record.area_id.value"> • <t t-esc="record.area_id.value"/></t>
+                        </div>
+                        <div class="mb-2">
+                            <field name="activity_ids" widget="kanban_activity"/>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <div class="small">
+                                <span class="fw-bold"><t t-esc="record.done_visit_count.value"/></span>
+                                / <t t-esc="record.visit_count.value"/> visits
+                            </div>
+                            <field name="execution_rate" widget="progressbar" readonly="1" width="100px"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Search View: Route Plans -->
+    <record id="view_distribution_route_plan_search" model="ir.ui.view">
+        <field name="name">distribution.route.plan.search</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <search string="Route Plans">
+                <field name="name" string="Route"/>
+                <field name="employee_id"/>
+                <field name="area_id"/>
+                <field name="supervisor_id"/>
+                <filter string="My Routes" name="filter_my_routes" domain="[('user_id', '=', uid)]"/>
+                <filter string="Today" name="filter_today" domain="[('date', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                <filter string="Tomorrow" name="filter_tomorrow" domain="[('date', '=', (context_today() + datetime.timedelta(days=1)).strftime('%Y-%m-%d'))]"/>
+                <filter string="This Week" name="filter_this_week" domain="[('date', '&gt;=', (context_today() - datetime.timedelta(days=context_today().weekday())).strftime('%Y-%m-%d')), ('date', '&lt;=', (context_today() + datetime.timedelta(days=6 - context_today().weekday())).strftime('%Y-%m-%d'))]"/>
+                <separator/>
+                <filter string="Draft" name="filter_draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Confirmed" name="filter_confirmed" domain="[('state', '=', 'confirmed')]"/>
+                <filter string="In Progress" name="filter_in_progress" domain="[('state', '=', 'in_progress')]"/>
+                <filter string="Completed" name="filter_completed" domain="[('state', '=', 'completed')]"/>
+                <filter string="Cancelled" name="filter_cancelled" domain="[('state', '=', 'cancelled')]"/>
+                <group>
+                    <filter string="Employee" name="group_employee" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Area" name="group_area" context="{'group_by': 'area_id'}"/>
+                    <filter string="Date" name="group_date" context="{'group_by': 'date'}"/>
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Supervisor" name="group_supervisor" context="{'group_by': 'supervisor_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Pivot View: Route Analysis -->
+    <record id="view_distribution_route_plan_pivot" model="ir.ui.view">
+        <field name="name">distribution.route.plan.pivot</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <pivot string="Route Analysis" sample="1">
+                <field name="date" interval="month" type="col"/>
+                <field name="employee_id" type="row"/>
+                <field name="visit_count" type="measure"/>
+                <field name="done_visit_count" type="measure"/>
+                <field name="execution_rate" type="measure"/>
+                <field name="success_rate" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Graph View: Route Analysis -->
+    <record id="view_distribution_route_plan_graph" model="ir.ui.view">
+        <field name="name">distribution.route.plan.graph</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <graph string="Route Analysis" sample="1">
+                <field name="date" interval="week"/>
+                <field name="employee_id"/>
+                <field name="visit_count" type="measure"/>
+                <field name="done_visit_count" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Calendar View: Route Plans -->
+    <record id="view_distribution_route_plan_calendar" model="ir.ui.view">
+        <field name="name">distribution.route.plan.calendar</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="arch" type="xml">
+            <calendar string="Route Plans" date_start="date" mode="month" color="employee_id">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="area_id"/>
+                <field name="state"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- Actions -->
+    <record id="action_route_plans" model="ir.actions.act_window">
+        <field name="name">Route Plans</field>
+        <field name="res_model">distribution.route.plan</field>
+        <field name="view_mode">list,form,kanban,calendar,pivot,graph</field>
+        <field name="search_view_id" ref="view_distribution_route_plan_search"/>
+        <field name="context">{'search_default_filter_today': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first route plan
+            </p>
+            <p>
+                Plan a daily route for a distribution employee, add ordered
+                customer visits, then confirm and let the representative
+                execute it.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_my_route_plans" model="ir.actions.act_window">
+        <field name="name">My Routes</field>
+        <field name="res_model">distribution.route.plan</field>
+        <field name="view_mode">kanban,list,form,calendar</field>
+        <field name="domain">[('user_id', '=', uid)]</field>
+        <field name="search_view_id" ref="view_distribution_route_plan_search"/>
+        <field name="context">{'search_default_filter_today': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No routes assigned to you yet
+            </p>
+            <p>
+                Your manager assigns route plans to you here. Open today's
+                route, then start the visits one by one.
+            </p>
+        </field>
+    </record>
+
+</odoo>

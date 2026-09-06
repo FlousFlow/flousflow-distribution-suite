@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- GPS Analysis action (uses pivot/graph views from visit views file) -->
+
+    <menuitem id="menu_distribution_gps_analysis"
+              name="GPS Analysis"
+              parent="flousflow_distribution_route_management.menu_distribution_operations"
+              action="action_gps_analysis_menu"
+              groups="flousflow_distribution_route_base.group_distribution_route_manager"
+              sequence="50"/>
+
+    <menuitem id="menu_distribution_gps_events"
+              name="GPS Events"
+              parent="flousflow_distribution_route_management.menu_distribution_operations"
+              action="action_distribution_visit_gps_event"
+              groups="flousflow_distribution_route_base.group_distribution_route_manager"
+              sequence="60"/>
+
+</odoo>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Partner Form: Distribution Information section -->
+    <record id="view_partner_form_inherit_distribution" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.distribution.route.base</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Distribution Information" name="distribution_information">
+                    <group>
+                        <group name="distribution_info" string="Distribution Information">
+                            <field name="distribution_area_id"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Partner Search: Distribution Area filters and grouping -->
+    <record id="view_res_partner_filter_inherit_distribution" model="ir.ui.view">
+        <field name="name">res.partner.select.inherit.distribution.route.base</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="distribution_area_id"/>
+                <separator/>
+                <filter string="Has Distribution Area" name="filter_has_distribution_area" domain="[('distribution_area_id', '!=', False)]"/>
+                <filter string="No Distribution Area" name="filter_no_distribution_area" domain="[('distribution_area_id', '=', False)]"/>
+                <group>
+                    <filter string="Distribution Area" name="group_by_distribution_area" context="{'group_by': 'distribution_area_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

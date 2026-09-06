@@ -1,0 +1,551 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_distribution_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Distribution Dashboard"
+msgstr "لوحة توزيع الأداء"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Today"
+msgstr "اليوم"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Yesterday"
+msgstr "أمس"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "This Week"
+msgstr "هذا الأسبوع"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Last Week"
+msgstr "الأسبوع الماضي"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "This Month"
+msgstr "هذا الشهر"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Last Month"
+msgstr "الشهر الماضي"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Custom Period"
+msgstr "فترة مخصصة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Refresh"
+msgstr "تحديث"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Employees"
+msgstr "كل الموظفين"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Supervisors"
+msgstr "كل المشرفين"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Areas"
+msgstr "كل المناطق"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Visit Types"
+msgstr "كل أنواع الزيارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Results"
+msgstr "كل النتائج"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Vehicles"
+msgstr "كل المركبات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "All Route States"
+msgstr "كل حالات المسار"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Loading…"
+msgstr "جارٍ التحميل…"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Could not load the dashboard. Please try again."
+msgstr "تعذر تحميل اللوحة. حاول مرة أخرى."
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Retry"
+msgstr "إعادة المحاولة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "No distribution activity found for the selected period."
+msgstr "لا يوجد نشاط توزيع في الفترة المحددة."
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Try another period or clear the filters."
+msgstr "جرّب فترة أخرى أو امسح الفلاتر."
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Routes"
+msgstr "المسارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Planned"
+msgstr "المخطط له"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Started"
+msgstr "بدأت"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Completed"
+msgstr "المكتملة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Not Started"
+msgstr "لم تبدأ"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Open Routes"
+msgstr "فتح المسارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visits"
+msgstr "الزيارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Executed"
+msgstr "المنفذة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Pending"
+msgstr "المعلقة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Needs Revisit"
+msgstr "تحتاج إعادة زيارة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Open Visits"
+msgstr "فتح الزيارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Successful"
+msgstr "الناجحة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Failed Results"
+msgstr "نتائج غير ناجحة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Execution Rate"
+msgstr "نسبة التنفيذ"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Success Rate"
+msgstr "نسبة النجاح"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Open Executed"
+msgstr "فتح المنفذة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Timing"
+msgstr "التوقيت"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Avg Visit Duration"
+msgstr "متوسط مدة الزيارة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Avg Arrival Variance"
+msgstr "متوسط انحراف الوصول"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Avg Late Delay"
+msgstr "متوسط التأخير"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visits by State"
+msgstr "الزيارات حسب الحالة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visit Results (executed)"
+msgstr "نتائج الزيارات (المنفذة)"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Daily Trend"
+msgstr "الاتجاه اليومي"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Employee Performance"
+msgstr "أداء الموظفين"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "rankings require the configured minimum executed visits"
+msgstr "الترتيب يتطلب الحد الأدنى من الزيارات المنفذة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Area Performance"
+msgstr "أداء المناطق"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Area"
+msgstr "المنطقة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visit Type Analysis"
+msgstr "تحليل أنواع الزيارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Type"
+msgstr "النوع"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Customer Visit Analysis"
+msgstr "تحليل زيارات العملاء"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Customer"
+msgstr "العميل"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Route Performance"
+msgstr "أداء المسارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "latest 50 in period"
+msgstr "أحدث 50 في الفترة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Vehicle"
+msgstr "المركبة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "State"
+msgstr "الحالة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Failed"
+msgstr "فاشلة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Revisit"
+msgstr "إعادة زيارة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Last Visit"
+msgstr "آخر زيارة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Common Result"
+msgstr "أكثر نتيجة شيوعًا"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Needs Attention"
+msgstr "تحتاج انتباه"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Route Analysis"
+msgstr "تحليل المسارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visit Analysis"
+msgstr "تحليل الزيارات"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Today's Operations"
+msgstr "عمليات اليوم"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Unsuccessful"
+msgstr "غير ناجحة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visits by Employee"
+msgstr "الزيارات حسب الموظف"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visits by Area"
+msgstr "الزيارات حسب المنطقة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Visits over Time"
+msgstr "الزيارات عبر الزمن"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Visit delayed — %s (planned %s)"
+msgstr "زيارة متأخرة — %s (المخطط %s)"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Route %s not started (planned %s)"
+msgstr "المسار %s لم يبدأ (المخطط %s)"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Route %s execution %d%% (< %d%%)"
+msgstr "تنفيذ المسار %s ‏%d%% (أقل من %d%%)"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "%s route(s) without vehicle assignment"
+msgstr "%s مسار/مسارات بدون تعيين مركبة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "…and more delayed visits"
+msgstr "…ومزيد من الزيارات المتأخرة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Results"
+msgstr "النتائج"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/js/dashboard_action.js:0
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Execution"
+msgstr "التنفيذ"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Avg Duration"
+msgstr "متوسط المدة"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "Avg Variance"
+msgstr "متوسط الانحراف"
+
+#. module: flousflow_distribution_dashboard
+#: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
+#. odoo-javascript
+msgid "GPS Outside"
+msgstr "خارج نطاق GPS"

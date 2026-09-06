@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- Route Analysis: execution + success per route (#87/#29)        -->
+    <!-- ============================================================ -->
+    <record id="view_dashboard_route_list_today" model="ir.ui.view">
+        <field name="name">distribution.route.plan.list.today.operations</field>
+        <field name="model">distribution.route.plan</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_plan_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='remaining_visit_count']" position="after">
+                <field name="success_rate" widget="progressbar" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Actions + Menus (#82) — dashboard group only                   -->
+    <!-- ============================================================ -->
+    <record id="action_distribution_dashboard" model="ir.actions.client">
+        <field name="name">Distribution Dashboard</field>
+        <field name="tag">distribution.dashboard</field>
+    </record>
+
+    <record id="action_dashboard_route_analysis" model="ir.actions.act_window">
+        <field name="name">Route Analysis</field>
+        <field name="res_model">distribution.route.plan</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('flousflow_distribution_route_management.view_distribution_route_plan_pivot')}), (0, 0, {'view_mode': 'graph', 'view_id': ref('flousflow_distribution_route_management.view_distribution_route_plan_graph')})]"/>
+    </record>
+
+    <record id="action_dashboard_visit_analysis" model="ir.actions.act_window">
+        <field name="name">Visit Analysis</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="search_view_id" ref="flousflow_distribution_route_management.view_distribution_route_visit_search"/>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_dashboard_visit_pivot')}), (0, 0, {'view_mode': 'graph', 'view_id': ref('view_dashboard_visit_graph_employee')})]"/>
+    </record>
+
+    <record id="action_dashboard_employee_performance" model="ir.actions.act_window">
+        <field name="name">Employee Performance</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_dashboard_visit_pivot')}), (0, 0, {'view_mode': 'graph', 'view_id': ref('view_dashboard_visit_graph_employee')})]"/>
+        <field name="context">{'group_by': ['employee_id', 'state'], 'search_default_filter_this_month': 1}</field>
+    </record>
+
+    <record id="action_dashboard_area_performance" model="ir.actions.act_window">
+        <field name="name">Area Performance</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_dashboard_visit_pivot')}), (0, 0, {'view_mode': 'graph', 'view_id': ref('view_dashboard_visit_graph_area')})]"/>
+        <field name="context">{'group_by': ['area_id', 'state'], 'search_default_filter_this_month': 1}</field>
+    </record>
+
+    <record id="action_dashboard_customer_analysis" model="ir.actions.act_window">
+        <field name="name">Customer Visit Analysis</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_dashboard_visit_pivot')})]"/>
+        <field name="context">{'group_by': ['partner_id', 'result_id'], 'search_default_filter_this_month': 1}</field>
+    </record>
+
+    <record id="action_dashboard_today_operations" model="ir.actions.act_window">
+        <field name="name">Today's Operations</field>
+        <field name="res_model">distribution.route.plan</field>
+        <field name="view_mode">list,form,kanban</field>
+        <field name="domain">[('date', '=', context_today().strftime('%Y-%m-%d'))]</field>
+        <field name="context">{'search_default_group_employee': 1}</field>
+    </record>
+
+    <menuitem id="menu_distribution_dashboard"
+              name="Dashboard"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              action="action_distribution_dashboard"
+              sequence="1"
+              groups="group_distribution_dashboard_user"/>
+
+    <menuitem id="menu_distribution_reporting"
+              name="Reporting"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              sequence="200"
+              groups="group_distribution_dashboard_user"/>
+
+    <menuitem id="menu_dashboard_route_analysis"
+              name="Route Analysis"
+              parent="menu_distribution_reporting"
+              action="action_dashboard_route_analysis"
+              sequence="10"
+              groups="group_distribution_dashboard_user"/>
+    <menuitem id="menu_dashboard_visit_analysis"
+              name="Visit Analysis"
+              parent="menu_distribution_reporting"
+              action="action_dashboard_visit_analysis"
+              sequence="20"
+              groups="group_distribution_dashboard_user"/>
+    <menuitem id="menu_dashboard_employee_performance"
+              name="Employee Performance"
+              parent="menu_distribution_reporting"
+              action="action_dashboard_employee_performance"
+              sequence="30"
+              groups="group_distribution_dashboard_user"/>
+    <menuitem id="menu_dashboard_area_performance"
+              name="Area Performance"
+              parent="menu_distribution_reporting"
+              action="action_dashboard_area_performance"
+              sequence="40"
+              groups="group_distribution_dashboard_user"/>
+    <menuitem id="menu_dashboard_customer_analysis"
+              name="Customer Visit Analysis"
+              parent="menu_distribution_reporting"
+              action="action_dashboard_customer_analysis"
+              sequence="50"
+              groups="group_distribution_dashboard_user"/>
+    <menuitem id="menu_dashboard_today_operations"
+              name="Today's Operations"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              action="action_dashboard_today_operations"
+              sequence="2"
+              groups="group_distribution_dashboard_user"/>
+
+</odoo>

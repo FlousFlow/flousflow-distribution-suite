@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Settings: commercial policies (spec #29/#42/#43/#75/#77) -->
+    <record id="res_config_settings_view_form_inherit_commercial"
+            model="ir.ui.view">
+        <field name="name">res.config.settings.form.commercial</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='distribution_vehicle_route_setting_container']" position="after">
+                <block title="Sales &amp; Collections" name="distribution_commercial_setting_container">
+                    <setting id="allow_unallocated_collection_setting"
+                             string="Unallocated Collections"
+                             help="Allow customer collections without selecting specific invoices (payment stays as customer credit)">
+                        <field name="allow_unallocated_customer_collection"/>
+                    </setting>
+                    <setting id="allow_overpayment_setting"
+                             string="Allow Overpayment"
+                             help="Allow collections larger than the outstanding balance of the selected invoices">
+                        <field name="allow_collection_overpayment"/>
+                    </setting>
+                    <setting id="require_attachment_setting"
+                             string="Require Collection Attachment"
+                             help="Require at least one attachment before submitting a collection">
+                        <field name="require_collection_attachment"/>
+                    </setting>
+                    <setting id="sale_visit_commercial_setting"
+                             string="Sale Visits Require Commercial Record"
+                             help="Visits of a sale type cannot be completed without a quotation or sale when strict mode is on">
+                        <field name="sales_visit_requires_commercial_record"/>
+                    </setting>
+                    <setting id="collection_visit_commercial_setting"
+                             string="Collection Visits Require Collection Record"
+                             help="Visits of a collection type cannot be completed without a recorded collection when strict mode is on">
+                        <field name="collection_visit_requires_collection_record"/>
+                    </setting>
+                    <setting id="commercial_validation_mode_setting"
+                             string="Commercial Validation Mode"
+                             help="disabled = no check · warning = log a note and complete · strict = block completion (customer refusal always completes)">
+                        <field name="commercial_validation_mode"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

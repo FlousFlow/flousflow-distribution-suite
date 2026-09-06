@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Distribution → Operations → Collections -->
+    <menuitem id="menu_distribution_collections"
+              name="Collections"
+              parent="flousflow_distribution_route_management.menu_distribution_operations"
+              action="action_distribution_visit_collection"
+              sequence="30"
+              groups="flousflow_distribution_commercial.group_distribution_collection_user"/>
+
+    <!-- Distribution → My Collections -->
+    <menuitem id="menu_distribution_my_collections"
+              name="My Collections"
+              parent="flousflow_distribution_route_management.menu_distribution_operations"
+              action="action_my_distribution_collections"
+              sequence="31"
+              groups="flousflow_distribution_commercial.group_distribution_collection_user"/>
+
+    <!-- Distribution → Finance Control → Collections to Validate -->
+    <menuitem id="menu_distribution_finance_control"
+              name="Finance Control"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              sequence="210"
+              groups="flousflow_distribution_commercial.group_distribution_collection_validator,account.group_account_invoice"/>
+
+    <menuitem id="menu_distribution_collections_to_validate"
+              name="Collections to Validate"
+              parent="menu_distribution_finance_control"
+              action="action_distribution_collections_to_validate"
+              sequence="10"
+              groups="flousflow_distribution_commercial.group_distribution_collection_validator,account.group_account_invoice"/>
+
+</odoo>

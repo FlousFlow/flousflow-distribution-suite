@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Sale order: distribution links (Other Info tab) -->
+    <record id="view_order_form_inherit_commercial" model="ir.ui.view">
+        <field name="name">sale.order.form.commercial</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='sale_info']" position="inside">
+                <group string="Distribution" name="distribution_commercial">
+                    <field name="distribution_visit_id"
+                           options="{'no_create': True}"/>
+                    <field name="distribution_route_id"/>
+                    <field name="distribution_employee_id"/>
+                    <field name="distribution_vehicle_id"/>
+                    <button name="action_view_distribution_visit" type="object"
+                            string="Open Visit" icon="fa-road"
+                            invisible="not distribution_visit_id"
+                            colspan="2" class="btn-link"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Sale order list: route + visit dimensions (#100) -->
+    <record id="view_order_list_inherit_commercial" model="ir.ui.view">
+        <field name="name">sale.order.list.commercial</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="distribution_route_id" optional="hide"/>
+                <field name="distribution_visit_id" optional="hide"/>
+                <field name="distribution_employee_id" optional="hide"/>
+                <field name="distribution_vehicle_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

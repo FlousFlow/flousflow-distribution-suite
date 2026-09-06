@@ -1,0 +1,147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_distribution_dashboard_gps
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-06 15:59+0000\n"
+"PO-Revision-Date: 2026-09-06 15:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Avg Check-In Distance (m)"
+msgstr "متوسط مسافة الوصول (م)"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Avg Distance (m)"
+msgstr "متوسط المسافة (م)"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Avg GPS Accuracy (m)"
+msgstr "متوسط دقة الموقع (م)"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Customer"
+msgstr "العميل"
+
+#. module: flousflow_distribution_dashboard_gps
+#: model:ir.model.fields,field_description:flousflow_distribution_dashboard_gps.field_distribution_dashboard_data__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: flousflow_distribution_dashboard_gps
+#: model:ir.model,name:flousflow_distribution_dashboard_gps.model_distribution_dashboard_data
+msgid "Distribution Dashboard Data Provider"
+msgstr "Distributiلوحة المتابعة البيانات Provider"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Executed Visits"
+msgstr "الزيارات المنفذة"
+
+#. module: flousflow_distribution_dashboard_gps
+#: model:ir.actions.act_window,name:flousflow_distribution_dashboard_gps.action_dashboard_gps_analysis
+#: model:ir.ui.menu,name:flousflow_distribution_dashboard_gps.menu_dashboard_gps_analysis
+msgid "GPS Analysis"
+msgstr "GPS Analysi"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "GPS Compliance"
+msgstr "الالتزام بنظام تحديد المواقع"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "GPS Customer Location Review (possible wrong customer locations)"
+msgstr "مراجعة مواقع عملاء GPS (مواقع عملاء قد تكون خاطئة)"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "GPS Errors"
+msgstr "أخطاء GPS"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "GPS Overrides"
+msgstr "تجاوزات GPS"
+
+#. module: flousflow_distribution_dashboard_gps
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard_gps.view_dashboard_visit_search_gps
+msgid "GPS Status"
+msgstr "حالة GPS"
+
+#. module: flousflow_distribution_dashboard_gps
+#: model:ir.model.fields,field_description:flousflow_distribution_dashboard_gps.field_distribution_dashboard_data__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard_gps.view_dashboard_visit_search_gps
+msgid "Inside Geofence"
+msgstr "داخل النطاق"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Metric"
+msgstr "المؤشر"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard_gps.view_dashboard_visit_search_gps
+msgid "Outside Geofence"
+msgstr "خارج النطاق"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Outside Geofence Rate"
+msgstr "نسبة خارج النطاق"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Outside Visits"
+msgstr "زيارات خارجية"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Rejected Check-Ins"
+msgstr "تسجيلات دخول مرفوضة"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Unknown / Missing GPS"
+msgstr "غير معروف / بدون GPS"
+
+#. module: flousflow_distribution_dashboard_gps
+#. odoo-python
+#: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
+msgid "Value"
+msgstr "القيمة"

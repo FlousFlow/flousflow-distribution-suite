@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Configure Distribution Vehicle -->
+    <record id="view_distribution_vehicle_configure_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.vehicle.configure.wizard.form</field>
+        <field name="model">distribution.vehicle.configure.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Configure Distribution Vehicle">
+                <group>
+                    <group string="Vehicle" name="vehicle_info">
+                        <field name="vehicle_id"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                        <field name="main_warehouse_id"/>
+                        <field name="activate"/>
+                    </group>
+                    <group string="Vehicle Warehouse" name="warehouse_info">
+                        <field name="warehouse_mode"/>
+                        <field name="new_warehouse_name" invisible="warehouse_mode != 'create_new'"
+                               placeholder="Leave empty to auto-generate"/>
+                        <field name="existing_warehouse_id" invisible="warehouse_mode != 'use_existing'"/>
+                    </group>
+                    <group string="POS Configuration" name="pos_info">
+                        <field name="pos_mode"/>
+                        <field name="new_pos_name" invisible="pos_mode != 'create_new'"
+                               placeholder="Leave empty to auto-generate"/>
+                        <field name="existing_pos_config_id" invisible="pos_mode != 'use_existing'"/>
+                    </group>
+                </group>
+                <separator string="Employee Assignments"/>
+                <field name="assignment_ids" nolabel="1">
+                    <list string="Assignments" editable="bottom">
+                        <field name="employee_id"/>
+                        <field name="role"/>
+                        <field name="date_from"/>
+                        <field name="notes" optional="hide"/>
+                    </list>
+                </field>
+                <footer>
+                    <button name="action_confirm" type="object" string="Configure"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Load / Unload Vehicle -->
+    <record id="view_distribution_vehicle_transfer_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.vehicle.transfer.wizard.form</field>
+        <field name="model">distribution.vehicle.transfer.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Load / Unload Vehicle">
+                <group>
+                    <group string="Transfer" name="transfer_info">
+                        <field name="vehicle_id" readonly="1"/>
+                        <field name="direction" invisible="1"/>
+                        <field name="source_warehouse_id"/>
+                        <field name="scheduled_date"/>
+                        <field name="responsible_employee_id"/>
+                        <field name="auto_validate"/>
+                    </group>
+                </group>
+                <separator string="Products"/>
+                <field name="line_ids" nolabel="1">
+                    <list string="Products" editable="bottom">
+                        <field name="product_id"/>
+                        <field name="product_uom_id" readonly="1"/>
+                        <field name="quantity"/>
+                        <field name="lot_id" optional="show"/>
+                    </list>
+                </field>
+                <group>
+                    <field name="notes" placeholder="Notes..."/>
+                </group>
+                <footer>
+                    <button name="action_confirm" type="object" string="Confirm Transfer"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

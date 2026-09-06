@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Settings: Distribution Dashboard section inside the existing
+         Distribution Route app settings. -->
+    <record id="res_config_settings_view_form_inherit_dashboard"
+            model="ir.ui.view">
+        <field name="name">res.config.settings.form.inherit.distribution.dashboard</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='distribution_area_setting_container']" position="after">
+                <block title="Dashboard" name="distribution_dashboard_setting_container">
+                    <setting id="dashboard_default_period_setting"
+                             string="Default Period"
+                             help="Period selected when the dashboard opens">
+                        <field name="distribution_dashboard_default_period"/>
+                    </setting>
+                    <setting id="dashboard_min_ranking_setting"
+                             string="Minimum Visits for Ranking"
+                             help="Employees with fewer executed visits are excluded from rankings">
+                        <field name="distribution_dashboard_minimum_visits_for_ranking"/>
+                    </setting>
+                    <setting id="dashboard_visit_delay_setting"
+                             string="Visit Delay Alert (minutes)"
+                             help="Unexecuted visits older than this appear in Needs Attention">
+                        <field name="distribution_dashboard_visit_delay_alert_minutes"/>
+                    </setting>
+                    <setting id="dashboard_route_delay_setting"
+                             string="Route Start Delay Alert (minutes)"
+                             help="Routes not started after this many minutes past the planned start appear in Needs Attention">
+                        <field name="distribution_dashboard_route_start_delay_minutes"/>
+                    </setting>
+                    <setting id="dashboard_low_execution_setting"
+                             string="Low Route Execution Alert (%)"
+                             help="Routes below this execution rate appear in Needs Attention (in-progress routes only after 15:00)">
+                        <field name="distribution_dashboard_low_execution_percentage"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

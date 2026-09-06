@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- Visit Analysis: dedicated pivot/graph/search for the dashboard -->
+    <!-- reporting menus (dimensions per spec #83, measures #84).       -->
+    <!-- ============================================================ -->
+    <record id="view_dashboard_visit_pivot" model="ir.ui.view">
+        <field name="name">distribution.route.visit.pivot.dashboard</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <pivot string="Visit Analysis" sample="1">
+                <field name="planned_datetime" interval="day" type="col"/>
+                <field name="employee_id" type="row"/>
+                <field name="area_id"/>
+                <field name="visit_type_id"/>
+                <field name="result_id"/>
+                <field name="partner_id"/>
+                <field name="planned_duration" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_dashboard_visit_graph_employee" model="ir.ui.view">
+        <field name="name">distribution.route.visit.graph.dashboard.employee</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <graph string="Visits by Employee" sample="1">
+                <field name="employee_id"/>
+                <field name="state"/>
+                <field name="planned_duration" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_dashboard_visit_graph_area" model="ir.ui.view">
+        <field name="name">distribution.route.visit.graph.dashboard.area</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <graph string="Visits by Area" sample="1">
+                <field name="area_id"/>
+                <field name="state"/>
+                <field name="planned_duration" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_dashboard_visit_graph_time" model="ir.ui.view">
+        <field name="name">distribution.route.visit.graph.dashboard.time</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <graph string="Visits over Time" sample="1">
+                <field name="planned_datetime" interval="day"/>
+                <field name="state"/>
+                <field name="planned_duration" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_dashboard_visit_search" model="ir.ui.view">
+        <field name="name">distribution.route.visit.search.dashboard</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_visit_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter string="This Week" name="filter_this_week"
+                        domain="[('planned_datetime', '&gt;=', (context_today() - datetime.timedelta(days=context_today().weekday())).strftime('%Y-%m-%d 00:00:00'))]"/>
+                <filter string="This Month" name="filter_this_month"
+                        domain="[('planned_datetime', '&gt;=', context_today().strftime('%Y-%m-01 00:00:00'))]"/>
+                <separator/>
+                <filter string="Executed" name="filter_executed"
+                        domain="[('state', '=', 'done')]"/>
+                <filter string="Successful" name="filter_successful"
+                        domain="[('state', '=', 'done'), ('result_id.is_success', '=', True)]"/>
+                <filter string="Unsuccessful" name="filter_unsuccessful"
+                        domain="[('state', '=', 'done'), '|', ('result_id', '=', False), ('result_id.is_success', '=', False)]"/>
+                <filter string="Needs Revisit" name="filter_needs_revisit"
+                        domain="[('requires_revisit', '=', True)]"/>
+                <group>
+                    <filter string="Customer" name="group_customer"
+                            context="{'group_by': 'partner_id'}"/>
+                    <filter string="Visit Result" name="group_result"
+                            context="{'group_by': 'result_id'}"/>
+                    <filter string="Visit Type" name="group_visit_type"
+                            context="{'group_by': 'visit_type_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

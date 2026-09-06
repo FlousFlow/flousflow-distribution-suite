@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- GPS Event List (immutable audit log) -->
+    <record id="view_distribution_visit_gps_event_list" model="ir.ui.view">
+        <field name="name">distribution.visit.gps.event.list</field>
+        <field name="model">distribution.visit.gps.event</field>
+        <field name="arch" type="xml">
+            <list string="GPS Events" sample="1" create="0" edit="0" delete="0">
+                <field name="server_datetime"/>
+                <field name="event_type" widget="badge"
+                       decoration-success="event_type in ('checkin', 'checkout', 'customer_location_capture')"
+                       decoration-danger="event_type in ('checkin_rejected', 'checkout_rejected')"
+                       decoration-warning="event_type == 'gps_error'"
+                       decoration-info="event_type == 'manager_override'"/>
+                <field name="visit_id" optional="show"/>
+                <field name="partner_id" optional="show"/>
+                <field name="employee_id" optional="show"/>
+                <field name="user_id" optional="hide"/>
+                <field name="latitude" optional="hide"/>
+                <field name="longitude" optional="hide"/>
+                <field name="accuracy" optional="show"/>
+                <field name="distance" optional="show"/>
+                <field name="geofence_radius" optional="hide"/>
+                <field name="geofence_status" optional="show" widget="badge"
+                       decoration-success="geofence_status == 'inside'"
+                       decoration-danger="geofence_status == 'outside'"
+                       decoration-info="geofence_status == 'unknown'"/>
+                <field name="message" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- GPS Event Form (read-only) -->
+    <record id="view_distribution_visit_gps_event_form" model="ir.ui.view">
+        <field name="name">distribution.visit.gps.event.form</field>
+        <field name="model">distribution.visit.gps.event</field>
+        <field name="arch" type="xml">
+            <form string="GPS Event" create="0" edit="0" delete="0">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="display_name_"/></h1>
+                    </div>
+                    <group>
+                        <group string="Event" name="event_info">
+                            <field name="event_type" readonly="1"/>
+                            <field name="visit_id" readonly="1"/>
+                            <field name="route_id" readonly="1"/>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="employee_id" readonly="1"/>
+                            <field name="user_id" readonly="1"/>
+                            <field name="company_id" readonly="1" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="Position" name="position_info">
+                            <field name="latitude" readonly="1"/>
+                            <field name="longitude" readonly="1"/>
+                            <field name="accuracy" readonly="1"/>
+                            <field name="customer_latitude" readonly="1"/>
+                            <field name="customer_longitude" readonly="1"/>
+                            <field name="distance" readonly="1"/>
+                            <field name="geofence_radius" readonly="1"/>
+                            <field name="geofence_status" readonly="1"/>
+                        </group>
+                        <group string="Timestamps" name="timing_info">
+                            <field name="server_datetime" readonly="1"/>
+                            <field name="event_datetime" readonly="1"/>
+                            <field name="gps_timestamp" readonly="1"/>
+                        </group>
+                    </group>
+                    <group string="Message" name="message_info">
+                        <field name="message" readonly="1" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- GPS Event Search -->
+    <record id="view_distribution_visit_gps_event_search" model="ir.ui.view">
+        <field name="name">distribution.visit.gps.event.search</field>
+        <field name="model">distribution.visit.gps.event</field>
+        <field name="arch" type="xml">
+            <search string="GPS Events">
+                <field name="visit_id"/>
+                <field name="partner_id"/>
+                <field name="employee_id"/>
+                <field name="user_id"/>
+                <filter string="Check-Ins" name="filter_checkin"
+                        domain="[('event_type', '=', 'checkin')]"/>
+                <filter string="Check-Outs" name="filter_checkout"
+                        domain="[('event_type', '=', 'checkout')]"/>
+                <filter string="Rejected" name="filter_rejected"
+                        domain="[('event_type', 'in', ('checkin_rejected', 'checkout_rejected'))]"/>
+                <filter string="GPS Errors" name="filter_errors"
+                        domain="[('event_type', '=', 'gps_error')]"/>
+                <filter string="Overrides" name="filter_overrides"
+                        domain="[('event_type', '=', 'manager_override')]"/>
+                <group>
+                    <filter string="Event Type" name="group_event_type"
+                            context="{'group_by': 'event_type'}"/>
+                    <filter string="Employee" name="group_employee"
+                            context="{'group_by': 'employee_id'}"/>
+                    <filter string="Customer" name="group_partner"
+                            context="{'group_by': 'partner_id'}"/>
+                    <filter string="User" name="group_user"
+                            context="{'group_by': 'user_id'}"/>
+                    <filter string="Day" name="group_day"
+                            context="{'group_by': 'server_datetime:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action: available from the visit smart button / analysis menu -->
+    <record id="action_distribution_visit_gps_event" model="ir.actions.act_window">
+        <field name="name">GPS Events</field>
+        <field name="res_model">distribution.visit.gps.event</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_distribution_visit_gps_event_search"/>
+    </record>
+
+    <!-- Analysis action (manager menu entry in gps_analysis_views.xml) -->
+    <record id="action_gps_analysis_menu" model="ir.actions.act_window">
+        <field name="name">GPS Analysis</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph</field>
+    </record>
+
+</odoo>

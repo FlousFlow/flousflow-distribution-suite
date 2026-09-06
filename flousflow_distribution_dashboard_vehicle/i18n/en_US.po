@@ -1,0 +1,44 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_distribution_dashboard_vehicle
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+#. module: flousflow_distribution_dashboard_vehicle
+#: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Vehicle Utilization (routes / visits per vehicle)"
+msgstr "استخدام المركبات (مسارات / زيارات لكل مركبة)"
+
+#. module: flousflow_distribution_dashboard_vehicle
+#: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Current Vehicle Stock (live stock.quant — not a historical route snapshot)"
+msgstr "مخزون المركبة الحالي (من stock.quant المباشر — ليس لقطة تاريخية)"
+
+#. module: flousflow_distribution_dashboard_vehicle
+#: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Warehouse"
+msgstr "المستودع"
+
+#. module: flousflow_distribution_dashboard_vehicle
+#: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: flousflow_distribution_dashboard_vehicle
+#: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
+#. odoo-python
+msgid "Total Qty On Hand"
+msgstr "إجمالي الكمية المتاحة"
+

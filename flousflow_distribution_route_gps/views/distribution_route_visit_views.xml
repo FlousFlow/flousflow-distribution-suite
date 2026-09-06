@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Visit Form: route the buttons through GPS capture + Location tab -->
+    <record id="view_distribution_route_visit_form_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.form.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id"
+               ref="flousflow_distribution_route_management.view_distribution_route_visit_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_start_visit']" position="attributes">
+                <attribute name="name">action_start_visit_gps</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_complete_visit_wizard']" position="attributes">
+                <attribute name="name">action_complete_visit_gps</attribute>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Location" name="gps_location">
+                    <group>
+                        <group string="GPS Events" name="gps_events_summary">
+                            <button name="action_view_gps_events" type="object"
+                                    class="btn-secondary" icon="fa-location-arrow"
+                                    string="GPS Events"/>
+                            <field name="gps_event_count" invisible="1"/>
+                            <field name="gps_has_override" string="Manager Override Applied"/>
+                        </group>
+                        <group string="Customer Location" name="gps_customer_location">
+                            <field name="partner_id" invisible="1"/>
+                            <field name="customer_latitude_snapshot" string="Customer Latitude"/>
+                            <field name="customer_longitude_snapshot" string="Customer Longitude"/>
+                            <field name="customer_geofence_radius_snapshot" string="Allowed Radius (m)"/>
+                        </group>
+                        <group string="Check-In" name="gps_checkin">
+                            <field name="checkin_datetime"/>
+                            <field name="checkin_latitude"/>
+                            <field name="checkin_longitude"/>
+                            <field name="checkin_accuracy"/>
+                            <field name="checkin_distance"/>
+                            <field name="checkin_geofence_status" widget="badge"
+                                   decoration-success="checkin_geofence_status == 'inside'"
+                                   decoration-danger="checkin_geofence_status == 'outside'"
+                                   decoration-info="checkin_geofence_status == 'unknown'"/>
+                        </group>
+                        <group string="Check-Out" name="gps_checkout">
+                            <field name="checkout_datetime"/>
+                            <field name="checkout_latitude"/>
+                            <field name="checkout_longitude"/>
+                            <field name="checkout_accuracy"/>
+                            <field name="checkout_distance"/>
+                            <field name="checkout_geofence_status" widget="badge"
+                                   decoration-success="checkout_geofence_status == 'inside'"
+                                   decoration-danger="checkout_geofence_status == 'outside'"
+                                   decoration-info="checkout_geofence_status == 'unknown'"/>
+                        </group>
+                        <group string="GPS Quality" name="gps_quality">
+                            <field name="gps_checkin_valid"/>
+                            <field name="gps_checkout_valid"/>
+                            <field name="gps_has_override"/>
+                            <field name="override_operation" invisible="not gps_has_override"/>
+                            <field name="override_user_id" invisible="not gps_has_override"/>
+                            <field name="override_datetime" invisible="not gps_has_override"/>
+                            <field name="override_reason" invisible="not gps_has_override"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Visit List: GPS columns + decorations -->
+    <record id="view_distribution_route_visit_list_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.list.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id"
+               ref="flousflow_distribution_route_management.view_distribution_route_visit_list"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="checkin_geofence_status" widget="badge" optional="show"
+                       decoration-success="checkin_geofence_status == 'inside'"
+                       decoration-danger="checkin_geofence_status == 'outside'"
+                       decoration-info="checkin_geofence_status == 'unknown'"/>
+                <field name="checkin_distance" optional="hide"/>
+                <field name="checkin_accuracy" optional="hide"/>
+                <field name="gps_has_override" optional="hide"/>
+                <field name="checkin_datetime" invisible="1"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Visit Search: GPS filters + group bys -->
+    <record id="view_distribution_route_visit_search_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.search.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="inherit_id"
+               ref="flousflow_distribution_route_management.view_distribution_route_visit_search"/>
+        <field name="arch" type="xml">
+            <filter name="filter_revisit" position="after">
+                <separator/>
+                <filter string="Inside Geofence" name="filter_inside_geofence"
+                        domain="[('checkin_geofence_status', '=', 'inside')]"/>
+                <filter string="Outside Geofence" name="filter_outside_geofence"
+                        domain="[('checkin_geofence_status', '=', 'outside')]"/>
+                <filter string="No GPS" name="filter_no_gps"
+                        domain="[('checkin_datetime', '=', False)]"/>
+                <filter string="Low Accuracy" name="filter_low_accuracy"
+                        domain="[('gps_checkin_low_accuracy', '=', True)]"/>
+                <filter string="GPS Override" name="filter_gps_override"
+                        domain="[('gps_has_override', '=', True)]"/>
+            </filter>
+            <filter name="group_planned_day" position="after">
+                <filter string="Check-In Geofence Status" name="group_geofence_status"
+                        context="{'group_by': 'checkin_geofence_status'}"/>
+            </filter>
+        </field>
+    </record>
+
+    <!-- GPS Analysis (Pivot / Graph) -->
+    <record id="view_distribution_route_visit_pivot_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.pivot.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <pivot string="GPS Analysis" sample="1">
+                <field name="employee_id" type="row"/>
+                <field name="checkin_geofence_status" type="col"/>
+                <field name="checkin_distance" type="measure"/>
+                <field name="checkin_accuracy" type="measure"/>
+                <field name="checkout_distance" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_distribution_route_visit_graph_gps" model="ir.ui.view">
+        <field name="name">distribution.route.visit.graph.gps</field>
+        <field name="model">distribution.route.visit</field>
+        <field name="arch" type="xml">
+            <graph string="GPS Analysis" sample="1">
+                <field name="employee_id"/>
+                <field name="checkin_geofence_status"/>
+                <field name="checkin_distance" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="action_gps_analysis" model="ir.actions.act_window">
+        <field name="name">GPS Analysis</field>
+        <field name="res_model">distribution.route.visit</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Analyze visit GPS data
+            </p>
+            <p>
+                Average check-in distance and GPS accuracy per employee,
+                inside / outside geofence.
+            </p>
+        </field>
+    </record>
+
+</odoo>

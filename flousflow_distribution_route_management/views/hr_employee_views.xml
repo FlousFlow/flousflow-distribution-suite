@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Employee: Routes / Visits smart buttons -->
+    <record id="view_employee_form_inherit_route_plans" model="ir.ui.view">
+        <field name="name">hr.employee.form.route.plans</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="priority">20</field>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" type="object"
+                        name="action_view_distribution_routes"
+                        icon="fa-route"
+                        groups="flousflow_distribution_route_base.group_distribution_route_user">
+                    <field name="distribution_route_count" widget="statinfo" string="Routes"/>
+                </button>
+                <button class="oe_stat_button" type="object"
+                        name="action_view_distribution_visits"
+                        icon="fa-map-marker"
+                        groups="flousflow_distribution_route_base.group_distribution_route_user">
+                    <field name="distribution_visit_count" widget="statinfo" string="Visits"/>
+                </button>
+            </div>
+        </field>
+    </record>
+
+</odoo>

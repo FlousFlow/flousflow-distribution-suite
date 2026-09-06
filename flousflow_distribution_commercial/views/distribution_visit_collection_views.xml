@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- Collection List                                                -->
+    <!-- ============================================================ -->
+    <record id="view_distribution_visit_collection_list" model="ir.ui.view">
+        <field name="name">distribution.visit.collection.list</field>
+        <field name="model">distribution.visit.collection</field>
+        <field name="arch" type="xml">
+            <list string="Customer Collections" sample="1">
+                <field name="name"/>
+                <field name="collection_date"/>
+                <field name="partner_id"/>
+                <field name="employee_id"/>
+                <field name="route_id" optional="show"/>
+                <field name="visit_id" optional="hide"/>
+                <field name="amount" sum="Total"/>
+                <field name="collection_method"/>
+                <field name="state" widget="badge"
+                       decoration-info="state == 'submitted'"
+                       decoration-success="state == 'validated'"
+                       decoration-danger="state in ('rejected', 'cancelled')"/>
+                <field name="payment_id" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Collection Form                                                -->
+    <!-- ============================================================ -->
+    <record id="view_distribution_visit_collection_form" model="ir.ui.view">
+        <field name="name">distribution.visit.collection.form</field>
+        <field name="model">distribution.visit.collection</field>
+        <field name="arch" type="xml">
+            <form string="Customer Collection">
+                <header>
+                    <button name="action_submit" type="object" string="Submit Collection"
+                            class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_validate" type="object" string="Validate"
+                            class="btn-primary" invisible="state != 'submitted'"
+                            groups="account.group_account_invoice"/>
+                    <button name="action_open_reject_wizard" type="object" string="Reject"
+                            invisible="state != 'submitted'"/>
+                    <button name="action_open_reset_wizard" type="object" string="Reset to Draft"
+                            invisible="state not in ('rejected', 'validated') or (payment_id and payment_state == 'posted')"/>
+                    <button name="action_cancel" type="object" string="Cancel"
+                            invisible="state not in ('draft', 'submitted', 'rejected') or (payment_id and payment_state == 'posted')"
+                            confirm="Cancel this collection?"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,submitted,validated"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Rejected" bg_color="text-bg-danger"
+                            invisible="state != 'rejected'"/>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-secondary"
+                            invisible="state != 'cancelled'"/>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group name="main">
+                        <group name="collection_info" string="Collection">
+                            <field name="visit_id" readonly="state != 'draft'"
+                                   options="{'no_create': True}"/>
+                            <field name="route_id" readonly="1"/>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="employee_id" readonly="1"/>
+                            <field name="company_id" readonly="1"
+                                   groups="base.group_multi_company"/>
+                            <field name="amount" readonly="state != 'draft'"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="collection_method"
+                                   readonly="state != 'draft'"/>
+                            <field name="collection_date"
+                                   readonly="state != 'draft'"/>
+                        </group>
+                        <group name="accounting_state" string="Accounting">
+                            <field name="payment_state" readonly="1"/>
+                            <field name="payment_id" readonly="1"/>
+                            <button name="action_open_payment" type="object"
+                                    string="Open Payment" icon="fa-arrow-right"
+                                    invisible="not payment_id" class="btn-link"/>
+                            <field name="accounting_date"
+                                   invisible="state not in ('submitted', 'validated')"
+                                   readonly="state != 'submitted'"
+                                   groups="account.group_account_invoice"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Accounting" name="accounting">
+                            <group>
+                                <group string="Journal &amp; Method">
+                                    <field name="journal_id"
+                                           readonly="state != 'submitted'"
+                                           required="state == 'submitted'"
+                                           groups="account.group_account_invoice"/>
+                                    <field name="payment_method_line_id"
+                                           readonly="state != 'submitted'"
+                                           required="state == 'submitted'"
+                                           groups="account.group_account_invoice"/>
+                                </group>
+                                <group string="Invoices" name="invoices">
+                                    <field name="invoice_ids" colspan="2" nolabel="1"
+                                           readonly="state != 'draft'"
+                                           context="{'default_partner_id': partner_id, 'default_move_type': 'out_invoice'}"
+                                           domain="[('move_type', '=', 'out_invoice'), ('state', '=', 'posted'), ('partner_id', '=', partner_id), ('payment_state', 'in', ('not_paid', 'partial'))]">
+                                        <list>
+                                            <field name="name"/>
+                                            <field name="invoice_date"/>
+                                            <field name="invoice_date_due"/>
+                                            <field name="currency_id" column_invisible="1"/>
+                                            <field name="amount_total"/>
+                                            <field name="amount_residual"/>
+                                        </list>
+                                    </field>
+                                </group>
+                                <group string="References">
+                                    <field name="payment_reference"/>
+                                    <field name="customer_reference"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Evidence &amp; Notes" name="evidence">
+                            <group>
+                                <field name="notes" nolabel="1" colspan="2"
+                                       placeholder="Receipts, transfer proof, received documents…"/>
+                            </group>
+                        </page>
+                        <page string="Rejection" name="rejection"
+                              invisible="state != 'rejected'">
+                            <group>
+                                <field name="rejection_reason"/>
+                                <field name="rejected_by"/>
+                                <field name="rejected_datetime"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Search                                                         -->
+    <!-- ============================================================ -->
+    <record id="view_distribution_visit_collection_search" model="ir.ui.view">
+        <field name="name">distribution.visit.collection.search</field>
+        <field name="model">distribution.visit.collection</field>
+        <field name="arch" type="xml">
+            <search string="Customer Collections">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="employee_id"/>
+                <field name="route_id"/>
+                <field name="payment_reference"/>
+                <field name="customer_reference"/>
+                <filter string="Draft" name="filter_draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Submitted" name="filter_submitted" domain="[('state', '=', 'submitted')]"/>
+                <filter string="Validated" name="filter_validated" domain="[('state', '=', 'validated')]"/>
+                <filter string="Rejected" name="filter_rejected" domain="[('state', '=', 'rejected')]"/>
+                <filter string="Cancelled" name="filter_cancelled" domain="[('state', '=', 'cancelled')]"/>
+                <separator/>
+                <filter string="Today" name="filter_today" domain="[('collection_date', '&gt;=', context_today().strftime('%Y-%m-%d 00:00:00')), ('collection_date', '&lt;=', context_today().strftime('%Y-%m-%d 23:59:59'))]"/>
+                <filter string="This Week" name="filter_this_week" domain="[('collection_date', '&gt;=', (context_today() - datetime.timedelta(days=context_today().weekday())).strftime('%Y-%m-%d'))]"/>
+                <separator/>
+                <filter string="Cash" name="filter_cash" domain="[('collection_method', '=', 'cash')]"/>
+                <filter string="Bank Transfer" name="filter_bank" domain="[('collection_method', '=', 'bank_transfer')]"/>
+                <filter string="Cheque" name="filter_cheque" domain="[('collection_method', '=', 'cheque')]"/>
+                <group>
+                    <filter string="Employee" name="group_employee" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Customer" name="group_customer" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Route" name="group_route" context="{'group_by': 'route_id'}"/>
+                    <filter string="Collection Method" name="group_method" context="{'group_by': 'collection_method'}"/>
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Company" name="group_company" context="{'group_by': 'company_id'}" groups="base.group_multi_company"/>
+                    <filter string="Journal" name="group_journal" context="{'group_by': 'journal_id'}"/>
+                    <filter string="Date" name="group_date" context="{'group_by': 'collection_date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Pivot + Graph: Collection Analysis (spec #97-#99)              -->
+    <!-- ============================================================ -->
+    <record id="view_distribution_visit_collection_pivot" model="ir.ui.view">
+        <field name="name">distribution.visit.collection.pivot</field>
+        <field name="model">distribution.visit.collection</field>
+        <field name="arch" type="xml">
+            <pivot string="Collection Analysis" sample="1">
+                <field name="collection_date" interval="day" type="col"/>
+                <field name="employee_id" type="row"/>
+                <field name="partner_id"/>
+                <field name="route_id"/>
+                <field name="collection_method"/>
+                <field name="state"/>
+                <field name="journal_id"/>
+                <field name="amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_distribution_visit_collection_graph" model="ir.ui.view">
+        <field name="name">distribution.visit.collection.graph</field>
+        <field name="model">distribution.visit.collection</field>
+        <field name="arch" type="xml">
+            <graph string="Collection Analysis" sample="1">
+                <field name="collection_date" interval="day"/>
+                <field name="employee_id"/>
+                <field name="amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Actions                                                        -->
+    <!-- ============================================================ -->
+    <record id="action_distribution_visit_collection" model="ir.actions.act_window">
+        <field name="name">Collections</field>
+        <field name="res_model">distribution.visit.collection</field>
+        <field name="view_mode">list,form,pivot,graph</field>
+        <field name="search_view_id" ref="view_distribution_visit_collection_search"/>
+        <field name="context">{'search_default_filter_today': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No customer collections yet
+            </p>
+            <p>
+                Collections are recorded from route visits and validated by
+                accounting before a standard payment is created.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_my_distribution_collections" model="ir.actions.act_window">
+        <field name="name">My Collections</field>
+        <field name="res_model">distribution.visit.collection</field>
+        <field name="view_mode">list,form,pivot</field>
+        <field name="domain">[('employee_id.user_id', '=', uid)]</field>
+        <field name="context">{'search_default_filter_this_week': 1}</field>
+    </record>
+
+    <record id="action_distribution_collections_to_validate" model="ir.actions.act_window">
+        <field name="name">Collections to Validate</field>
+        <field name="res_model">distribution.visit.collection</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('state', '=', 'submitted')]</field>
+        <field name="context">{'search_default_filter_submitted': 1}</field>
+    </record>
+
+</odoo>

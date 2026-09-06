@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fleet_vehicle_route_user,fleet.vehicle.distribution.route.user,model_fleet_vehicle,flousflow_distribution_route_base.group_distribution_route_user,1,0,0,0
+access_vehicle_assignment_route_user,fleet.vehicle.employee.assignment.route.user,model_fleet_vehicle_employee_assignment,flousflow_distribution_route_base.group_distribution_route_user,1,0,0,0

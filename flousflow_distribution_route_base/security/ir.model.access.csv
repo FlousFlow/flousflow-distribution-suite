@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_distribution_area_user,distribution.area.user,model_distribution_area,group_distribution_route_user,1,0,0,0
+access_distribution_area_manager,distribution.area.manager,model_distribution_area,group_distribution_route_manager,1,1,1,1
+access_distribution_visit_type_user,distribution.visit.type.user,model_distribution_visit_type,group_distribution_route_user,1,0,0,0
+access_distribution_visit_type_manager,distribution.visit.type.manager,model_distribution_visit_type,group_distribution_route_manager,1,1,1,1

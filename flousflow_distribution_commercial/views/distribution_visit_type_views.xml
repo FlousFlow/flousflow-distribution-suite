@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Visit type: expected commercial action (spec #76) -->
+    <record id="view_distribution_visit_type_form_inherit_commercial"
+            model="ir.ui.view">
+        <field name="name">distribution.visit.type.form.commercial</field>
+        <field name="model">distribution.visit.type</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_base.view_distribution_visit_type_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='require_customer']" position="after">
+                <field name="commercial_action_type"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

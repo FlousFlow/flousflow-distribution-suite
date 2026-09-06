@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Default Visit Types (editable master data — no business logic depends on these codes) -->
+    <record id="visit_type_sales" model="distribution.visit.type">
+        <field name="name">Sales Visit</field>
+        <field name="code">sales</field>
+        <field name="sequence">10</field>
+        <field name="color">1</field>
+        <field name="require_customer">True</field>
+        <field name="icon">fa-money</field>
+        <field name="description">Visit for taking a sales order or selling products.</field>
+    </record>
+
+    <record id="visit_type_collection" model="distribution.visit.type">
+        <field name="name">Collection</field>
+        <field name="code">collection</field>
+        <field name="sequence">20</field>
+        <field name="color">10</field>
+        <field name="require_customer">True</field>
+        <field name="icon">fa-credit-card</field>
+        <field name="description">Visit for collecting cash payments from customers.</field>
+    </record>
+
+    <record id="visit_type_followup" model="distribution.visit.type">
+        <field name="name">Follow-up</field>
+        <field name="code">followup</field>
+        <field name="sequence">30</field>
+        <field name="color">2</field>
+        <field name="require_customer">True</field>
+        <field name="icon">fa-refresh</field>
+        <field name="description">Regular follow-up visit with an existing customer.</field>
+    </record>
+
+    <record id="visit_type_prospect" model="distribution.visit.type">
+        <field name="name">New Customer</field>
+        <field name="code">prospect</field>
+        <field name="sequence">40</field>
+        <field name="color">3</field>
+        <field name="require_customer">False</field>
+        <field name="allow_completion_without_customer">True</field>
+        <field name="icon">fa-user-plus</field>
+        <field name="description">Prospecting visit to acquire a new customer.</field>
+    </record>
+
+    <record id="visit_type_complaint" model="distribution.visit.type">
+        <field name="name">Complaint</field>
+        <field name="code">complaint</field>
+        <field name="sequence">50</field>
+        <field name="color">9</field>
+        <field name="require_customer">True</field>
+        <field name="icon">fa-exclamation-triangle</field>
+        <field name="description">Visit to handle a customer complaint.</field>
+    </record>
+
+    <record id="visit_type_merchandising" model="distribution.visit.type">
+        <field name="name">Merchandising</field>
+        <field name="code">merchandising</field>
+        <field name="sequence">60</field>
+        <field name="color">4</field>
+        <field name="require_customer">True</field>
+        <field name="icon">fa-tags</field>
+        <field name="description">Shelf check, display setup and stock rotation at the customer.</field>
+    </record>
+
+    <record id="visit_type_delivery" model="distribution.visit.type">
+        <field name="name">Delivery Follow-up</field>
+        <field name="code">delivery</field>
+        <field name="sequence">70</field>
+        <field name="color">5</field>
+        <field name="require_customer">True</field>
+        <field name="icon">fa-truck</field>
+        <field name="description">Follow-up on a pending delivery.</field>
+    </record>
+
+    <record id="visit_type_other" model="distribution.visit.type">
+        <field name="name">Other</field>
+        <field name="code">other</field>
+        <field name="sequence">80</field>
+        <field name="color">7</field>
+        <field name="require_customer">False</field>
+        <field name="allow_completion_without_customer">True</field>
+        <field name="icon">fa-ellipsis-h</field>
+        <field name="description">Any other type of visit.</field>
+    </record>
+
+</odoo>

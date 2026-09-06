@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="flousflow_distribution_route_gps.GpsFlowDialog">
+        <div class="o_gps_flow d-flex flex-column align-items-center py-5">
+            <div class="o_gps_spinner position-relative mb-3">
+                <i class="fa fa-compass fa-4x text-primary" role="img"
+                   aria-label="GPS"/>
+                <i class="fa fa-circle-o-notch fa-spin fa-2x text-secondary o_gps_spin"
+                   role="img" aria-label="Loading"/>
+            </div>
+            <p class="lead mb-0 text-center" t-out="state.message"/>
+        </div>
+    </t>
+
+</templates>

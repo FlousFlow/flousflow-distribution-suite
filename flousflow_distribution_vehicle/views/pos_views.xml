@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- POS Order list: historical vehicle + warehouse snapshots -->
+    <record id="view_pos_order_list_inherit_distribution_vehicle" model="ir.ui.view">
+        <field name="name">pos.order.list.distribution.vehicle</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='session_id']" position="after">
+                <field name="distribution_vehicle_id" optional="show"/>
+                <field name="distribution_warehouse_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- POS Order search: vehicle/warehouse filters -->
+    <record id="view_pos_order_search_inherit_distribution_vehicle" model="ir.ui.view">
+        <field name="name">pos.order.search.distribution.vehicle</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_order_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="distribution_vehicle_id" string="Vehicle"/>
+                <group>
+                    <filter string="Vehicle" name="group_vehicle"
+                            context="{'group_by': 'distribution_vehicle_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

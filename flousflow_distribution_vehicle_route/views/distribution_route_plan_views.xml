@@ -1,0 +1,158 @@
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- Route Plan Form: Vehicle & Distribution section, snapshot     -->
+    <!-- warnings, and Route smart buttons (Vehicle Stock / POS).      -->
+    <!-- ============================================================ -->
+    <record id="view_distribution_route_plan_form_inherit_vehicle"
+            model="ir.ui.view">
+        <field name="name">distribution.route.plan.form.inherit.vehicle.route
+        </field>
+        <field name="model">distribution.route.plan</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_plan_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_title']" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_view_route_vehicle_stock" type="object"
+                            class="oe_stat_button" icon="fa-cubes"
+                            invisible="not vehicle_id">
+                        <span class="o_stat_text">Vehicle Stock</span>
+                    </button>
+                    <button name="action_view_route_pos_orders" type="object"
+                            class="oe_stat_button" icon="fa-shopping-cart"
+                            invisible="not vehicle_id">
+                        <span class="o_stat_text">POS Orders</span>
+                    </button>
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='oe_title']" position="after">
+                <div class="alert alert-warning" role="alert"
+                     invisible="not multiple_vehicle_assignments">
+                    The employee has <b>multiple valid vehicle assignments</b>
+                    on the route date. Choose the assignment below — the
+                    system will never pick one automatically.
+                </div>
+                <div class="alert alert-info" role="alert"
+                     invisible="not no_vehicle_assignment or vehicle_id">
+                    The employee has <b>no active vehicle assignment</b> on
+                    the route date. Assign a vehicle first, or confirm is
+                    only allowed when "Require Vehicle on Route" is disabled.
+                </div>
+            </xpath>
+            <xpath expr="//group[@name='main_info']" position="inside">
+                <group name="vehicle_distribution" string="Vehicle &amp; Distribution">
+                    <field name="vehicle_assignment_id"
+                           readonly="state not in ('draft', 'confirmed')"/>
+                    <field name="vehicle_id"
+                           readonly="state not in ('draft', 'confirmed')"/>
+                    <field name="vehicle_warehouse_id"
+                           readonly="state not in ('draft', 'confirmed')"/>
+                    <field name="vehicle_pos_config_id"
+                           readonly="state not in ('draft', 'confirmed')"/>
+                    <field name="multiple_vehicle_assignments" invisible="1"/>
+                    <field name="no_vehicle_assignment" invisible="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- List: add Route Vehicle -->
+    <record id="view_distribution_route_plan_list_inherit_vehicle"
+            model="ir.ui.view">
+        <field name="name">distribution.route.plan.list.inherit.vehicle.route
+        </field>
+        <field name="model">distribution.route.plan</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_plan_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='area_id']" position="after">
+                <field name="vehicle_id" optional="show"/>
+                <field name="vehicle_warehouse_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search: vehicle filters + group by (spec #30/#31) -->
+    <record id="view_distribution_route_plan_search_inherit_vehicle"
+            model="ir.ui.view">
+        <field name="name">distribution.route.plan.search.inherit.vehicle.route
+        </field>
+        <field name="model">distribution.route.plan</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_plan_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='supervisor_id']" position="after">
+                <field name="vehicle_id"/>
+                <field name="vehicle_warehouse_id"/>
+                <field name="vehicle_pos_config_id"/>
+                <filter string="Has Vehicle" name="filter_has_vehicle"
+                        domain="[('vehicle_id', '!=', False)]"/>
+                <filter string="No Vehicle" name="filter_no_vehicle"
+                        domain="[('vehicle_id', '=', False)]"/>
+            </xpath>
+            <xpath expr="//group" position="inside">
+                <filter string="Vehicle" name="group_vehicle"
+                        context="{'group_by': 'vehicle_id'}"/>
+                <filter string="Vehicle Warehouse" name="group_vehicle_warehouse"
+                        context="{'group_by': 'vehicle_warehouse_id'}"/>
+                <filter string="Vehicle POS" name="group_vehicle_pos"
+                        context="{'group_by': 'vehicle_pos_config_id'}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Pivot: Routes by Vehicle / Warehouse / POS (spec #32) -->
+    <record id="view_distribution_route_plan_pivot_inherit_vehicle"
+            model="ir.ui.view">
+        <field name="name">distribution.route.plan.pivot.inherit.vehicle.route
+        </field>
+        <field name="model">distribution.route.plan</field>
+        <field name="inherit_id" ref="flousflow_distribution_route_management.view_distribution_route_plan_pivot"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <field name="vehicle_id" type="row"/>
+                <field name="vehicle_warehouse_id"/>
+                <field name="vehicle_pos_config_id"/>
+                <field name="area_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Vehicle form: Routes smart button (spec #18)                  -->
+    <!-- ============================================================ -->
+    <record id="view_vehicle_form_inherit_route" model="ir.ui.view">
+        <field name="name">fleet.vehicle.form.inherit.vehicle.route</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_distribution_routes" type="object"
+                        class="oe_stat_button" icon="fa-road">
+                    <field name="distribution_route_count" widget="statinfo"
+                           string="Routes"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- Assignment form: Routes smart button (spec #29)               -->
+    <!-- ============================================================ -->
+    <record id="view_vehicle_assignment_form_inherit_route" model="ir.ui.view">
+        <field name="name">fleet.vehicle.employee.assignment.form.inherit.route
+        </field>
+        <field name="model">fleet.vehicle.employee.assignment</field>
+        <field name="inherit_id" ref="flousflow_distribution_vehicle.view_vehicle_employee_assignment_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_view_distribution_routes"
+                            type="object" class="oe_stat_button" icon="fa-road">
+                        <field name="distribution_route_count" widget="statinfo"
+                               string="Routes"/>
+                    </button>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Privilege: operational collection approval (does NOT grant
+         accounting posting rights — spec #35/#36). -->
+    <record model="res.groups.privilege"
+            id="res_groups_privilege_distribution_collection">
+        <field name="name">Distribution Collection Validator</field>
+        <field name="sequence">29</field>
+        <field name="category_id" ref="base.module_category_sales"/>
+    </record>
+
+    <record id="group_distribution_collection_validator" model="res.groups">
+        <field name="name">Collection Validator</field>
+        <field name="sequence">20</field>
+        <field name="privilege_id" ref="res_groups_privilege_distribution_collection"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('flousflow_distribution_route_base.group_distribution_route_manager')])]"/>
+        <field name="comment">Operational approval of distribution customer collections. Accounting posting still requires real billing/accounting rights on the user — this group alone never posts payments.</field>
+    </record>
+
+    <!-- Distribution user: create/read own collections, write draft only,
+         never delete submitted+ (code guards enforce the rest). -->
+    <record id="group_distribution_collection_user" model="res.groups">
+        <field name="name">Collection User</field>
+        <field name="sequence">10</field>
+        <field name="privilege_id" ref="res_groups_privilege_distribution_collection"/>
+        <field name="implied_ids" eval="[(6, 0, [ref('flousflow_distribution_route_base.group_distribution_route_user'), ref('sales_team.group_sale_salesman')])]"/>
+        <field name="comment">Record and submit customer collections on own visits. Cannot validate or post payments.</field>
+    </record>
+
+    <!-- Collection validators and distribution managers get the user group -->
+    <record id="group_distribution_collection_validator" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_distribution_collection_user'))]"/>
+    </record>
+    <record id="flousflow_distribution_route_base.group_distribution_route_manager" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_distribution_collection_user'))]"/>
+    </record>
+
+    <!-- Record rules -->
+    <record id="rule_collection_user_own" model="ir.rule">
+        <field name="name">Collection: own records only</field>
+        <field name="model_id" ref="model_distribution_visit_collection"/>
+        <field name="groups" eval="[(4, ref('group_distribution_collection_user'))]"/>
+        <field name="domain_force">['|',
+            ('employee_id.user_id', '=', user.id),
+            ('create_uid', '=', user.id)]</field>
+    </record>
+
+    <record id="rule_collection_validator_company" model="ir.rule">
+        <field name="name">Collection: validator company access</field>
+        <field name="model_id" ref="model_distribution_visit_collection"/>
+        <field name="groups" eval="[(4, ref('group_distribution_collection_validator'))]"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_collection_route_manager_company" model="ir.rule">
+        <field name="name">Collection: route manager company access</field>
+        <field name="model_id" ref="model_distribution_visit_collection"/>
+        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_manager'))]"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_collection_accounting_company" model="ir.rule">
+        <field name="name">Collection: accounting company access</field>
+        <field name="model_id" ref="model_distribution_visit_collection"/>
+        <field name="groups" eval="[(4, ref('account.group_account_invoice'))]"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_collection_company" model="ir.rule">
+        <field name="name">Collection: multi-company</field>
+        <field name="model_id" ref="model_distribution_visit_collection"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+</odoo>

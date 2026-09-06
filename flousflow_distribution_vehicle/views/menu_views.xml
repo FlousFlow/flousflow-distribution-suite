@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menus under the existing Distribution root -->
+    <menuitem id="menu_distribution_vehicles"
+              name="Vehicles"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              action="fleet.fleet_vehicle_action"
+              groups="flousflow_distribution_vehicle.group_distribution_vehicle_manager"
+              sequence="5"/>
+
+    <menuitem id="menu_distribution_vehicle_assignments"
+              name="Vehicle Assignments"
+              parent="flousflow_distribution_route_base.menu_distribution_root"
+              action="action_vehicle_employee_assignment"
+              groups="flousflow_distribution_vehicle.group_distribution_vehicle_manager"
+              sequence="6"/>
+
+</odoo>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Default visit results (company-agnostic: company_id left empty).
+         Never bind business logic to result names: use is_success /
+         requires_notes / requires_revisit flags. -->
+
+    <record id="visit_result_completed" model="distribution.visit.result">
+        <field name="name">Visit Completed</field>
+        <field name="code">completed</field>
+        <field name="sequence">10</field>
+        <field name="is_success" eval="True"/>
+    </record>
+
+    <record id="visit_result_order_taken" model="distribution.visit.result">
+        <field name="name">Order Taken</field>
+        <field name="code">order_taken</field>
+        <field name="sequence">20</field>
+        <field name="is_success" eval="True"/>
+    </record>
+
+    <record id="visit_result_collected" model="distribution.visit.result">
+        <field name="name">Collected</field>
+        <field name="code">collected</field>
+        <field name="sequence">30</field>
+        <field name="is_success" eval="True"/>
+    </record>
+
+    <record id="visit_result_customer_closed" model="distribution.visit.result">
+        <field name="name">Customer Closed</field>
+        <field name="code">customer_closed</field>
+        <field name="sequence">40</field>
+        <field name="is_success" eval="False"/>
+    </record>
+
+    <record id="visit_result_unavailable" model="distribution.visit.result">
+        <field name="name">Customer Not Available</field>
+        <field name="code">unavailable</field>
+        <field name="sequence">50</field>
+        <field name="is_success" eval="False"/>
+    </record>
+
+    <record id="visit_result_refused" model="distribution.visit.result">
+        <field name="name">Customer Refused</field>
+        <field name="code">refused</field>
+        <field name="sequence">60</field>
+        <field name="is_success" eval="False"/>
+    </record>
+
+    <record id="visit_result_revisit" model="distribution.visit.result">
+        <field name="name">Needs Revisit</field>
+        <field name="code">revisit</field>
+        <field name="sequence">70</field>
+        <field name="is_success" eval="False"/>
+        <field name="requires_revisit" eval="True"/>
+        <field name="requires_notes" eval="True"/>
+    </record>
+
+    <record id="visit_result_partial" model="distribution.visit.result">
+        <field name="name">Partial Completion</field>
+        <field name="code">partial</field>
+        <field name="sequence">80</field>
+        <field name="is_success" eval="False"/>
+        <field name="requires_notes" eval="True"/>
+    </record>
+
+    <record id="visit_result_other" model="distribution.visit.result">
+        <field name="name">Other</field>
+        <field name="code">other</field>
+        <field name="sequence">90</field>
+        <field name="is_success" eval="False"/>
+        <field name="requires_notes" eval="True"/>
+    </record>
+
+</odoo>

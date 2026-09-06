@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Wizard: Complete Visit -->
+    <record id="view_distribution_visit_complete_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.visit.complete.wizard.form</field>
+        <field name="model">distribution.visit.complete.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Complete Visit">
+                <group>
+                    <group>
+                        <field name="visit_id" readonly="1"/>
+                        <field name="result_id" required="1"/>
+                        <field name="result_is_success" invisible="1"/>
+                        <field name="result_requires_notes" invisible="1"/>
+                        <field name="failure_reason"
+                               required="not result_is_success"
+                               invisible="result_is_success"
+                               placeholder="Why was this visit unsuccessful?"/>
+                    </group>
+                    <group>
+                        <field name="requires_revisit"/>
+                        <field name="suggested_revisit_date"
+                               required="requires_revisit"
+                               invisible="not requires_revisit"/>
+                    </group>
+                </group>
+                <group>
+                    <field name="result_notes"
+                           required="result_requires_notes"
+                           placeholder="Notes about the result..."/>
+                    <field name="employee_notes"
+                           placeholder="Notes about how the visit went..."/>
+                </group>
+                <footer>
+                    <button name="action_confirm" type="object" string="Confirm"
+                            class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Wizard: Skip Visit -->
+    <record id="view_distribution_visit_skip_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.visit.skip.wizard.form</field>
+        <field name="model">distribution.visit.skip.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Skip Visit">
+                <group>
+                    <field name="visit_id" readonly="1"/>
+                    <field name="skip_reason" placeholder="Why are you skipping this visit?"/>
+                </group>
+                <footer>
+                    <button name="action_confirm" type="object" string="Skip Visit"
+                            class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Wizard: Cancel Route -->
+    <record id="view_distribution_route_cancel_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.route.cancel.wizard.form</field>
+        <field name="model">distribution.route.cancel.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Cancel Route">
+                <group>
+                    <field name="route_id" readonly="1"/>
+                    <field name="cancellation_reason" placeholder="Why is this route being cancelled?"/>
+                </group>
+                <footer>
+                    <button name="action_confirm" type="object" string="Cancel Route"
+                            class="btn-danger"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Wizard: Force Complete Route -->
+    <record id="view_distribution_route_force_complete_wizard_form" model="ir.ui.view">
+        <field name="name">distribution.route.force.complete.wizard.form</field>
+        <field name="model">distribution.route.force.complete.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Force Complete Route">
+                <group>
+                    <field name="route_id" readonly="1"/>
+                    <field name="pending_visit_count"/>
+                    <field name="reason"
+                           placeholder="Open visits will be skipped with this reason. Why are you force completing this route?"/>
+                </group>
+                <footer>
+                    <button name="action_confirm" type="object" string="Force Complete"
+                            class="btn-danger"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

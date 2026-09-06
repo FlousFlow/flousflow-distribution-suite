@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Partner: distribution collections smart button (#60) -->
+    <record id="view_partner_form_inherit_commercial" model="ir.ui.view">
+        <field name="name">res.partner.form.commercial</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_distribution_collections" type="object"
+                        class="oe_stat_button" icon="fa-money"
+                        invisible="distribution_collection_count == 0"
+                        context="{'default_customer_rank': 1}">
+                    <field name="distribution_collection_count" widget="statinfo"
+                           string="Collections"/>
+                </button>
+                <button name="action_view_distribution_sales" type="object"
+                        class="oe_stat_button" icon="fa-road"
+                        invisible="distribution_route_sale_count == 0">
+                    <field name="distribution_route_sale_count" widget="statinfo"
+                           string="Route Sales"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

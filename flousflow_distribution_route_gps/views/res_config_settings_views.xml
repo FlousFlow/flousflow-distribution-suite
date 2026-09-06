@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Settings: GPS & Geofence section -->
+    <record id="res_config_settings_view_form_gps" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.gps.geofence</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id"
+               ref="flousflow_distribution_route_base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='distribution_route_base']" position="inside">
+                <block title="GPS &amp; Geofence" name="distribution_gps_setting_container">
+                    <setting id="gps_enabled_setting" string="Enable GPS Validation"
+                             help="When disabled, route management keeps working exactly as before the GPS module">
+                        <field name="distribution_gps_enabled"/>
+                    </setting>
+                    <setting id="gps_geofence_mode_setting" string="Geofence Validation Mode"
+                             help="Warning: allow but record outside visits. Strict: block check-in outside the geofence">
+                        <field name="distribution_geofence_mode"/>
+                    </setting>
+                    <setting id="gps_default_radius_setting" string="Default Geofence Radius (m)"
+                             help="Used when neither the customer nor the area defines a radius">
+                        <field name="distribution_default_geofence_radius"/>
+                    </setting>
+                    <setting id="gps_missing_location_setting" string="Missing Customer Location"
+                             help="What to do when the customer has no stored GPS location">
+                        <field name="distribution_missing_customer_location_policy"/>
+                    </setting>
+                    <setting id="gps_max_accuracy_setting" string="Maximum GPS Accuracy (m)"
+                             help="Positions less accurate than this are handled by the accuracy validation mode">
+                        <field name="gps_maximum_accuracy"/>
+                    </setting>
+                    <setting id="gps_accuracy_mode_setting" string="GPS Accuracy Validation Mode"
+                             help="Warning: allow but record. Strict: block operations with low accuracy">
+                        <field name="gps_accuracy_validation_mode"/>
+                    </setting>
+                    <setting id="gps_max_age_setting" string="Maximum GPS Position Age (seconds)"
+                             help="Older positions are rejected and must be re-captured">
+                        <field name="gps_max_position_age_seconds"/>
+                    </setting>
+                    <setting id="gps_checkout_geofence_setting" string="Validate Check-Out Geofence"
+                             help="Apply geofence rules on check-out too. Disabled by default: representatives may finish the visit after moving away">
+                        <field name="validate_checkout_geofence"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

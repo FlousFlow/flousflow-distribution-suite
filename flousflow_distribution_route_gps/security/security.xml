@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Multi-company isolation for the GPS audit log -->
+    <record id="rule_distribution_visit_gps_event_company" model="ir.rule">
+        <field name="name">GPS Event: multi-company</field>
+        <field name="model_id" ref="model_distribution_visit_gps_event"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <!-- Distribution User: read only the GPS events of their own visits
+         (or events they triggered themselves, e.g. customer captures). -->
+    <record id="rule_distribution_visit_gps_event_own" model="ir.rule">
+        <field name="name">GPS Event: own events only</field>
+        <field name="model_id" ref="model_distribution_visit_gps_event"/>
+        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_user'))]"/>
+        <field name="domain_force">['|', ('user_id', '=', user.id), ('visit_id.employee_id', 'in', user.employee_ids.ids)]</field>
+    </record>
+
+    <!-- Manager: all events within allowed companies -->
+    <record id="rule_distribution_visit_gps_event_manager" model="ir.rule">
+        <field name="name">GPS Event: manager full access</field>
+        <field name="model_id" ref="model_distribution_visit_gps_event"/>
+        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_manager'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+</odoo>

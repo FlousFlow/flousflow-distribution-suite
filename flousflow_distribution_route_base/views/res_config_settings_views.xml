@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Settings: Distribution Route Management -->
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.distribution.route.base</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Distribution Route" string="Distribution Route" name="distribution_route_base"
+                     logo="/flousflow_distribution_route_base/static/description/icon.png">
+                    <block title="Distribution Areas" name="distribution_area_setting_container">
+                        <setting id="default_distribution_area_setting" string="Default Distribution Area"
+                                 help="Area proposed by default on new customer records">
+                            <field name="distribution_default_area_id"/>
+                        </setting>
+                        <setting id="multi_area_employee_setting" string="Multiple Areas per Employee"
+                                 help="Allow an employee to operate in more than one distribution area">
+                            <field name="allow_multi_area_employee"/>
+                        </setting>
+                        <setting id="require_area_customer_setting" string="Require Area on Customer"
+                                 help="Block saving customers without a distribution area">
+                            <field name="require_distribution_area_on_customer"/>
+                        </setting>
+                        <setting id="require_area_employee_setting" string="Require Areas on Distribution Employees"
+                                 help="Block saving distribution employees without at least one area">
+                            <field name="require_distribution_area_on_distribution_employee"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Settings Action -->
+    <record id="action_distribution_config_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="path">distribution-settings</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'module' : 'distribution_route_base', 'bin_size': False}</field>
+    </record>
+
+</odoo>
