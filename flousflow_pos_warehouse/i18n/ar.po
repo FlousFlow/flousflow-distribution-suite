@@ -1,0 +1,74 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_pos_warehouse
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-25 00:00+0000\n"
+"PO-Revision-Date: 2026-08-25 00:00+0000\n"
+"Last-Translator: Mohamed Gamal <mohamed@flousflow.com>\n"
+"Language-Team: Arabic <ar@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
+
+#. module: flousflow_pos_warehouse
+#: model:ir.module.module,shortdesc:flousflow_pos_warehouse.module_flousflow_pos_warehouse
+msgid "POS Warehouse Assignment"
+msgstr "تخصيص مخزن لنقطة البيع"
+
+#. module: flousflow_pos_warehouse
+#: model:ir.module.module,summary:flousflow_pos_warehouse.module_flousflow_pos_warehouse
+msgid "Assign each Point of Sale to a specific warehouse so POS sales deduct from that warehouse only."
+msgstr "خصّص لكل نقطة بيع مخزنًا محددًا بحيث تُخصم مبيعات نقطة البيع من مخزون ذلك المخزن فقط."
+
+#. module: flousflow_pos_warehouse
+#. odoo-python
+#: code:addons/flousflow_pos_warehouse/models/pos_config.py:0
+msgid "The warehouse assigned to this Point of Sale (%s) does not have a valid stock operation type."
+msgstr "المخزن المعيّن لنقطة البيع هذه (%s) لا يحتوي على نوع عملية مخزنية صالح."
+
+#. module: flousflow_pos_warehouse
+#. odoo-python
+#: code:addons/flousflow_pos_warehouse/models/pos_config.py:0
+msgid "The warehouse assigned to this Point of Sale (%(pos)s) must belong to the same company as the Point of Sale."
+msgstr "يجب أن ينتمي المخزن المعيّن لنقطة البيع هذه (%(pos)s) إلى نفس شركة نقطة البيع."
+
+#. module: flousflow_pos_warehouse
+#: model:ir.model.fields,field_description:flousflow_pos_warehouse.field_pos_config__warehouse_source_location_id
+msgid "Warehouse Source Location"
+msgstr "موقع المخزن المصدر"
+
+#. module: flousflow_pos_warehouse
+#: model:ir.model.fields,help:flousflow_pos_warehouse.field_pos_config__warehouse_source_location_id
+msgid "Stock location from which POS sales are deducted. Derived automatically from the assigned warehouse."
+msgstr "الموقع المخزني الذي تُخصم منه مبيعات نقطة البيع. يُشتق تلقائيًا من المخزن المعيّن."
+
+#. module: flousflow_pos_warehouse
+#: model_terms:ir.ui.view,arch_db:flousflow_pos_warehouse.view_pos_config_form_pos_warehouse
+msgid "Inventory"
+msgstr "المخزون"
+
+#. module: flousflow_pos_warehouse
+#: model_terms:ir.ui.view,arch_db:flousflow_pos_warehouse.view_pos_config_form_pos_warehouse
+msgid "Derived Automatically"
+msgstr "مُشتق تلقائيًا"
+
+#. module: flousflow_pos_warehouse
+#: model_terms:ir.ui.view,arch_db:flousflow_pos_warehouse.view_pos_config_form_pos_warehouse
+msgid "Every order made at this Point of Sale is deducted from this warehouse's stock. The operation type and source location are derived automatically."
+msgstr "يُخصم كل طلب يتم في نقطة البيع هذه من مخزون هذا المخزن. نوع العملية وموقع المصدر يُشتقّان تلقائيًا."
+
+#. module: flousflow_pos_warehouse
+#: model_terms:ir.ui.view,arch_db:flousflow_pos_warehouse.view_pos_config_form_pos_warehouse
+msgid "Outgoing operation type used to create the stock pickings of POS orders. Derived from the assigned warehouse."
+msgstr "نوع العملية الصادرة المستخدم لإنشاء حركات المخزون لطلبات نقطة البيع. مُشتق من المخزن المعيّن."
+
+#. module: flousflow_pos_warehouse
+#: model_terms:ir.ui.view,arch_db:flousflow_pos_warehouse.view_pos_config_form_pos_warehouse
+msgid "Stock location from which POS sales are deducted. Derived from the assigned warehouse."
+msgstr "الموقع المخزني الذي تُخصم منه مبيعات نقطة البيع. مُشتق من المخزن المعيّن."

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced" style="max-width: 100%;">
+        <img class="img img-fluid" src="thumbnail.png" alt="POS Warehouse Assignment" style="width: 100%;"/>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced" style="max-width: 100%;">
+        <img class="img img-fluid" src="banner.png" alt="POS Warehouse Assignment Banner" style="width: 100%;"/>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#714B67;">Connect Every POS to the Right Warehouse</h2>
+        <h3 class="oe_slogan" style="opacity: 0.7;">Automatically deduct POS sales from the warehouse assigned to each Point of Sale — and route returns back to that same warehouse.</h3>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="alert alert-info" style="padding: 1em 1.5em;">
+            <i class="fa fa-info-circle"></i>
+            <b>No parallel inventory engine.</b> The module reuses Odoo's standard
+            <code>pos.config.warehouse_id</code>, <code>stock.warehouse.pos_type_id</code> and the native
+            <code>stock.picking</code> / <code>stock.move</code> flow. No core file is modified, no direct
+            <code>stock.quant</code> update, and stock valuation, lots/serials and services behave exactly as in
+            standard Odoo.
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Key Features</h3>
+        <div class="oe_span12">
+            <div class="oe_row">
+                <div class="oe_span4">
+                    <div class="oe_padded">
+                        <h4><i class="fa fa-cubes"></i> POS-to-Warehouse assignment</h4>
+                        <p>A dedicated <b>Inventory</b> tab on every Point of Sale configuration. Pick the
+                        warehouse; the operation type and source stock location are derived automatically.</p>
+                    </div>
+                </div>
+                <div class="oe_span4">
+                    <div class="oe_padded">
+                        <h4><i class="fa fa-arrow-circle-down"></i> Correct stock deduction</h4>
+                        <p>POS sales create the standard outgoing picking whose source location is the assigned
+                        warehouse's stock (e.g. <code>CAI/Stock</code>). Other warehouses are never touched.</p>
+                    </div>
+                </div>
+                <div class="oe_span4">
+                    <div class="oe_padded">
+                        <h4><i class="fa fa-arrow-circle-up"></i> Warehouse-based returns</h4>
+                        <p>Full and partial returns go back into the assigned warehouse's stock — never into the
+                        company's default warehouse.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="oe_row">
+                <div class="oe_span4">
+                    <div class="oe_padded">
+                        <h4><i class="fa fa-building"></i> Multi-branch support</h4>
+                        <p>Cairo, Giza, Alexandria… each Point of Sale consumes its own branch warehouse. Several
+                        POS configurations can share the same warehouse.</p>
+                    </div>
+                </div>
+                <div class="oe_span4">
+                    <div class="oe_padded">
+                        <h4><i class="fa fa-user-o"></i> Cashier independent</h4>
+                        <p>The warehouse belongs to the POS configuration, not to the logged-in user or employee.
+                        Any cashier at the same POS uses the same warehouse.</p>
+                    </div>
+                </div>
+                <div class="oe_span4">
+                    <div class="oe_padded">
+                        <h4><i class="fa fa-shield"></i> Multi-company &amp; session safety</h4>
+                        <p>A POS can only use a warehouse of its own company, and the warehouse cannot be changed
+                        while a POS session is open — so one session never consumes two warehouses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Configuration</h3>
+        <div class="oe_span12">
+            <div class="alert alert-secondary" style="padding: 1em 1.5em;">
+                <ol>
+                    <li>Create your warehouses:
+                        <b>Inventory → Configuration → Warehouses</b> (e.g. <i>Cairo</i> <code>CAI</code>,
+                        <i>Giza</i> <code>GIZ</code>, <i>Alexandria</i> <code>ALX</code>).</li>
+                    <li>Open each Point of Sale:
+                        <b>Point of Sale → Configuration → Point of Sale → [POS] → Inventory</b> tab.</li>
+                    <li>Set <b>POS Warehouse</b> and save. The <b>Operation Type</b> and <b>Source Location</b>
+                        are derived automatically.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Compatibility</h3>
+        <div class="oe_span12">
+            <div class="oe_span6">
+                <div class="oe_padded">
+                    <p><i class="fa fa-check-circle-o text-success"></i> Verified against <b>Odoo 19</b> (Community
+                    Edition).</p>
+                    <p><i class="fa fa-check-circle-o text-success"></i> Works with automated / manual valuation,
+                    AVCO, FIFO and Standard Price.</p>
+                </div>
+            </div>
+            <div class="oe_span6">
+                <div class="oe_padded">
+                    <p><i class="fa fa-check-circle-o text-success"></i> Lots, serials and service products fully
+                    supported.</p>
+                    <p><i class="fa fa-check-circle-o text-success"></i> Offline POS friendly — no real-time stock
+                    blocking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">License</h3>
+        <div class="oe_span12">
+            <p class="text-center">This module is published under the <b>LGPL-3</b> license, developed by
+            <a href="https://flousflow.com" target="_blank">Flous Flow</a>.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

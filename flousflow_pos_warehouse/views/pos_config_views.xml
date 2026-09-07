@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_pos_config_form_pos_warehouse" model="ir.ui.view">
+        <field name="name">pos.config.form.pos.warehouse</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Inventory" name="inventory">
+                    <group>
+                        <group string="Inventory">
+                            <field name="warehouse_id"
+                                   options="{'no_create': True}"
+                                   domain="[('company_id', '=', company_id)]"
+                                   help="Every order made at this Point of Sale is deducted from this warehouse's stock. The operation type and source location are derived automatically."/>
+                        </group>
+                        <group string="Derived Automatically">
+                            <field name="picking_type_id" readonly="1"
+                                   help="Outgoing operation type used to create the stock pickings of POS orders. Derived from the assigned warehouse."/>
+                            <field name="warehouse_source_location_id" readonly="1"
+                                   help="Stock location from which POS sales are deducted. Derived from the assigned warehouse."/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
