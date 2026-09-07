@@ -2,7 +2,7 @@
 
 # FlousFlow Distribution Management Suite
 
-**9 integrated modules** for Odoo 19 Community — routes & visits, GPS geofencing,
+**12 modules** for Odoo 19 Community — routes & visits, GPS geofencing,
 vehicle warehouses & POS, commercial sales & collections with a full
 operational-to-accounting workflow.
 
@@ -21,6 +21,9 @@ operational-to-accounting workflow.
 | `flousflow_distribution_dashboard_gps` | Dashboard GPS analytics (auto-installs with GPS module) |
 | `flousflow_distribution_dashboard_vehicle` | Dashboard vehicle analytics (auto-installs with vehicles) |
 | `flousflow_distribution_commercial` | Visits ↔ Sales Orders ↔ POS ↔ Collections ↔ Accounting |
+| `flousflow_partner_location` | Customer GPS locations: Google-Maps link + device capture widget |
+| `flousflow_pos_warehouse` | Assign each POS to a specific warehouse (dependency of vehicle) |
+| `flousflow_branch_analytic` | Branch / profit-center analytic on POS, sales & invoices (dependency of vehicle) |
 
 ## Installation
 
