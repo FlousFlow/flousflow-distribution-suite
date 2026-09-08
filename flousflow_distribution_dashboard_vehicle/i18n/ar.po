@@ -21,19 +21,19 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Completed"
-msgstr "مكتملة"
+msgstr "Completed"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid ""
 "Current Vehicle Stock (live stock.quant — not a historical route snapshot)"
-msgstr "مخزون المركبة الحالي (من stock.quant المباشر — ليس لقطة تاريخية)"
+msgstr "Current Vehicle Stock (live stock.quant — not a historical route snapshot)"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard_vehicle.field_distribution_dashboard_data__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "Display Name"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #: model:ir.model,name:flousflow_distribution_dashboard_vehicle.model_distribution_dashboard_data
@@ -44,63 +44,63 @@ msgstr "Distribution Dashboard Data Provider"
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Executed"
-msgstr "منفذة"
+msgstr "Executed"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard_vehicle.field_distribution_dashboard_data__id
 msgid "ID"
-msgstr "المُعرف"
+msgstr "ID"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Products"
-msgstr "المنتجات"
+msgstr "Products"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Routes"
-msgstr "مسارات"
+msgstr "Routes"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Success"
-msgstr "نجاح"
+msgstr "Success"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Total Qty On Hand"
-msgstr "إجمالي الكمية المتاحة"
+msgstr "Total Qty On Hand"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Vehicle"
-msgstr "المركبة"
+msgstr "Vehicle"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard_vehicle.action_dashboard_vehicle_analysis
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard_vehicle.menu_dashboard_vehicle_analysis
 msgid "Vehicle Analysis"
-msgstr "Vehicle Analysi"
+msgstr "Vehicle Analysis"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Vehicle Utilization (routes / visits per vehicle)"
-msgstr "استخدام المركبات (مسارات / زيارات لكل مركبة)"
+msgstr "Vehicle Utilization (routes / visits per vehicle)"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Visits"
-msgstr "زيارات"
+msgstr "Visits"
 
 #. module: flousflow_distribution_dashboard_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_vehicle/models/distribution_dashboard_data.py:0
 msgid "Warehouse"
-msgstr "المستودع"
+msgstr "Warehouse"

@@ -31,7 +31,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_search
 msgid "Active"
-msgstr "نشط"
+msgstr "Active"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__allow_completion_without_customer
@@ -42,7 +42,7 @@ msgstr "Allow Completion Without Customer"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_company__distribution_allow_multi_area_employee
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_config_settings__allow_multi_area_employee
 msgid "Allow Multiple Areas per Employee"
-msgstr "Allow Multiple Areas لكل Employee"
+msgstr "Allow Multiple Areas per Employee"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
@@ -66,17 +66,17 @@ msgstr "Allow completing this type of visit even if no customer is linked."
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_search
 msgid "Archived"
-msgstr ""
+msgstr "Archived"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__manager_id
 msgid "Area Manager"
-msgstr "المنطقة المدير"
+msgstr "Area Manager"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
 msgid "Area proposed by default on new customer records"
-msgstr "Area proposed بواسطة default on new customer records"
+msgstr "Area proposed by default on new customer records"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_hr_employee_form_inherit_distribution
@@ -89,9 +89,7 @@ msgstr "Areas in which this employee operates..."
 msgid ""
 "At least one distribution area is required for the distribution employee "
 "'%(employee)s' (see Distribution settings)."
-msgstr ""
-"At least one distribution المنطقة is مطلوب for the distribution الموظف "
-"'%(الموظف)s' (see Distribution settings)."
+msgstr "At least one distribution area is required for the distribution employee '%(employee)s' (see Distribution settings)."
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
@@ -118,29 +116,29 @@ msgstr "Block saving distribution employees without at least one area."
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "Business Rules"
-msgstr "Business Rule"
+msgstr "Business Rules"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__child_ids
 msgid "Child Areas"
-msgstr "Child Area"
+msgstr "Child Areas"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__code
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__code
 msgid "Code"
-msgstr "الرمز"
+msgstr "Code"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__color
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__color
 msgid "Color Index"
-msgstr ""
+msgstr "Color Index"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model,name:flousflow_distribution_route_base.model_res_company
 msgid "Companies"
-msgstr "الشركات"
+msgstr "Companies"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__company_id
@@ -148,22 +146,22 @@ msgstr "الشركات"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_search
 msgid "Company"
-msgstr "الشركة"
+msgstr "Company"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model,name:flousflow_distribution_route_base.model_res_config_settings
 msgid "Config Settings"
-msgstr "تهيئة الإعدادات"
+msgstr "Config Settings"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.ui.menu,name:flousflow_distribution_route_base.menu_distribution_config
 msgid "Configuration"
-msgstr "الإعدادات"
+msgstr "Configuration"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model,name:flousflow_distribution_route_base.model_res_partner
 msgid "Contact"
-msgstr "جهة الاتصال"
+msgstr "Contact"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_base.action_distribution_area
@@ -173,19 +171,19 @@ msgstr "Create your first distribution area"
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_base.action_distribution_visit_type
 msgid "Create your first visit type"
-msgstr "Create your first الزيارة type"
+msgstr "Create your first visit type"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__create_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__create_uid
 msgid "Created by"
-msgstr "أنشئ بواسطة"
+msgstr "Created by"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__create_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__create_date
 msgid "Created on"
-msgstr "أُنشئ في"
+msgstr "Created on"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_company__distribution_default_area_id
@@ -211,7 +209,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "Description"
-msgstr "الوصف"
+msgstr "Description"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__display_name
@@ -222,13 +220,13 @@ msgstr "الوصف"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_partner__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "Display Name"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.ui.menu,name:flousflow_distribution_route_base.menu_distribution_root
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_hr_employee_form_inherit_distribution
 msgid "Distribution"
-msgstr "التوزيع"
+msgstr "Distribution"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_hr_employee__distribution_active
@@ -255,7 +253,7 @@ msgstr "Distribution Area"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_hr_employee_form_inherit_distribution
 msgid "Distribution Areas"
-msgstr "Distribution Area"
+msgstr "Distribution Areas"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_hr_employee__is_distribution_employee
@@ -272,7 +270,7 @@ msgstr "DistributiInformation"
 #: model:res.groups.privilege,name:flousflow_distribution_route_base.res_groups_privilege_distribution_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
 msgid "Distribution Route"
-msgstr "مسار التوزيع"
+msgstr "Distribution Route"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_hr_employee__distribution_supervisor_id
@@ -283,7 +281,7 @@ msgstr "DistributiSupervisor"
 #. module: flousflow_distribution_route_base
 #: model:ir.model,name:flousflow_distribution_route_base.model_distribution_visit_type
 msgid "Distribution Visit Type"
-msgstr "نوع Distribution Visit"
+msgstr "Distribution Visit Type"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_res_partner__distribution_area_id
@@ -295,7 +293,7 @@ msgstr "Distribution area of this contact."
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_res_company__distribution_default_area_id
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_res_config_settings__distribution_default_area_id
 msgid "Distribution area proposed by default on new customer records."
-msgstr "Distribution area proposed بواسطة default on new customer records."
+msgstr "Distribution area proposed by default on new customer records."
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_hr_employee__distribution_area_ids
@@ -308,24 +306,24 @@ msgstr "Distribution areas in which this employee may operate."
 msgid ""
 "Distribution managers: full access to distribution master data and "
 "configuration."
-msgstr ""
+msgstr "Distribution managers: full access to distribution master data and configuration."
 
 #. module: flousflow_distribution_route_base
 #: model:res.groups,comment:flousflow_distribution_route_base.group_distribution_route_user
 msgid ""
 "Distribution representatives: read-only access to distribution master data."
-msgstr ""
+msgstr "Distribution representatives: read-only access to distribution master data."
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model,name:flousflow_distribution_route_base.model_hr_employee
 msgid "Employee"
-msgstr "الموظف"
+msgstr "Employee"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__employee_ids
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 msgid "Employees"
-msgstr "الموظفون"
+msgstr "Employees"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_distribution_visit_type__icon
@@ -336,7 +334,7 @@ msgstr "FontAwesome icclass, e.g. 'fa-money'. display purposes only."
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "General Information"
-msgstr ""
+msgstr "General Information"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_res_partner_filter_inherit_distribution
@@ -352,12 +350,12 @@ msgstr "Has Distribution Area"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_config_settings__id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_partner__id
 msgid "ID"
-msgstr "المُعرف"
+msgstr "ID"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__icon
 msgid "Icon"
-msgstr ""
+msgstr "Icon"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
@@ -368,46 +366,46 @@ msgstr "Internal description of this distribution area..."
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__write_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__write_uid
 msgid "Last Updated by"
-msgstr "آخر تحديث بواسطة"
+msgstr "Last Updated by"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__write_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__write_date
 msgid "Last Updated on"
-msgstr "آخر تحديث في"
+msgstr "Last Updated on"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 msgid "Management"
-msgstr ""
+msgstr "Management"
 
 #. module: flousflow_distribution_route_base
 #: model:res.groups,name:flousflow_distribution_route_base.group_distribution_route_manager
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 msgid "Manager"
-msgstr "المدير"
+msgstr "Manager"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
 msgid "Multiple Areas per Employee"
-msgstr "Multiple Areas لكل Employee"
+msgstr "Multiple Areas per Employee"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 msgid "My Company"
-msgstr "My الشركة"
+msgstr "My Company"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__name
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__name
 msgid "Name"
-msgstr "الاسم"
+msgstr "Name"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_search
 msgid "Name or Code"
-msgstr "الاسم or الرمز"
+msgstr "Name or Code"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_res_partner_filter_inherit_distribution
@@ -417,7 +415,7 @@ msgstr "No Distribution Area"
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_distribution_visit_type__require_notes
 msgid "Notes are mandatory when completing a visit of this type."
-msgstr "Notes are mandatory when completing a الزيارة of this type."
+msgstr "Notes are mandatory when completing a visit of this type."
 
 #. module: flousflow_distribution_route_base
 #. odoo-python
@@ -425,9 +423,7 @@ msgstr "Notes are mandatory when completing a الزيارة of this type."
 msgid ""
 "Only one distribution area is allowed per employee (see Distribution "
 "settings)."
-msgstr ""
-"Only one distribution المنطقة is allowed per الموظف (see Distribution "
-"settings)."
+msgstr "Only one distribution area is allowed per employee (see Distribution settings)."
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_distribution_area__code
@@ -447,59 +443,59 @@ msgstr ""
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__parent_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 msgid "Parent Area"
-msgstr "منطقة الأب"
+msgstr "Parent Area"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model,name:flousflow_distribution_route_base.model_hr_employee_public
 msgid "Public Employee"
-msgstr "موظف في القطاع العام"
+msgstr "Public Employee"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_company__distribution_require_area_on_customer
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_config_settings__require_distribution_area_on_customer
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
 msgid "Require Area on Customer"
-msgstr "إلزام Area on Customer"
+msgstr "Require Area on Customer"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_company__distribution_require_area_on_distribution_employee
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_res_config_settings__require_distribution_area_on_distribution_employee
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.res_config_settings_view_form
 msgid "Require Areas on Distribution Employees"
-msgstr "Require Areas on Distribution Employee"
+msgstr "Require Areas on Distribution Employees"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__require_customer
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_search
 msgid "Require Customer"
-msgstr "إلزام Customer"
+msgstr "Require Customer"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__require_notes
 msgid "Require Notes"
-msgstr "Require Note"
+msgstr "Require Notes"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_area__sequence
 #: model:ir.model.fields,field_description:flousflow_distribution_route_base.field_distribution_visit_type__sequence
 msgid "Sequence"
-msgstr "التسلسل"
+msgstr "Sequence"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.actions.act_window,name:flousflow_distribution_route_base.action_distribution_config_settings
 #: model:ir.ui.menu,name:flousflow_distribution_route_base.menu_distribution_settings
 msgid "Settings"
-msgstr "الإعدادات"
+msgstr "Settings"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 msgid "Sub Areas"
-msgstr "Sub Area"
+msgstr "Sub Areas"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.constraint,message:flousflow_distribution_route_base.constraint_distribution_area_code_company_uniq
 msgid "The area code must be unique per company!"
-msgstr "The area code must be unique لكل company!"
+msgstr "The area code must be unique per company!"
 
 #. module: flousflow_distribution_route_base
 #. odoo-python
@@ -507,9 +503,7 @@ msgstr "The area code must be unique لكل company!"
 msgid ""
 "The distribution area '%(area)s' does not belong to the company of the "
 "employee '%(employee)s'."
-msgstr ""
-"The distribution المنطقة '%(المنطقة)s' does not belong to the الشركة of the "
-"الموظف '%(الموظف)s'."
+msgstr "The distribution area '%(area)s' does not belong to the company of the employee '%(employee)s'."
 
 #. module: flousflow_distribution_route_base
 #. odoo-python
@@ -517,35 +511,33 @@ msgstr ""
 msgid ""
 "The employee '%(employee)s' does not belong to the company of the "
 "distribution area '%(area)s'."
-msgstr ""
-"The الموظف '%(الموظف)s' does not belong to the الشركة of the distribution "
-"المنطقة '%(المنطقة)s'."
+msgstr "The employee '%(employee)s' does not belong to the company of the distribution area '%(area)s'."
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.constraint,message:flousflow_distribution_route_base.constraint_distribution_visit_type_code_company_uniq
 msgid "The visit type code must be unique per company!"
-msgstr "The الزيارة type code must be unique لكل company!"
+msgstr "The visit type code must be unique per company!"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_hr_employee__is_distribution_employee
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_hr_employee_public__is_distribution_employee
 msgid "This employee works in distribution (e.g. sales representative)."
-msgstr "هذا الموظف works distributi(e.g. المبيعات representative)."
+msgstr "This employee works in distribution (e.g. sales representative)."
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_search
 msgid "Top Level Areas"
-msgstr "Top Level Area"
+msgstr "Top Level Areas"
 
 #. module: flousflow_distribution_route_base
 #: model:res.groups,name:flousflow_distribution_route_base.group_distribution_route_user
 msgid "User"
-msgstr "المستخدم"
+msgstr "User"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "Visit Type"
-msgstr "نوع الزيارة"
+msgstr "Visit Type"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.actions.act_window,name:flousflow_distribution_route_base.action_distribution_visit_type
@@ -553,7 +545,7 @@ msgstr "نوع الزيارة"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_list
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_search
 msgid "Visit Types"
-msgstr "أنواع الزيارات"
+msgstr "Visit Types"
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_distribution_visit_type__require_customer
@@ -563,7 +555,7 @@ msgstr "Visits of this type must be linked to a customer."
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "When should this visit type be used..."
-msgstr "When should this الزيارة type be used..."
+msgstr "When should this visit type be used..."
 
 #. module: flousflow_distribution_route_base
 #: model:ir.model.fields,help:flousflow_distribution_route_base.field_hr_employee__distribution_active
@@ -577,31 +569,29 @@ msgstr "Whether this employee is currently active in distribution operations."
 msgid ""
 "You cannot create a recursive hierarchy of distribution areas.\n"
 "The area '%(area)s' cannot be its own parent or an ancestor of itself."
-msgstr ""
-"You لا يمكن create a recursive hierarchy of distribution المناطق.\n"
-"The المنطقة '%(المنطقة)s' لا يمكن be its own parent or an ancestor of itself."
+msgstr "You cannot create a recursive hierarchy of distribution areas.\\nThe area '%(area)s' cannot be its own parent or an ancestor of itself."
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 msgid "e.g. CAI-MDI"
-msgstr ""
+msgstr "e.g. CAI-MDI"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_area_form
 msgid "e.g. Cairo"
-msgstr ""
+msgstr "e.g. Cairo"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "e.g. Sales Visit"
-msgstr "e.g. المبيعات الزيارة"
+msgstr "e.g. Sales Visit"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "e.g. fa-money"
-msgstr ""
+msgstr "e.g. fa-money"
 
 #. module: flousflow_distribution_route_base
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_base.view_distribution_visit_type_form
 msgid "e.g. sales"
-msgstr "e.g. sale"
+msgstr "e.g. sales"

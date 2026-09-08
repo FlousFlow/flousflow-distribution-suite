@@ -1,0 +1,196 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flousflow_stock_barcode
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: flousflow_stock_barcode
+msgid "%(count)s barcode(s) were generated."
+msgstr "%(count)s barcode(s) were generated."
+
+#. module: flousflow_stock_barcode
+msgid "A barcode could not be generated after multiple attempts because generated values are already in use."
+msgstr "A barcode could not be generated after multiple attempts because generated values are already in use."
+
+#. module: flousflow_stock_barcode
+msgid "Assign barcodes to existing products that have no barcode."
+msgstr "Assign barcodes to existing products that have no barcode."
+
+#. module: flousflow_stock_barcode
+msgid "Automatic Product Barcode Configuration"
+msgstr "Automatic Product Barcode Configuration"
+
+#. module: flousflow_stock_barcode
+msgid "Automatic Product Barcodes"
+msgstr "Automatic Product Barcodes"
+
+#. module: flousflow_stock_barcode
+msgid "Automatically assign a unique barcode when a new product variant is created."
+msgstr "Automatically assign a unique barcode when a new product variant is created."
+
+#. module: flousflow_stock_barcode
+msgid "Barcode Format"
+msgstr "Barcode Format"
+
+#. module: flousflow_stock_barcode
+msgid "Barcode Generation"
+msgstr "Barcode Generation"
+
+#. module: flousflow_stock_barcode
+msgid "Barcode Preview"
+msgstr "Barcode Preview"
+
+#. module: flousflow_stock_barcode
+msgid "Barcode Sequence"
+msgstr "Barcode Sequence"
+
+#. module: flousflow_stock_barcode
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: flousflow_stock_barcode
+msgid "Company"
+msgstr "Company"
+
+#. module: flousflow_stock_barcode
+msgid "EAN-13"
+msgstr "EAN-13"
+
+#. module: flousflow_stock_barcode
+msgid "Enable Automatic Barcode Generation"
+msgstr "Enable Automatic Barcode Generation"
+
+#. module: flousflow_stock_barcode
+msgid "Existing Barcode Policy"
+msgstr "Existing Barcode Policy"
+
+#. module: flousflow_stock_barcode
+msgid "Existing Products"
+msgstr "Existing Products"
+
+#. module: flousflow_stock_barcode
+msgid "Existing product barcodes are never overwritten."
+msgstr "Existing product barcodes are never overwritten."
+
+#. module: flousflow_stock_barcode
+msgid "First number to be generated."
+msgstr "First number to be generated."
+
+#. module: flousflow_stock_barcode
+msgid "Generate Barcodes"
+msgstr "Generate Barcodes"
+
+#. module: flousflow_stock_barcode
+msgid "Generate Missing Barcodes"
+msgstr "Generate Missing Barcodes"
+
+#. module: flousflow_stock_barcode
+msgid "Generate Product Barcodes"
+msgstr "Generate Product Barcodes"
+
+#. module: flousflow_stock_barcode
+msgid "Include Archived Products"
+msgstr "Include Archived Products"
+
+#. module: flousflow_stock_barcode
+msgid "Include archived product variants when generating missing barcodes."
+msgstr "Include archived product variants when generating missing barcodes."
+
+#. module: flousflow_stock_barcode
+msgid "Invalid EAN-13 configuration"
+msgstr "Invalid EAN-13 configuration"
+
+#. module: flousflow_stock_barcode
+msgid "Keep Existing Barcodes"
+msgstr "Keep Existing Barcodes"
+
+#. module: flousflow_stock_barcode
+msgid "No barcode configuration exists for this company. Configure it in Settings first."
+msgstr "No barcode configuration exists for this company. Configure it in Settings first."
+
+#. module: flousflow_stock_barcode
+msgid "No barcode configuration found for %(company)s. Configure it in Settings first."
+msgstr "No barcode configuration found for %(company)s. Configure it in Settings first."
+
+#. module: flousflow_stock_barcode
+msgid "No selected product is missing a barcode."
+msgstr "No selected product is missing a barcode."
+
+#. module: flousflow_stock_barcode
+msgid "Number of digits of the sequential part. Example: prefix 20 and 10 digits produce 200000000001."
+msgstr "Number of digits of the sequential part. Example: prefix 20 and 10 digits produce 200000000001."
+
+#. module: flousflow_stock_barcode
+msgid "Only one barcode configuration can exist per company."
+msgstr "Only one barcode configuration can exist per company."
+
+#. module: flousflow_stock_barcode
+msgid "Optional prefix prepended to the generated number."
+msgstr "Optional prefix prepended to the generated number."
+
+#. module: flousflow_stock_barcode
+msgid "Optional prefix prepended to the generated number. Must contain digits only for EAN-13."
+msgstr "Optional prefix prepended to the generated number. Must contain digits only for EAN-13."
+
+#. module: flousflow_stock_barcode
+msgid "Prefix"
+msgstr "Prefix"
+
+#. module: flousflow_stock_barcode
+msgid "Prefix + Sequential Numeric"
+msgstr "Prefix + Sequential Numeric"
+
+#. module: flousflow_stock_barcode
+msgid "Product barcode sequence - %s"
+msgstr "Product barcode sequence - %s"
+
+#. module: flousflow_stock_barcode
+msgid "Products Without Barcode"
+msgstr "Products Without Barcode"
+
+#. module: flousflow_stock_barcode
+msgid "Sequence Digits"
+msgstr "Sequence Digits"
+
+#. module: flousflow_stock_barcode
+msgid "Sequential Numeric"
+msgstr "Sequential Numeric"
+
+#. module: flousflow_stock_barcode
+msgid "Sequential Numeric, Prefix + Sequential Numeric, or EAN-13 (with checksum)."
+msgstr "Sequential Numeric, Prefix + Sequential Numeric, or EAN-13 (with checksum)."
+
+#. module: flousflow_stock_barcode
+msgid "Starting Number"
+msgstr "Starting Number"
+
+#. module: flousflow_stock_barcode
+msgid "The barcode prefix must contain digits only for EAN-13."
+msgstr "The barcode prefix must contain digits only for EAN-13."
+
+#. module: flousflow_stock_barcode
+msgid "The selected configuration produces more than 13 EAN digits. For EAN-13, the prefix length plus the sequence length must equal 12 digits."
+msgstr "The selected configuration produces more than 13 EAN digits. For EAN-13, the prefix length plus the sequence length must equal 12 digits."
+
+#. module: flousflow_stock_barcode
+msgid "The sequence length must be at least 1 digit."
+msgstr "The sequence length must be at least 1 digit."
+
+#. module: flousflow_stock_barcode
+msgid "The starting number cannot be negative."
+msgstr "The starting number cannot be negative."
+
+#. module: flousflow_stock_barcode
+msgid "The starting number does not fit in the configured sequence length."
+msgstr "The starting number does not fit in the configured sequence length."
+
+#. module: flousflow_stock_barcode
+msgid "Use Generate Missing Barcodes to assign barcodes to existing products."
+msgstr "Use Generate Missing Barcodes to assign barcodes to existing products."

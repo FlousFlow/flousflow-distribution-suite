@@ -21,7 +21,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
 msgid "%s route(s) without vehicle assignment"
-msgstr "%s مسار/مسارات بدون تعيين مركبة"
+msgstr "%s route(s) without vehicle assignment"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,help:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_route_start_delay_minutes
@@ -29,9 +29,7 @@ msgstr "%s مسار/مسارات بدون تعيين مركبة"
 msgid ""
 "A route not started whose planned start is older than this appears in Needs "
 "Attention."
-msgstr ""
-"A المسار not started whose planned start is older than this appears in Needs"
-" Attention."
+msgstr "A route not started whose planned start is older than this appears in Needs Attention."
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,help:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_visit_delay_alert_minutes
@@ -39,57 +37,55 @@ msgstr ""
 msgid ""
 "A visit not executed whose planned time is older than this appears in Needs "
 "Attention."
-msgstr ""
-"A الزيارة not executed whose planned time is older than this appears in "
-"Needs Attention."
+msgstr "A visit not executed whose planned time is older than this appears in Needs Attention."
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Areas"
-msgstr "كل المناطق"
+msgstr "All Areas"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Employees"
-msgstr "كل الموظفين"
+msgstr "All Employees"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Results"
-msgstr "كل النتائج"
+msgstr "All Results"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Route States"
-msgstr "كل حالات المسار"
+msgstr "All Route States"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Supervisors"
-msgstr "كل المشرفين"
+msgstr "All Supervisors"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Vehicles"
-msgstr "كل المركبات"
+msgstr "All Vehicles"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "All Visit Types"
-msgstr "كل أنواع الزيارات"
+msgstr "All Visit Types"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Area"
-msgstr "المنطقة"
+msgstr "Area"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
@@ -97,72 +93,72 @@ msgstr "المنطقة"
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard.action_dashboard_area_performance
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_dashboard_area_performance
 msgid "Area Performance"
-msgstr "أداء المناطق"
+msgstr "Area Performance"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Avg Arrival Variance"
-msgstr "متوسط انحراف الوصول"
+msgstr "Avg Arrival Variance"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Avg Duration"
-msgstr "متوسط المدة"
+msgstr "Avg Duration"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Avg Late Delay"
-msgstr "متوسط التأخير"
+msgstr "Avg Late Delay"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Avg Variance"
-msgstr "متوسط الانحراف"
+msgstr "Avg Variance"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Avg Visit Duration"
-msgstr "متوسط مدة الزيارة"
+msgstr "Avg Visit Duration"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Common Result"
-msgstr "أكثر نتيجة شيوعًا"
+msgstr "Common Result"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model,name:flousflow_distribution_dashboard.model_res_company
 msgid "Companies"
-msgstr "الشركات"
+msgstr "Companies"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Completed"
-msgstr "المكتملة"
+msgstr "Completed"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model,name:flousflow_distribution_dashboard.model_res_config_settings
 msgid "Config Settings"
-msgstr "تهيئة الإعدادات"
+msgstr "Config Settings"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Could not load the dashboard. Please try again."
-msgstr "تعذر تحميل اللوحة. حاول مرة أخرى."
+msgstr "Could not load the dashboard. Please try again."
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Customer"
-msgstr "العميل"
+msgstr "Customer"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
@@ -170,25 +166,25 @@ msgstr "العميل"
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard.action_dashboard_customer_analysis
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_dashboard_customer_analysis
 msgid "Customer Visit Analysis"
-msgstr "تحليل زيارات العملاء"
+msgstr "Customer Visit Analysis"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Daily Trend"
-msgstr "الاتجاه اليومي"
+msgstr "Daily Trend"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Dashboard"
-msgstr "لوحة المتابعة"
+msgstr "Dashboard"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_default_period
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__distribution_dashboard_default_period
 msgid "Dashboard Default Period"
-msgstr "لوحة المتابعة Default Period"
+msgstr "Dashboard Default Period"
 
 #. module: flousflow_distribution_dashboard
 #: model:res.groups,name:flousflow_distribution_dashboard.group_distribution_dashboard_user
@@ -199,19 +195,19 @@ msgstr "Dashboard Viewer"
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Date"
-msgstr "التاريخ"
+msgstr "Date"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Default Period"
-msgstr ""
+msgstr "Default Period"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_distribution_dashboard_data__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr "اسم العرض"
+msgstr "Display Name"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
@@ -219,7 +215,7 @@ msgstr "اسم العرض"
 #: model:ir.actions.client,name:flousflow_distribution_dashboard.action_distribution_dashboard
 #: model:res.groups.privilege,name:flousflow_distribution_dashboard.res_groups_privilege_distribution_dashboard
 msgid "Distribution Dashboard"
-msgstr "لوحة توزيع الأداء"
+msgstr "Distribution Dashboard"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model,name:flousflow_distribution_dashboard.model_distribution_dashboard_data
@@ -230,7 +226,7 @@ msgstr "Distribution Dashboard Data Provider"
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Employee"
-msgstr "الموظف"
+msgstr "Employee"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
@@ -238,7 +234,7 @@ msgstr "الموظف"
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard.action_dashboard_employee_performance
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_dashboard_employee_performance
 msgid "Employee Performance"
-msgstr "أداء الموظفين"
+msgstr "Employee Performance"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
@@ -259,118 +255,118 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Error"
-msgstr "خطأ"
+msgstr "Error"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Executed"
-msgstr "المنفذة"
+msgstr "Executed"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Execution"
-msgstr "التنفيذ"
+msgstr "Execution"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Execution Rate"
-msgstr "نسبة التنفيذ"
+msgstr "Execution Rate"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Failed"
-msgstr "فاشلة"
+msgstr "Failed"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Failed Results"
-msgstr "نتائج غير ناجحة"
+msgstr "Failed Results"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "GPS Outside"
-msgstr "خارج نطاق GPS"
+msgstr "GPS Outside"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_distribution_dashboard_data__id
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__id
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__id
 msgid "ID"
-msgstr "المُعرف"
+msgstr "ID"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields.selection,name:flousflow_distribution_dashboard.selection__res_company__distribution_dashboard_default_period__last_month
 msgid "Last Month"
-msgstr "آخر Month"
+msgstr "Last Month"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Last Visit"
-msgstr "آخر زيارة"
+msgstr "Last Visit"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields.selection,name:flousflow_distribution_dashboard.selection__res_company__distribution_dashboard_default_period__last_week
 msgid "Last Week"
-msgstr "آخر Week"
+msgstr "Last Week"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Loading"
-msgstr "التحميل"
+msgstr "Loading"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Loading…"
-msgstr "جارٍ التحميل…"
+msgstr "Loading…"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_low_execution_percentage
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__distribution_dashboard_low_execution_percentage
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Low Route Execution Alert (%)"
-msgstr "Low المسار التنفيذ Alert (%)"
+msgstr "Low Route Execution Alert (%)"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Meets ranking minimum"
-msgstr ""
+msgstr "Meets ranking minimum"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_minimum_visits_for_ranking
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__distribution_dashboard_minimum_visits_for_ranking
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Minimum Visits for Ranking"
-msgstr "Minimum الزيارات Ranking"
+msgstr "Minimum Visits for Ranking"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Needs Attention"
-msgstr "تحتاج انتباه"
+msgstr "Needs Attention"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Needs Revisit"
-msgstr "تحتاج إعادة زيارة"
+msgstr "Needs Revisit"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "No data"
-msgstr ""
+msgstr "No data"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
@@ -382,7 +378,7 @@ msgstr "No datthperiod."
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "No distribution activity found for the selected period."
-msgstr "لا يوجد نشاط توزيع في الفترة المحددة."
+msgstr "No distribution activity found for the selected period."
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
@@ -394,24 +390,24 @@ msgstr "No executed visits in this period."
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Not Started"
-msgstr "لم تبدأ"
+msgstr "Not Started"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Open"
-msgstr "مفتوح"
+msgstr "Open"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Pending"
-msgstr "المعلقة"
+msgstr "Pending"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Period selected when the dashboard opens"
-msgstr "Period selected when the dashboard open"
+msgstr "Period selected when the dashboard opens"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,help:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_default_period
@@ -423,88 +419,86 @@ msgstr "Period selected when distributidashboard opens."
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Planned"
-msgstr "المخطط له"
+msgstr "Planned"
 
 #. module: flousflow_distribution_dashboard
 #: model:res.groups,comment:flousflow_distribution_dashboard.group_distribution_dashboard_user
 msgid ""
 "Read-only access to the distribution performance dashboard. Data is still "
 "filtered by the route/visit record rules of the underlying modules."
-msgstr ""
-"Read-only access to the distribution performance dashboard. Data is still "
-"filtered by the route/الزيارة record rules of the underlying modules."
+msgstr "Read-only access to the distribution performance dashboard. Data is still filtered by the route/visit record rules of the underlying modules."
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Refresh"
-msgstr "تحديث"
+msgstr "Refresh"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_distribution_reporting
 msgid "Reporting"
-msgstr "التقارير"
+msgstr "Reporting"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Results"
-msgstr "النتائج"
+msgstr "Results"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Retry"
-msgstr "إعادة المحاولة"
+msgstr "Retry"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Revisit"
-msgstr "إعادة زيارة"
+msgstr "Revisit"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Route"
-msgstr "مسار"
+msgstr "Route"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
 msgid "Route %s execution %d%% (< %d%%)"
-msgstr "تنفيذ المسار %s ‏%d%% (أقل من %d%%)"
+msgstr "Route %s execution %d%% (< %d%%)"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
 msgid "Route %s not started (planned %s)"
-msgstr "المسار %s لم يبدأ (المخطط %s)"
+msgstr "Route %s not started (planned %s)"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard.action_dashboard_route_analysis
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_dashboard_route_analysis
 msgid "Route Analysis"
-msgstr "Route Analysi"
+msgstr "Route Analysis"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Route Performance"
-msgstr "أداء المسارات"
+msgstr "Route Performance"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_route_start_delay_minutes
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__distribution_dashboard_route_start_delay_minutes
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Route Start Delay Alert (minutes)"
-msgstr "المسار البداية Delay Alert (minutes)"
+msgstr "Route Start Delay Alert (minutes)"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Routes"
-msgstr "المسارات"
+msgstr "Routes"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
@@ -538,73 +532,73 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Started"
-msgstr "بدأت"
+msgstr "Started"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "State"
-msgstr "الحالة"
+msgstr "State"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Success"
-msgstr "نجاح"
+msgstr "Success"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Success Rate"
-msgstr "نسبة النجاح"
+msgstr "Success Rate"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Successful"
-msgstr "الناجحة"
+msgstr "Successful"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields.selection,name:flousflow_distribution_dashboard.selection__res_company__distribution_dashboard_default_period__this_month
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "This Month"
-msgstr "هذا الشهر"
+msgstr "This Month"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields.selection,name:flousflow_distribution_dashboard.selection__res_company__distribution_dashboard_default_period__this_week
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "This Week"
-msgstr "هذا الأسبوع"
+msgstr "This Week"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Timing"
-msgstr "التوقيت"
+msgstr "Timing"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields.selection,name:flousflow_distribution_dashboard.selection__res_company__distribution_dashboard_default_period__today
 msgid "Today"
-msgstr "اليوم"
+msgstr "Today"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard.action_dashboard_today_operations
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_dashboard_today_operations
 msgid "Today's Operations"
-msgstr "Today's Operation"
+msgstr "Today's Operations"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Try another period or clear the filters."
-msgstr "جرّب فترة أخرى أو امسح الفلاتر."
+msgstr "Try another period or clear the filters."
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Type"
-msgstr "النوع"
+msgstr "Type"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
@@ -614,108 +608,108 @@ msgstr "Unexecuted visits older than this appear in Needs Attention"
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Unsuccessful"
-msgstr "غير ناجحة"
+msgstr "Unsuccessful"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Vehicle"
-msgstr "المركبة"
+msgstr "Vehicle"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard.action_dashboard_visit_analysis
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard.menu_dashboard_visit_analysis
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_pivot
 msgid "Visit Analysis"
-msgstr "Visit Analysi"
+msgstr "Visit Analysis"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_company__distribution_dashboard_visit_delay_alert_minutes
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard.field_res_config_settings__distribution_dashboard_visit_delay_alert_minutes
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.res_config_settings_view_form_inherit_dashboard
 msgid "Visit Delay Alert (minutes)"
-msgstr "الزيارة Delay Alert (minutes)"
+msgstr "Visit Delay Alert (minutes)"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Visit Result"
-msgstr "نتيجة الزيارة"
+msgstr "Visit Result"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Visit Results (executed)"
-msgstr "نتائج الزيارات (المنفذة)"
+msgstr "Visit Results (executed)"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_search
 msgid "Visit Type"
-msgstr "نوع الزيارة"
+msgstr "Visit Type"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Visit Type Analysis"
-msgstr "تحليل أنواع الزيارات"
+msgstr "Visit Type Analysis"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
 msgid "Visit delayed — %s (planned %s)"
-msgstr "زيارة متأخرة — %s (المخطط %s)"
+msgstr "Visit delayed — %s (planned %s)"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Visits"
-msgstr "الزيارات"
+msgstr "Visits"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_graph_area
 msgid "Visits by Area"
-msgstr "Visits بواسطة Area"
+msgstr "Visits by Area"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_graph_employee
 msgid "Visits by Employee"
-msgstr "Visits بواسطة Employee"
+msgstr "Visits by Employee"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "Visits by State"
-msgstr "الزيارات حسب الحالة"
+msgstr "Visits by State"
 
 #. module: flousflow_distribution_dashboard
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard.view_dashboard_visit_graph_time
 msgid "Visits over Time"
-msgstr "وقت Visits over"
+msgstr "Visits over Time"
 
 #. module: flousflow_distribution_dashboard
 #: model:ir.model.fields.selection,name:flousflow_distribution_dashboard.selection__res_company__distribution_dashboard_default_period__yesterday
 msgid "Yesterday"
-msgstr ""
+msgstr "Yesterday"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "latest 50 in period"
-msgstr "أحدث 50 في الفترة"
+msgstr "latest 50 in period"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "rankings require the configured minimum executed visits"
-msgstr "الترتيب يتطلب الحد الأدنى من الزيارات المنفذة"
+msgstr "rankings require the configured minimum executed visits"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-javascript
 #: code:addons/flousflow_distribution_dashboard/static/src/xml/dashboard_templates.xml:0
 msgid "top 50"
-msgstr ""
+msgstr "top 50"
 
 #. module: flousflow_distribution_dashboard
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard/models/distribution_dashboard_data.py:0
 msgid "…and more delayed visits"
-msgstr "…ومزيد من الزيارات المتأخرة"
+msgstr "…and more delayed visits"
