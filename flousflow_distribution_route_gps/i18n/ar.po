@@ -3,7 +3,7 @@
 # 	* flousflow_distribution_route_gps
 #
 msgid ""
-msgstr ""
+msgstr "Project-Id-Version: Odoo Server 19.0-20260619\\nReport-Msgid-Bugs-To: \\nPOT-Creation-Date: 2026-09-07 15:58+0000\\nPO-Revision-Date: 2026-09-07 15:58+0000\\nLast-Translator: \\nLanguage-Team: \\nLanguage: ar_00MIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: \\nPlural-Forms: \\n"
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-07 15:58+0000\n"
@@ -18,89 +18,89 @@ msgstr ""
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "<span>Capture Location</span>"
-msgstr "<span>Capture Location</span>"
+msgstr "<span>تسجيل الموقع</span>"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "<span>Open Location</span>"
-msgstr "<span>Open Location</span>"
+msgstr "<span>فتح الموقع</span>"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__distribution_missing_customer_location_policy__allow
 msgid "Allow"
-msgstr "Allow"
+msgstr "السماح"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__distribution_missing_customer_location_policy__warn
 msgid "Allow With Warning"
-msgstr "Allow With Warning"
+msgstr "السماح مع تحذير"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Allowed Radius (m)"
-msgstr "Allowed Radius (m)"
+msgstr "نطاق السماح (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_partner__distribution_geofence_radius
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_users__distribution_geofence_radius
-msgid ""
+msgid "Allowed distance from this customer for geofence validation, in meters. Leave empty to use the area or global default."
 "Allowed distance from this customer for geofence validation, in meters. "
 "Leave empty to use the area or global default."
-msgstr "Allowed distance from this customer for geofence validation, in meters. Leave empty to use the area or global default."
+msgstr "المسافة المسموح بها من هذا العميل للتحقق من النطاق الجغرافي، بالأمتار. اتركه فارغاً لاستخدام الافتراضي للمنطقة أو العام."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "An override reason is required."
-msgstr "An override reason is required."
+msgstr "سبب التجاوز مطلوب."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_gps.action_gps_analysis
 msgid "Analyze visit GPS data"
-msgstr "Analyze visit GPS data"
+msgstr "تحليل بيانات GPS للزيارات"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__validate_checkout_geofence
-msgid ""
+msgid "Apply geofence rules on check-out too. Disabled by default because representatives may finish the visit after moving away from the customer."
 "Apply geofence rules on check-out too. Disabled by default because "
 "representatives may finish the visit after moving away from the customer."
-msgstr "Apply geofence rules on check-out too. Disabled by default because representatives may finish the visit after moving away from the customer."
+msgstr "تطبيق قواعد النطاق الجغرافي على الانصراف أيضاً. معطل افتراضياً لأن المندوبين قد ينهون الزيارة بعد الابتعاد عن العميل."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
-msgid ""
+msgid "Apply geofence rules on check-out too. Disabled by default: representatives may finish the visit after moving away"
 "Apply geofence rules on check-out too. Disabled by default: representatives "
 "may finish the visit after moving away"
-msgstr "Apply geofence rules on check-out too. Disabled by default: representatives may finish the visit after moving away"
+msgstr "تطبيق قواعد النطاق الجغرافي على الانصراف أيضاً. معطل افتراضياً: قد ينهي المندوب الزيارة بعد الابتعاد"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_gps.action_gps_analysis
-msgid ""
+msgid "Average check-in distance and GPS accuracy per employee,\\n                inside / outside geofence."
 "Average check-in distance and GPS accuracy per employee,\n"
 "                inside / outside geofence."
-msgstr "Average check-in distance and GPS accuracy per employee,\\n                inside / outside geofence."
+msgstr "Average check-in distance and GPS accuracy per employee,\\\\n                inside / outside geofence."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__distribution_missing_customer_location_policy__block
 msgid "Block"
-msgstr "Block"
+msgstr "منع"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "Capture Current Location"
-msgstr "Capture Current Location"
+msgstr "تسجيل الموقع الحالي"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_visit_type__require_gps_checkin
-msgid ""
+msgid "Capture and validate GPS on visit check-in. Disable for visit types that do not happen at the customer location (e.g. internal tasks)."
 "Capture and validate GPS on visit check-in. Disable for visit types that do "
 "not happen at the customer location (e.g. internal tasks)."
-msgstr "Capture and validate GPS on visit check-in. Disable for visit types that do not happen at the customer location (e.g. internal tasks)."
+msgstr "تسجيل والتحقق من GPS عند حضور الزيارة. عطّله لأنواع الزيارات التي لا تحدث في موقع العميل (مثل المهام الداخلية)."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_visit_type__require_gps_checkout
 msgid "Capture and validate GPS on visit check-out."
-msgstr "Capture and validate GPS on visit check-out."
+msgstr "تسجيل والتحقق من GPS عند الانصراف من الزيارة."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_gps_override_wizard__operation__checkin
@@ -108,58 +108,58 @@ msgstr "Capture and validate GPS on visit check-out."
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__checkin
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Check-In"
-msgstr "Check-In"
+msgstr "الحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkin_distance
 msgid "Check-In Distance (m)"
-msgstr "Check-In Distance (m)"
+msgstr "مسافة الحضور (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkin_accuracy
 msgid "Check-In GPS Accuracy (m)"
-msgstr "Check-In GPS Accuracy (m)"
+msgstr "دقة GPS للحضور (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__gps_checkin_valid
 msgid "Check-In GPS Valid"
-msgstr "Check-In GPS Valid"
+msgstr "GPS الحضور صحيح"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkin_geofence_status
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_search_gps
 msgid "Check-In Geofence Status"
-msgstr "Check-In Geofence Status"
+msgstr "حالة النطاق الجغرافي للحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkin_latitude
 msgid "Check-In Latitude"
-msgstr "Check-In Latitude"
+msgstr "خط عرض الحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkin_longitude
 msgid "Check-In Longitude"
-msgstr "Check-In Longitude"
+msgstr "خط طول الحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__gps_checkin_low_accuracy
 msgid "Check-In Low Accuracy"
-msgstr "Check-In Low Accuracy"
+msgstr "دقة منخفضة للحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__checkin_rejected
 msgid "Check-In Rejected"
-msgstr "Check-In Rejected"
+msgstr "رفض الحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkin_datetime
 msgid "Check-In Time"
-msgstr "Check-In Time"
+msgstr "وقت الحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Check-Ins"
-msgstr "Check-Ins"
+msgstr "سجلات الحضور"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_gps_override_wizard__operation__checkout
@@ -167,166 +167,166 @@ msgstr "Check-Ins"
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__checkout
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Check-Out"
-msgstr "Check-Out"
+msgstr "الانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkout_distance
 msgid "Check-Out Distance (m)"
-msgstr "Check-Out Distance (m)"
+msgstr "مسافة الانصراف (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkout_accuracy
 msgid "Check-Out GPS Accuracy (m)"
-msgstr "Check-Out GPS Accuracy (m)"
+msgstr "دقة GPS للانصراف (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__gps_checkout_valid
 msgid "Check-Out GPS Valid"
-msgstr "Check-Out GPS Valid"
+msgstr "GPS الانصراف صحيح"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkout_geofence_status
 msgid "Check-Out Geofence Status"
-msgstr "Check-Out Geofence Status"
+msgstr "حالة النطاق الجغرافي للانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkout_latitude
 msgid "Check-Out Latitude"
-msgstr "Check-Out Latitude"
+msgstr "خط عرض الانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkout_longitude
 msgid "Check-Out Longitude"
-msgstr "Check-Out Longitude"
+msgstr "خط طول الانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__checkout_rejected
 msgid "Check-Out Rejected"
-msgstr "Check-Out Rejected"
+msgstr "رفض الانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__checkout_datetime
 msgid "Check-Out Time"
-msgstr "Check-Out Time"
+msgstr "وقت الانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Check-Outs"
-msgstr "Check-Outs"
+msgstr "سجلات الانصراف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_route_visit_checkin_latitude_check
 msgid "Check-in latitude must be between -90 and 90 degrees."
-msgstr "Check-in latitude must be between -90 and 90 degrees."
+msgstr "يجب أن يكون خط عرض الحضور بين -90 و90 درجة."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_route_visit_checkin_longitude_check
 msgid "Check-in longitude must be between -180 and 180 degrees."
-msgstr "Check-in longitude must be between -180 and 180 degrees."
+msgstr "يجب أن يكون خط طول الحضور بين -180 و180 درجة."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/visit_gps_action.js:0
 msgid "Check-in recorded at the customer location."
-msgstr "Check-in recorded at the customer location."
+msgstr "تم تسجيل الحضور في موقع العميل."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_route_visit_checkout_latitude_check
 msgid "Check-out latitude must be between -90 and 90 degrees."
-msgstr "Check-out latitude must be between -90 and 90 degrees."
+msgstr "يجب أن يكون خط عرض الانصراف بين -90 و90 درجة."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_route_visit_checkout_longitude_check
 msgid "Check-out longitude must be between -180 and 180 degrees."
-msgstr "Check-out longitude must be between -180 and 180 degrees."
+msgstr "يجب أن يكون خط طول الانصراف بين -180 و180 درجة."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/visit_gps_action.js:0
 msgid "Check-out recorded."
-msgstr "Check-out recorded."
+msgstr "تم تسجيل الانصراف."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_route_visit_checkout_after_checkin_check
 msgid "Check-out time cannot be before check-in time."
-msgstr "Check-out time cannot be before check-in time."
+msgstr "لا يمكن أن يكون وقت الانصراف قبل وقت الحضور."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__company_id
 msgid "Company"
-msgstr "Company"
+msgstr "الشركة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_res_config_settings
 msgid "Config Settings"
-msgstr "Config Settings"
+msgstr "الإعدادات"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_res_partner
 msgid "Contact"
-msgstr "Contact"
+msgstr "جهة الاتصال"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__create_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__create_uid
 msgid "Created by"
-msgstr "Created by"
+msgstr "أنشئ بواسطة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__create_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__create_date
 msgid "Created on"
-msgstr "Created on"
+msgstr "أنشئ في"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__partner_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Customer"
-msgstr "Customer"
+msgstr "العميل"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__customer_geofence_radius_snapshot
 msgid "Customer Geofence Radius (Snapshot)"
-msgstr "Customer Geofence Radius (Snapshot)"
+msgstr "نطاق العميل الجغرافي (لقطة)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__customer_latitude
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Customer Latitude"
-msgstr "Customer Latitude"
+msgstr "خط عرض العميل"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__customer_latitude_snapshot
 msgid "Customer Latitude (Snapshot)"
-msgstr "Customer Latitude (Snapshot)"
+msgstr "خط عرض العميل (لقطة)"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Customer Location"
-msgstr "Customer Location"
+msgstr "موقع العميل"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__customer_location_capture
 msgid "Customer Location Capture"
-msgstr "Customer Location Capture"
+msgstr "تسجيل موقع العميل"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__customer_longitude
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Customer Longitude"
-msgstr "Customer Longitude"
+msgstr "خط طول العميل"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__customer_longitude_snapshot
 msgid "Customer Longitude (Snapshot)"
-msgstr "Customer Longitude (Snapshot)"
+msgstr "خط طول العميل (لقطة)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_route_visit__customer_latitude_snapshot
-msgid ""
+msgid "Customer coordinates frozen at check-in time, so later customer location edits never change historical visits."
 "Customer coordinates frozen at check-in time, so later customer location "
 "edits never change historical visits."
-msgstr ""
+msgstr "إحداثيات العميل تُثبَّت وقت الحضور، لذا لا تؤثر تعديلات موقع العميل لاحقاً على الزيارات التاريخية."
 "Customer coordinates frozen at check-in time, so later customer location "
 "edits never change historical visits."
 
@@ -334,63 +334,63 @@ msgstr ""
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_partner__distribution_latitude
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_users__distribution_latitude
 msgid "Customer latitude in decimal degrees (WGS84)."
-msgstr "Customer latitude in decimal degrees (WGS84)."
+msgstr "خط عرض العميل بالدرجات العشرية (WGS84)."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/customer_location_action.js:0
 msgid "Customer location captured (accuracy ±%s m)."
-msgstr "Customer location captured (accuracy ±%s m)."
+msgstr "تم تسجيل موقع العميل (دقة ±%s متر)."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_partner__distribution_longitude
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_users__distribution_longitude
 msgid "Customer longitude in decimal degrees (WGS84)."
-msgstr "Customer longitude in decimal degrees (WGS84)."
+msgstr "خط طول العميل بالدرجات العشرية (WGS84)."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_visit_gps_event__partner_id
-msgid ""
+msgid "Customer of the visit, or the partner whose location was captured for customer_location_capture events."
 "Customer of the visit, or the partner whose location was captured for "
 "customer_location_capture events."
-msgstr "Customer of the visit, or the partner whose location was captured for customer_location_capture events."
+msgstr "عميل الزيارة، أو جهة الاتصال التي سُجل موقعها لأحداث تسجيل موقع العميل."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Day"
-msgstr "Day"
+msgstr "يوم"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_area__default_geofence_radius
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__distribution_default_geofence_radius
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Default Geofence Radius (m)"
-msgstr "Default Geofence Radius (m)"
+msgstr "نطاق النطاق الجغرافي الافتراضي (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_area__default_geofence_radius
-msgid ""
+msgid "Default allowed distance from customers in this area, in meters. Used when the customer has no specific radius. Leave empty to use the global default."
 "Default allowed distance from customers in this area, in meters. Used when "
 "the customer has no specific radius. Leave empty to use the global default."
-msgstr ""
+msgstr "المسافة المسموح بها الافتراضية من العملاء في هذه المنطقة، بالأمتار. تُستخدم عندما لا يكون للعميل نصف قطر محدد. اتركه فارغاً لاستخدام الافتراضي العام."
 "Default allowed distance from customers in this area, in meters. Used when "
 "the customer has no specific radius. Leave empty to use the global default."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_partner__distribution_location_source__device_gps
 msgid "Device GPS"
-msgstr "Device GPS"
+msgstr "GPS الجهاز"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__distribution_geofence_mode__disabled
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__gps_accuracy_validation_mode__disabled
 msgid "Disabled"
-msgstr "Disabled"
+msgstr "معطل"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_gps_override_wizard_form
 msgid "Discard"
-msgstr "Discard"
+msgstr "تجاهل"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_area__display_name
@@ -402,86 +402,86 @@ msgstr "Discard"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__display_name
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "الاسم المعروض"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__display_name_
 msgid "Display Name "
-msgstr "Display Name "
+msgstr "الاسم المعروض "
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__distance
 msgid "Distance (m)"
-msgstr "Distance (m)"
+msgstr "المسافة (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_distribution_area
 msgid "Distribution Area"
-msgstr "Distribution Area"
+msgstr "منطقة التوزيع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_distribution_gps_config
 msgid "Distribution GPS Configuration Helper"
-msgstr "Distribution GPS Configuration Helper"
+msgstr "مساعد إعدادات GPS للتوزيع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_location_set
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_location_set
 msgid "Distribution Location Set"
-msgstr "Distribution Location Set"
+msgstr "تم تحديد موقع التوزيع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_distribution_route_visit
 msgid "Distribution Route Visit"
-msgstr "Distribution Route Visit"
+msgstr "زيارة مسار التوزيع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_distribution_visit_gps_event
 msgid "Distribution Visit GPS Event"
-msgstr "Distribution Visit GPS Event"
+msgstr "حدث GPS لزيارة التوزيع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_distribution_visit_type
 msgid "Distribution Visit Type"
-msgstr "Distribution Visit Type"
+msgstr "نوع زيارة التوزيع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__employee_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Employee"
-msgstr "Employee"
+msgstr "الموظف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_visit_gps_event__visit_id
 msgid "Empty for customer-location capture events."
-msgstr "Empty for customer-location capture events."
+msgstr "فارغ لأحداث تسجيل موقع العميل."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__distribution_gps_enabled
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Enable GPS Validation"
-msgstr "Enable GPS Validation"
+msgstr "تشغيل التحقق من GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_form
 msgid "Event"
-msgstr "Event"
+msgstr "الحدث"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__event_datetime
 msgid "Event Time (Device)"
-msgstr "Event Time (Device)"
+msgstr "وقت الحدث (الجهاز)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__event_type
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Event Type"
-msgstr "Event Type"
+msgstr "نوع الحدث"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "Extract from Link"
-msgstr "Extract from Link"
+msgstr "استخراج من الرابط"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
@@ -494,19 +494,19 @@ msgstr "GPS"
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "GPS & Geofence"
-msgstr "GPS & Geofence"
+msgstr "GPS والنطاق الجغرافي"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__accuracy
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__accuracy
 msgid "GPS Accuracy (m)"
-msgstr "GPS Accuracy (m)"
+msgstr "دقة GPS (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__gps_accuracy_validation_mode
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "GPS Accuracy Validation Mode"
-msgstr "GPS Accuracy Validation Mode"
+msgstr "نمط التحقق من دقة GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.actions.act_window,name:flousflow_distribution_route_gps.action_gps_analysis
@@ -515,22 +515,22 @@ msgstr "GPS Accuracy Validation Mode"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_graph_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_pivot_gps
 msgid "GPS Analysis"
-msgstr "GPS Analysis"
+msgstr "تحليل GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__gps_error
 msgid "GPS Error"
-msgstr "GPS Error"
+msgstr "خطأ GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "GPS Errors"
-msgstr "GPS Errors"
+msgstr "أخطاء GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_form
 msgid "GPS Event"
-msgstr "GPS Event"
+msgstr "حدث GPS"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
@@ -543,17 +543,17 @@ msgstr "GPS Event"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_list
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "GPS Events"
-msgstr "GPS Events"
+msgstr "أحداث GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "GPS Location"
-msgstr "GPS Location"
+msgstr "موقع GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "GPS Location Status"
-msgstr "GPS Location Status"
+msgstr "حالة موقع GPS"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
@@ -561,96 +561,96 @@ msgstr "GPS Location Status"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_gps_override_wizard_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_search_gps
 msgid "GPS Override"
-msgstr "GPS Override"
+msgstr "تجاوز GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "GPS Quality"
-msgstr "GPS Quality"
+msgstr "جودة GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__gps_timestamp
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__gps_timestamp
 msgid "GPS Timestamp (epoch)"
-msgstr "GPS Timestamp (epoch)"
+msgstr "طابع GPS الزمني (إيبوك)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model,name:flousflow_distribution_route_gps.model_distribution_gps_override_wizard
 msgid "GPS Validation Override Wizard"
-msgstr "GPS Validation Override Wizard"
+msgstr "معالج تجاوز التحقق من GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_res_partner_distribution_accuracy_check
 msgid "GPS accuracy cannot be negative."
-msgstr "GPS accuracy cannot be negative."
+msgstr "لا يمكن أن تكون دقة GPS سالبة."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_partner__distribution_location_accuracy
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_users__distribution_location_accuracy
 msgid "GPS accuracy of the stored location, in meters."
-msgstr "GPS accuracy of the stored location, in meters."
+msgstr "دقة GPS للموقع المحفوظ، بالأمتار."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
-msgid ""
+msgid "GPS data is recorded automatically during check-in / check-out and cannot be edited manually."
 "GPS data is recorded automatically during check-in / check-out and cannot be"
 " edited manually."
-msgstr "GPS data is recorded automatically during check-in / check-out and cannot be edited manually."
+msgstr "تُسجل بيانات GPS تلقائياً أثناء الحضور/الانصراف ولا يمكن تعديلها يدوياً."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_visit_gps_event.py:0
 msgid "GPS events are an immutable audit log and cannot be deleted."
-msgstr "GPS events are an immutable audit log and cannot be deleted."
+msgstr "أحداث GPS سجل تدقيق ثابت لا يمكن حذفه."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_visit_gps_event.py:0
 msgid "GPS events are an immutable audit log and cannot be modified."
-msgstr "GPS events are an immutable audit log and cannot be modified."
+msgstr "أحداث GPS سجل تدقيق ثابت لا يمكن تعديله."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__geofence_radius
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_geofence_radius
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_geofence_radius
 msgid "Geofence Radius (m)"
-msgstr "Geofence Radius (m)"
+msgstr "نطاق النطاق الجغرافي (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__geofence_status
 msgid "Geofence Status"
-msgstr "Geofence Status"
+msgstr "حالة النطاق الجغرافي"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__distribution_geofence_mode
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Geofence Validation Mode"
-msgstr "Geofence Validation Mode"
+msgstr "نمط التحقق من النطاق الجغرافي"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/customer_location_action.js:0
 #: code:addons/flousflow_distribution_route_gps/static/src/js/visit_gps_action.js:0
 msgid "Getting your location..."
-msgstr "Getting your location..."
+msgstr "جارٍ تحديد موقعك..."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__has_distribution_location
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__has_distribution_location
 msgid "Has GPS Location"
-msgstr "Has GPS Location"
+msgstr "لديه موقع GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__gps_has_override
 msgid "Has Manager Override"
-msgstr "Has Manager Override"
+msgstr "لديه تجاوز مدير"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_partner__distribution_location_source
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_users__distribution_location_source
 msgid "How the stored location was captured."
-msgstr "How the stored location was captured."
+msgstr "كيف تم تسجيل الموقع المحفوظ."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_area__id
@@ -662,52 +662,52 @@ msgstr "How the stored location was captured."
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__id
 msgid "ID"
-msgstr "ID"
+msgstr "المعرف"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_partner__distribution_location_source__imported
 msgid "Imported"
-msgstr "Imported"
+msgstr "مستورد"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_route_visit__checkin_geofence_status__inside
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_route_visit__checkout_geofence_status__inside
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__geofence_status__inside
 msgid "Inside"
-msgstr "Inside"
+msgstr "داخل النطاق"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_search_gps
 msgid "Inside Geofence"
-msgstr "Inside Geofence"
+msgstr "داخل النطاق الجغرافي"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 #: code:addons/flousflow_distribution_route_gps/models/res_partner.py:0
 msgid "Invalid GPS accuracy received."
-msgstr "Invalid GPS accuracy received."
+msgstr "تم استلام دقة GPS غير صحيحة."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 #: code:addons/flousflow_distribution_route_gps/models/res_partner.py:0
-msgid ""
+msgid "Invalid coordinates received. Latitude must be between -90 and 90 and longitude between -180 and 180."
 "Invalid coordinates received. Latitude must be between -90 and 90 and "
 "longitude between -180 and 180."
-msgstr "Invalid coordinates received. Latitude must be between -90 and 90 and longitude between -180 and 180."
+msgstr "تم استلام إحداثيات غير صحيحة. يجب أن يكون خط العرض بين -90 و90 وخط الطول بين -180 و180."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__write_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__write_uid
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "آخر تحديث بواسطة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__write_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__write_date
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "آخر تحديث في"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__latitude
@@ -715,48 +715,48 @@ msgstr "Last Updated on"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_latitude
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_latitude
 msgid "Latitude"
-msgstr "Latitude"
+msgstr "خط العرض"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_visit_gps_event_latitude_check
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_res_partner_distribution_latitude_check
 msgid "Latitude must be between -90 and 90 degrees."
-msgstr "Latitude must be between -90 and 90 degrees."
+msgstr "يجب أن يكون خط العرض بين -90 و90 درجة."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/xml/gps_templates.xml:0
 msgid "Loading"
-msgstr "Loading"
+msgstr "جارٍ التحميل"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Location"
-msgstr "Location"
+msgstr "الموقع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_location_accuracy
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_location_accuracy
 msgid "Location Accuracy (m)"
-msgstr "Location Accuracy (m)"
+msgstr "دقة الموقع (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_location_user_id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_location_user_id
 msgid "Location Captured By"
-msgstr "Location Captured By"
+msgstr "تم تسجيل الموقع بواسطة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_location_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_location_date
 msgid "Location Last Updated"
-msgstr "Location Last Updated"
+msgstr "آخر تحديث للموقع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_location_source
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_location_source
 msgid "Location Source"
-msgstr "Location Source"
+msgstr "مصدر الموقع"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__longitude
@@ -764,214 +764,214 @@ msgstr "Location Source"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_partner__distribution_longitude
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_users__distribution_longitude
 msgid "Longitude"
-msgstr "Longitude"
+msgstr "خط الطول"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_distribution_visit_gps_event_longitude_check
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_res_partner_distribution_longitude_check
 msgid "Longitude must be between -180 and 180 degrees."
-msgstr "Longitude must be between -180 and 180 degrees."
+msgstr "يجب أن يكون خط الطول بين -180 و180 درجة."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_search_gps
 msgid "Low Accuracy"
-msgstr "Low Accuracy"
+msgstr "دقة منخفضة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__event_type__manager_override
 msgid "Manager Override"
-msgstr "Manager Override"
+msgstr "تجاوز المدير"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_form_gps
 msgid "Manager Override Applied"
-msgstr "Manager Override Applied"
+msgstr "تم تطبيق تجاوز المدير"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_partner__distribution_location_source__manual
 msgid "Manual"
-msgstr "Manual"
+msgstr "يدوي"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__gps_maximum_accuracy
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Maximum GPS Accuracy (m)"
-msgstr "Maximum GPS Accuracy (m)"
+msgstr "أقصى دقة GPS (متر)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__gps_max_position_age_seconds
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Maximum GPS Position Age (seconds)"
-msgstr "Maximum GPS Position Age (seconds)"
+msgstr "أقصى عمر لموقع GPS (ثوانٍ)"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__message
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_form
 msgid "Message"
-msgstr "Message"
+msgstr "الرسالة"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Missing Customer Location"
-msgstr "Missing Customer Location"
+msgstr "موقع عميل مفقود"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__distribution_missing_customer_location_policy
 msgid "Missing Customer Location Policy"
-msgstr "Missing Customer Location Policy"
+msgstr "سياسة موقع العميل المفقود"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_search_gps
 msgid "No GPS"
-msgstr "No GPS"
+msgstr "بدون GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Older positions are rejected and must be re-captured"
-msgstr "Older positions are rejected and must be re-captured"
+msgstr "يتم رفض المواقع الأقدم ويجب إعادة تسجيلها"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 #: code:addons/flousflow_distribution_route_gps/wizard/gps_override_wizard.py:0
 msgid "Only distribution managers may override GPS validation."
-msgstr "Only distribution managers may override GPS validation."
+msgstr "مديرو التوزيع فقط يمكنهم تجاوز التحقق من GPS."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "Only in-progress visits can be completed."
-msgstr "Only in-progress visits can be completed."
+msgstr "يمكن إنهاء الزيارات قيد التنفيذ فقط."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__operation
 msgid "Operation"
-msgstr "Operation"
+msgstr "العملية"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_partner__distribution_location_source__other
 msgid "Other"
-msgstr "Other"
+msgstr "أخرى"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_route_visit__checkin_geofence_status__outside
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_route_visit__checkout_geofence_status__outside
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__geofence_status__outside
 msgid "Outside"
-msgstr "Outside"
+msgstr "خارج النطاق"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_route_visit_search_gps
 msgid "Outside Geofence"
-msgstr "Outside Geofence"
+msgstr "خارج النطاق الجغرافي"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_gps_override_wizard_form
 msgid "Override & Continue"
-msgstr "Override & Continue"
+msgstr "تجاوز ومتابعة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__override_user_id
 msgid "Override By"
-msgstr "Override By"
+msgstr "تم التجاوز بواسطة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__override_operation
 msgid "Override Operation"
-msgstr "Override Operation"
+msgstr "عملية التجاوز"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__reason
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__override_reason
 msgid "Override Reason"
-msgstr "Override Reason"
+msgstr "سبب التجاوز"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_route_visit__override_datetime
 msgid "Override Time"
-msgstr "Override Time"
+msgstr "وقت التجاوز"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Overrides"
-msgstr "Overrides"
+msgstr "التجاوزات"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_partner_form_inherit_gps
 msgid "Paste a Google Maps / WhatsApp location link..."
-msgstr "Paste a Google Maps / WhatsApp location link..."
+msgstr "الصق رابط موقع من Google Maps / WhatsApp..."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_form
 msgid "Position"
-msgstr "Position"
+msgstr "الموقع"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
-msgid ""
+msgid "Positions less accurate than this are handled by the accuracy validation mode"
 "Positions less accurate than this are handled by the accuracy validation "
 "mode"
-msgstr ""
+msgstr "تُعالج المواقع الأقل دقة من هذا حسب نمط التحقق من الدقة"
 "Positions less accurate than this are handled by the accuracy validation "
 "mode"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__gps_maximum_accuracy
-msgid ""
+msgid "Positions less accurate than this value (in meters) are handled according to the GPS Accuracy Validation Mode."
 "Positions less accurate than this value (in meters) are handled according to"
 " the GPS Accuracy Validation Mode."
-msgstr ""
+msgstr "تُعالج المواقع الأقل دقة من هذه القيمة (بالأمتار) حسب نمط التحقق من دقة GPS."
 "Positions less accurate than this value (in meters) are handled according to"
 " the GPS Accuracy Validation Mode."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__gps_max_position_age_seconds
 msgid "Positions older than this are rejected and must be re-captured."
-msgstr "Positions older than this are rejected and must be re-captured."
+msgstr "يتم رفض المواقع الأقدم من هذا ويجب إعادة تسجيلها."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_visit_gps_event__gps_timestamp
 msgid "Raw device GPS timestamp (Unix epoch milliseconds)."
-msgstr "Raw device GPS timestamp (Unix epoch milliseconds)."
+msgstr "طابع GPS الزمني الخام للجهاز (ميلي ثانية يونكس)."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "Rejected"
-msgstr "Rejected"
+msgstr "مرفوض"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_type__require_gps_checkin
 msgid "Require GPS Check-In"
-msgstr "Require GPS Check-In"
+msgstr "إلزام حضور GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_type__require_gps_checkout
 msgid "Require GPS Check-Out"
-msgstr "Require GPS Check-Out"
+msgstr "إلزام انصراف GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__route_id
 msgid "Route Plan"
-msgstr "Route Plan"
+msgstr "خطة المسار"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/customer_location_action.js:0
 msgid "Saving the location..."
-msgstr "Saving the location..."
+msgstr "جارٍ حفظ الموقع..."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__server_datetime
 msgid "Server Time"
-msgstr "Server Time"
+msgstr "وقت الخادم"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
-msgid ""
+msgid "Start the route first: visits can only be started when the route is in progress."
 "Start the route first: visits can only be started when the route is in "
 "progress."
-msgstr ""
+msgstr "ابدأ المسار أولاً: لا يمكن بدء الزيارات إلا عندما يكون المسار قيد التنفيذ."
 "Start the route first: visits can only be started when the route is in "
 "progress."
 
@@ -979,211 +979,211 @@ msgstr ""
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__distribution_geofence_mode__strict
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__gps_accuracy_validation_mode__strict
 msgid "Strict Validation"
-msgstr "Strict Validation"
+msgstr "تحقق صارم"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "The GPS position is too old. Please retry to capture a fresh location."
-msgstr "The GPS position is too old. Please retry to capture a fresh location."
+msgstr "موقع GPS قديم جداً. يرجى إعادة المحاولة لتسجيل موقع حديث."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
-msgid ""
+msgid "The current location accuracy (%.0f m) is not good enough. Try again in an open area with precise location enabled."
 "The current location accuracy (%.0f m) is not good enough. Try again in an "
 "open area with precise location enabled."
-msgstr "The current location accuracy (%.0f m) is not good enough. Try again in an open area with precise location enabled."
+msgstr "دقة الموقع الحالية (%.0f متر) غير كافية. حاول مجدداً في منطقة مفتوحة مع تمكين الموقع الدقيق."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.constraint,message:flousflow_distribution_route_gps.constraint_res_partner_distribution_geofence_radius_check
 msgid "The geofence radius must be greater than zero."
-msgstr "The geofence radius must be greater than zero."
+msgstr "يجب أن يكون نصف قطر النطاق الجغرافي أكبر من صفر."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
-msgid ""
+msgid "This customer has no stored GPS location, and the system blocks check-in without one."
 "This customer has no stored GPS location, and the system blocks check-in "
 "without one."
-msgstr "This customer has no stored GPS location, and the system blocks check-in without one."
+msgstr "هذا العميل ليس لديه موقع GPS محفوظ، والنظام يمنع الحضور بدونه."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/res_partner.py:0
 msgid "This customer has no stored GPS location."
-msgstr "This customer has no stored GPS location."
+msgstr "هذا العميل ليس لديه موقع GPS محفوظ."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "This visit has already been started or closed."
-msgstr "This visit has already been started or closed."
+msgstr "هذه الزيارة بدأت أو أُغلقت بالفعل."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_visit_gps_event__event_datetime
 msgid "Timestamp reported by the device GPS, in UTC."
-msgstr "Timestamp reported by the device GPS, in UTC."
+msgstr "الطابع الزمني المُبلّغ عنه من GPS الجهاز، بتوقيت UTC."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_form
 msgid "Timestamps"
-msgstr "Timestamps"
+msgstr "الأختام الزمنية"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_distribution_route_visit__gps_checkin_low_accuracy
-msgid ""
+msgid "True when the check-in GPS accuracy is worse than the configured maximum."
 "True when the check-in GPS accuracy is worse than the configured maximum."
-msgstr "True when the check-in GPS accuracy is worse than the configured maximum."
+msgstr "صحيح عندما تكون دقة GPS للحضور أسوأ من الحد الأقصى المُعد."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_partner__has_distribution_location
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_users__has_distribution_location
 msgid "True when valid coordinates are stored for this customer."
-msgstr "True when valid coordinates are stored for this customer."
+msgstr "صحيح عند وجود إحداثيات صحيحة محفوظة لهذا العميل."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_route_visit__checkin_geofence_status__unknown
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_route_visit__checkout_geofence_status__unknown
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__distribution_visit_gps_event__geofence_status__unknown
 msgid "Unknown"
-msgstr "Unknown"
+msgstr "غير معروف"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "Unknown override operation."
-msgstr "Unknown override operation."
+msgstr "عملية تجاوز غير معروفة."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Used when neither the customer nor the area defines a radius"
-msgstr "Used when neither the customer nor the area defines a radius"
+msgstr "يُستخدم عندما لا يحدد العميل ولا المنطقة نصف قطر"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__distribution_default_geofence_radius
 msgid "Used when neither the customer nor the area defines a radius."
-msgstr "Used when neither the customer nor the area defines a radius."
+msgstr "يُستخدم عندما لا يحدد العميل ولا المنطقة نصف قطر."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__user_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_visit_gps_event_search
 msgid "User"
-msgstr "User"
+msgstr "المستخدم"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_res_config_settings__validate_checkout_geofence
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Validate Check-Out Geofence"
-msgstr "Validate Check-Out Geofence"
+msgstr "التحقق من النطاق الجغرافي للانصراف"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/visit_gps_action.js:0
 msgid "Validating your location..."
-msgstr "Validating your location..."
+msgstr "جارٍ التحقق من موقعك..."
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_gps_override_wizard__visit_id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_gps.field_distribution_visit_gps_event__visit_id
 msgid "Visit"
-msgstr "Visit"
+msgstr "الزيارة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__distribution_geofence_mode__warning
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_gps.selection__res_config_settings__gps_accuracy_validation_mode__warning
 msgid "Warning Only"
-msgstr "Warning Only"
+msgstr "تحذير فقط"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
-msgid ""
+msgid "Warning: allow but record outside visits. Strict: block check-in outside the geofence"
 "Warning: allow but record outside visits. Strict: block check-in outside the"
 " geofence"
-msgstr ""
+msgstr "تحذير: السماح بالزيارات الخارجية مع تسجيلها. صارم: منع الحضور خارج النطاق الجغرافي"
 "Warning: allow but record outside visits. Strict: block check-in outside the"
 " geofence"
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "Warning: allow but record. Strict: block operations with low accuracy"
-msgstr "Warning: allow but record. Strict: block operations with low accuracy"
+msgstr "تحذير: السماح مع التسجيل. صارم: منع العمليات ذات الدقة المنخفضة"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__distribution_geofence_mode
-msgid ""
+msgid "Warning: allow visits outside the geofence but record it. Strict: block check-in outside the geofence (manager override possible with a reason)."
 "Warning: allow visits outside the geofence but record it. Strict: block "
 "check-in outside the geofence (manager override possible with a reason)."
-msgstr ""
+msgstr "تحذير: السماح بالزيارات خارج النطاق الجغرافي مع تسجيلها. صارم: منع الحضور خارج النطاق الجغرافي (يمكن تجاوزه من المدير مع سبب)."
 "Warning: allow visits outside the geofence but record it. Strict: block "
 "check-in outside the geofence (manager override possible with a reason)."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
 msgid "What to do when the customer has no stored GPS location"
-msgstr "What to do when the customer has no stored GPS location"
+msgstr "ماذا تفعل عندما لا يكون للعميل موقع GPS محفوظ"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__distribution_missing_customer_location_policy
 msgid "What to do when the customer has no stored GPS location."
-msgstr "What to do when the customer has no stored GPS location."
+msgstr "ماذا تفعل عندما لا يكون للعميل موقع GPS محفوظ."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.res_config_settings_view_form_gps
-msgid ""
+msgid "When disabled, route management keeps working exactly as before the GPS module"
 "When disabled, route management keeps working exactly as before the GPS "
 "module"
-msgstr "When disabled, route management keeps working exactly as before the GPS module"
+msgstr "عند التعطيل، يستمر عمل إدارة المسارات تماماً كما قبل وحدة GPS"
 
 #. module: flousflow_distribution_route_gps
 #: model:ir.model.fields,help:flousflow_distribution_route_gps.field_res_config_settings__distribution_gps_enabled
-msgid ""
+msgid "When disabled, the route management module keeps working exactly as before the GPS module was installed."
 "When disabled, the route management module keeps working exactly as before "
 "the GPS module was installed."
-msgstr "When disabled, the route management module keeps working exactly as before the GPS module was installed."
+msgstr "عند التعطيل، تستمر وحدة إدارة المسارات في العمل تماماً كما قبل تثبيت وحدة GPS."
 
 #. module: flousflow_distribution_route_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_gps.view_distribution_gps_override_wizard_form
-msgid ""
+msgid "Why is GPS validation being overridden? (e.g. customer moved temporarily, GPS signal unavailable at site...)"
 "Why is GPS validation being overridden? (e.g. customer moved temporarily, "
 "GPS signal unavailable at site...)"
-msgstr "Why is GPS validation being overridden? (e.g. customer moved temporarily, GPS signal unavailable at site...)"
+msgstr "لماذا يتم تجاوز التحقق من GPS؟ (مثل: انتقل العميل مؤقتاً، إشارة GPS غير متاحة في الموقع...)"
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
-msgid ""
+msgid "You are %(distance).0f m away from the customer location, while the allowed radius is %(radius).0f m. Check-in is not allowed."
 "You are %(distance).0f m away from the customer location, while the allowed "
 "radius is %(radius).0f m. Check-in is not allowed."
-msgstr "You are %(distance).0f m away from the customer location, while the allowed radius is %(radius).0f m. Check-in is not allowed."
+msgstr "أنت على بعد %(distance).0f متر من موقع العميل، بينما النطاق المسموح %(radius).0f متر. لا يُسمح بالحضور."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
-msgid ""
+msgid "You are %(distance).0f m away from the customer location, while the allowed radius is %(radius).0f m. Check-out is not allowed."
 "You are %(distance).0f m away from the customer location, while the allowed "
 "radius is %(radius).0f m. Check-out is not allowed."
-msgstr "You are %(distance).0f m away from the customer location, while the allowed radius is %(radius).0f m. Check-out is not allowed."
+msgstr "أنت على بعد %(distance).0f متر من موقع العميل، بينما النطاق المسموح %(radius).0f متر. لا يُسمح بالانصراف."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-javascript
 #: code:addons/flousflow_distribution_route_gps/static/src/js/visit_gps_action.js:0
-msgid ""
+msgid "You are outside the customer geofence. The visit was allowed and the event was recorded."
 "You are outside the customer geofence. The visit was allowed and the event "
 "was recorded."
-msgstr "You are outside the customer geofence. The visit was allowed and the event was recorded."
+msgstr "أنت خارج النطاق الجغرافي للعميل. سُمحت الزيارة وسُجل الحدث."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "You can only complete visits assigned to you."
-msgstr "You can only complete visits assigned to you."
+msgstr "يمكنك إنهاء الزيارات المعينة لك فقط."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_route_gps/models/distribution_route_visit.py:0
 msgid "You can only start visits assigned to you."
-msgstr "You can only start visits assigned to you."
+msgstr "يمكنك بدء الزيارات المعينة لك فقط."
 
 #. module: flousflow_distribution_route_gps
 #. odoo-python

@@ -3,7 +3,7 @@
 # 	* flousflow_distribution_commercial
 #
 msgid ""
-msgstr ""
+msgstr "Project-Id-Version: Odoo Server 19.0-20260619\\nReport-Msgid-Bugs-To: \\nPOT-Creation-Date: 2026-09-07 15:59+0000\\nPO-Revision-Date: 2026-09-07 15:59+0000\\nLast-Translator: \\nLanguage-Team: \\nMIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: \\nPlural-Forms: \\n"
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-07 15:59+0000\n"
@@ -21,134 +21,134 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "A collection must be linked to a visit."
-msgstr "A collection must be linked to a visit."
+msgstr "يجب ربط التحصيل بزيارة."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 #: code:addons/flousflow_distribution_commercial/wizard/collection_review_wizard.py:0
 msgid "A rejection reason is required."
-msgstr "A rejection reason is required."
+msgstr "سبب الرفض مطلوب."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Accounting"
-msgstr "Accounting"
+msgstr "المحاسبة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__accounting_date
 msgid "Accounting Date"
-msgstr "Accounting Date"
+msgstr "التاريخ المحاسبي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__payment_state
 msgid "Accounting Status"
-msgstr "Accounting Status"
+msgstr "الحالة المحاسبية"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_needaction
 msgid "Action Needed"
-msgstr "Action Needed"
+msgstr "إجراء مطلوب"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__action_type
 msgid "Action Type"
-msgstr "Action Type"
+msgstr "نوع الإجراء"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_ids
 msgid "Activities"
-msgstr "Activities"
+msgstr "الأنشطة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Activity Exception Decoration"
+msgstr "زخرفة نشاط الاستثناء"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_state
 msgid "Activity State"
-msgstr "Activity State"
+msgstr "حالة النشاط"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_type_icon
 msgid "Activity Type Icon"
-msgstr "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_company__allow_collection_overpayment
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_config_settings__allow_collection_overpayment
 msgid "Allow Collection Overpayment"
-msgstr "Allow Collection Overpayment"
+msgstr "السماح بتحصيل زائد عن المبلغ"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Allow Overpayment"
-msgstr "Allow Overpayment"
+msgstr "السماح بالتحصيل الزائد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_company__allow_unallocated_customer_collection
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_config_settings__allow_unallocated_customer_collection
 msgid "Allow Unallocated Customer Collection"
-msgstr "Allow Unallocated Customer Collection"
+msgstr "السماح بتحصيل عميل غير مخصص"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
-msgid ""
+msgid "Allow collections larger than the outstanding balance of the selected invoices"
 "Allow collections larger than the outstanding balance of the selected "
 "invoices"
-msgstr "Allow collections larger than the outstanding balance of the selected invoices"
+msgstr "السماح بتحصيلات أكبر من الرصيد المستحق للفواتير المحددة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_company__allow_collection_overpayment
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_config_settings__allow_collection_overpayment
-msgid ""
+msgid "Allow collections larger than the outstanding balance of the selected invoices. The excess remains customer credit."
 "Allow collections larger than the outstanding balance of the selected "
 "invoices. The excess remains customer credit."
-msgstr "Allow collections larger than the outstanding balance of the selected invoices. The excess remains customer credit."
+msgstr "السماح بتحصيلات أكبر من الرصيد المستحق للفواتير المحددة. يبقى الزائد رصيداً دائناً للعميل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
-msgid ""
+msgid "Allow customer collections without selecting specific invoices (payment stays as customer credit)"
 "Allow customer collections without selecting specific invoices (payment "
 "stays as customer credit)"
-msgstr "Allow customer collections without selecting specific invoices (payment stays as customer credit)"
+msgstr "السماح بتحصيلات العملاء بدون تحديد فواتير محددة (تبقى الدفعة رصيداً دائناً للعميل)"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_company__allow_unallocated_customer_collection
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_config_settings__allow_unallocated_customer_collection
-msgid ""
+msgid "Allow customer collections without selecting specific invoices. The payment remains available customer credit per standard Odoo accounting."
 "Allow customer collections without selecting specific invoices. The payment "
 "remains available customer credit per standard Odoo accounting."
-msgstr ""
+msgstr "السماح بتحصيلات العملاء بدون تحديد فواتير محددة. تبقى الدفعة رصيداً دائناً متاحاً للعميل حسب المعالجة المحاسبية القياسية في أودو."
 "Allow customer collections without selecting specific invoices. The payment "
 "remains available customer credit per standard Odoo accounting."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__amount
 msgid "Amount"
-msgstr "Amount"
+msgstr "المبلغ"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr "عدد المرفقات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__collection_method__bank_transfer
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Bank Transfer"
-msgstr "Bank Transfer"
+msgstr "تحويل بنكي"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "إلغاء"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Cancel this collection?"
-msgstr "Cancel this collection?"
+msgstr "هل تريد إلغاء هذا التحصيل؟"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__payment_state__cancelled
@@ -156,34 +156,34 @@ msgstr "Cancel this collection?"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Cancelled"
-msgstr "Cancelled"
+msgstr "ملغي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__collection_method__cash
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Cash"
-msgstr "Cash"
+msgstr "نقدي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__collection_method__cheque
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Cheque"
-msgstr "Cheque"
+msgstr "شيك"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__collection_id
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_type__commercial_action_type__collection
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Collection"
-msgstr "Collection"
+msgstr "التحصيل"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Collection %(name)s has a posted payment. Cancel the payment through standard accounting first."
 "Collection %(name)s has a posted payment. Cancel the payment through "
 "standard accounting first."
-msgstr ""
+msgstr "التحصيل %(name)s له دفعة مُرحّلة. ألغِ الدفعة من المحاسبة القياسية أولاً."
 "Collection %(name)s has a posted payment. Cancel the payment through "
 "standard accounting first."
 
@@ -191,67 +191,67 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection %(name)s is %(state)s and can no longer be modified."
-msgstr "Collection %(name)s is %(state)s and can no longer be modified."
+msgstr "التحصيل %(name)s حالته %(state)s ولا يمكن تعديله بعد الآن."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection %(name)s is %(state)s and cannot be cancelled."
-msgstr "Collection %(name)s is %(state)s and cannot be cancelled."
+msgstr "التحصيل %(name)s حالته %(state)s ولا يمكن إلغاؤه."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection %(name)s is already %(state)s."
-msgstr "Collection %(name)s is already %(state)s."
+msgstr "التحصيل %(name)s حالته %(state)s بالفعل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_graph
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_pivot
 msgid "Collection Analysis"
-msgstr "Collection Analysis"
+msgstr "تحليل التحصيلات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__collection_date
 msgid "Collection Date"
-msgstr "Collection Date"
+msgstr "تاريخ التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__collection_method
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Collection Method"
-msgstr "Collection Method"
+msgstr "طريقة التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_distribution_collection_review_wizard
 msgid "Collection Review Wizard"
-msgstr "Collection Review Wizard"
+msgstr "معالج مراجعة التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:res.groups,name:flousflow_distribution_commercial.group_distribution_collection_user
 msgid "Collection User"
-msgstr "Collection User"
+msgstr "مستخدم التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:res.groups,name:flousflow_distribution_commercial.group_distribution_collection_validator
 msgid "Collection Validator"
-msgstr "Collection Validator"
+msgstr "معتمد التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_company__collection_visit_requires_collection_record
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_config_settings__collection_visit_requires_collection_record
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Collection Visits Require Collection Record"
-msgstr "Collection Visits Require Collection Record"
+msgstr "زيارات التحصيل تتطلب سجل تحصيل"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Collection amount %(amount)s exceeds the outstanding balance of the selected invoices (%(residual)s). Adjust the amount or enable the overpayment policy."
 "Collection amount %(amount)s exceeds the outstanding balance of the selected"
 " invoices (%(residual)s). Adjust the amount or enable the overpayment "
 "policy."
-msgstr ""
+msgstr "مبلغ التحصيل %(amount)s يتجاوز الرصيد المستحق للفواتير المحددة (%(residual)s). عدّل المبلغ أو فعّل سياسة التحصيل الزائد."
 "Collection amount %(amount)s exceeds the outstanding balance of the selected"
 " invoices (%(residual)s). Adjust the amount or enable the overpayment "
 "policy."
@@ -260,31 +260,31 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection cancelled."
-msgstr "Collection cancelled."
+msgstr "تم إلغاء التحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection rejected: %s"
-msgstr "Collection rejected: %s"
+msgstr "تم رفض التحصيل: %s"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection reset to draft."
-msgstr "Collection reset to draft."
+msgstr "تمت إعادة التحصيل إلى مسودة."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection submitted for accounting validation."
-msgstr "Collection submitted for accounting validation."
+msgstr "تم إرسال التحصيل للاعتماد المحاسبي."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Collection validated — payment %(payment)s created and posted."
-msgstr "Collection validated — payment %(payment)s created and posted."
+msgstr "تم اعتماد التحصيل — تم إنشاء وترحيل الدفعة %(payment)s."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
@@ -300,14 +300,14 @@ msgstr "Collection validated — payment %(payment)s created and posted."
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_employee_form_inherit_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_partner_form_inherit_commercial
 msgid "Collections"
-msgstr "Collections"
+msgstr "التحصيلات"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_commercial.action_distribution_visit_collection
-msgid ""
+msgid "Collections are recorded from route visits and validated by\\n                accounting before a standard payment is created."
 "Collections are recorded from route visits and validated by\n"
 "                accounting before a standard payment is created."
-msgstr ""
+msgstr "Collections are recorded from route visits and validated by\\n                accounting before a standard payment is created."
 "Collections are recorded from route visits and validated by\n"
 "                accounting before a standard payment is created."
 
@@ -315,161 +315,161 @@ msgstr ""
 #: model:ir.actions.act_window,name:flousflow_distribution_commercial.action_distribution_collections_to_validate
 #: model:ir.ui.menu,name:flousflow_distribution_commercial.menu_distribution_collections_to_validate
 msgid "Collections to Validate"
-msgstr "Collections to Validate"
+msgstr "تحصيلات بانتظار الاعتماد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_type__commercial_action_type
 msgid "Commercial Action"
-msgstr "Commercial Action"
+msgstr "الإجراء التجاري"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_plan_form_inherit_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "Commercial Summary"
-msgstr "Commercial Summary"
+msgstr "الملخص التجاري"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_company__commercial_validation_mode
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_config_settings__commercial_validation_mode
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Commercial Validation Mode"
-msgstr "Commercial Validation Mode"
+msgstr "نمط الاعتماد التجاري"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_type__commercial_action_type
-msgid ""
+msgid "Commercial activity expected during this kind of visit. Used by the commercial validation policy (disabled / warning / strict). An unsuccessful business result always completes the visit without a commercial record."
 "Commercial activity expected during this kind of visit. Used by the "
 "commercial validation policy (disabled / warning / strict). An unsuccessful "
 "business result always completes the visit without a commercial record."
-msgstr "Commercial activity expected during this kind of visit. Used by the commercial validation policy (disabled / warning / strict). An unsuccessful business result always completes the visit without a commercial record."
+msgstr "نشاط تجاري متوقع أثناء هذا النوع من الزيارات. تُستخدمه سياسة الاعتماد التجاري (معطل / تحذير / صارم). النتيجة التجارية غير الناجحة تنهي الزيارة دائماً بدون سجل تجاري."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
-msgid ""
+msgid "Commercial warning: this %(type)s visit was completed without %(missing)s."
 "Commercial warning: this %(type)s visit was completed without %(missing)s."
-msgstr "Commercial warning: this %(type)s visit was completed without %(missing)s."
+msgstr "تحذير تجاري: هذه الزيارة من نوع %(type)s اكتملت بدون %(missing)s."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_res_company
 msgid "Companies"
-msgstr "Companies"
+msgstr "الشركات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__company_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Company"
-msgstr "Company"
+msgstr "الشركة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__company_currency_id
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__company_currency_id
 msgid "Company Currency"
-msgstr "Company Currency"
+msgstr "عملة الشركة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_res_config_settings
 msgid "Config Settings"
-msgstr "Config Settings"
+msgstr "الإعدادات"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "Confirmed"
-msgstr "Confirmed"
+msgstr "مؤكد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__sale_order_amount
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__confirmed_sale_amount_total
 msgid "Confirmed Sales Amount"
-msgstr "Confirmed Sales Amount"
+msgstr "قيمة المبيعات المؤكدة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_res_partner
 msgid "Contact"
-msgstr "Contact"
+msgstr "جهة الاتصال"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_company__commercial_validation_mode
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_config_settings__commercial_validation_mode
-msgid ""
+msgid "Controls visit completion when the visit type expects a commercial action: disabled = no check, warning = log a note and complete, strict = block completion. An unsuccessful business result (customer refused) always completes."
 "Controls visit completion when the visit type expects a commercial action: "
 "disabled = no check, warning = log a note and complete, strict = block "
 "completion. An unsuccessful business result (customer refused) always "
 "completes."
-msgstr "Controls visit completion when the visit type expects a commercial action: disabled = no check, warning = log a note and complete, strict = block completion. An unsuccessful business result (customer refused) always completes."
+msgstr "يتحكم في إنهاء الزيارة عندما يتوقع نوع الزيارة إجراءً تجارياً: معطل = بدون فحص، تحذير = تسجيل ملاحظة والإكمال، صارم = منع الإكمال. النتيجة التجارية غير الناجحة (رفض العميل) تكمل الزيارة دائماً."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "Create Quotation"
-msgstr "Create Quotation"
+msgstr "إنشاء عرض سعر"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__create_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__create_uid
 msgid "Created by"
-msgstr "Created by"
+msgstr "أنشئ بواسطة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__create_date
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__create_date
 msgid "Created on"
-msgstr "Created on"
+msgstr "أنشئ في"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__currency_id
 msgid "Currency"
-msgstr "Currency"
+msgstr "العملة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__partner_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Customer"
-msgstr "Customer"
+msgstr "العميل"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/wizard/collection_review_wizard.py:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Customer Collection"
-msgstr "Customer Collection"
+msgstr "تحصيل العميل"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_list
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Customer Collections"
-msgstr "Customer Collections"
+msgstr "تحصيلات العملاء"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__invoice_ids
 msgid "Customer Invoices"
-msgstr "Customer Invoices"
+msgstr "فواتير العملاء"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Customer Ledger"
-msgstr "Customer Ledger"
+msgstr "حساب العميل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__customer_reference
 msgid "Customer Reference"
-msgstr "Customer Reference"
+msgstr "مرجع العميل"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Customer collection awaiting accounting validation."
-msgstr "Customer collection awaiting accounting validation."
+msgstr "تحصيل عميل بانتظار الاعتماد المحاسبي."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Date"
-msgstr "Date"
+msgstr "التاريخ"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__res_company__commercial_validation_mode__disabled
 msgid "Disabled"
-msgstr "Disabled"
+msgstr "معطل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__display_name
@@ -485,17 +485,17 @@ msgstr "Disabled"
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_partner__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_sale_order__display_name
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "الاسم المعروض"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_order_form_inherit_commercial
 msgid "Distribution"
-msgstr "Distribution"
+msgstr "التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:res.groups.privilege,name:flousflow_distribution_commercial.res_groups_privilege_distribution_collection
 msgid "Distribution Collection Validator"
-msgstr "Distribution Collection Validator"
+msgstr "معتمد تحصيلات التوزيع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
@@ -504,29 +504,29 @@ msgstr "Distribution Collection Validator"
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_partner__distribution_collection_count
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_users__distribution_collection_count
 msgid "Distribution Collections"
-msgstr "Distribution Collections"
+msgstr "تحصيلات التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_pos_order__distribution_employee_id
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_sale_order__distribution_employee_id
 msgid "Distribution Employee"
-msgstr "Distribution Employee"
+msgstr "موظف توزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_pos_order__distribution_route_id
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_sale_order__distribution_route_id
 msgid "Distribution Route"
-msgstr "Distribution Route"
+msgstr "مسار التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_distribution_route_plan
 msgid "Distribution Route Plan"
-msgstr "Distribution Route Plan"
+msgstr "خطة مسار التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_distribution_route_visit
 msgid "Distribution Route Visit"
-msgstr "Distribution Route Visit"
+msgstr "زيارة مسار التوزيع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
@@ -534,12 +534,12 @@ msgstr "Distribution Route Visit"
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_partner__distribution_route_sale_count
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_users__distribution_route_sale_count
 msgid "Distribution Sales"
-msgstr "Distribution Sales"
+msgstr "مبيعات التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_sale_order__distribution_vehicle_id
 msgid "Distribution Vehicle"
-msgstr "Distribution Vehicle"
+msgstr "مركبة التوزيع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
@@ -547,112 +547,112 @@ msgstr "Distribution Vehicle"
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_pos_order__distribution_visit_id
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_sale_order__distribution_visit_id
 msgid "Distribution Visit"
-msgstr "Distribution Visit"
+msgstr "زيارة التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_distribution_visit_collection
 msgid "Distribution Visit Collection"
-msgstr "Distribution Visit Collection"
+msgstr "تحصيل زيارة التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_pos_config__distribution_visit_context_raw
 msgid "Distribution Visit Context"
-msgstr "Distribution Visit Context"
+msgstr "سياق زيارة التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_distribution_visit_type
 msgid "Distribution Visit Type"
-msgstr "Distribution Visit Type"
+msgstr "نوع زيارة التوزيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__payment_state__draft
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__state__draft
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Draft"
-msgstr "Draft"
+msgstr "مسودة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_route_visit__quotation_amount_total
 msgid "Draft/sent quotations linked to this visit (not revenue yet)."
-msgstr "Draft/sent quotations linked to this visit (not revenue yet)."
+msgstr "عروض الأسعار المسودة/المرسلة المرتبطة بهذه الزيارة (ليست إيرادات بعد)."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_hr_employee
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__employee_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Employee"
-msgstr "Employee"
+msgstr "الموظف"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Evidence & Notes"
-msgstr "Evidence & Notes"
+msgstr "الأدلة والملاحظات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.ui.menu,name:flousflow_distribution_commercial.menu_distribution_finance_control
 msgid "Finance Control"
-msgstr "Finance Control"
+msgstr "الرقابة المالية"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_follower_ids
 msgid "Followers"
-msgstr "Followers"
+msgstr "المتابعون"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Followers (Partners)"
+msgstr "المتابعون (جهات الاتصال)"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_collection
 msgid "Has Collection"
-msgstr "Has Collection"
+msgstr "لديه تحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_confirmed_sale
 msgid "Has Confirmed Sale"
-msgstr "Has Confirmed Sale"
+msgstr "لديه بيع مؤكد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__has_message
 msgid "Has Message"
-msgstr "Has Message"
+msgstr "لديه رسالة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_pos_sale
 msgid "Has Pos Sale"
-msgstr "Has Pos Sale"
+msgstr "لديه بيع نقطة بيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_quotation
 msgid "Has Quotation"
-msgstr "Has Quotation"
+msgstr "لديه عرض سعر"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_sale
 msgid "Has Sale"
-msgstr "Has Sale"
+msgstr "لديه بيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_submitted_collection
 msgid "Has Submitted Collection"
-msgstr "Has Submitted Collection"
+msgstr "لديه تحصيل مُرسل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__has_validated_collection
 msgid "Has Validated Collection"
-msgstr "Has Validated Collection"
+msgstr "لديه تحصيل معتمد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_sale_order__distribution_vehicle_id
-msgid ""
+msgid "Historical vehicle snapshot taken when the sale was created from the visit."
 "Historical vehicle snapshot taken when the sale was created from the visit."
-msgstr "Historical vehicle snapshot taken when the sale was created from the visit."
+msgstr "لقطة تاريخية للمركبة التُقطت عند إنشاء البيع من الزيارة."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__id
@@ -668,231 +668,231 @@ msgstr "Historical vehicle snapshot taken when the sale was created from the vis
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_partner__id
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_sale_order__id
 msgid "ID"
-msgstr "ID"
+msgstr "المعرف"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_exception_icon
 msgid "Icon"
-msgstr "Icon"
+msgstr "الأيقونة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "If checked, new messages require your attention."
+msgstr "عند التحديد، تتطلب الرسائل الجديدة انتباهك."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__message_has_error
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr "عند التحديد، بعض الرسائل بها خطأ في التسليم."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Invoice %(invoice)s does not belong to customer %(customer)s."
-msgstr "Invoice %(invoice)s does not belong to customer %(customer)s."
+msgstr "الفاتورة %(invoice)s لا تخص العميل %(customer)s."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Invoice %(invoice)s does not belong to the collection company."
-msgstr "Invoice %(invoice)s does not belong to the collection company."
+msgstr "الفاتورة %(invoice)s لا تخص شركة التحصيل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Invoices"
-msgstr "Invoices"
+msgstr "الفواتير"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_is_follower
 msgid "Is Follower"
-msgstr "Is Follower"
+msgstr "متابع"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Journal"
-msgstr "Journal"
+msgstr "اليومية"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Journal & Method"
-msgstr "Journal & Method"
+msgstr "اليومية والطريقة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__write_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__write_uid
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "آخر تحديث بواسطة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__write_date
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__write_date
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "آخر تحديث في"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_ids
 msgid "Messages"
-msgstr "Messages"
+msgstr "الرسائل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "My Activity Deadline"
+msgstr "موعد نشاطي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.actions.act_window,name:flousflow_distribution_commercial.action_my_distribution_collections
 #: model:ir.ui.menu,name:flousflow_distribution_commercial.menu_distribution_my_collections
 msgid "My Collections"
-msgstr "My Collections"
+msgstr "تحصيلاتي"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "New"
-msgstr "New"
+msgstr "جديد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr "Next Activity Calendar Event"
+msgstr "حدث تقويم النشاط التالي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Next Activity Deadline"
+msgstr "موعد النشاط التالي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_summary
 msgid "Next Activity Summary"
-msgstr "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_type_id
 msgid "Next Activity Type"
-msgstr "Next Activity Type"
+msgstr "نوع النشاط التالي"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_commercial.action_distribution_visit_collection
 msgid "No customer collections yet"
-msgstr "No customer collections yet"
+msgstr "لا توجد تحصيلات عملاء بعد"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "No payment has been created yet."
-msgstr "No payment has been created yet."
+msgstr "لم يتم إنشاء أي دفعة بعد."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_type__commercial_action_type__none
 msgid "None"
-msgstr "None"
+msgstr "لا شيء"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__payment_state__not_created
 msgid "Not Created"
-msgstr "Not Created"
+msgstr "لم يتم الإنشاء"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__notes
 msgid "Notes & Evidence Notes"
-msgstr "Notes & Evidence Notes"
+msgstr "الملاحظات وملاحظات الأدلة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Number of Actions"
+msgstr "عدد الإجراءات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_has_error_counter
 msgid "Number of errors"
-msgstr "Number of errors"
+msgstr "عدد الأخطاء"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ تسليم"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Only collection validators may reject a collection."
-msgstr "Only collection validators may reject a collection."
+msgstr "معتمدو التحصيلات فقط يمكنهم رفض التحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Only draft collections can be deleted. Collection %(name)s is %(state)s."
 "Only draft collections can be deleted. Collection %(name)s is %(state)s."
-msgstr "Only draft collections can be deleted. Collection %(name)s is %(state)s."
+msgstr "يمكن حذف التحصيلات في حالة المسودة فقط. التحصيل %(name)s حالته %(state)s."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Only rejected collections can be reset to draft."
-msgstr "Only rejected collections can be reset to draft."
+msgstr "يمكن إعادة التحصيلات المرفوضة فقط إلى المسودة."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Only submitted collections can be rejected."
-msgstr "Only submitted collections can be rejected."
+msgstr "يمكن رفض التحصيلات المرسلة فقط."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Only submitted collections can be validated. Collection %(name)s is %(state)s."
 "Only submitted collections can be validated. Collection %(name)s is "
 "%(state)s."
-msgstr "Only submitted collections can be validated. Collection %(name)s is %(state)s."
+msgstr "يمكن اعتماد التحصيلات المرسلة فقط. التحصيل %(name)s حالته %(state)s."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
-msgid ""
+msgid "Only the assigned employee or a distribution manager can run commercial actions on visit %(visit)s."
 "Only the assigned employee or a distribution manager can run commercial "
 "actions on visit %(visit)s."
-msgstr "Only the assigned employee or a distribution manager can run commercial actions on visit %(visit)s."
+msgstr "الموظف المعين أو مدير التوزيع فقط يمكنه تنفيذ الإجراءات التجارية على الزيارة %(visit)s."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Only validators or distribution managers may reset a collection to draft."
 "Only validators or distribution managers may reset a collection to draft."
-msgstr "Only validators or distribution managers may reset a collection to draft."
+msgstr "المعتمدون أو مديرو التوزيع فقط يمكنهم إعادة التحصيل إلى مسودة."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Open Payment"
-msgstr "Open Payment"
+msgstr "فتح الدفعة"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_order_form_inherit_commercial
 msgid "Open Visit"
-msgstr "Open Visit"
+msgstr "فتح الزيارة"
 
 #. module: flousflow_distribution_commercial
 #: model:res.groups,comment:flousflow_distribution_commercial.group_distribution_collection_validator
-msgid ""
+msgid "Operational approval of distribution customer collections. Accounting posting still requires real billing/accounting rights on the user — this group alone never posts payments."
 "Operational approval of distribution customer collections. Accounting "
 "posting still requires real billing/accounting rights on the user — this "
 "group alone never posts payments."
-msgstr ""
+msgstr "الاعتماد التشغيلي لتحصيلات عملاء التوزيع. لا يزال ترحيل القيود المحاسبية يتطلب صلاحيات فواتير/محاسبة حقيقية للمستخدم — هذه المجموعة وحدها لا ترحّل دفعات أبداً."
 "Operational approval of distribution customer collections. Accounting "
 "posting still requires real billing/accounting rights on the user — this "
 "group alone never posts payments."
@@ -900,7 +900,7 @@ msgstr ""
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__collection_method__other
 msgid "Other"
-msgstr "Other"
+msgstr "أخرى"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
@@ -910,76 +910,76 @@ msgstr "Other"
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__pos_order_ids
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "POS Orders"
-msgstr "POS Orders"
+msgstr "أوامر نقاط البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_type__commercial_action_type__pos_sale
 msgid "POS Sale"
-msgstr "POS Sale"
+msgstr "بيع نقطة البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__pos_sales_amount
 msgid "POS Sales Amount"
-msgstr "POS Sales Amount"
+msgstr "قيمة مبيعات نقاط البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__pos_sales_amount_total
 msgid "POS Sales Amount (net)"
-msgstr "POS Sales Amount (net)"
+msgstr "قيمة مبيعات نقاط البيع (صافي)"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_route_visit__pos_sales_amount_total
 msgid "Paid POS orders net of refunds. Cancelled orders excluded."
-msgstr "Paid POS orders net of refunds. Cancelled orders excluded."
+msgstr "أوامر نقاط البيع المدفوعة صافية من المرتجعات. تستبعد الأوامر الملغاة."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__payment_id
 msgid "Payment"
-msgstr "Payment"
+msgstr "الدفعة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__journal_id
 msgid "Payment Journal"
-msgstr "Payment Journal"
+msgstr "يومية الدفع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__payment_method_line_id
 msgid "Payment Method Line"
-msgstr "Payment Method Line"
+msgstr "سطر طريقة الدفع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__payment_reference
 msgid "Payment Reference"
-msgstr "Payment Reference"
+msgstr "مرجع الدفعة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_pos_config
 msgid "Point of Sale Configuration"
-msgstr "Point of Sale Configuration"
+msgstr "إعدادات نقطة البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_pos_order
 msgid "Point of Sale Orders"
-msgstr "Point of Sale Orders"
+msgstr "أوامر نقاط البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__payment_state__posted
 msgid "Posted"
-msgstr "Posted"
+msgstr "مُرحّلة"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "Quotation"
-msgstr "Quotation"
+msgstr "عرض السعر"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__quotation_amount
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__quotation_amount_total
 msgid "Quotation Amount"
-msgstr "Quotation Amount"
+msgstr "قيمة عرض السعر"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
@@ -987,516 +987,516 @@ msgstr "Quotation Amount"
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__quotation_count
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "Quotations"
-msgstr "Quotations"
+msgstr "عروض الأسعار"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__sale_order_count
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__sale_order_ids
 msgid "Quotations & Sales"
-msgstr "Quotations & Sales"
+msgstr "عروض الأسعار والمبيعات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__rating_ids
 msgid "Ratings"
-msgstr "Ratings"
+msgstr "التقييمات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_collection_review_wizard__reason
 msgid "Reason"
-msgstr "Reason"
+msgstr "السبب"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Receipts, transfer proof, received documents…"
-msgstr "Receipts, transfer proof, received documents…"
+msgstr "الإيصالات، إثبات التحويل، المستندات المستلمة…"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "Record Collection"
-msgstr "Record Collection"
+msgstr "تسجيل تحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:res.groups,comment:flousflow_distribution_commercial.group_distribution_collection_user
-msgid ""
+msgid "Record and submit customer collections on own visits. Cannot validate or post payments."
 "Record and submit customer collections on own visits. Cannot validate or "
 "post payments."
-msgstr ""
+msgstr "تسجيل وإرسال تحصيلات العملاء على الزيارات الخاصة به. لا يمكنه الاعتماد أو ترحيل الدفعات."
 "Record and submit customer collections on own visits. Cannot validate or "
 "post payments."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__name
 msgid "Reference"
-msgstr "Reference"
+msgstr "المرجع"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "References"
-msgstr "References"
+msgstr "المراجع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_collection_review_wizard__action_type__reject
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Reject"
-msgstr "Reject"
+msgstr "رفض"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Reject Collection"
-msgstr "Reject Collection"
+msgstr "رفض التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__state__rejected
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Rejected"
-msgstr "Rejected"
+msgstr "مرفوض"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__rejected_by
 msgid "Rejected By"
-msgstr "Rejected By"
+msgstr "رفضه"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__rejected_datetime
 msgid "Rejected On"
-msgstr "Rejected On"
+msgstr "تاريخ الرفض"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Rejection"
-msgstr "Rejection"
+msgstr "الرفض"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__rejection_reason
 msgid "Rejection Reason"
-msgstr "Rejection Reason"
+msgstr "سبب الرفض"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_company__require_collection_attachment
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_config_settings__require_collection_attachment
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Require Collection Attachment"
-msgstr "Require Collection Attachment"
+msgstr "إلزام مرفق التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_company__require_collection_attachment
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_res_config_settings__require_collection_attachment
-msgid ""
+msgid "Require at least one attachment (receipt, transfer proof) before a collection can be submitted."
 "Require at least one attachment (receipt, transfer proof) before a "
 "collection can be submitted."
-msgstr "Require at least one attachment (receipt, transfer proof) before a collection can be submitted."
+msgstr "يلزم مرفق واحد على الأقل (إيصال، إثبات تحويل) قبل إمكانية إرسال التحصيل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Require at least one attachment before submitting a collection"
-msgstr "Require at least one attachment before submitting a collection"
+msgstr "يلزم مرفق واحد على الأقل قبل إرسال التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_collection_review_wizard__reason
 msgid "Required when rejecting the collection."
-msgstr "Required when rejecting the collection."
+msgstr "إلزامي عند رفض التحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Reset Collection to Draft"
-msgstr "Reset Collection to Draft"
+msgstr "إعادة التحصيل إلى مسودة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_collection_review_wizard__action_type__reset_draft
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Reset to Draft"
-msgstr "Reset to Draft"
+msgstr "إعادة إلى مسودة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__activity_user_id
 msgid "Responsible User"
-msgstr "Responsible User"
+msgstr "المستخدم المسؤول"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Route"
-msgstr "Route"
+msgstr "المسار"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "Route %(route)s is not in progress. Start the route first."
-msgstr "Route %(route)s is not in progress. Start the route first."
+msgstr "المسار %(route)s ليس قيد التنفيذ. ابدأ المسار أولاً."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__route_id
 msgid "Route Plan"
-msgstr "Route Plan"
+msgstr "خطة المسار"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_partner_form_inherit_commercial
 msgid "Route Sales"
-msgstr "Route Sales"
+msgstr "مبيعات المسار"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_pos_order__distribution_route_id
 msgid "Route the visit belonged to (historical snapshot)."
-msgstr "Route the visit belonged to (historical snapshot)."
+msgstr "المسار الذي كانت تنتمي إليه الزيارة (لقطة تاريخية)."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr "SMS Delivery error"
+msgstr "خطأ في تسليم SMS"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_type__commercial_action_type__sale
 msgid "Sale"
-msgstr "Sale"
+msgstr "البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__sale_order_count
 msgid "Sale Orders"
-msgstr "Sale Orders"
+msgstr "أوامر البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_company__sales_visit_requires_commercial_record
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_res_config_settings__sales_visit_requires_commercial_record
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Sale Visits Require Commercial Record"
-msgstr "Sale Visits Require Commercial Record"
+msgstr "زيارات البيع تتطلب سجل تجاري"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_type__commercial_action_type__sale_and_collection
 msgid "Sale and Collection"
-msgstr "Sale and Collection"
+msgstr "البيع والتحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_plan_form_inherit_commercial
 msgid "Sales"
-msgstr "Sales"
+msgstr "المبيعات"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Sales & Collections"
-msgstr "Sales & Collections"
+msgstr "المبيعات والتحصيلات"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model,name:flousflow_distribution_commercial.model_sale_order
 msgid "Sales Order"
-msgstr "Sales Order"
+msgstr "أمر البيع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "Sales Orders"
-msgstr "Sales Orders"
+msgstr "أوامر البيع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Select a collection method."
-msgstr "Select a collection method."
+msgstr "اختر طريقة تحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Select a payment journal."
-msgstr "Select a payment journal."
+msgstr "اختر يومية دفع."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "Select a payment method line."
-msgstr "Select a payment method line."
+msgstr "اختر سطر طريقة دفع."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__accounting_date
-msgid ""
+msgid "Set by the accounting validator according to the accounting period. The salesman cannot change it."
 "Set by the accounting validator according to the accounting period. The "
 "salesman cannot change it."
-msgstr ""
+msgstr "يحددها معتمد المحاسبة حسب الفترة المحاسبية. لا يمكن للمندوب تغييرها."
 "Set by the accounting validator according to the accounting period. The "
 "salesman cannot change it."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_route_visit_form_inherit_commercial
 msgid "Start POS Sale"
-msgstr "Start POS Sale"
+msgstr "بدء بيع نقطة البيع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__state
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Status"
-msgstr "Status"
+msgstr "الحالة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__activity_state
-msgid ""
+msgid "Status based on activities\\nOverdue: Due date is already passed\\nToday: Activity date is today\\nPlanned: Future activities."
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
 "Today: Activity date is today\n"
 "Planned: Future activities."
-msgstr "Status based on activities\\nOverdue: Due date is already passed\\nToday: Activity date is today\\nPlanned: Future activities."
+msgstr "Status based on activities\\\\nOverdue: Due date is already passed\\\\nToday: Activity date is today\\\\nPlanned: Future activities."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__res_company__commercial_validation_mode__strict
 msgid "Strict"
-msgstr "Strict"
+msgstr "صارم"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Submit Collection"
-msgstr "Submit Collection"
+msgstr "إرسال التحصيل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__state__submitted
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Submitted"
-msgstr "Submitted"
+msgstr "مُرسل"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__submitted_collection_amount
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__submitted_collection_amount
 msgid "Submitted Collections"
-msgstr "Submitted Collections"
+msgstr "التحصيلات المرسلة"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Submitted collection %(name)s is locked. A manager may reset it to draft."
 "Submitted collection %(name)s is locked. A manager may reset it to draft."
-msgstr "Submitted collection %(name)s is locked. A manager may reset it to draft."
+msgstr "التحصيل المرسل %(name)s مقفل. يمكن للمدير إعادته إلى مسودة."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_pos_config__distribution_visit_context_raw
-msgid ""
+msgid "Technical: id of the visit whose commercial context is injected into new POS orders. Set by the visit action, cleared on normal POS open."
 "Technical: id of the visit whose commercial context is injected into new POS"
 " orders. Set by the visit action, cleared on normal POS open."
-msgstr "Technical: id of the visit whose commercial context is injected into new POS orders. Set by the visit action, cleared on normal POS open."
+msgstr "تقني: معرف الزيارة التي يُحقن سياقها التجاري في أوامر نقطة البيع الجديدة. يُحدد بإجراء الزيارة ويُمسح عند فتح نقطة البيع العادية."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "The collection amount must be positive."
-msgstr "The collection amount must be positive."
+msgstr "يجب أن يكون مبلغ التحصيل موجباً."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.constraint,message:flousflow_distribution_commercial.constraint_distribution_visit_collection_amount_check
-msgid ""
+msgid "The collection amount must be strictly positive. If the customer did not pay, use the visit result instead of a zero collection."
 "The collection amount must be strictly positive. If the customer did not "
 "pay, use the visit result instead of a zero collection."
-msgstr "The collection amount must be strictly positive. If the customer did not pay, use the visit result instead of a zero collection."
+msgstr "يجب أن يكون مبلغ التحصيل موجباً تماماً. إذا لم يدفع العميل، استخدم نتيجة الزيارة بدلاً من تحصيل بقيمة صفر."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "The payment journal currency does not match the collection currency."
-msgstr "The payment journal currency does not match the collection currency."
+msgstr "عملة يومية الدفع لا تطابق عملة التحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "The payment journal must belong to the collection company."
-msgstr "The payment journal must belong to the collection company."
+msgstr "يجب أن تتبع يومية الدفع شركة التحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "The route vehicle has no POS configuration."
-msgstr "The route vehicle has no POS configuration."
+msgstr "مركبة المسار ليس لها إعدادات نقطة بيع."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/sale_order.py:0
 msgid "The sale order company does not match the visit company."
-msgstr "The sale order company does not match the visit company."
+msgstr "شركة أمر البيع لا تطابق شركة الزيارة."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/sale_order.py:0
-msgid ""
+msgid "The sale order customer (%(customer)s) does not match the visit customer (%(visit_customer)s). Only distribution managers may override this."
 "The sale order customer (%(customer)s) does not match the visit customer "
 "(%(visit_customer)s). Only distribution managers may override this."
-msgstr "The sale order customer (%(customer)s) does not match the visit customer (%(visit_customer)s). Only distribution managers may override this."
+msgstr "عميل أمر البيع (%(customer)s) لا يطابق عميل الزيارة (%(visit_customer)s). مديرو التوزيع فقط يمكنهم تجاوز هذا."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/sale_order.py:0
 msgid "The sale order route does not match the visit route."
-msgstr "The sale order route does not match the visit route."
+msgstr "مسار أمر البيع لا يطابق مسار الزيارة."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "The visit has no customer."
-msgstr "The visit has no customer."
+msgstr "الزيارة ليس لها عميل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "This Week"
-msgstr "This Week"
+msgstr "هذا الأسبوع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "This company requires at least one attachment (receipt, transfer proof) on customer collections."
 "This company requires at least one attachment (receipt, transfer proof) on "
 "customer collections."
-msgstr "This company requires at least one attachment (receipt, transfer proof) on customer collections."
+msgstr "هذه الشركة تتطلب مرفقاً واحداً على الأقل (إيصال، إثبات تحويل) على تحصيلات العملاء."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "This visit has no customer."
-msgstr "This visit has no customer."
+msgstr "هذه الزيارة ليس لها عميل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "This visit is no longer open for sales."
-msgstr "This visit is no longer open for sales."
+msgstr "هذه الزيارة لم تعد مفتوحة للبيع."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Today"
-msgstr "Today"
+msgstr "اليوم"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_list
 msgid "Total"
-msgstr "Total"
+msgstr "الإجمالي"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي على السجل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
 msgid "Unallocated Collections"
-msgstr "Unallocated Collections"
+msgstr "تحصيلات غير مخصصة"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
-msgid ""
+msgid "Unallocated customer collections are not allowed by policy. Select at least one customer invoice."
 "Unallocated customer collections are not allowed by policy. Select at least "
 "one customer invoice."
-msgstr "Unallocated customer collections are not allowed by policy. Select at least one customer invoice."
+msgstr "لا تسمح السياسة بتحصيلات العملاء غير المخصصة. حدد فاتورة عميل واحدة على الأقل."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_form
 msgid "Validate"
-msgstr "Validate"
+msgstr "اعتماد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__distribution_visit_collection__state__validated
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.view_distribution_visit_collection_search
 msgid "Validated"
-msgstr "Validated"
+msgstr "معتمد"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_plan__validated_collection_amount
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_route_visit__validated_collection_amount
 msgid "Validated Collections"
-msgstr "Validated Collections"
+msgstr "التحصيلات المعتمدة"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__visit_id
 msgid "Visit"
-msgstr "Visit"
+msgstr "الزيارة"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
-msgid ""
+msgid "Visit %(visit)s cannot be completed: the visit type requires %(missing)s. If the customer refused, set an unsuccessful business result instead."
 "Visit %(visit)s cannot be completed: the visit type requires %(missing)s. If"
 " the customer refused, set an unsuccessful business result instead."
-msgstr "Visit %(visit)s cannot be completed: the visit type requires %(missing)s. If the customer refused, set an unsuccessful business result instead."
+msgstr "لا يمكن إنهاء الزيارة %(visit)s: نوع الزيارة يتطلب %(missing)s. إذا رفض العميل، عيّن نتيجة تجارية غير ناجحة بدلاً من ذلك."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_pos_order__distribution_visit_id
 msgid "Visit this POS order was created from (explicit link)."
-msgstr "Visit this POS order was created from (explicit link)."
+msgstr "الزيارة التي أُنشئ منها أمر نقطة البيع هذا (رابط صريح)."
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_sale_order__distribution_visit_id
-msgid ""
+msgid "Visit this sale was created from (explicit link, never guessed from customer or date)."
 "Visit this sale was created from (explicit link, never guessed from customer"
 " or date)."
-msgstr "Visit this sale was created from (explicit link, never guessed from customer or date)."
+msgstr "الزيارة التي أُنشئ منها هذا البيع (رابط صريح، لا يُخمَّن أبداً من العميل أو التاريخ)."
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
-msgid ""
+msgid "Visits of a collection type cannot be completed without a recorded collection when strict mode is on"
 "Visits of a collection type cannot be completed without a recorded "
 "collection when strict mode is on"
-msgstr "Visits of a collection type cannot be completed without a recorded collection when strict mode is on"
+msgstr "لا يمكن إنهاء زيارات نوع التحصيل بدون تحصيل مسجل عندما يكون النمط الصارم مفعلاً"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
-msgid ""
+msgid "Visits of a sale type cannot be completed without a quotation or sale when strict mode is on"
 "Visits of a sale type cannot be completed without a quotation or sale when "
 "strict mode is on"
-msgstr "Visits of a sale type cannot be completed without a quotation or sale when strict mode is on"
+msgstr "لا يمكن إنهاء زيارات نوع البيع بدون عرض سعر أو بيع عندما يكون النمط الصارم مفعلاً"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields.selection,name:flousflow_distribution_commercial.selection__res_company__commercial_validation_mode__warning
 msgid "Warning"
-msgstr "Warning"
+msgstr "تحذير"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,field_description:flousflow_distribution_commercial.field_distribution_visit_collection__website_message_ids
 msgid "Website Messages"
-msgstr "Website Messages"
+msgstr "رسائل الموقع"
 
 #. module: flousflow_distribution_commercial
 #: model:ir.model.fields,help:flousflow_distribution_commercial.field_distribution_visit_collection__website_message_ids
 msgid "Website communication history"
-msgstr "Website communication history"
+msgstr "سجل التواصل عبر الموقع"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "You can only submit collections recorded for your own visits."
-msgstr "You can only submit collections recorded for your own visits."
+msgstr "يمكنك إرسال التحصيلات المسجلة لزياراتك الخاصة فقط."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "You cannot cancel this collection."
-msgstr "You cannot cancel this collection."
+msgstr "لا يمكنك إلغاء هذا التحصيل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "You need billing/accounting access to open the customer ledger."
-msgstr "You need billing/accounting access to open the customer ledger."
+msgstr "تحتاج صلاحية فواتير/محاسبة لفتح حساب العميل."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_visit_collection.py:0
 msgid "You need billing/accounting access to validate customer collections."
-msgstr "You need billing/accounting access to validate customer collections."
+msgstr "تحتاج صلاحية فواتير/محاسبة لاعتماد تحصيلات العملاء."
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "a quotation or confirmed sale"
-msgstr "a quotation or confirmed sale"
+msgstr "عرض سعر أو بيع مؤكد"
 
 #. module: flousflow_distribution_commercial
 #. odoo-python
 #: code:addons/flousflow_distribution_commercial/models/distribution_route_visit.py:0
 msgid "a recorded collection"
-msgstr "a recorded collection"
+msgstr "تحصيل مسجل"
 
 #. module: flousflow_distribution_commercial
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_commercial.res_config_settings_view_form_inherit_commercial
-msgid ""
+msgid "disabled = no check · warning = log a note and complete · strict = block completion (customer refusal always completes)"
 "disabled = no check · warning = log a note and complete · strict = block "
 "completion (customer refusal always completes)"
-msgstr ""
+msgstr "معطل = بدون فحص · تحذير = تسجيل ملاحظة والإكمال · صارم = منع الإكمال (رفض العميل يكمل الزيارة دائماً)"
 "disabled = no check · warning = log a note and complete · strict = block "
 "completion (customer refusal always completes)"
 

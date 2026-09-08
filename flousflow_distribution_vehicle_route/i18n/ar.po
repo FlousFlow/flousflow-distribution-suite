@@ -3,7 +3,7 @@
 # 	* flousflow_distribution_vehicle_route
 #
 msgid ""
-msgstr ""
+msgstr "Project-Id-Version: Odoo Server 19.0-20260619\\nReport-Msgid-Bugs-To: \\nPOT-Creation-Date: 2026-09-07 15:59+0000\\nPO-Revision-Date: 2026-09-07 15:59+0000\\nLast-Translator: \\nLanguage-Team: \\nLanguage: ar_00MIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: \\nPlural-Forms: \\n"
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-07 15:59+0000\n"
@@ -19,33 +19,33 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "'%(record)s' does not belong to the route company '%(company)s'."
-msgstr "'%(record)s' does not belong to the route company '%(company)s'."
+msgstr "'%(record)s' لا ينتمي إلى شركة المسار '%(company)s'."
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
-msgid "<span class=\"o_stat_text\">POS Orders</span>"
-msgstr "<span class=\\\"o_stat_text\\\">POS Orders</span>"
+msgid "<span class=\\\"o_stat_text\\\">POS Orders</span>"
+msgstr "<span class=\\\\\\\"o_stat_text\\\\\\\">POS Orders</span>"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
-msgid "<span class=\"o_stat_text\">Vehicle Stock</span>"
-msgstr "<span class=\\\"o_stat_text\\\">Vehicle Stock</span>"
+msgid "<span class=\\\"o_stat_text\\\">Vehicle Stock</span>"
+msgstr "<span class=\\\\\\\"o_stat_text\\\\\\\">Vehicle Stock</span>"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_res_company
 msgid "Companies"
-msgstr "Companies"
+msgstr "الشركات"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_res_config_settings
 msgid "Config Settings"
-msgstr "Config Settings"
+msgstr "الإعدادات"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_warehouse_id
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_warehouse_id
 msgid "Dedicated warehouse of the route vehicle (snapshot)."
-msgstr "Dedicated warehouse of the route vehicle (snapshot)."
+msgstr "المستودع المخصص لمركبة المسار (لقطة)."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__display_name
@@ -56,63 +56,63 @@ msgstr "Dedicated warehouse of the route vehicle (snapshot)."
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "الاسم المعروض"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_distribution_route_plan
 msgid "Distribution Route Plan"
-msgstr "Distribution Route Plan"
+msgstr "خطة مسار التوزيع"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_distribution_route_visit
 msgid "Distribution Route Visit"
-msgstr "Distribution Route Visit"
+msgstr "زيارة مسار التوزيع"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle__distribution_route_ids
 msgid "Distribution Routes"
-msgstr "Distribution Routes"
+msgstr "مسارات التوزيع"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_hr_employee
 msgid "Employee"
-msgstr "Employee"
+msgstr "الموظف"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Employee '%(employee)s' already has route '%(conflict)s' in progress. One route in progress per employee is allowed."
 "Employee '%(employee)s' already has route '%(conflict)s' in progress. One "
 "route in progress per employee is allowed."
-msgstr "Employee '%(employee)s' already has route '%(conflict)s' in progress. One route in progress per employee is allowed."
+msgstr "الموظف '%(employee)s' لديه بالفعل مسار '%(conflict)s' قيد التنفيذ. يُسمح بمسار واحد قيد التنفيذ لكل موظف."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s. Choose the assignment in the 'Vehicle & Distribution' section before confirming the route."
 "Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s."
 " Choose the assignment in the 'Vehicle & Distribution' section before "
 "confirming the route."
-msgstr "Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s. Choose the assignment in the 'Vehicle & Distribution' section before confirming the route."
+msgstr "الموظف '%(employee)s' لديه %(count)s تعيينات مركبات صحيحة بتاريخ %(date)s. اختر التعيين من قسم «المركبة والتوزيع» قبل تأكيد المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s. Choose the assignment in the 'Vehicle & Distribution' section before confirming."
 "Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s."
 " Choose the assignment in the 'Vehicle & Distribution' section before "
 "confirming."
-msgstr "Employee '%(employee)s' has %(count)s valid vehicle assignments on %(date)s. Choose the assignment in the 'Vehicle & Distribution' section before confirming."
+msgstr "الموظف '%(employee)s' لديه %(count)s تعيينات مركبات صحيحة بتاريخ %(date)s. اختر التعيين من قسم «المركبة والتوزيع» قبل التأكيد."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_fleet_vehicle_employee_assignment
 msgid "Fleet Vehicle Employee Assignment"
-msgstr "Fleet Vehicle Employee Assignment"
+msgstr "تعيين الموظف لمركبة الأسطول"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
 msgid "Has Vehicle"
-msgstr "Has Vehicle"
+msgstr "لديه مركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__id
@@ -123,73 +123,73 @@ msgstr "Has Vehicle"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__id
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__id
 msgid "ID"
-msgstr "ID"
+msgstr "المعرف"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__multiple_vehicle_assignments
 msgid "Multiple Vehicle Assignments"
-msgstr "Multiple Vehicle Assignments"
+msgstr "تعيينات مركبات متعددة"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
 msgid "No Vehicle"
-msgstr "No Vehicle"
+msgstr "بدون مركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__no_vehicle_assignment
 msgid "No Vehicle Assignment"
-msgstr "No Vehicle Assignment"
+msgstr "بدون تعيين مركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "No active vehicle assignment found for '%(employee)s' on %(date)s. Assign the employee to a distribution vehicle first, or disable 'Require Vehicle on Route' in the distribution settings."
 "No active vehicle assignment found for '%(employee)s' on %(date)s. Assign "
 "the employee to a distribution vehicle first, or disable 'Require Vehicle on"
 " Route' in the distribution settings."
-msgstr "No active vehicle assignment found for '%(employee)s' on %(date)s. Assign the employee to a distribution vehicle first, or disable 'Require Vehicle on Route' in the distribution settings."
+msgstr "لا يوجد تعيين مركبة نشط لـ '%(employee)s' بتاريخ %(date)s. عيّن الموظف على مركبة توزيع أولاً، أو عطّل «إلزام المركبة على المسار» في إعدادات التوزيع."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Only distribution managers may adjust the vehicle data of confirmed route %(route)s."
 "Only distribution managers may adjust the vehicle data of confirmed route "
 "%(route)s."
-msgstr "Only distribution managers may adjust the vehicle data of confirmed route %(route)s."
+msgstr "مديرو التوزيع فقط يمكنهم تعديل بيانات المركبة للمسار المؤكد %(route)s."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_pos_config_id
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_pos_config_id
 msgid "POS configuration of the route vehicle (snapshot)."
-msgstr "POS configuration of the route vehicle (snapshot)."
+msgstr "إعدادات نقطة البيع لمركبة المسار (لقطة)."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_pos_on_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_pos_on_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
 msgid "Require Vehicle POS on Route"
-msgstr "Require Vehicle POS on Route"
+msgstr "إلزام نقطة بيع المركبة على المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_on_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_on_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
 msgid "Require Vehicle on Route"
-msgstr "Require Vehicle on Route"
+msgstr "إلزام المركبة على المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Route %(route)s is %(state)s: its vehicle, warehouse and POS are a historical snapshot and can no longer be changed."
 "Route %(route)s is %(state)s: its vehicle, warehouse and POS are a "
 "historical snapshot and can no longer be changed."
-msgstr "Route %(route)s is %(state)s: its vehicle, warehouse and POS are a historical snapshot and can no longer be changed."
+msgstr "المسار %(route)s حالته %(state)s: مركبته ومستودعه ونقطة بيعه لقطة تاريخية ولا يمكن تغييرها بعد الآن."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "Route POS Orders (%s)"
-msgstr "Route POS Orders (%s)"
+msgstr "أوامر نقاط البيع للمسار (%s)"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
@@ -198,171 +198,171 @@ msgstr "Route POS Orders (%s)"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle_employee_assignment__distribution_route_count
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_hr_employee__distribution_route_ids
 msgid "Route Plans"
-msgstr "Route Plans"
+msgstr "خطط المسارات"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle_employee_assignment__distribution_route_ids
 msgid "Route Plans using this Assignment"
-msgstr "Route Plans using this Assignment"
+msgstr "خطط المسارات المستخدمة لهذا التعيين"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_id
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_id
 msgid "Route Vehicle"
-msgstr "Route Vehicle"
+msgstr "مركبة المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_pos_config_id
 msgid "Route Vehicle POS"
-msgstr "Route Vehicle POS"
+msgstr "نقطة بيع مركبة المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_warehouse_id
 msgid "Route Vehicle Warehouse"
-msgstr "Route Vehicle Warehouse"
+msgstr "مستودع مركبة المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
-msgid ""
+msgid "Route plans cannot be confirmed unless the employee has an active vehicle assignment"
 "Route plans cannot be confirmed unless the employee has an active vehicle "
 "assignment"
-msgstr "Route plans cannot be confirmed unless the employee has an active vehicle assignment"
+msgstr "لا يمكن تأكيد خطط المسارات إلا إذا كان للموظف تعيين مركبة نشط"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_on_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_on_route
-msgid ""
+msgid "Route plans cannot be confirmed unless the employee has an active vehicle assignment (resolved vehicle becomes the route snapshot)."
 "Route plans cannot be confirmed unless the employee has an active vehicle "
 "assignment (resolved vehicle becomes the route snapshot)."
-msgstr "Route plans cannot be confirmed unless the employee has an active vehicle assignment (resolved vehicle becomes the route snapshot)."
+msgstr "لا يمكن تأكيد خطط المسارات إلا إذا كان للموظف تعيين مركبة نشط (تصبح المركبة المحددة لقطة المسار)."
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
-msgid ""
+msgid "Route vehicles must have a POS configuration before the route can be confirmed or started"
 "Route vehicles must have a POS configuration before the route can be "
 "confirmed or started"
-msgstr "Route vehicles must have a POS configuration before the route can be confirmed or started"
+msgstr "يجب أن يكون لمركبات المسار إعدادات نقطة بيع قبل تأكيد المسار أو بدئه"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_company__distribution_require_vehicle_pos_on_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_res_config_settings__distribution_require_vehicle_pos_on_route
-msgid ""
+msgid "Route vehicles must have a POS configuration before the route can be confirmed or started."
 "Route vehicles must have a POS configuration before the route can be "
 "confirmed or started."
-msgstr "Route vehicles must have a POS configuration before the route can be confirmed or started."
+msgstr "يجب أن يكون لمركبات المسار إعدادات نقطة بيع قبل تأكيد المسار أو بدئه."
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_vehicle_assignment_form_inherit_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_vehicle_form_inherit_route
 msgid "Routes"
-msgstr "Routes"
+msgstr "المسارات"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/fleet_vehicle_employee_assignment.py:0
 msgid "Routes using this Assignment"
-msgstr "Routes using this Assignment"
+msgstr "المسارات المستخدمة لهذا التعيين"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
-msgid ""
+msgid "The employee has <b>multiple valid vehicle assignments</b>\\n                    on the route date. Choose the assignment below — the\\n                    system will never pick one automatically."
 "The employee has <b>multiple valid vehicle assignments</b>\n"
 "                    on the route date. Choose the assignment below — the\n"
 "                    system will never pick one automatically."
-msgstr "The employee has <b>multiple valid vehicle assignments</b>\\n                    on the route date. Choose the assignment below — the\\n                    system will never pick one automatically."
+msgstr "The employee has <b>multiple valid vehicle assignments</b>\\\\n                    on the route date. Choose the assignment below — the\\\\n                    system will never pick one automatically."
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
-msgid ""
+msgid "The employee has <b>no active vehicle assignment</b> on\\n                    the route date. Assign a vehicle first, or confirm is\\n                    only allowed when \\\"Require Vehicle on Route\\\" is disabled."
 "The employee has <b>no active vehicle assignment</b> on\n"
 "                    the route date. Assign a vehicle first, or confirm is\n"
 "                    only allowed when \"Require Vehicle on Route\" is disabled."
-msgstr "The employee has <b>no active vehicle assignment</b> on\\n                    the route date. Assign a vehicle first, or confirm is\\n                    only allowed when \\\"Require Vehicle on Route\\\" is disabled."
+msgstr "The employee has <b>no active vehicle assignment</b> on\\\\n                    the route date. Assign a vehicle first, or confirm is\\\\n                    only allowed when \\\\\\\"Require Vehicle on Route\\\\\\\" is disabled."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "The vehicle assignment does not belong to the route company."
-msgstr "The vehicle assignment does not belong to the route company."
+msgstr "تعيين المركبة لا يتبع شركة المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "The vehicle assignment does not belong to the route employee."
-msgstr "The vehicle assignment does not belong to the route employee."
+msgstr "تعيين المركبة لا يتبع موظف المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "The vehicle assignment does not cover the route date %(date)s."
-msgstr "The vehicle assignment does not cover the route date %(date)s."
+msgstr "تعيين المركبة لا يغطي تاريخ المسار %(date)s."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "The vehicle assignment does not match the route vehicle."
-msgstr "The vehicle assignment does not match the route vehicle."
+msgstr "تعيين المركبة لا يطابق مركبة المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_assignment_id
-msgid ""
+msgid "The vehicle assignment this route was planned against. Resolved automatically from the employee and the route date."
 "The vehicle assignment this route was planned against. Resolved "
 "automatically from the employee and the route date."
-msgstr "The vehicle assignment this route was planned against. Resolved automatically from the employee and the route date."
+msgstr "تعيين المركبة الذي خُطط له هذا المسار. يُحدد تلقائياً من الموظف وتاريخ المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "This route has no vehicle / vehicle warehouse."
-msgstr "This route has no vehicle / vehicle warehouse."
+msgstr "هذا المسار ليس له مركبة / مستودع مركبة."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "This route has no vehicle."
-msgstr "This route has no vehicle."
+msgstr "هذا المسار ليس له مركبة."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_fleet_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
 msgid "Vehicle"
-msgstr "Vehicle"
+msgstr "المركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
 msgid "Vehicle & Distribution"
-msgstr "Vehicle & Distribution"
+msgstr "المركبة والتوزيع"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle '%(vehicle)s' has no POS configuration. Configure it before confirming the route."
 "Vehicle '%(vehicle)s' has no POS configuration. Configure it before "
 "confirming the route."
-msgstr "Vehicle '%(vehicle)s' has no POS configuration. Configure it before confirming the route."
+msgstr "المركبة '%(vehicle)s' ليس لها إعدادات نقطة بيع. هيئها قبل تأكيد المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle '%(vehicle)s' has no POS configuration. The route cannot start."
 "Vehicle '%(vehicle)s' has no POS configuration. The route cannot start."
-msgstr "Vehicle '%(vehicle)s' has no POS configuration. The route cannot start."
+msgstr "المركبة '%(vehicle)s' ليس لها إعدادات نقطة بيع. لا يمكن بدء المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle '%(vehicle)s' has no dedicated warehouse. Configure it before confirming the route."
 "Vehicle '%(vehicle)s' has no dedicated warehouse. Configure it before "
 "confirming the route."
-msgstr "Vehicle '%(vehicle)s' has no dedicated warehouse. Configure it before confirming the route."
+msgstr "المركبة '%(vehicle)s' ليس لها مستودع مخصص. هيئه قبل تأكيد المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle '%(vehicle)s' is already operating route '%(conflict)s' in progress. A vehicle cannot run two routes at the same time."
 "Vehicle '%(vehicle)s' is already operating route '%(conflict)s' in progress."
 " A vehicle cannot run two routes at the same time."
-msgstr ""
+msgstr "المركبة '%(vehicle)s' تدير بالفعل المسار '%(conflict)s' قيد التنفيذ. لا يمكن لمركبة تشغيل مسارين في نفس الوقت."
 "Vehicle '%(vehicle)s' is already operating route '%(conflict)s' in progress."
 " A vehicle cannot run two routes at the same time."
 
@@ -370,71 +370,71 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "Vehicle '%(vehicle)s' is not a distribution vehicle."
-msgstr "Vehicle '%(vehicle)s' is not a distribution vehicle."
+msgstr "المركبة '%(vehicle)s' ليست مركبة توزيع."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle '%(vehicle)s' is not distribution active anymore. The route cannot start."
 "Vehicle '%(vehicle)s' is not distribution active anymore. The route cannot "
 "start."
-msgstr "Vehicle '%(vehicle)s' is not distribution active anymore. The route cannot start."
+msgstr "المركبة '%(vehicle)s' لم تعد نشطة في التوزيع. لا يمكن بدء المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "Vehicle '%(vehicle)s' is not distribution active."
-msgstr "Vehicle '%(vehicle)s' is not distribution active."
+msgstr "المركبة '%(vehicle)s' غير نشطة في التوزيع."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle '%(vehicle)s' lost its dedicated warehouse. The route cannot start."
 "Vehicle '%(vehicle)s' lost its dedicated warehouse. The route cannot start."
-msgstr "Vehicle '%(vehicle)s' lost its dedicated warehouse. The route cannot start."
+msgstr "فقدت المركبة '%(vehicle)s' مستودعها المخصص. لا يمكن بدء المسار."
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_assignment_id
 msgid "Vehicle Assignment"
-msgstr "Vehicle Assignment"
+msgstr "تعيين المركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_pos_config_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
 msgid "Vehicle POS"
-msgstr "Vehicle POS"
+msgstr "نقطة بيع المركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
 msgid "Vehicle Stock (%s)"
-msgstr "Vehicle Stock (%s)"
+msgstr "مخزون المركبة (%s)"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_warehouse_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_search_inherit_vehicle
 msgid "Vehicle Warehouse"
-msgstr "Vehicle Warehouse"
+msgstr "مستودع المركبة"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
 msgid "Vehicle on Routes"
-msgstr "Vehicle on Routes"
+msgstr "المركبة على المسارات"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/distribution_route_plan.py:0
-msgid ""
+msgid "Vehicle snapshot: %(vehicle)s | Warehouse: %(warehouse)s | POS: %(pos)s"
 "Vehicle snapshot: %(vehicle)s | Warehouse: %(warehouse)s | POS: %(pos)s"
-msgstr "Vehicle snapshot: %(vehicle)s | Warehouse: %(warehouse)s | POS: %(pos)s"
+msgstr "لقطة المركبة: %(vehicle)s | المستودع: %(warehouse)s | نقطة البيع: %(pos)s"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_id
 #: model:ir.model.fields,help:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_id
-msgid ""
+msgid "Vehicle the representative operates during this route. Snapshotted at confirm and kept for history."
 "Vehicle the representative operates during this route. Snapshotted at "
 "confirm and kept for history."
-msgstr "Vehicle the representative operates during this route. Snapshotted at confirm and kept for history."
+msgstr "المركبة التي يشغلها المندوب خلال هذا المسار. تُلتقط لقطة منها عند التأكيد وتُحفظ للسجل."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python

@@ -3,7 +3,7 @@
 # 	* flousflow_distribution_dashboard_gps
 #
 msgid ""
-msgstr ""
+msgstr "Project-Id-Version: Odoo Server 19.0-20260619\\nReport-Msgid-Bugs-To: \\nPOT-Creation-Date: 2026-09-07 15:59+0000\\nPO-Revision-Date: 2026-09-07 15:59+0000\\nLast-Translator: \\nLanguage-Team: \\nMIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: \\nPlural-Forms: \\n"
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-07 15:59+0000\n"
@@ -21,128 +21,128 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Avg Check-In Distance (m)"
-msgstr "Avg Check-In Distance (m)"
+msgstr "متوسط مسافة الحضور (متر)"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Avg Distance (m)"
-msgstr "Avg Distance (m)"
+msgstr "متوسط المسافة (متر)"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Avg GPS Accuracy (m)"
-msgstr "Avg GPS Accuracy (m)"
+msgstr "متوسط دقة GPS (متر)"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Customer"
-msgstr "Customer"
+msgstr "العميل"
 
 #. module: flousflow_distribution_dashboard_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard_gps.field_distribution_dashboard_data__display_name
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "الاسم المعروض"
 
 #. module: flousflow_distribution_dashboard_gps
 #: model:ir.model,name:flousflow_distribution_dashboard_gps.model_distribution_dashboard_data
 msgid "Distribution Dashboard Data Provider"
-msgstr "Distribution Dashboard Data Provider"
+msgstr "مزود بيانات لوحة معلومات التوزيع"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Executed Visits"
-msgstr "Executed Visits"
+msgstr "الزيارات المنفذة"
 
 #. module: flousflow_distribution_dashboard_gps
 #: model:ir.actions.act_window,name:flousflow_distribution_dashboard_gps.action_dashboard_gps_analysis
 #: model:ir.ui.menu,name:flousflow_distribution_dashboard_gps.menu_dashboard_gps_analysis
 msgid "GPS Analysis"
-msgstr "GPS Analysis"
+msgstr "تحليل GPS"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "GPS Compliance"
-msgstr "GPS Compliance"
+msgstr "الالتزام بـ GPS"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "GPS Customer Location Review (possible wrong customer locations)"
-msgstr "GPS Customer Location Review (possible wrong customer locations)"
+msgstr "مراجعة مواقع العملاء GPS (مواقع عملاء قد تكون خاطئة)"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "GPS Errors"
-msgstr "GPS Errors"
+msgstr "أخطاء GPS"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "GPS Overrides"
-msgstr "GPS Overrides"
+msgstr "تجاوزات GPS"
 
 #. module: flousflow_distribution_dashboard_gps
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard_gps.view_dashboard_visit_search_gps
 msgid "GPS Status"
-msgstr "GPS Status"
+msgstr "حالة GPS"
 
 #. module: flousflow_distribution_dashboard_gps
 #: model:ir.model.fields,field_description:flousflow_distribution_dashboard_gps.field_distribution_dashboard_data__id
 msgid "ID"
-msgstr "ID"
+msgstr "المعرف"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard_gps.view_dashboard_visit_search_gps
 msgid "Inside Geofence"
-msgstr "Inside Geofence"
+msgstr "داخل النطاق الجغرافي"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Metric"
-msgstr "Metric"
+msgstr "المؤشر"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_dashboard_gps.view_dashboard_visit_search_gps
 msgid "Outside Geofence"
-msgstr "Outside Geofence"
+msgstr "خارج النطاق الجغرافي"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Outside Geofence Rate"
-msgstr "Outside Geofence Rate"
+msgstr "معدل الخروج من النطاق الجغرافي"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Outside Visits"
-msgstr "Outside Visits"
+msgstr "زيارات خارجية"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Rejected Check-Ins"
-msgstr "Rejected Check-Ins"
+msgstr "حضور مرفوض"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Unknown / Missing GPS"
-msgstr "Unknown / Missing GPS"
+msgstr "غير معروف / GPS مفقود"
 
 #. module: flousflow_distribution_dashboard_gps
 #. odoo-python
 #: code:addons/flousflow_distribution_dashboard_gps/models/distribution_dashboard_data.py:0
 msgid "Value"
-msgstr "Value"
+msgstr "القيمة"

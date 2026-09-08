@@ -3,7 +3,7 @@
 # 	* flousflow_distribution_route_management
 #
 msgid ""
-msgstr ""
+msgstr "Project-Id-Version: Odoo Server 19.0-20260619\\nReport-Msgid-Bugs-To: \\nPOT-Creation-Date: 2026-09-07 15:58+0000\\nPO-Revision-Date: 2026-09-07 15:58+0000\\nLast-Translator: \\nLanguage-Team: \\nLanguage: ar_00MIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: \\nPlural-Forms: \\n"
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-07 15:58+0000\n"
@@ -19,192 +19,192 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "A cancellation reason is required."
-msgstr "A cancellation reason is required."
+msgstr "سبب الإلغاء مطلوب."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "A closed visit cannot be reopened."
-msgstr "A closed visit cannot be reopened."
+msgstr "لا يمكن إعادة فتح زيارة مغلقة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.constraint,message:flousflow_distribution_route_management.constraint_distribution_route_visit_visit_final_result_check
 msgid "A done visit must always have a visit result."
-msgstr "A done visit must always have a visit result."
+msgstr "يجب أن يكون للزيارة المنتهية نتيجة زيارة دائماً."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "A failure reason is required for the unsuccessful result '%(result)s'."
-msgstr "A failure reason is required for the unsuccessful result '%(result)s'."
+msgstr "سبب الفشل مطلوب للنتيجة غير الناجحة '%(result)s'."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "A failure reason is required when closing a visit with the unsuccessful result '%(result)s'."
 "A failure reason is required when closing a visit with the unsuccessful "
 "result '%(result)s'."
-msgstr "A failure reason is required when closing a visit with the unsuccessful result '%(result)s'."
+msgstr "سبب الفشل مطلوب عند إغلاق زيارة بنتيجة غير ناجحة '%(result)s'."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "A reason is required to force complete a route."
-msgstr "A reason is required to force complete a route."
+msgstr "السبب مطلوب لإغلاق المسار قسراً."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "A route plan must start in the Draft state."
-msgstr "A route plan must start in the Draft state."
+msgstr "يجب أن يبدأ خطة المسار بحالة مسودة."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "A skip reason is required when cancelling a visit."
-msgstr "A skip reason is required when cancelling a visit."
+msgstr "سبب التخطي مطلوب عند إلغاء الزيارة."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "A skip reason is required."
-msgstr "A skip reason is required."
+msgstr "سبب التخطي مطلوب."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/wizard/distribution_visit_complete_wizard.py:0
 msgid "A suggested revisit date is required when a revisit is needed."
-msgstr "A suggested revisit date is required when a revisit is needed."
+msgstr "تاريخ إعادة الزيارة المقترح مطلوب عند الحاجة لإعادة الزيارة."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "A visit result is required."
-msgstr "A visit result is required."
+msgstr "نتيجة الزيارة مطلوبة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_needaction
 msgid "Action Needed"
-msgstr "Action Needed"
+msgstr "إجراء مطلوب"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__active
 msgid "Active"
-msgstr "Active"
+msgstr "نشط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_ids
 msgid "Activities"
-msgstr "Activities"
+msgstr "الأنشطة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Activity Exception Decoration"
+msgstr "زخرفة نشاط الاستثناء"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_state
 msgid "Activity State"
-msgstr "Activity State"
+msgstr "حالة النشاط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_type_icon
 msgid "Activity Type Icon"
-msgstr "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__actual_duration
 msgid "Actual Duration (minutes)"
-msgstr "Actual Duration (minutes)"
+msgstr "المدة الفعلية (دقائق)"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__actual_end_datetime
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__actual_end_datetime
 msgid "Actual End"
-msgstr "Actual End"
+msgstr "النهاية الفعلية"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__actual_start_datetime
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__actual_start_datetime
 msgid "Actual Start"
-msgstr "Actual Start"
+msgstr "البداية الفعلية"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__duration
 msgid "Actual execution duration of the route, in minutes."
-msgstr "Actual execution duration of the route, in minutes."
+msgstr "مدة التنفيذ الفعلية للمسار، بالدقائق."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.actions.act_window,name:flousflow_distribution_route_management.action_all_visits
 #: model:ir.ui.menu,name:flousflow_distribution_route_management.menu_distribution_all_visits
 msgid "All Visits"
-msgstr "All Visits"
+msgstr "كل الزيارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__can_complete
 msgid "All Visits Closed"
-msgstr "All Visits Closed"
+msgstr "كل الزيارات مغلقة"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Archived"
-msgstr "Archived"
+msgstr "مؤرشف"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Area"
-msgstr "Area"
+msgstr "المنطقة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__arrival_variance_minutes
 msgid "Arrival Variance (minutes)"
-msgstr "Arrival Variance (minutes)"
+msgstr "فرق الوصول (دقائق)"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__user_id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__user_id
 msgid "Assigned User"
-msgstr "Assigned User"
+msgstr "المستخدم المعيّن"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Assignment"
-msgstr "Assignment"
+msgstr "التعيين"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr "عدد المرفقات"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "Business Rules"
-msgstr "Business Rules"
+msgstr "قواعد العمل"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "إلغاء"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_cancel_wizard_form
 msgid "Cancel Route"
-msgstr "Cancel Route"
+msgstr "إلغاء المسار"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_route_cancel_wizard
 msgid "Cancel Route Wizard"
-msgstr "Cancel Route Wizard"
+msgstr "معالج إلغاء المسار"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__cancellation_reason
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__cancellation_reason
 msgid "Cancellation Reason"
-msgstr "Cancellation Reason"
+msgstr "سبب الإلغاء"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_plan__state__cancelled
@@ -214,22 +214,22 @@ msgstr "Cancellation Reason"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Cancelled"
-msgstr "Cancelled"
+msgstr "ملغي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__cancelled_visit_count
 msgid "Cancelled Visits"
-msgstr "Cancelled Visits"
+msgstr "الزيارات الملغاة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__code
 msgid "Code"
-msgstr "Code"
+msgstr "الرمز"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__color
 msgid "Color Index"
-msgstr "Color Index"
+msgstr "مؤشر اللون"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__company_id
@@ -238,12 +238,12 @@ msgstr "Color Index"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__company_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Company"
-msgstr "Company"
+msgstr "الشركة"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Complete Route"
-msgstr "Complete Route"
+msgstr "إنهاء المسار"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -251,54 +251,54 @@ msgstr "Complete Route"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_complete_wizard_form
 msgid "Complete Visit"
-msgstr "Complete Visit"
+msgstr "إنهاء الزيارة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_visit_complete_wizard
 msgid "Complete Visit Wizard"
-msgstr "Complete Visit Wizard"
+msgstr "معالج إنهاء الزيارة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_plan__state__completed
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Completed"
-msgstr "Completed"
+msgstr "منتهية"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__completion_datetime
 msgid "Completion Time"
-msgstr "Completion Time"
+msgstr "وقت الإنهاء"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_complete_wizard_form
 msgid "Confirm"
-msgstr "Confirm"
+msgstr "تأكيد"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Confirm Route"
-msgstr "Confirm Route"
+msgstr "تأكيد المسار"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_plan__state__confirmed
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Confirmed"
-msgstr "Confirmed"
+msgstr "مؤكد"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_res_partner
 msgid "Contact"
-msgstr "Contact"
+msgstr "جهة الاتصال"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_route_plans
 msgid "Create your first route plan"
-msgstr "Create your first route plan"
+msgstr "أنشئ أول خطة مسار"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_distribution_visit_result
 msgid "Create your first visit result"
-msgstr "Create your first visit result"
+msgstr "أنشئ أول نتيجة زيارة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__create_uid
@@ -309,7 +309,7 @@ msgstr "Create your first visit result"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__create_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_skip_wizard__create_uid
 msgid "Created by"
-msgstr "Created by"
+msgstr "أنشئ بواسطة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__create_date
@@ -320,32 +320,32 @@ msgstr "Created by"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__create_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_skip_wizard__create_date
 msgid "Created on"
-msgstr "Created on"
+msgstr "أنشئ في"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__partner_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Customer"
-msgstr "Customer"
+msgstr "العميل"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Date"
-msgstr "Date"
+msgstr "التاريخ"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__description
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "Description"
-msgstr "Description"
+msgstr "الوصف"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__arrival_variance_minutes
-msgid ""
+msgid "Difference between actual start and planned time, in minutes. Positive = arrived late, negative = arrived early."
 "Difference between actual start and planned time, in minutes. Positive = "
 "arrived late, negative = arrived early."
-msgstr "Difference between actual start and planned time, in minutes. Positive = arrived late, negative = arrived early."
+msgstr "الفرق بين البداية الفعلية والوقت المخطط، بالدقائق. موجب = وصل متأخراً، سالب = وصل مبكراً."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_cancel_wizard_form
@@ -353,7 +353,7 @@ msgstr "Difference between actual start and planned time, in minutes. Positive =
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_complete_wizard_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_skip_wizard_form
 msgid "Discard"
-msgstr "Discard"
+msgstr "تجاهل"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__display_name
@@ -366,28 +366,28 @@ msgstr "Discard"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_hr_employee__display_name
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_res_partner__display_name
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "الاسم المعروض"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__area_id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__area_id
 msgid "Distribution Area"
-msgstr "Distribution Area"
+msgstr "منطقة التوزيع"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_route_plan
 msgid "Distribution Route Plan"
-msgstr "Distribution Route Plan"
+msgstr "خطة مسار التوزيع"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_route_visit
 msgid "Distribution Route Visit"
-msgstr "Distribution Route Visit"
+msgstr "زيارة مسار التوزيع"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_visit_result
 msgid "Distribution Visit Result"
-msgstr "Distribution Visit Result"
+msgstr "نتيجة زيارة التوزيع"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -397,29 +397,29 @@ msgstr "Distribution Visit Result"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_res_partner__distribution_visit_count
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_res_users__distribution_visit_count
 msgid "Distribution Visits"
-msgstr "Distribution Visits"
+msgstr "زيارات التوزيع"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_visit__state__done
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Done"
-msgstr "Done"
+msgstr "منتهي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_plan__state__draft
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Draft"
-msgstr "Draft"
+msgstr "مسودة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__duration
 msgid "Duration (minutes)"
-msgstr "Duration (minutes)"
+msgstr "المدة (دقائق)"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__actual_duration
 msgid "Effective visit duration, in minutes."
-msgstr "Effective visit duration, in minutes."
+msgstr "مدة الزيارة الفعلية، بالدقائق."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_hr_employee
@@ -428,123 +428,123 @@ msgstr "Effective visit duration, in minutes."
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Employee"
-msgstr "Employee"
+msgstr "الموظف"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__employee_notes
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__employee_notes
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Employee Notes"
-msgstr "Employee Notes"
+msgstr "ملاحظات الموظف"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "Every visit requires a planned time before confirming the route (visit %(seq)s)."
 "Every visit requires a planned time before confirming the route (visit "
 "%(seq)s)."
-msgstr "Every visit requires a planned time before confirming the route (visit %(seq)s)."
+msgstr "كل زيارة تتطلب وقتاً مخططاً قبل تأكيد المسار (الزيارة %(seq)s)."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Every visit requires a visit type."
-msgstr "Every visit requires a visit type."
+msgstr "كل زيارة تتطلب نوع زيارة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__done_visit_count
 msgid "Executed Visits"
-msgstr "Executed Visits"
+msgstr "الزيارات المنفذة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__execution_rate
-msgid ""
+msgid "Executed visits / planned active visits x 100. Cancelled visits are excluded from both sides."
 "Executed visits / planned active visits x 100. Cancelled visits are excluded"
 " from both sides."
-msgstr ""
+msgstr "الزيارات المنفذة / الزيارات النشطة المخططة × 100. تُستبعد الزيارات الملغاة من الطرفين."
 "Executed visits / planned active visits x 100. Cancelled visits are excluded"
 " from both sides."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Execution"
-msgstr "Execution"
+msgstr "التنفيذ"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__execution_rate
 msgid "Execution Rate (%)"
-msgstr "Execution Rate (%)"
+msgstr "معدل التنفيذ (%)"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__state
 msgid "Execution State"
-msgstr "Execution State"
+msgstr "حالة التنفيذ"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Execution Summary"
-msgstr "Execution Summary"
+msgstr "ملخص التنفيذ"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__state
-msgid ""
+msgid "Execution state of the visit. The business outcome is tracked separately by the Visit Result."
 "Execution state of the visit. The business outcome is tracked separately by "
 "the Visit Result."
-msgstr "Execution state of the visit. The business outcome is tracked separately by the Visit Result."
+msgstr "حالة تنفيذ الزيارة. تُتتبع النتيجة التجارية بشكل منفصل عبر نتيجة الزيارة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__failure_reason
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__failure_reason
 msgid "Failure Reason"
-msgstr "Failure Reason"
+msgstr "سبب الفشل"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Follow-up"
-msgstr "Follow-up"
+msgstr "متابعة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_follower_ids
 msgid "Followers"
-msgstr "Followers"
+msgstr "المتابعون"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Followers (Partners)"
+msgstr "المتابعون (جهات الاتصال)"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_force_complete_wizard_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Force Complete"
-msgstr "Force Complete"
+msgstr "إغلاق قسري"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_force_complete_wizard_form
 msgid "Force Complete Route"
-msgstr "Force Complete Route"
+msgstr "إغلاق المسار قسرياً"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_route_force_complete_wizard
 msgid "Force Complete Route Wizard"
-msgstr "Force Complete Route Wizard"
+msgstr "معالج الإغلاق القسري للمسار"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "General Information"
-msgstr "General Information"
+msgstr "معلومات عامة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__has_message
 msgid "Has Message"
-msgstr "Has Message"
+msgstr "لديه رسالة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__id
@@ -557,28 +557,28 @@ msgstr "Has Message"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_hr_employee__id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_res_partner__id
 msgid "ID"
-msgstr "ID"
+msgstr "المعرف"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_exception_icon
 msgid "Icon"
-msgstr "Icon"
+msgstr "الأيقونة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "If checked, new messages require your attention."
+msgstr "عند التحديد، تتطلب الرسائل الجديدة انتباهك."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__message_has_error
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr "عند التحديد، بعض الرسائل بها خطأ في التسليم."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_plan__state__in_progress
@@ -586,17 +586,17 @@ msgstr "If checked, some messages have a delivery error."
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "In Progress"
-msgstr "In Progress"
+msgstr "قيد التنفيذ"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Internal notes about this route plan..."
-msgstr "Internal notes about this route plan..."
+msgstr "ملاحظات داخلية عن خطة المسار هذه..."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_is_follower
 msgid "Is Follower"
-msgstr "Is Follower"
+msgstr "متابع"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__write_uid
@@ -607,7 +607,7 @@ msgstr "Is Follower"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__write_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_skip_wizard__write_uid
 msgid "Last Updated by"
-msgstr "Last Updated by"
+msgstr "آخر تحديث بواسطة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__write_date
@@ -618,277 +618,277 @@ msgstr "Last Updated by"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__write_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_skip_wizard__write_date
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "آخر تحديث في"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_result__company_id
 msgid "Leave empty to share this result with all companies."
-msgstr "Leave empty to share this result with all companies."
+msgstr "اتركه فارغاً لمشاركة هذه النتيجة مع جميع الشركات."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__failure_reason
 msgid "Mandatory when the visit is closed with an unsuccessful result."
-msgstr "Mandatory when the visit is closed with an unsuccessful result."
+msgstr "إلزامي عند إغلاق الزيارة بنتيجة غير ناجحة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__skip_reason
 msgid "Mandatory when the visit is skipped (cancelled)."
-msgstr "Mandatory when the visit is skipped (cancelled)."
+msgstr "إلزامي عند تخطي الزيارة (إلغاؤها)."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__result_is_success
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_result__is_success
-msgid ""
+msgid "Mark as successful when the visit achieved its business objective. Unsuccessful results require a failure reason when closing a visit."
 "Mark as successful when the visit achieved its business objective. "
 "Unsuccessful results require a failure reason when closing a visit."
-msgstr "Mark as successful when the visit achieved its business objective. Unsuccessful results require a failure reason when closing a visit."
+msgstr "علّمها كناجحة عندما تحقق الزيارة هدفها التجاري. النتائج غير الناجحة تتطلب سبب فشل عند إغلاق الزيارة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_ids
 msgid "Messages"
-msgstr "Messages"
+msgstr "الرسائل"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "My Activity Deadline"
+msgstr "موعد نشاطي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.actions.act_window,name:flousflow_distribution_route_management.action_my_route_plans
 #: model:ir.ui.menu,name:flousflow_distribution_route_management.menu_distribution_my_routes
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "My Routes"
-msgstr "My Routes"
+msgstr "مساراتي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.actions.act_window,name:flousflow_distribution_route_management.action_my_visits
 #: model:ir.ui.menu,name:flousflow_distribution_route_management.menu_distribution_my_visits
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "My Visits"
-msgstr "My Visits"
+msgstr "زياراتي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__name
 msgid "Name"
-msgstr "Name"
+msgstr "الاسم"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Name or Code"
-msgstr "Name or Code"
+msgstr "الاسم أو الرمز"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "New"
-msgstr "New"
+msgstr "جديد"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr "Next Activity Calendar Event"
+msgstr "حدث تقويم النشاط التالي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Next Activity Deadline"
+msgstr "موعد النشاط التالي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_summary
 msgid "Next Activity Summary"
-msgstr "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_type_id
 msgid "Next Activity Type"
-msgstr "Next Activity Type"
+msgstr "نوع النشاط التالي"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_my_route_plans
 msgid "No routes assigned to you yet"
-msgstr "No routes assigned to you yet"
+msgstr "لا توجد مسارات معينة لك بعد"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_my_visits
 msgid "No visits assigned to you yet"
-msgstr "No visits assigned to you yet"
+msgstr "لا توجد زيارات معينة لك بعد"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_all_visits
 msgid "No visits scheduled yet"
-msgstr "No visits scheduled yet"
+msgstr "لا توجد زيارات مجدولة بعد"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__notes
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__notes
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Notes"
-msgstr "Notes"
+msgstr "الملاحظات"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_complete_wizard_form
 msgid "Notes about how the visit went..."
-msgstr "Notes about how the visit went..."
+msgstr "ملاحظات عن سير الزيارة..."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_complete_wizard_form
 msgid "Notes about the result..."
-msgstr "Notes about the result..."
+msgstr "ملاحظات عن النتيجة..."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Notes entered at planning time..."
-msgstr "Notes entered at planning time..."
+msgstr "ملاحظات مسجلة وقت التخطيط..."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__employee_notes
 msgid "Notes recorded by the representative during/after the visit."
-msgstr "Notes recorded by the representative during/after the visit."
+msgstr "ملاحظات سجلها المندوب أثناء/بعد الزيارة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Number of Actions"
+msgstr "عدد الإجراءات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_has_error_counter
 msgid "Number of errors"
-msgstr "Number of errors"
+msgstr "عدد الأخطاء"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ تسليم"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__objective
 msgid "Objective"
-msgstr "Objective"
+msgstr "الهدف"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Only cancelled routes can be reopened."
-msgstr "Only cancelled routes can be reopened."
+msgstr "يمكن إعادة فتح المسارات الملغاة فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Only distribution managers may add visits to a route plan."
-msgstr "Only distribution managers may add visits to a route plan."
+msgstr "مديرو التوزيع فقط يمكنهم إضافة زيارات إلى خطة المسار."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Only distribution managers may force complete a route."
-msgstr "Only distribution managers may force complete a route."
+msgstr "مديرو التوزيع فقط يمكنهم الإغلاق القسري للمسار."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
-msgid ""
+msgid "Only distribution managers may modify the planning data of route %(route)s after confirmation."
 "Only distribution managers may modify the planning data of route %(route)s "
 "after confirmation."
-msgstr "Only distribution managers may modify the planning data of route %(route)s after confirmation."
+msgstr "مديرو التوزيع فقط يمكنهم تعديل بيانات تخطيط المسار %(route)s بعد التأكيد."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Only distribution managers may modify visit planning data."
-msgstr "Only distribution managers may modify visit planning data."
+msgstr "مديرو التوزيع فقط يمكنهم تعديل بيانات تخطيط الزيارات."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Only distribution managers may reopen a cancelled route."
-msgstr "Only distribution managers may reopen a cancelled route."
+msgstr "مديرو التوزيع فقط يمكنهم إعادة فتح مسار ملغى."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Only draft route plans can be deleted. Route %(route)s is %(state)s."
-msgstr "Only draft route plans can be deleted. Route %(route)s is %(state)s."
+msgstr "يمكن حذف خطط المسارات في حالة المسودة فقط. المسار %(route)s حالته %(state)s."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Only draft routes can be confirmed."
-msgstr "Only draft routes can be confirmed."
+msgstr "يمكن تأكيد المسارات في حالة المسودة فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Only in-progress visits can be completed."
-msgstr "Only in-progress visits can be completed."
+msgstr "يمكن إنهاء الزيارات قيد التنفيذ فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Only pending or in-progress visits can be skipped."
-msgstr "Only pending or in-progress visits can be skipped."
+msgstr "يمكن تخطي الزيارات المعلقة أو قيد التنفيذ فقط."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_force_complete_wizard__pending_visit_count
 msgid "Open Visits"
-msgstr "Open Visits"
+msgstr "الزيارات المفتوحة"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_my_visits
 msgid "Open today's route from My Routes and start your visits."
-msgstr "Open today's route from My Routes and start your visits."
+msgstr "افتح مسار اليوم من «مساراتي» وابدأ زياراتك."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_force_complete_wizard_form
-msgid ""
+msgid "Open visits will be skipped with this reason. Why are you force completing this route?"
 "Open visits will be skipped with this reason. Why are you force completing "
 "this route?"
-msgstr ""
+msgstr "ستُتخطى الزيارات المفتوحة بهذا السبب. لماذا تقوم بالإغلاق القسري لهذا المسار؟"
 "Open visits will be skipped with this reason. Why are you force completing "
 "this route?"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.ui.menu,name:flousflow_distribution_route_management.menu_distribution_operations
 msgid "Operations"
-msgstr "Operations"
+msgstr "العمليات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__employee_notes
 msgid "Optional notes about how the visit went."
-msgstr "Optional notes about how the visit went."
+msgstr "ملاحظات اختيارية عن سير الزيارة."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Outcome"
-msgstr "Outcome"
+msgstr "النتيجة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields.selection,name:flousflow_distribution_route_management.selection__distribution_route_visit__state__pending
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Pending"
-msgstr "Pending"
+msgstr "معلقة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__pending_visit_count
 msgid "Pending / In Progress"
-msgstr "Pending / In Progress"
+msgstr "معلقة / قيد التنفيذ"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_route_plans
-msgid ""
+msgid "Plan a daily route for a distribution employee, add ordered\\n                customer visits, then confirm and let the representative\\n                execute it."
 "Plan a daily route for a distribution employee, add ordered\n"
 "                customer visits, then confirm and let the representative\n"
 "                execute it."
-msgstr ""
+msgstr "Plan a daily route for a distribution employee, add ordered\\n                customer visits, then confirm and let the representative\\n                execute it."
 "Plan a daily route for a distribution employee, add ordered\n"
 "                customer visits, then confirm and let the representative\n"
 "                execute it."
@@ -896,156 +896,156 @@ msgstr ""
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Planned Day"
-msgstr "Planned Day"
+msgstr "اليوم المخطط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__planned_duration
 msgid "Planned Duration (minutes)"
-msgstr "Planned Duration (minutes)"
+msgstr "المدة المخططة (دقائق)"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__planned_end_time
 msgid "Planned End Time"
-msgstr "Planned End Time"
+msgstr "وقت النهاية المخطط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__planned_start_time
 msgid "Planned Start Time"
-msgstr "Planned Start Time"
+msgstr "وقت البداية المخطط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__planned_datetime
 msgid "Planned Time"
-msgstr "Planned Time"
+msgstr "الوقت المخطط"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__planned_duration
 msgid "Planned duration of the visit, in minutes."
-msgstr "Planned duration of the visit, in minutes."
+msgstr "المدة المخططة للزيارة، بالدقائق."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Planning"
-msgstr "Planning"
+msgstr "التخطيط"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Preparation"
-msgstr "Preparation"
+msgstr "التحضير"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__notes
 msgid "Preparation notes entered at planning time."
-msgstr "Preparation notes entered at planning time."
+msgstr "ملاحظات التحضير المسجلة وقت التخطيط."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Rates"
-msgstr "Rates"
+msgstr "المعدلات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__rating_ids
 msgid "Ratings"
-msgstr "Ratings"
+msgstr "التقييمات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_force_complete_wizard__reason
 msgid "Reason"
-msgstr "Reason"
+msgstr "السبب"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__user_id
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__user_id
 msgid "Related user name for the resource to manage its access."
-msgstr "Related user name for the resource to manage its access."
+msgstr "اسم المستخدم المرتبط بالمورد لإدارة صلاحياته."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__remaining_visit_count
 msgid "Remaining Visits"
-msgstr "Remaining Visits"
+msgstr "الزيارات المتبقية"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Reopen to Draft"
-msgstr "Reopen to Draft"
+msgstr "إعادة فتح كمسودة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__result_requires_notes
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__requires_notes
 msgid "Require Notes"
-msgstr "Require Notes"
+msgstr "إلزام الملاحظات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__failure_reason
 msgid "Required for unsuccessful results."
-msgstr "Required for unsuccessful results."
+msgstr "إلزامي للنتائج غير الناجحة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__requires_revisit
 msgid "Requires Revisit"
-msgstr "Requires Revisit"
+msgstr "يتطلب إعادة زيارة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__activity_user_id
 msgid "Responsible User"
-msgstr "Responsible User"
+msgstr "المستخدم المسؤول"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Result"
-msgstr "Result"
+msgstr "النتيجة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__result_notes
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__result_notes
 msgid "Result Notes"
-msgstr "Result Notes"
+msgstr "ملاحظات النتيجة"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Result notes are required for the result '%(result)s'."
-msgstr "Result notes are required for the result '%(result)s'."
+msgstr "ملاحظات النتيجة مطلوبة للنتيجة '%(result)s'."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__result_requires_notes
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_result__requires_notes
 msgid "Result notes become mandatory when this result is selected."
-msgstr "Result notes become mandatory when this result is selected."
+msgstr "تصبح ملاحظات النتيجة إلزامية عند اختيار هذه النتيجة."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_kanban
 msgid "Result:"
-msgstr "Result:"
+msgstr "النتيجة:"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__requires_revisit
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__requires_revisit
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Revisit Required"
-msgstr "Revisit Required"
+msgstr "مطلوب إعادة زيارة"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Route"
-msgstr "Route"
+msgstr "المسار"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route %(route)s cannot be completed from the %(state)s state."
-msgstr "Route %(route)s cannot be completed from the %(state)s state."
+msgstr "لا يمكن إنهاء المسار %(route)s من الحالة %(state)s."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
-msgid ""
+msgid "Route %(route)s cannot be started from the %(state)s state. Only confirmed routes can be started."
 "Route %(route)s cannot be started from the %(state)s state. Only confirmed "
 "routes can be started."
-msgstr ""
+msgstr "لا يمكن بدء المسار %(route)s من الحالة %(state)s. يمكن بدء المسارات المؤكدة فقط."
 "Route %(route)s cannot be started from the %(state)s state. Only confirmed "
 "routes can be started."
 
@@ -1053,32 +1053,32 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route %(route)s is %(state)s and can no longer be modified."
-msgstr "Route %(route)s is %(state)s and can no longer be modified."
+msgstr "المسار %(route)s حالته %(state)s ولا يمكن تعديله بعد الآن."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route %(route)s is already cancelled."
-msgstr "Route %(route)s is already cancelled."
+msgstr "المسار %(route)s ملغي بالفعل."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
-msgid ""
+msgid "Route %(route)s still has %(count)s pending or in-progress visit(s). Close them first or use Force Complete."
 "Route %(route)s still has %(count)s pending or in-progress visit(s). Close "
 "them first or use Force Complete."
-msgstr "Route %(route)s still has %(count)s pending or in-progress visit(s). Close them first or use Force Complete."
+msgstr "لا يزال المسار %(route)s به %(count)s زيارة معلقة أو قيد التنفيذ. أغلقها أولاً أو استخدم الإغلاق القسري."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_graph
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_pivot
 msgid "Route Analysis"
-msgstr "Route Analysis"
+msgstr "تحليل المسارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__date
 msgid "Route Date"
-msgstr "Route Date"
+msgstr "تاريخ المسار"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_cancel_wizard__route_id
@@ -1086,7 +1086,7 @@ msgstr "Route Date"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__route_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Route Plan"
-msgstr "Route Plan"
+msgstr "خطة المسار"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -1098,22 +1098,22 @@ msgstr "Route Plan"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_list
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Route Plans"
-msgstr "Route Plans"
+msgstr "خطط المسارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__name
 msgid "Route Reference"
-msgstr "Route Reference"
+msgstr "مرجع المسار"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__route_state
 msgid "Route Status"
-msgstr "Route Status"
+msgstr "حالة المسار"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Route Visit"
-msgstr "Route Visit"
+msgstr "زيارة المسار"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -1123,64 +1123,64 @@ msgstr "Route Visit"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_list
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Route Visits"
-msgstr "Route Visits"
+msgstr "زيارات المسار"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route cancelled: %s"
-msgstr "Route cancelled: %s"
+msgstr "تم إلغاء المسار: %s"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route completed."
-msgstr "Route completed."
+msgstr "تم إنهاء المسار."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route confirmed with %(count)s visit(s)."
-msgstr "Route confirmed with %(count)s visit(s)."
+msgstr "تم تأكيد المسار مع %(count)s زيارة."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route reopened in draft."
-msgstr "Route reopened in draft."
+msgstr "أعيد فتح المسار كمسودة."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "Route started."
-msgstr "Route started."
+msgstr "بدأ المسار."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_employee_form_inherit_route_plans
 msgid "Routes"
-msgstr "Routes"
+msgstr "المسارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr "SMS Delivery error"
+msgstr "خطأ في تسليم SMS"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__sequence
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__sequence
 msgid "Sequence"
-msgstr "Sequence"
+msgstr "التسلسل"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_visit__requires_revisit
 msgid "Set when the outcome indicates a follow-up visit is needed."
-msgstr "Set when the outcome indicates a follow-up visit is needed."
+msgstr "تُحدد عندما تشير النتيجة إلى الحاجة لزيارة متابعة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__skip_reason
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_skip_wizard__skip_reason
 msgid "Skip Reason"
-msgstr "Skip Reason"
+msgstr "سبب التخطي"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -1188,178 +1188,178 @@ msgstr "Skip Reason"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_skip_wizard_form
 msgid "Skip Visit"
-msgstr "Skip Visit"
+msgstr "تخطي الزيارة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model,name:flousflow_distribution_route_management.model_distribution_visit_skip_wizard
 msgid "Skip Visit Wizard"
-msgstr "Skip Visit Wizard"
+msgstr "معالج تخطي الزيارة"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Start Route"
-msgstr "Start Route"
+msgstr "بدء المسار"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "Start Visit"
-msgstr "Start Visit"
+msgstr "بدء الزيارة"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "Start the route first: visits can only be started when the route is in progress."
 "Start the route first: visits can only be started when the route is in "
 "progress."
-msgstr ""
+msgstr "ابدأ المسار أولاً: لا يمكن بدء الزيارات إلا عندما يكون المسار قيد التنفيذ."
 "Start the route first: visits can only be started when the route is in "
 "progress."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "State"
-msgstr "State"
+msgstr "الحالة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__state
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Status"
-msgstr "Status"
+msgstr "الحالة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__activity_state
-msgid ""
+msgid "Status based on activities\\nOverdue: Due date is already passed\\nToday: Activity date is today\\nPlanned: Future activities."
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
 "Today: Activity date is today\n"
 "Planned: Future activities."
-msgstr "Status based on activities\\nOverdue: Due date is already passed\\nToday: Activity date is today\\nPlanned: Future activities."
+msgstr "Status based on activities\\\\nOverdue: Due date is already passed\\\\nToday: Activity date is today\\\\nPlanned: Future activities."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Success Flag"
-msgstr "Success Flag"
+msgstr "علامة النجاح"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__success_rate
 msgid "Success Rate (%)"
-msgstr "Success Rate (%)"
+msgstr "معدل النجاح (%)"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Successful"
-msgstr "Successful"
+msgstr "ناجح"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__result_is_success
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_result__is_success
 msgid "Successful Result"
-msgstr "Successful Result"
+msgstr "نتيجة ناجحة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__success_rate
 msgid "Successful results / executed visits x 100."
-msgstr "Successful results / executed visits x 100."
+msgstr "النتائج الناجحة / الزيارات المنفذة × 100."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__suggested_revisit_date
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__suggested_revisit_date
 msgid "Suggested Revisit Date"
-msgstr "Suggested Revisit Date"
+msgstr "تاريخ إعادة الزيارة المقترح"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__supervisor_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Supervisor"
-msgstr "Supervisor"
+msgstr "المشرف"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "The customer '%(partner)s' does not belong to the company of the route plan."
 "The customer '%(partner)s' does not belong to the company of the route plan."
-msgstr "The customer '%(partner)s' does not belong to the company of the route plan."
+msgstr "العميل '%(partner)s' لا ينتمي لشركة خطة المسار."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
-msgid ""
+msgid "The distribution area '%(area)s' is not assigned to employee '%(employee)s'. Assign the area to the employee first or choose another area."
 "The distribution area '%(area)s' is not assigned to employee '%(employee)s'."
 " Assign the area to the employee first or choose another area."
-msgstr "The distribution area '%(area)s' is not assigned to employee '%(employee)s'. Assign the area to the employee first or choose another area."
+msgstr "منطقة التوزيع '%(area)s' غير معينة للموظف '%(employee)s'. عيّن المنطقة للموظف أولاً أو اختر منطقة أخرى."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.constraint,message:flousflow_distribution_route_management.constraint_distribution_route_plan_planned_times_check
 msgid "The planned end time must be after the planned start time."
-msgstr "The planned end time must be after the planned start time."
+msgstr "يجب أن يكون وقت النهاية المخطط بعد وقت البداية المخطط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "The planned time of this visit (%(planned)s) does not match the route date (%(date)s)."
 "The planned time of this visit (%(planned)s) does not match the route date "
 "(%(date)s)."
-msgstr "The planned time of this visit (%(planned)s) does not match the route date (%(date)s)."
+msgstr "الوقت المخطط لهذه الزيارة (%(planned)s) لا يطابق تاريخ المسار (%(date)s)."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "The visit and its route plan must belong to the same company."
-msgstr "The visit and its route plan must belong to the same company."
+msgstr "يجب أن تنتمي الزيارة وخطة مسارها لنفس الشركة."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.constraint,message:flousflow_distribution_route_management.constraint_distribution_visit_result_code_company_uniq
 msgid "The visit result code must be unique per company!"
-msgstr "The visit result code must be unique per company!"
+msgstr "يجب أن يكون رمز نتيجة الزيارة فريداً لكل شركة!"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "The visit type '%(type)s' does not belong to the company of the route plan."
 "The visit type '%(type)s' does not belong to the company of the route plan."
-msgstr "The visit type '%(type)s' does not belong to the company of the route plan."
+msgstr "نوع الزيارة '%(type)s' لا ينتمي لشركة خطة المسار."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "This Week"
-msgstr "This Week"
+msgstr "هذا الأسبوع"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "This visit has already been started or closed."
-msgstr "This visit has already been started or closed."
+msgstr "هذه الزيارة بدأت أو أُغلقت بالفعل."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Today"
-msgstr "Today"
+msgstr "اليوم"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_search
 msgid "Tomorrow"
-msgstr "Tomorrow"
+msgstr "غداً"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__visit_count
 msgid "Total Visits"
-msgstr "Total Visits"
+msgstr "إجمالي الزيارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__can_complete
 msgid "True when every visit is in a final state (done or cancelled)."
-msgstr "True when every visit is in a final state (done or cancelled)."
+msgstr "صحيح عندما تكون كل الزيارات في حالة نهائية (منتهية أو ملغاة)."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي على السجل."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Unsuccessful"
-msgstr "Unsuccessful"
+msgstr "غير ناجحة"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -1367,32 +1367,32 @@ msgstr "Unsuccessful"
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__visit_id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_skip_wizard__visit_id
 msgid "Visit"
-msgstr "Visit"
+msgstr "الزيارة"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "Visit '%(type)s' requires a customer before confirming the route."
-msgstr "Visit '%(type)s' requires a customer before confirming the route."
+msgstr "الزيارة '%(type)s' تتطلب عميلاً قبل تأكيد المسار."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
-msgid ""
+msgid "Visit '%(type)s' requires a customer. Please set a customer on this visit."
 "Visit '%(type)s' requires a customer. Please set a customer on this visit."
-msgstr "Visit '%(type)s' requires a customer. Please set a customer on this visit."
+msgstr "الزيارة '%(type)s' تتطلب عميلاً. يرجى تحديد عميل لهذه الزيارة."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 msgid "Visit Counts"
-msgstr "Visit Counts"
+msgstr "عدد الزيارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__result_id
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_visit_complete_wizard__result_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "Visit Result"
-msgstr "Visit Result"
+msgstr "نتيجة الزيارة"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.actions.act_window,name:flousflow_distribution_route_management.action_distribution_visit_result
@@ -1400,154 +1400,154 @@ msgstr "Visit Result"
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_list
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_search
 msgid "Visit Results"
-msgstr "Visit Results"
+msgstr "نتائج الزيارات"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_visit__visit_type_id
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_search
 msgid "Visit Type"
-msgstr "Visit Type"
+msgstr "نوع الزيارة"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_distribution_visit_result
-msgid ""
+msgid "Visit results record the business outcome of a visit\\n                (order taken, collected, customer closed...). Use flags\\n                instead of names to drive logic."
 "Visit results record the business outcome of a visit\n"
 "                (order taken, collected, customer closed...). Use flags\n"
 "                instead of names to drive logic."
-msgstr "Visit results record the business outcome of a visit\\n                (order taken, collected, customer closed...). Use flags\\n                instead of names to drive logic."
+msgstr "Visit results record the business outcome of a visit\\\\n                (order taken, collected, customer closed...). Use flags\\\\n                instead of names to drive logic."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_form
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_employee_form_inherit_route_plans
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_partner_form_inherit_route_visits
 msgid "Visits"
-msgstr "Visits"
+msgstr "الزيارات"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_graph
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_pivot
 msgid "Visits Analysis"
-msgstr "Visits Analysis"
+msgstr "تحليل الزيارات"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_all_visits
-msgid ""
+msgid "Visits are created inside route plans. Analyze execution by\\n                employee, area, type, result or customer."
 "Visits are created inside route plans. Analyze execution by\n"
 "                employee, area, type, result or customer."
-msgstr ""
+msgstr "Visits are created inside route plans. Analyze execution by\\n                employee, area, type, result or customer."
 "Visits are created inside route plans. Analyze execution by\n"
 "                employee, area, type, result or customer."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,field_description:flousflow_distribution_route_management.field_distribution_route_plan__website_message_ids
 msgid "Website Messages"
-msgstr "Website Messages"
+msgstr "رسائل الموقع"
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_route_plan__website_message_ids
 msgid "Website communication history"
-msgstr "Website communication history"
+msgstr "سجل التواصل عبر الموقع"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_visit_form
 msgid "What happened during the visit..."
-msgstr "What happened during the visit..."
+msgstr "ماذا حدث أثناء الزيارة..."
 
 #. module: flousflow_distribution_route_management
 #: model:ir.model.fields,help:flousflow_distribution_route_management.field_distribution_visit_result__requires_revisit
-msgid ""
+msgid "When selected, the revisit flag is proposed by default on the completion wizard."
 "When selected, the revisit flag is proposed by default on the completion "
 "wizard."
-msgstr ""
+msgstr "عند التحديد، تُقترح علامة إعادة الزيارة افتراضياً في معالج الإنهاء."
 "When selected, the revisit flag is proposed by default on the completion "
 "wizard."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "When should this result be used..."
-msgstr "When should this result be used..."
+msgstr "متى يجب استخدام هذه النتيجة..."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_skip_wizard_form
 msgid "Why are you skipping this visit?"
-msgstr "Why are you skipping this visit?"
+msgstr "لماذا تريد تخطي هذه الزيارة؟"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_cancel_wizard_form
 msgid "Why is this route being cancelled?"
-msgstr "Why is this route being cancelled?"
+msgstr "لماذا يتم إلغاء هذا المسار؟"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_complete_wizard_form
 msgid "Why was this visit unsuccessful?"
-msgstr "Why was this visit unsuccessful?"
+msgstr "لماذا كانت هذه الزيارة غير ناجحة؟"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "You are not allowed to modify route %(route)s after confirmation."
-msgstr "You are not allowed to modify route %(route)s after confirmation."
+msgstr "غير مسموح لك بتعديل المسار %(route)s بعد التأكيد."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "You are not allowed to modify this field."
-msgstr "You are not allowed to modify this field."
+msgstr "غير مسموح لك بتعديل هذا الحقل."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "You can only complete visits assigned to you."
-msgstr "You can only complete visits assigned to you."
+msgstr "يمكنك إنهاء الزيارات المعينة لك فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "You can only modify your own visits."
-msgstr "You can only modify your own visits."
+msgstr "يمكنك تعديل زياراتك الخاصة فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "You can only skip visits assigned to you."
-msgstr "You can only skip visits assigned to you."
+msgstr "يمكنك تخطي الزيارات المعينة لك فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "You can only start routes assigned to you."
-msgstr "You can only start routes assigned to you."
+msgstr "يمكنك بدء المسارات المعينة لك فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_visit.py:0
 msgid "You can only start visits assigned to you."
-msgstr "You can only start visits assigned to you."
+msgstr "يمكنك بدء الزيارات المعينة لك فقط."
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
 #: code:addons/flousflow_distribution_route_management/models/distribution_route_plan.py:0
 msgid "You must add at least one visit before confirming route %(route)s."
-msgstr "You must add at least one visit before confirming route %(route)s."
+msgstr "يجب إضافة زيارة واحدة على الأقل قبل تأكيد المسار %(route)s."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.actions.act_window,help:flousflow_distribution_route_management.action_my_route_plans
-msgid ""
+msgid "Your manager assigns route plans to you here. Open today's\\n                route, then start the visits one by one."
 "Your manager assigns route plans to you here. Open today's\n"
 "                route, then start the visits one by one."
-msgstr ""
+msgstr "Your manager assigns route plans to you here. Open today's\\n                route, then start the visits one by one."
 "Your manager assigns route plans to you here. Open today's\n"
 "                route, then start the visits one by one."
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "e.g. Collected"
-msgstr "e.g. Collected"
+msgstr "مثال: تم التحصيل"
 
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_visit_result_form
 msgid "e.g. collected"
-msgstr "e.g. collected"
+msgstr "مثال: تم التحصيل"
 
 #. module: flousflow_distribution_route_management
 #. odoo-python
@@ -1570,4 +1570,4 @@ msgstr "route_id"
 #. module: flousflow_distribution_route_management
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_route_management.view_distribution_route_plan_kanban
 msgid "visits"
-msgstr "visits"
+msgstr "زيارات"

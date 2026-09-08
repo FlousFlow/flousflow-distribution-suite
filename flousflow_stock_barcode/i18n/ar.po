@@ -3,7 +3,7 @@
 # 	* flousflow_stock_barcode
 #
 msgid ""
-msgstr ""
+msgstr "Project-Id-Version: Odoo Server 19.0\\nLanguage: ar\\nMIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: 8bit\\nPlural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\\n"
 "Project-Id-Version: Odoo Server 19.0\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -13,51 +13,51 @@ msgstr ""
 
 #. module: flousflow_stock_barcode
 msgid "%(count)s barcode(s) were generated."
-msgstr "%(count)s barcode(s) were generated."
+msgstr "تم توليد %(count)s باركود."
 
 #. module: flousflow_stock_barcode
 msgid "A barcode could not be generated after multiple attempts because generated values are already in use."
-msgstr "A barcode could not be generated after multiple attempts because generated values are already in use."
+msgstr "تعذر توليد الباركود بعد عدة محاولات لأن القيم المولدة مستخدمة بالفعل."
 
 #. module: flousflow_stock_barcode
 msgid "Assign barcodes to existing products that have no barcode."
-msgstr "Assign barcodes to existing products that have no barcode."
+msgstr "تعيين باركود للمنتجات الموجودة التي لا تحتوي على باركود."
 
 #. module: flousflow_stock_barcode
 msgid "Automatic Product Barcode Configuration"
-msgstr "Automatic Product Barcode Configuration"
+msgstr "إعدادات الباركود التلقائي للمنتجات"
 
 #. module: flousflow_stock_barcode
 msgid "Automatic Product Barcodes"
-msgstr "Automatic Product Barcodes"
+msgstr "باركود تلقائي للمنتجات"
 
 #. module: flousflow_stock_barcode
 msgid "Automatically assign a unique barcode when a new product variant is created."
-msgstr "Automatically assign a unique barcode when a new product variant is created."
+msgstr "تعيين باركود فريد تلقائياً عند إنشاء وحدة منتج جديدة."
 
 #. module: flousflow_stock_barcode
 msgid "Barcode Format"
-msgstr "Barcode Format"
+msgstr "صيغة الباركود"
 
 #. module: flousflow_stock_barcode
 msgid "Barcode Generation"
-msgstr "Barcode Generation"
+msgstr "توليد الباركود"
 
 #. module: flousflow_stock_barcode
 msgid "Barcode Preview"
-msgstr "Barcode Preview"
+msgstr "معاينة الباركود"
 
 #. module: flousflow_stock_barcode
 msgid "Barcode Sequence"
-msgstr "Barcode Sequence"
+msgstr "تسلسل الباركود"
 
 #. module: flousflow_stock_barcode
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "إلغاء"
 
 #. module: flousflow_stock_barcode
 msgid "Company"
-msgstr "Company"
+msgstr "الشركة"
 
 #. module: flousflow_stock_barcode
 msgid "EAN-13"
@@ -65,132 +65,132 @@ msgstr "EAN-13"
 
 #. module: flousflow_stock_barcode
 msgid "Enable Automatic Barcode Generation"
-msgstr "Enable Automatic Barcode Generation"
+msgstr "تشغيل التوليد التلقائي للباركود"
 
 #. module: flousflow_stock_barcode
 msgid "Existing Barcode Policy"
-msgstr "Existing Barcode Policy"
+msgstr "سياسة الباركود الموجود"
 
 #. module: flousflow_stock_barcode
 msgid "Existing Products"
-msgstr "Existing Products"
+msgstr "المنتجات الموجودة"
 
 #. module: flousflow_stock_barcode
 msgid "Existing product barcodes are never overwritten."
-msgstr "Existing product barcodes are never overwritten."
+msgstr "لا يتم الكتابة فوق باركود المنتجات الموجودة أبداً."
 
 #. module: flousflow_stock_barcode
 msgid "First number to be generated."
-msgstr "First number to be generated."
+msgstr "أول رقم سيتم توليده."
 
 #. module: flousflow_stock_barcode
 msgid "Generate Barcodes"
-msgstr "Generate Barcodes"
+msgstr "توليد الباركود"
 
 #. module: flousflow_stock_barcode
 msgid "Generate Missing Barcodes"
-msgstr "Generate Missing Barcodes"
+msgstr "توليد الباركود الناقص"
 
 #. module: flousflow_stock_barcode
 msgid "Generate Product Barcodes"
-msgstr "Generate Product Barcodes"
+msgstr "توليد باركود المنتجات"
 
 #. module: flousflow_stock_barcode
 msgid "Include Archived Products"
-msgstr "Include Archived Products"
+msgstr "تضمين المنتجات المؤرشفة"
 
 #. module: flousflow_stock_barcode
 msgid "Include archived product variants when generating missing barcodes."
-msgstr "Include archived product variants when generating missing barcodes."
+msgstr "تضمين وحدات المنتجات المؤرشفة عند توليد الباركود الناقص."
 
 #. module: flousflow_stock_barcode
 msgid "Invalid EAN-13 configuration"
-msgstr "Invalid EAN-13 configuration"
+msgstr "إعدادات EAN-13 غير صحيحة"
 
 #. module: flousflow_stock_barcode
 msgid "Keep Existing Barcodes"
-msgstr "Keep Existing Barcodes"
+msgstr "الاحتفاظ بالباركود الموجود"
 
 #. module: flousflow_stock_barcode
 msgid "No barcode configuration exists for this company. Configure it in Settings first."
-msgstr "No barcode configuration exists for this company. Configure it in Settings first."
+msgstr "لا توجد إعدادات باركود لهذه الشركة. قم بتهيئتها من الإعدادات أولاً."
 
 #. module: flousflow_stock_barcode
 msgid "No barcode configuration found for %(company)s. Configure it in Settings first."
-msgstr "No barcode configuration found for %(company)s. Configure it in Settings first."
+msgstr "لا توجد إعدادات باركود لـ %(company)s. قم بتهيئتها من الإعدادات أولاً."
 
 #. module: flousflow_stock_barcode
 msgid "No selected product is missing a barcode."
-msgstr "No selected product is missing a barcode."
+msgstr "لا يوجد أي منتج محدد ينقصه باركود."
 
 #. module: flousflow_stock_barcode
 msgid "Number of digits of the sequential part. Example: prefix 20 and 10 digits produce 200000000001."
-msgstr "Number of digits of the sequential part. Example: prefix 20 and 10 digits produce 200000000001."
+msgstr "عدد أرقام الجزء التسلسلي. مثال: بادئة 20 مع 10 أرقام تنتج 200000000001."
 
 #. module: flousflow_stock_barcode
 msgid "Only one barcode configuration can exist per company."
-msgstr "Only one barcode configuration can exist per company."
+msgstr "يمكن وجود إعداد باركود واحد فقط لكل شركة."
 
 #. module: flousflow_stock_barcode
 msgid "Optional prefix prepended to the generated number."
-msgstr "Optional prefix prepended to the generated number."
+msgstr "بادئة اختيارية تُضاف قبل الرقم المولد."
 
 #. module: flousflow_stock_barcode
 msgid "Optional prefix prepended to the generated number. Must contain digits only for EAN-13."
-msgstr "Optional prefix prepended to the generated number. Must contain digits only for EAN-13."
+msgstr "بادئة اختيارية تُضاف قبل الرقم المولد. يجب أن تحتوي أرقاماً فقط لـ EAN-13."
 
 #. module: flousflow_stock_barcode
 msgid "Prefix"
-msgstr "Prefix"
+msgstr "البادئة"
 
 #. module: flousflow_stock_barcode
 msgid "Prefix + Sequential Numeric"
-msgstr "Prefix + Sequential Numeric"
+msgstr "بادئة + أرقام تسلسلية"
 
 #. module: flousflow_stock_barcode
 msgid "Product barcode sequence - %s"
-msgstr "Product barcode sequence - %s"
+msgstr "تسلسل باركود المنتج - %s"
 
 #. module: flousflow_stock_barcode
 msgid "Products Without Barcode"
-msgstr "Products Without Barcode"
+msgstr "منتجات بدون باركود"
 
 #. module: flousflow_stock_barcode
 msgid "Sequence Digits"
-msgstr "Sequence Digits"
+msgstr "عدد أرقام التسلسل"
 
 #. module: flousflow_stock_barcode
 msgid "Sequential Numeric"
-msgstr "Sequential Numeric"
+msgstr "أرقام تسلسلية"
 
 #. module: flousflow_stock_barcode
 msgid "Sequential Numeric, Prefix + Sequential Numeric, or EAN-13 (with checksum)."
-msgstr "Sequential Numeric, Prefix + Sequential Numeric, or EAN-13 (with checksum)."
+msgstr "أرقام تسلسلية، بادئة + أرقام تسلسلية، أو EAN-13 (مع خانة تحقق)."
 
 #. module: flousflow_stock_barcode
 msgid "Starting Number"
-msgstr "Starting Number"
+msgstr "رقم البداية"
 
 #. module: flousflow_stock_barcode
 msgid "The barcode prefix must contain digits only for EAN-13."
-msgstr "The barcode prefix must contain digits only for EAN-13."
+msgstr "يجب أن تحتوي بادئة الباركود على أرقام فقط لـ EAN-13."
 
 #. module: flousflow_stock_barcode
 msgid "The selected configuration produces more than 13 EAN digits. For EAN-13, the prefix length plus the sequence length must equal 12 digits."
-msgstr "The selected configuration produces more than 13 EAN digits. For EAN-13, the prefix length plus the sequence length must equal 12 digits."
+msgstr "الإعدادات المحددة تنتج أكثر من 13 رقماً لـ EAN. لـ EAN-13، يجب أن يساوي طول البادئة زائد طول التسلسل 12 رقماً."
 
 #. module: flousflow_stock_barcode
 msgid "The sequence length must be at least 1 digit."
-msgstr "The sequence length must be at least 1 digit."
+msgstr "يجب أن يكون طول التسلسل رقماً واحداً على الأقل."
 
 #. module: flousflow_stock_barcode
 msgid "The starting number cannot be negative."
-msgstr "The starting number cannot be negative."
+msgstr "لا يمكن أن يكون رقم البداية سالباً."
 
 #. module: flousflow_stock_barcode
 msgid "The starting number does not fit in the configured sequence length."
-msgstr "The starting number does not fit in the configured sequence length."
+msgstr "رقم البداية لا يتسع في طول التسلسل المُعد."
 
 #. module: flousflow_stock_barcode
 msgid "Use Generate Missing Barcodes to assign barcodes to existing products."
-msgstr "Use Generate Missing Barcodes to assign barcodes to existing products."
+msgstr "استخدم «توليد الباركود الناقص» لتعيين باركود للمنتجات الموجودة."
