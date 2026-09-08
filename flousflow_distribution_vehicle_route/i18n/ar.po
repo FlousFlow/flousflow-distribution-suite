@@ -6,12 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-06 15:59+0000\n"
-"PO-Revision-Date: 2026-09-06 15:59+0000\n"
+"POT-Creation-Date: 2026-09-07 15:59+0000\n"
+"PO-Revision-Date: 2026-09-07 15:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: ar\n"
-"MIME-Version: 1.0\n"
+"Language: ar_00MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
@@ -25,7 +24,7 @@ msgstr "'%(record)s' does not belong to the المسار company '%(company)s'."
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
 msgid "<span class=\"o_stat_text\">POS Orders</span>"
-msgstr "<span class=\"o_stat_text\">POS Orders</span>"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
@@ -72,7 +71,7 @@ msgstr "Distribution المسار الزيارة"
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_fleet_vehicle__distribution_route_ids
 msgid "Distribution Routes"
-msgstr "Distribution المسارs"
+msgstr "Distribution Routes"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model,name:flousflow_distribution_vehicle_route.model_hr_employee
@@ -225,7 +224,7 @@ msgstr "المسار Plans using this Assignment"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_plan__vehicle_id
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_id
 msgid "Route Vehicle"
-msgstr "المسار المركبة"
+msgstr "مركبة المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_pos_config_id
@@ -235,7 +234,7 @@ msgstr "المسار المركبة POS"
 #. module: flousflow_distribution_vehicle_route
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_route.field_distribution_route_visit__vehicle_warehouse_id
 msgid "Route Vehicle Warehouse"
-msgstr "المسار المركبة المخزن"
+msgstr "مخزن مركبة المسار"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
@@ -285,7 +284,7 @@ msgstr "المسارات"
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle_route/models/fleet_vehicle_employee_assignment.py:0
 msgid "Routes using this Assignment"
-msgstr "المسارs using this Assignment"
+msgstr "Routes using this Assignment"
 
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.view_distribution_route_plan_form_inherit_vehicle
@@ -400,8 +399,8 @@ msgid ""
 "Vehicle '%(vehicle)s' is already operating route '%(conflict)s' in progress."
 " A vehicle cannot run two routes at the same time."
 msgstr ""
-"Vehicle '%(vehicle)s' is already operating المسار '%(conflict)s' in "
-"progress. A vehicle cannot run two المسارs at the same time."
+"Vehicle '%(vehicle)s' is already operating route '%(conflict)s' in progress."
+" A vehicle cannot run two routes at the same time."
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python
@@ -459,7 +458,7 @@ msgstr "المركبة المخزن"
 #. module: flousflow_distribution_vehicle_route
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_route.res_config_settings_view_form_inherit_vehicle_route
 msgid "Vehicle on Routes"
-msgstr "المركبة on المسارs"
+msgstr "Vehicle on Routes"
 
 #. module: flousflow_distribution_vehicle_route
 #. odoo-python

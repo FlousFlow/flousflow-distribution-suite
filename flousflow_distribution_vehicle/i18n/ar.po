@@ -6,11 +6,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0-20260619\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-06 15:59+0000\n"
-"PO-Revision-Date: 2026-09-06 15:59+0000\n"
+"POT-Creation-Date: 2026-09-07 15:58+0000\n"
+"PO-Revision-Date: 2026-09-07 15:58+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: ar\n"
+"Language: ar_001
+"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -37,12 +38,12 @@ msgstr "%(pos)s نقدي"
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
 msgid "<span class=\"o_stat_text\">Employees</span>"
-msgstr "<span class=\"o_stat_text\">الموظفs</span>"
+msgstr "<span class=\"o_stat_text\">Employees</span>"
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
 msgid "<span class=\"o_stat_text\">POS</span>"
-msgstr "<span class=\"o_stat_text\">POS</span>"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
@@ -52,7 +53,7 @@ msgstr "<span class=\"o_stat_text\">المخزون</span>"
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
 msgid "<span class=\"o_stat_text\">Transfers</span>"
-msgstr "<span class=\"o_stat_text\">Transfers</span>"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
@@ -62,7 +63,7 @@ msgstr "<span class=\"o_stat_text\">المخزن</span>"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__activate
 msgid "Activate Distribution"
-msgstr "Activate Distribution"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -85,9 +86,9 @@ msgid ""
 "default: selling more than the vehicle holds is blocked until the vehicle is"
 " loaded."
 msgstr ""
-"Allow POS المبيعات exceeding the المركبة المخزن الكمية. Disabled by default:"
-" selling more than the المركبة holds is blocked until the المركبة is "
-"التحميلed."
+"Allow POS sales exceeding the vehicle warehouse quantity. Disabled by "
+"default: selling more than the vehicle holds is blocked until the vehicle is"
+" loaded."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_res_config_settings__distribution_allow_vehicle_negative_stock
@@ -115,7 +116,7 @@ msgstr "إلغاء"
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_employee_assignment_form
 msgid "Close Assignment"
-msgstr "Close Assignment"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__company_id
@@ -132,7 +133,7 @@ msgstr "تهيئة الإعدادات"
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_distribution_vehicle_configure_wizard_form
 msgid "Configure"
-msgstr "Configure"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -157,17 +158,29 @@ msgstr "Configure a المركبة المخزن first."
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_distribution_vehicle_transfer_wizard_form
 msgid "Confirm Transfer"
-msgstr "Confirm Transfer"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_configure_wizard__pos_mode__create_new
 msgid "Create New POS"
-msgstr "Create New POS"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_configure_wizard__warehouse_mode__create_new
 msgid "Create New Vehicle Warehouse"
 msgstr "Create New المركبة المخزن"
+
+#. module: flousflow_distribution_vehicle
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__create_analytic_account
+msgid "Create Vehicle Analytic Account"
+msgstr ""
+
+#. module: flousflow_distribution_vehicle
+#: model:ir.model.fields,help:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__create_analytic_account
+msgid ""
+"Create a dedicated analytic account (profit center) for this vehicle and "
+"attach it to its POS so sales and COGS are reported per vehicle."
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__create_uid
@@ -176,7 +189,7 @@ msgstr "Create New المركبة المخزن"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__create_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__create_uid
 msgid "Created by"
-msgstr "Created by"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__create_date
@@ -185,7 +198,7 @@ msgstr "Created by"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__create_date
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__create_date
 msgid "Created on"
-msgstr "Created on"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -200,7 +213,7 @@ msgstr ""
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_employee_assignment_search
 msgid "Current Assignments"
-msgstr "Current Assignments"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_hr_employee__current_distribution_vehicle_id
@@ -210,23 +223,23 @@ msgstr "Current Distribution المركبة"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__current_driver_id
 msgid "Current Driver"
-msgstr "Current Driver"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_employee_ids
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
 msgid "Current Employees"
-msgstr "Current الموظفs"
+msgstr "Current Employees"
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__current_salesman_id
 msgid "Current Salesman"
-msgstr "Current المبيعاتman"
+msgstr "Current Salesman"
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
 msgid "Current Team"
-msgstr "Current Team"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_warehouse_id
@@ -245,7 +258,7 @@ msgstr "Default unit of measure used for all المخزون operations."
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__direction
 msgid "Direction"
-msgstr "Direction"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__display_name
@@ -271,12 +284,12 @@ msgstr "التوزيع"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_active
 msgid "Distribution Active"
-msgstr "Distribution Active"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_form_inherit_distribution
 msgid "Distribution Operations"
-msgstr "Distribution Operations"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_status
@@ -304,7 +317,7 @@ msgstr "Distribution المركبة السجل"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_stock_warehouse__distribution_vehicle_ids
 msgid "Distribution Vehicles"
-msgstr "Distribution المركبةs"
+msgstr "Distribution Vehicles"
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_pos_order__distribution_warehouse_id
@@ -317,8 +330,8 @@ msgid ""
 "Distribution vehicle managers: configure vehicles, warehouses, POS, "
 "assignments and load/unload operations."
 msgstr ""
-"Distribution المركبة managers: configure المركبةs, المخزنs, POS, assignments"
-" and التحميل/التفريغ operations."
+"Distribution vehicle managers: configure vehicles, warehouses, POS, "
+"assignments and load/unload operations."
 
 #. module: flousflow_distribution_vehicle
 #: model:res.groups,comment:flousflow_distribution_vehicle.group_distribution_vehicle_user
@@ -366,12 +379,12 @@ msgstr "الموظف Assignments"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_employee_ids
 msgid "Employees with an open assignment on this vehicle."
-msgstr "الموظفs with an open assignment on this المركبة."
+msgstr "Employees with an open assignment on this vehicle."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__date_to
 msgid "Empty = current assignment."
-msgstr "Empty = current assignment."
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model,name:flousflow_distribution_vehicle.model_fleet_vehicle_employee_assignment
@@ -382,13 +395,13 @@ msgstr "Fleet المركبة الموظف Assignment"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__date_from
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__date_from
 msgid "From"
-msgstr "From"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_assignment_line__role__helper
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__fleet_vehicle_employee_assignment__role__helper
 msgid "Helper"
-msgstr "Helper"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__id
@@ -408,7 +421,7 @@ msgstr "المُعرف"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__fleet_vehicle__distribution_status__inactive
 msgid "Inactive"
-msgstr "Inactive"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_active
@@ -416,8 +429,8 @@ msgid ""
 "Inactive vehicles keep their warehouse/POS and history but are excluded from"
 " operations and availability checks."
 msgstr ""
-"Inactive المركبةs keep their المخزن/POS and history but are excluded from "
-"operations and availability checks."
+"Inactive vehicles keep their warehouse/POS and history but are excluded from"
+" operations and availability checks."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__write_uid
@@ -426,7 +439,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__write_uid
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__write_uid
 msgid "Last Updated by"
-msgstr "آخر Upالتاريخd by"
+msgstr "Last Updated by"
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__write_date
@@ -435,22 +448,22 @@ msgstr "آخر Upالتاريخd by"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__write_date
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__write_date
 msgid "Last Updated on"
-msgstr "آخر Upالتاريخd on"
+msgstr "Last Updated on"
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_distribution_vehicle_configure_wizard_form
 msgid "Leave empty to auto-generate"
-msgstr "Leave empty to auto-geneالنسبة"
+msgstr "Leave empty to auto-generate"
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__new_warehouse_name
 msgid "Leave empty to auto-generate from the vehicle."
-msgstr "Leave empty to auto-geneالنسبة from the المركبة."
+msgstr "Leave empty to auto-generate from the vehicle."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__new_pos_name
 msgid "Leave empty to auto-generate."
-msgstr "Leave empty to auto-geneالنسبة."
+msgstr "Leave empty to auto-generate."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_transfer_wizard__direction__load
@@ -484,8 +497,8 @@ msgid ""
 "Load: the main loading warehouse. Unload: the receiving warehouse (defaults "
 "to the main)."
 msgstr ""
-"التحميل: the main التحميلing المخزن. التفريغ: the receiving المخزن (defaults"
-" to the main)."
+"Load: the main loading warehouse. Unload: the receiving warehouse (defaults "
+"to the main)."
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -496,13 +509,13 @@ msgstr "Lot '%s' does not belong to المنتج '%s'."
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_line__lot_id
 msgid "Lot/Serial"
-msgstr "Lot/Serial"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__main_warehouse_id
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_main_warehouse_id
 msgid "Main Loading Warehouse"
-msgstr "Main التحميلing المخزن"
+msgstr "Main Loading Warehouse"
 
 #. module: flousflow_distribution_vehicle
 #: model:res.groups,name:flousflow_distribution_vehicle.group_distribution_vehicle_manager
@@ -517,7 +530,7 @@ msgstr "Mark the المركبة as an active distribution المركبة."
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_configure_wizard__pos_mode__none
 msgid "No POS Now"
-msgstr "No POS Now"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -532,13 +545,13 @@ msgid ""
 "No sales journal found for company '%(company)s'. Configure accounting "
 "first."
 msgstr ""
-"No المبيعات دفتر اليومية found for الشركة '%(الشركة)s'. Configure acالعددing"
-" first."
+"No sales journal found for company '%(company)s'. Configure accounting "
+"first."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__fleet_vehicle__distribution_status__not_configured
 msgid "Not Configured"
-msgstr "Not Configured"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -572,8 +585,8 @@ msgid ""
 "Only distribution vehicle managers may activate or deactivate distribution "
 "vehicles."
 msgstr ""
-"Only distribution المركبة managers may activate or deactivate distribution "
-"المركبةs."
+"Only distribution vehicle managers may activate or deactivate distribution "
+"vehicles."
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -585,14 +598,14 @@ msgstr "Only distribution المركبة managers may change the المركبة 
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_assignment_line__role__other
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__fleet_vehicle_employee_assignment__role__other
 msgid "Other"
-msgstr "Other"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__existing_pos_config_id
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__pos_mode
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_distribution_vehicle_configure_wizard_form
 msgid "POS Configuration"
-msgstr "POS Configuration"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__new_pos_name
@@ -626,6 +639,13 @@ msgid "Products"
 msgstr "المنتجات"
 
 #. module: flousflow_distribution_vehicle
+#: model:ir.model.fields,help:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_analytic_account_id
+msgid ""
+"Profit-center analytic account for this vehicle. Applied to its POS sales "
+"and COGS so you get a P&L per vehicle."
+msgstr ""
+
+#. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_line__quantity
 msgid "Quantity"
 msgstr "الكمية"
@@ -639,7 +659,7 @@ msgstr "الكمية يجب be positive for '%s'."
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__fleet_vehicle__distribution_status__ready
 msgid "Ready"
-msgstr "Ready"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__responsible_employee_id
@@ -657,7 +677,7 @@ msgstr "Responsible الموظف: %s"
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__role
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_employee_assignment_search
 msgid "Role"
-msgstr "Role"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_assignment_line__role__sales_rep
@@ -674,7 +694,7 @@ msgstr "تاريخ Scheduled"
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle/wizard/vehicle_configure_wizard.py:0
 msgid "Select an existing POS configuration."
-msgstr "Select an existing POS configuration."
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -691,7 +711,7 @@ msgstr "Source المخزن"
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_assignment_line__role__supervisor
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__fleet_vehicle_employee_assignment__role__supervisor
 msgid "Supervisor"
-msgstr "Supervisor"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -738,7 +758,8 @@ msgstr ""
 #: model:ir.model.constraint,message:flousflow_distribution_vehicle.constraint_fleet_vehicle_distribution_warehouse_check
 msgid ""
 "The vehicle warehouse and the main loading warehouse must be different."
-msgstr "يجب أن يكون المركبة المخزن and the main التحميلing المخزن different."
+msgstr ""
+"The vehicle warehouse and the main loading warehouse must be different."
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -774,12 +795,12 @@ msgstr ""
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle_employee_assignment__date_to
 msgid "To"
-msgstr "To"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_distribution_vehicle_transfer_wizard_form
 msgid "Transfer"
-msgstr "Transfer"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_transfer_wizard__direction__unload
@@ -795,12 +816,12 @@ msgstr "التفريغ المركبة"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_line__product_uom_id
 msgid "UoM"
-msgstr "UoM"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_configure_wizard__pos_mode__use_existing
 msgid "Use Existing POS"
-msgstr "Use Existing POS"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields.selection,name:flousflow_distribution_vehicle.selection__distribution_vehicle_configure_wizard__warehouse_mode__use_existing
@@ -820,7 +841,7 @@ msgstr "المستخدم Has المركبة المدير"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__auto_validate
 msgid "Validate Immediately"
-msgstr "Valiالتاريخ Immediately"
+msgstr "Validate Immediately"
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_wizard__auto_validate
@@ -828,8 +849,8 @@ msgid ""
 "Validate the transfer right away instead of leaving it ready for the "
 "warehouse team."
 msgstr ""
-"Valiالتاريخ the transfer right away instead of leaving it ready for the "
-"المخزن team."
+"Validate the transfer right away instead of leaving it ready for the "
+"warehouse team."
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -846,6 +867,12 @@ msgstr "المركبة"
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
+#: code:addons/flousflow_distribution_vehicle/models/fleet_vehicle_analytic.py:0
+msgid "Vehicle %s"
+msgstr ""
+
+#. module: flousflow_distribution_vehicle
+#. odoo-python
 #: code:addons/flousflow_distribution_vehicle/models/fleet_vehicle.py:0
 msgid ""
 "Vehicle '%(vehicle)s' has distribution history (warehouse / assignments). "
@@ -853,6 +880,11 @@ msgid ""
 msgstr ""
 "المركبة '%(المركبة)s' has distribution history (المخزن / assignments). "
 "Archive it instead of deleting it."
+
+#. module: flousflow_distribution_vehicle
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_analytic_account_id
+msgid "Vehicle Analytic Account"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle.view_vehicle_employee_assignment_form
@@ -956,18 +988,18 @@ msgstr "اسم المخزن"
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_fleet_vehicle__distribution_main_warehouse_id
 msgid "Warehouse from which the vehicle is loaded (e.g. Cairo Main)."
-msgstr "المخزن from which the المركبة is التحميلed (e.g. Cairo Main)."
+msgstr "Warehouse from which the vehicle is loaded (e.g. Cairo Main)."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,help:flousflow_distribution_vehicle.field_distribution_vehicle_configure_wizard__main_warehouse_id
 msgid "Warehouse from which this vehicle will be loaded."
-msgstr "المخزن from which this المركبة will be التحميلed."
+msgstr "Warehouse from which this vehicle will be loaded."
 
 #. module: flousflow_distribution_vehicle
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_assignment_line__wizard_id
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle.field_distribution_vehicle_transfer_line__wizard_id
 msgid "Wizard"
-msgstr "Wizard"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
@@ -983,19 +1015,19 @@ msgstr ""
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle/models/fleet_vehicle.py:0
 msgid "location_dest_id"
-msgstr "location_dest_id"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle/models/fleet_vehicle.py:0
 msgid "location_id"
-msgstr "location_id"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
 #: code:addons/flousflow_distribution_vehicle/models/pos_order.py:0
 msgid "none"
-msgstr "none"
+msgstr ""
 
 #. module: flousflow_distribution_vehicle
 #. odoo-python
