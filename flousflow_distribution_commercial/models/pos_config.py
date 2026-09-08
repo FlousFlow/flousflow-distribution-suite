@@ -43,8 +43,12 @@ class PosConfig(models.Model):
 
     def _load_pos_data_fields(self, config):
         fields = super()._load_pos_data_fields(config)
+        # Only request fields that actually exist on this installation:
+        # some essential fields belong to optional POS modules (e.g.
+        # ``module_pos_preparation_display``) and reading a missing field
+        # raises ``ValueError`` which breaks the whole POS data load.
         for f in self.POS_CONFIG_ESSENTIAL_FIELDS:
-            if f not in fields:
+            if f not in fields and f in self._fields:
                 fields.append(f)
         return fields
 
