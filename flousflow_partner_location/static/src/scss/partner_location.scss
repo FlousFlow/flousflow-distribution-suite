@@ -3,3 +3,9 @@
         white-space: nowrap;
     }
 }
+
+// Fields kept active for the location widget but not shown (the
+// distribution tab already displays the mirrored values).
+.o_hidden_location_helper {
+    display: none !important;
+}

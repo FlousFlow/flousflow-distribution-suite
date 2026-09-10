@@ -80,6 +80,55 @@ export class PartnerLocationButtons extends Component {
         }
     }
 
+    /**
+     * Reverse-geocode the given coords and fill the (still unsaved) form's
+     * address card. Best-effort: a geocoder outage must not block the
+     * capture flow — the server backfills on save.
+     */
+    async _applyAddressFromCoords(latitude, longitude) {
+        let address;
+        try {
+            address = await this.orm.silent.call(
+                "res.partner", "get_address_from_location",
+                [latitude, longitude],
+            );
+        } catch {
+            // geocoder outage: keep the captured coords, server backfills
+            return;
+        }
+        // Update field by field: a failure on one field (e.g. a many2one
+        // whose value is not accepted by the form) must not discard the
+        // rest of the address — the country/city fill is exactly what lets
+        // the user pass required-field rules on a new contact.
+        const charVals = {};
+        for (const fname of ["street", "street2", "city", "zip"]) {
+            if (address[fname]) {
+                charVals[fname] = address[fname];
+            }
+        }
+        try {
+            await this.record.update(charVals);
+        } catch (e) {
+            this.notification.add(
+                _t("Address fields could not be filled automatically."),
+                { type: "warning" },
+            );
+        }
+        for (const [fname, value] of [["country_id", address.country_id], ["state_id", address.state_id]]) {
+            if (!value) {
+                continue;
+            }
+            try {
+                await this.record.update({ [fname]: [value[0], value[1]] });
+            } catch {
+                this.notification.add(
+                    _t("Could not set %(field)s automatically.", { field: fname }),
+                    { type: "warning" },
+                );
+            }
+        }
+    }
+
     async onGetCurrentLocation() {
         try {
             const position = await getPosition();
@@ -90,8 +139,24 @@ export class PartnerLocationButtons extends Component {
                 location_accuracy: coords.accuracy !== undefined ? coords.accuracy : false,
                 location_source: "gps",
             });
+            await this._applyAddressFromCoords(coords.latitude, coords.longitude);
             await this._persist();
-            this.notification.add(_t("Location saved successfully."), { type: "success" });
+            const acc = coords.accuracy !== undefined ? Math.round(coords.accuracy) : null;
+            if (acc !== null && acc > 500) {
+                // Browser location on desktops comes from WiFi/IP and can be
+                // kilometers off. Tell the user instead of silently saving.
+                this.notification.add(
+                    _t("Location saved, but accuracy is %(acc)s m — it may be "
+                       + "inaccurate (desktop WiFi/IP location). Prefer a "
+                       + "mobile device or paste a Maps link.", { acc }),
+                    { type: "warning", sticky: true },
+                );
+            } else {
+                this.notification.add(
+                    _t("Location saved successfully (accuracy ±%(acc)s m).", { acc: acc === null ? "?" : acc }),
+                    { type: "success" },
+                );
+            }
         } catch (err) {
             this.notification.add(geolocationErrorMessage(err), { type: "danger" });
         }
@@ -111,6 +176,7 @@ export class PartnerLocationButtons extends Component {
                 location_url: url,
                 location_source: "google_maps_link",
             });
+            await this._applyAddressFromCoords(result.latitude, result.longitude);
             await this._persist();
             this.notification.add(_t("Location saved successfully."), { type: "success" });
         } catch (err) {
@@ -134,27 +200,56 @@ export class PartnerLocationButtons extends Component {
         return true;
     }
 
+    /**
+     * Address string for map fallbacks when no coordinates were captured.
+     */
+    _addressQuery() {
+        const d = this.record.data;
+        const parts = [d.street, d.street2, d.city, d.zip, d.state_id && d.state_id[1], d.country_id && d.country_id[1]]
+            .filter((part) => part && String(part).trim());
+        return parts.map((part) => encodeURIComponent(String(part).trim())).join(",");
+    }
+
     onOpenLocation() {
-        if (!this._requireCoords()) {
+        if (this.hasCoords) {
+            const { lat, lng } = this._bestCoords();
+            this._open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`);
             return;
         }
-        const { partner_latitude: lat, partner_longitude: lng } = this.record.data;
-        this._open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`);
+        // No coordinates yet: fall back to the saved address.
+        const query = this._addressQuery();
+        if (!query) {
+            this.notification.add(
+                _t("Set a location or fill the address first."),
+                { type: "warning" },
+            );
+            return;
+        }
+        this._open(`https://www.google.com/maps/search/?api=1&query=${query}`);
     }
 
     onGetDirections() {
-        if (!this._requireCoords()) {
+        if (this.hasCoords) {
+            const { lat, lng } = this._bestCoords();
+            this._open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`);
             return;
         }
-        const { partner_latitude: lat, partner_longitude: lng } = this.record.data;
-        this._open(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`);
+        const query = this._addressQuery();
+        if (!query) {
+            this.notification.add(
+                _t("Set a location or fill the address first."),
+                { type: "warning" },
+            );
+            return;
+        }
+        this._open(`https://www.google.com/maps/dir/?api=1&destination=${query}`);
     }
 
     async onFillAddress() {
         if (!this._requireCoords()) {
             return;
         }
-        const { partner_latitude: lat, partner_longitude: lng } = this.record.data;
+        const { lat, lng } = this._bestCoords();
         try {
             const address = await this.orm.call(
                 "res.partner", "get_address_from_location", [lat, lng]

@@ -45,6 +45,13 @@ No Google Maps API key is required.
             "flousflow_partner_location/static/src/xml/partner_location_widget.xml",
             "flousflow_partner_location/static/src/scss/partner_location.scss",
         ],
+        # POS opens the same partner form view, so the widget and its
+        # hiding CSS must also ship in the POS asset bundle.
+        "point_of_sale._assets_pos": [
+            "flousflow_partner_location/static/src/js/partner_location_widget.js",
+            "flousflow_partner_location/static/src/xml/partner_location_widget.xml",
+            "flousflow_partner_location/static/src/scss/partner_location.scss",
+        ],
     },
     "images": [
         "static/description/thumbnail.png",

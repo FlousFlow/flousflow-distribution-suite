@@ -2,19 +2,25 @@
 <templates xml:space="preserve">
     <t t-name="flousflow_partner_location.PartnerLocationButtons" owl="1">
         <div class="o_partner_location_buttons d-flex flex-wrap gap-2 mt-2">
-            <!-- Capture (device GPS) and Extract (Maps link) actions are
-                 provided by the Distribution GPS tab buttons instead, to
-                 avoid duplicate controls on the partner form. -->
-            <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onOpenLocation">
+            <!-- These two work on UNSAVED records: they fill the form
+                 locally (coords + reverse-geocoded address) so the user can
+                 satisfy required-field rules with one click, then save. -->
+            <button type="button" class="btn btn-primary" t-on-click="onGetCurrentLocation">
+                <i class="fa fa-location-arrow me-1"/> Get Current Location
+            </button>
+            <button type="button" class="btn btn-secondary" t-on-click="onExtractLocation">
+                <i class="fa fa-magic me-1"/> Extract Location
+            </button>
+            <button type="button" class="btn btn-secondary" t-on-click="onOpenLocation">
                 <i class="fa fa-external-link me-1"/> Open Location
             </button>
-            <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onGetDirections">
+            <button type="button" class="btn btn-secondary" t-on-click="onGetDirections">
                 <i class="fa fa-route me-1"/> Get Directions
             </button>
-            <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onFillAddress">
+            <button type="button" class="btn btn-secondary" t-on-click="onFillAddress">
                 <i class="fa fa-address-book me-1"/> Fill Address from Location
             </button>
-            <button type="button" class="btn btn-link text-danger" t-if="hasCoords" t-on-click="onClearLocation">
+            <button type="button" class="btn btn-link text-danger" t-on-click="onClearLocation">
                 <i class="fa fa-trash me-1"/> Clear Location
             </button>
         </div>

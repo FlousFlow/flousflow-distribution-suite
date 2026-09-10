@@ -6,6 +6,8 @@ location captured once feeds both systems:
   * device GPS capture (route_gps client action)       →  partner_latitude/longitude
 Also enables the Google-Maps-link widget on the Distribution GPS page so the
 salesman can capture location from a pasted WhatsApp/Maps link."""
+import time
+
 from odoo import api, fields, models
 
 import logging
@@ -24,11 +26,20 @@ class ResPartner(models.Model):
         self.ensure_one()
         if not (self.partner_latitude and self.partner_longitude):
             return
-        try:
-            address = self.get_address_from_location(
-                self.partner_latitude, self.partner_longitude)
-        except Exception as exc:  # noqa: BLE — availability of the geocoder
-            _logger.info('Auto address fill skipped: %s', exc)
+        address = None
+        # Two attempts: the public geocoder rate-limits and occasionally
+        # drops a request; a short retry recovers most of those.
+        for attempt in range(2):
+            try:
+                address = self.get_address_from_location(
+                    self.partner_latitude, self.partner_longitude)
+                break
+            except Exception as exc:  # noqa: BLE — geocoder availability
+                _logger.info('Auto address fill attempt %s failed: %s',
+                             attempt + 1, exc)
+                if attempt == 0:
+                    time.sleep(1.1)
+        if not address:
             return
         addr_vals = {}
         for fname in ('street', 'street2', 'city', 'zip'):
@@ -87,6 +98,10 @@ class ResPartner(models.Model):
             # require extra partner rights from the field salesman.
             partner.sudo().with_context(
                 location_sync_running=True).write(sync_vals)
+            # Backfill a missing address from the freshly stored coords, so a
+            # contact captured via the widget (which fills the form locally)
+            # still ends up complete when the browser geocoder failed.
+            partner._fill_empty_address_from_location()
 
 
 class ResPartnerLocationLink(models.Model):
