@@ -2,12 +2,9 @@
 <templates xml:space="preserve">
     <t t-name="flousflow_partner_location.PartnerLocationButtons" owl="1">
         <div class="o_partner_location_buttons d-flex flex-wrap gap-2 mt-2">
-            <button type="button" class="btn btn-primary" t-on-click="onGetCurrentLocation">
-                <i class="fa fa-location-arrow me-1"/> Get Current Location
-            </button>
-            <button type="button" class="btn btn-secondary" t-on-click="onExtractLocation">
-                <i class="fa fa-magic me-1"/> Extract Location
-            </button>
+            <!-- Capture (device GPS) and Extract (Maps link) actions are
+                 provided by the Distribution GPS tab buttons instead, to
+                 avoid duplicate controls on the partner form. -->
             <button type="button" class="btn btn-secondary" t-if="hasCoords" t-on-click="onOpenLocation">
                 <i class="fa fa-external-link me-1"/> Open Location
             </button>

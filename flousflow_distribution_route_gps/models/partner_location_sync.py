@@ -8,9 +8,41 @@ Also enables the Google-Maps-link widget on the Distribution GPS page so the
 salesman can capture location from a pasted WhatsApp/Maps link."""
 from odoo import api, fields, models
 
+import logging
+
+_logger = logging.getLogger(__name__)
+
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
+
+    def _fill_empty_address_from_location(self):
+        """Reverse-geocode the stored coordinates and fill only EMPTY
+        address fields, so a manually entered address is never overwritten.
+        Never raises: an address lookup outage must not block saving a
+        GPS location."""
+        self.ensure_one()
+        if not (self.partner_latitude and self.partner_longitude):
+            return
+        try:
+            address = self.get_address_from_location(
+                self.partner_latitude, self.partner_longitude)
+        except Exception as exc:  # noqa: BLE — availability of the geocoder
+            _logger.info('Auto address fill skipped: %s', exc)
+            return
+        addr_vals = {}
+        for fname in ('street', 'street2', 'city', 'zip'):
+            value = (address.get(fname) or '').strip()
+            if value and not (self[fname] or '').strip():
+                addr_vals[fname] = value
+        for fname in ('country_id', 'state_id'):
+            value = address.get(fname)
+            if value and not self[fname]:
+                addr_vals[fname] = value[0]
+        if addr_vals:
+            # sudo: mirrors the location-sync writes — capture flows are
+            # permission-gated by their buttons, not by partner-edit rights.
+            self.sudo().write(addr_vals)
 
     def _location_sync_both_present(self, vals):
         """Did this write touch one of the two location systems?"""
@@ -71,6 +103,7 @@ class ResPartnerLocationLink(models.Model):
                 'distribution_longitude': self.partner_longitude,
                 'distribution_location_source': 'imported',
             })
+            self._fill_empty_address_from_location()
         return res
 
     def gps_save_customer_location(self, latitude, longitude, accuracy=0.0,
@@ -86,4 +119,5 @@ class ResPartnerLocationLink(models.Model):
                 'partner_latitude': float(latitude),
                 'partner_longitude': float(longitude),
             })
+        self._fill_empty_address_from_location()
         return res

@@ -65,9 +65,12 @@ class ResPartner(models.Model):
         'distribution_location_accuracy >= 0)',
         'GPS accuracy cannot be negative.',
     )
+    # 0 is allowed and means "inherit from area / global default", matching
+    # _get_effective_geofence_radius() fallback logic. Only negatives are
+    # invalid — a Float field on a form is written as 0.0 when left empty.
     _distribution_geofence_radius_check = models.Constraint(
         'CHECK (distribution_geofence_radius IS NULL OR '
-        'distribution_geofence_radius > 0)',
+        'distribution_geofence_radius >= 0)',
         'The geofence radius must be greater than zero.',
     )
 
