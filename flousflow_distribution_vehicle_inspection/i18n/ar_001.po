@@ -1,0 +1,322 @@
+# Translation of Odoo Server.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Language: ar_001\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.actions.act_window,name:flousflow_distribution_vehicle_inspection.inspection_action
+#: model:ir.ui.menu,name:flousflow_distribution_vehicle_inspection.menu_vehicle_inspection
+msgid "Vehicle Inspections"
+msgstr "فحوصات المركبات"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.actions.act_window,name:flousflow_distribution_vehicle_inspection.template_action
+#: model:ir.ui.menu,name:flousflow_distribution_vehicle_inspection.menu_inspection_templates
+msgid "Inspection Templates"
+msgstr "قوالب الفحص"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.actions.act_window,name:flousflow_distribution_vehicle_inspection.adhoc_inspection_action
+#: model:ir.ui.menu,name:flousflow_distribution_vehicle_inspection.menu_adhoc_inspection
+msgid "Ad hoc Inspections"
+msgstr "الفحوصات العارضة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__scheduled_date
+msgid "Scheduled Date"
+msgstr "تاريخ التنفيذ"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__priority
+msgid "Priority"
+msgstr "الأولوية"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__driver_id
+msgid "Driver"
+msgstr "السائق"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__instructions
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_inspection.inspection_form
+msgid "Instructions"
+msgstr "التعليمات"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__priority__0
+msgid "Normal"
+msgstr "عادي"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "High"
+msgstr "مرتفع"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Urgent"
+msgstr "عاجل"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__daily_task
+msgid "Daily Task"
+msgstr "مهمة يومية"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__driver_ids
+msgid "Assigned Drivers"
+msgstr "السائقون المسندون"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__review_decision
+msgid "Review Decision"
+msgstr "قرار المراجعة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__review_decision__pending
+msgid "Pending Review"
+msgstr "بانتظار المراجعة"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Accepted"
+msgstr "مقبول"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_inspection.inspection_form
+msgid "Reject"
+msgstr "رفض"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__completed_by
+msgid "Completed By"
+msgstr "تم التنفيذ بواسطة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__completed_at
+msgid "Completed At"
+msgstr "وقت التنفيذ"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__overdue
+msgid "Overdue"
+msgstr "متأخر"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__required_before_start
+msgid "Required Before Start"
+msgstr "مطلوب قبل البدء"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__response_type
+msgid "Response Type"
+msgstr "نوع الإجابة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__requires_photo
+msgid "Requires Photo"
+msgstr "يتطلب صورة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__requires_note
+msgid "Requires Note"
+msgstr "يتطلب ملاحظة"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Vehicle Inspection"
+msgstr "فحص المركبة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__name
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_line__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "New"
+msgstr "جديد"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__state__in_progress
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__state__submitted
+msgid "Submitted"
+msgstr "تم الإرسال"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__state__reviewed
+msgid "Reviewed"
+msgstr "تمت المراجعة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__state__cancelled
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields.selection,name:flousflow_distribution_vehicle_inspection.selection__distribution_vehicle_inspection__result__pending
+msgid "Pending"
+msgstr "معلق"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Passed"
+msgstr "ناجح"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Passed with issues"
+msgstr "ناجح مع ملاحظات"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Failed"
+msgstr "فاشل"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Pre-trip"
+msgstr "قبل الرحلة"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Post-trip"
+msgstr "بعد الرحلة"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Ad hoc"
+msgstr "فحص عارض"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Pass/Fail"
+msgstr "نجاح/فشل"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Yes/No"
+msgstr "نعم/لا"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Numeric"
+msgstr "رقمي"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Text"
+msgstr "نصي"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Selection"
+msgstr "اختيار"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Inspection Lines"
+msgstr "بنود الفحص"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Vehicle Inspection Template"
+msgstr "قالب فحص المركبة"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Vehicle Inspection Template Line"
+msgstr "بند قالب فحص المركبة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__required
+msgid "Required"
+msgstr "إلزامي"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__critical
+msgid "Critical"
+msgstr "حرج"
+
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__inspection_type
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__inspection_type
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__inspection_type
+msgid "Inspection Type"
+msgstr "نوع الفحص"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__template_id
+msgid "Template"
+msgstr "القالب"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__vehicle_id
+msgid "Vehicle"
+msgstr "المركبة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__route_plan_id
+msgid "Route Plan"
+msgstr "خطة الرحلة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__result
+msgid "Result"
+msgstr "النتيجة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_line__response_value
+msgid "Response Value"
+msgstr "قيمة الإجابة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_line__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_line__attachment_ids
+msgid "Photos"
+msgstr "الصور"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_inspection.inspection_form
+msgid "Start"
+msgstr "بدء"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_inspection.inspection_form
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_inspection.inspection_form
+msgid "Review"
+msgstr "مراجعة"
+
+#. module: flousflow_distribution_vehicle_inspection
+#: model_terms:ir.ui.view,arch_db:flousflow_distribution_vehicle_inspection.inspection_form
+msgid "Manager Override"
+msgstr "تجاوز المدير"

@@ -1,0 +1,7 @@
+<odoo>
+ <record id="group_inspection_manager" model="res.groups"><field name="name">Vehicle Inspection Manager</field><field name="implied_ids" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_manager'))]"/></record>
+ <record id="rule_inspection_company" model="ir.rule"><field name="name">Inspection multi-company</field><field name="model_id" ref="model_distribution_vehicle_inspection"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+ <record id="rule_inspection_driver_scope" model="ir.rule"><field name="name">Inspection: assigned driver scope</field><field name="model_id" ref="model_distribution_vehicle_inspection"/><field name="groups" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_user'))]"/><field name="domain_force">['|',('driver_id.user_id','=',user.id),('create_uid','=',user.id)]</field></record>
+ <record id="rule_inspection_manager_scope" model="ir.rule"><field name="name">Inspection: manager full access</field><field name="model_id" ref="model_distribution_vehicle_inspection"/><field name="groups" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_manager'))]"/><field name="domain_force">[(1,'=',1)]</field></record>
+ <record id="rule_template_company" model="ir.rule"><field name="name">Inspection template multi-company</field><field name="model_id" ref="model_distribution_vehicle_inspection_template"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+</odoo>
