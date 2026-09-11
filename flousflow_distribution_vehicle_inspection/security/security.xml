@@ -1,5 +1,16 @@
 <odoo>
- <record id="group_inspection_manager" model="res.groups"><field name="name">Vehicle Inspection Manager</field><field name="implied_ids" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_manager'))]"/></record>
+ <record id="res_groups_privilege_distribution_inspection" model="res.groups.privilege">
+  <field name="name">Distribution Vehicle Inspection</field>
+  <field name="sequence">30</field>
+  <field name="category_id" ref="base.module_category_sales"/>
+ </record>
+ <record id="group_inspection_manager" model="res.groups">
+  <field name="name">Vehicle Inspection Manager</field>
+  <field name="sequence">20</field>
+  <field name="privilege_id" ref="res_groups_privilege_distribution_inspection"/>
+  <field name="implied_ids" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_manager'))]"/>
+  <field name="comment">Manage vehicle inspection templates, assignments, reviews and overrides.</field>
+ </record>
  <record id="rule_inspection_company" model="ir.rule"><field name="name">Inspection multi-company</field><field name="model_id" ref="model_distribution_vehicle_inspection"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
  <record id="rule_inspection_driver_scope" model="ir.rule"><field name="name">Inspection: assigned driver scope</field><field name="model_id" ref="model_distribution_vehicle_inspection"/><field name="groups" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_user'))]"/><field name="domain_force">['|',('driver_id.user_id','=',user.id),('create_uid','=',user.id)]</field></record>
  <record id="rule_inspection_manager_scope" model="ir.rule"><field name="name">Inspection: manager full access</field><field name="model_id" ref="model_distribution_vehicle_inspection"/><field name="groups" eval="[(4, ref('flousflow_distribution_vehicle.group_distribution_vehicle_manager'))]"/><field name="domain_force">[(1,'=',1)]</field></record>

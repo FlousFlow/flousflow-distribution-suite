@@ -146,6 +146,14 @@ msgid "Vehicle Inspection"
 msgstr "فحص المركبة"
 
 #. module: flousflow_distribution_vehicle_inspection
+msgid "Distribution Vehicle Inspection"
+msgstr "فحوصات مركبات التوزيع"
+
+#. module: flousflow_distribution_vehicle_inspection
+msgid "Vehicle Inspection Manager"
+msgstr "مدير فحوصات المركبات"
+
+#. module: flousflow_distribution_vehicle_inspection
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template__name
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection_template_line__name
 #: model:ir.model.fields,field_description:flousflow_distribution_vehicle_inspection.field_distribution_vehicle_inspection__name
