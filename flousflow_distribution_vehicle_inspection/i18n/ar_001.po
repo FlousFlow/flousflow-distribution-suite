@@ -146,10 +146,12 @@ msgid "Vehicle Inspection"
 msgstr "فحص المركبة"
 
 #. module: flousflow_distribution_vehicle_inspection
+#: model:res.groups.privilege,name:flousflow_distribution_vehicle_inspection.res_groups_privilege_distribution_inspection
 msgid "Distribution Vehicle Inspection"
 msgstr "فحوصات مركبات التوزيع"
 
 #. module: flousflow_distribution_vehicle_inspection
+#: model:res.groups,name:flousflow_distribution_vehicle_inspection.group_inspection_manager
 msgid "Vehicle Inspection Manager"
 msgstr "مدير فحوصات المركبات"
 
