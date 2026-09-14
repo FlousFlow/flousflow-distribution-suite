@@ -24,6 +24,12 @@ class TestPartnerLocationParser(TransactionCase):
         self.assertAlmostEqual(lat, 29.95, places=5)
         self.assertAlmostEqual(lng, 31.25, places=5)
 
+    def test_parse_directions_endpoint(self):
+        url = 'https://www.google.com/maps?daddr=Cairo&saddr=30.7744388,30.9892960'
+        lat, lng = self.env['res.partner']._parse_location_url(url)
+        self.assertAlmostEqual(lat, 30.7744388, places=5)
+        self.assertAlmostEqual(lng, 30.9892960, places=5)
+
     def test_parse_at_path(self):
         url = 'https://www.google.com/maps/place/Cairo/@30.0444,31.2357,17z'
         lat, lng = self.env['res.partner']._parse_location_url(url)

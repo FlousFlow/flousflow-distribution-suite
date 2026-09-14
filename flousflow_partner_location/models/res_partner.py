@@ -136,7 +136,11 @@ class ResPartner(models.Model):
         query = parse_qs(parsed.query, keep_blank_values=True)
         candidates = []
 
-        for key in ('q', 'query', 'll'):
+        # Google Maps shared links may resolve to a directions URL where the
+        # pinned location is stored in saddr/daddr instead of q/query/ll.
+        # Parse both endpoints; whichever contains coordinates is authoritative
+        # for extracting the shared location.
+        for key in ('q', 'query', 'll', 'saddr', 'daddr', 'origin', 'destination'):
             for value in query.get(key, []):
                 value = value.strip()
                 if value.lower().startswith('loc:'):
