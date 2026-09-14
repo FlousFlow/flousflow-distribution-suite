@@ -26,7 +26,10 @@ _ALLOWED_HOSTS = frozenset({
 _SHORT_LINK_HOSTS = frozenset({'maps.app.goo.gl', 'goo.gl'})
 
 _MAX_REDIRECTS = 5
-_REQUEST_TIMEOUT = 5
+# Google Maps short links can take several seconds to resolve, especially
+# when they contain a shared directions/location payload. Keep the timeout
+# bounded while allowing normal mobile/shared links to complete.
+_REQUEST_TIMEOUT = 15
 
 _COORD_RE = re.compile(
     r'^([-+]?\d{1,3}(?:\.\d+)?)\s*[, ]\s*([-+]?\d{1,3}(?:\.\d+)?)$'
