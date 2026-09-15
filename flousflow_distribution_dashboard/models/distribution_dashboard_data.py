@@ -26,11 +26,9 @@ def _rate(numerator, denominator):
     return round(numerator / denominator * 100.0, 2) if denominator else 0.0
 
 
-class DistributionDashboardData(models.Model):
+class DistributionDashboardData(models.AbstractModel):
     _name = 'distribution.dashboard.data'
     _description = 'Distribution Dashboard Data Provider'
-    _auto = False
-
     # ------------------------------------------------------------------
     # Public entry points
     # ------------------------------------------------------------------

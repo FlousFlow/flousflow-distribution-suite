@@ -7,7 +7,7 @@ def _rate(num, den):
     return round(num / den * 100.0, 2) if den else 0.0
 
 
-class DistributionDashboardDataGps(models.Model):
+class DistributionDashboardDataGps(models.AbstractModel):
     _inherit = 'distribution.dashboard.data'
 
     # ------------------------------------------------------------------
