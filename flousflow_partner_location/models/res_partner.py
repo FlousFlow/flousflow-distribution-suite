@@ -1,11 +1,14 @@
 import ipaddress
 import json
 import logging
+import os
 import re
 import socket
 import urllib.error
 import urllib.request
 from urllib.parse import parse_qs, urlencode, urlparse, unquote
+
+import requests
 
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError
@@ -30,6 +33,7 @@ _MAX_REDIRECTS = 5
 # when they contain a shared directions/location payload. Keep the timeout
 # bounded while allowing normal mobile/shared links to complete.
 _REQUEST_TIMEOUT = 15
+_REVERSE_GEOCODE_TIMEOUT = 5
 
 _COORD_RE = re.compile(
     r'^([-+]?\d{1,3}(?:\.\d+)?)\s*[, ]\s*([-+]?\d{1,3}(?:\.\d+)?)$'
@@ -292,29 +296,62 @@ class ResPartner(models.Model):
     # ------------------------------------------------------------------
     @api.model
     def _reverse_geocode(self, latitude, longitude):
-        """Query OpenStreetMap Nominatim for the address of the coordinates."""
+        """Query the configured reverse-geocoder for an address.
+
+        LocationIQ is preferred when its server-side key is configured.  The
+        public Nominatim endpoint remains a no-key fallback for development
+        and installations that do not configure LocationIQ.
+        """
         lat, lng = self._validate_coordinates(latitude, longitude)
-        query = urlencode({
-            'format': 'jsonv2',
-            'lat': lat,
-            'lon': lng,
-            'zoom': 18,
-            'addressdetails': 1,
-        })
-        url = 'https://nominatim.openstreetmap.org/reverse?%s' % query
-        request = urllib.request.Request(url, headers={
-            'User-Agent': 'flousflow_partner_location/19.0 (https://flousflow.com)',
-            'Accept': 'application/json',
-        })
-        try:
-            with urllib.request.urlopen(request, timeout=10) as response:
-                if response.status != 200:
-                    raise UserError(_('Unable to determine the address from this location.'))
-                data = json.loads(response.read().decode('utf-8'))
-        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
-            _logger.info('Reverse geocoding failed: %s', exc)
-            raise UserError(_('Unable to determine the address from this location.'))
-        return data.get('address') or {}
+        api_key = (os.environ.get('LOCATIONIQ_API_KEY') or '').strip()
+        providers = []
+        if api_key:
+            providers.append((
+                'locationiq',
+                'https://us1.locationiq.com/v1/reverse.php?%s' % urlencode({
+                    'key': api_key,
+                    'format': 'json',
+                    'lat': lat,
+                    'lon': lng,
+                    'addressdetails': 1,
+                }),
+                {'User-Agent': 'flousflow_partner_location/19.0 (https://flousflow.com)',
+                 'Accept': 'application/json'},
+            ))
+        providers.append((
+            'nominatim',
+            'https://nominatim.openstreetmap.org/reverse?%s' % urlencode({
+                'format': 'jsonv2',
+                'lat': lat,
+                'lon': lng,
+                'zoom': 18,
+                'addressdetails': 1,
+            }),
+            {'User-Agent': 'flousflow_partner_location/19.0 (https://flousflow.com)',
+             'Accept': 'application/json'},
+        ))
+        last_error = None
+        for provider, url, headers in providers:
+            try:
+                # requests avoids the intermittent IPv6 connection resets
+                # seen with urllib on this host and supports a separate
+                # connect/read timeout so a provider cannot hold an Odoo
+                # worker indefinitely.
+                response = requests.get(
+                    url, headers=headers,
+                    timeout=(2, _REVERSE_GEOCODE_TIMEOUT),
+                )
+                if response.status_code != 200:
+                    raise OSError('HTTP %s' % response.status_code)
+                data = response.json()
+                address = data.get('address') or {}
+                if address:
+                    return address
+                raise ValueError('empty address response')
+            except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
+                last_error = exc
+                _logger.info('%s reverse geocoding failed: %s', provider, exc)
+        raise UserError(_('Unable to determine the address from this location.')) from last_error
 
     @api.model
     def get_address_from_location(self, latitude, longitude):

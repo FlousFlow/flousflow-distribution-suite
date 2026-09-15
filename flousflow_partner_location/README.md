@@ -13,9 +13,10 @@ reuse it instantly — open it in Google Maps or get turn-by-turn directions.
   the coordinates. Supports short `maps.app.goo.gl` links (resolved safely).
 - **Open Location** — opens Google Maps at the saved coordinates.
 - **Get Directions** — opens Google Maps directions to the customer.
-- **Fill Address from Location** — reverse-geocodes the saved coordinates
-  (OpenStreetMap, no API key) and fills the partner address card. Opt-in: it
-  runs only when you click the button.
+- **Fill Address from Location** — reverse-geocodes the saved coordinates and
+  fills the partner address card. Opt-in: it runs only when you click the
+  button. The server prefers LocationIQ when `LOCATIONIQ_API_KEY` is
+  configured, and falls back to OpenStreetMap Nominatim.
 - **Clear Location** — clears the saved coordinates after confirmation.
 - Coordinates are stored on the standard `res.partner` fields
   `partner_latitude` / `partner_longitude` (no duplicate fields).
@@ -82,7 +83,9 @@ short timeout (5s) is applied. The response body is never downloaded.
 - Country-specific Google domains (`google.co.uk`, `google.com.eg`, …) are not
   on the allowlist by default; use the canonical `google.com` link.
 - GPS accuracy depends on the device; `Accuracy (m)` records the reported value.
-- Short-link resolution requires outbound HTTPS access from the Odoo server.
+- Address lookup and short-link resolution require outbound HTTPS access from
+  the Odoo server. Provider calls use bounded connect/read timeouts so a
+  geocoder outage never holds a worker indefinitely.
 - **Desktop / localhost**: browsers without GPS hardware (or running over
   `localhost` in an embedded/sandboxed browser) may time out or be unable to
   determine the location. The module retries automatically with network-based

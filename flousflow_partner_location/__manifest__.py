@@ -24,7 +24,8 @@ URL. Saved coordinates can be reused by any authorized user through:
 * **Open Location** — opens Google Maps at the saved coordinates.
 * **Get Directions** — opens Google Maps directions to the saved coordinates.
 * **Fill Address from Location** — reverse-geocodes the saved coordinates
-  (OpenStreetMap, no API key) and fills the partner address card (opt-in).
+  (LocationIQ when configured, with OpenStreetMap fallback) and fills the
+  partner address card (opt-in).
 
 No Google Maps API key is required.
 """,

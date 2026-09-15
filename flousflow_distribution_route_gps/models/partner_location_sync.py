@@ -6,8 +6,6 @@ location captured once feeds both systems:
   * device GPS capture (route_gps client action)       →  partner_latitude/longitude
 Also enables the Google-Maps-link widget on the Distribution GPS page so the
 salesman can capture location from a pasted WhatsApp/Maps link."""
-import time
-
 from odoo import api, fields, models
 
 import logging
@@ -26,19 +24,19 @@ class ResPartner(models.Model):
         self.ensure_one()
         if not (self.partner_latitude and self.partner_longitude):
             return
+        # The browser widget normally fills the address before saving.  Avoid
+        # a second external lookup in that case; this keeps saving local and
+        # prevents duplicate provider calls from freezing the form.
+        if not any(not (self[fname] or '').strip()
+                   for fname in ('street', 'street2', 'city', 'zip')) \
+                and self.country_id and self.state_id:
+            return
         address = None
-        # Two attempts: the public geocoder rate-limits and occasionally
-        # drops a request; a short retry recovers most of those.
-        for attempt in range(2):
-            try:
-                address = self.get_address_from_location(
-                    self.partner_latitude, self.partner_longitude)
-                break
-            except Exception as exc:  # noqa: BLE — geocoder availability
-                _logger.info('Auto address fill attempt %s failed: %s',
-                             attempt + 1, exc)
-                if attempt == 0:
-                    time.sleep(1.1)
+        try:
+            address = self.get_address_from_location(
+                self.partner_latitude, self.partner_longitude)
+        except Exception as exc:  # noqa: BLE — geocoder availability
+            _logger.info('Auto address fill failed: %s', exc)
         if not address:
             return
         addr_vals = {}
