@@ -1,6 +1,6 @@
 {
     'name': 'Branch Analytic Accounting',
-    'version': '19.0.1.0.0',
+    'version': '19.0.1.0.1',
     'category': 'Sales/Point of Sale',
     'sequence': 10,
     'summary': 'Track branch / profit-center P&L by assigning an analytic account to POS, sales orders and customer invoices.',
@@ -26,7 +26,8 @@ Key features
   receive the POS analytic account. Balance-sheet lines are left untouched.
 * **Customer invoices & credit notes** — new *Analytic Account* header that is
   propagated to the invoice product lines (100%); native ``stock_account`` then
-  copies it onto the COGS lines automatically. Credit notes reverse on the same
+  creates COGS lines while this module keeps the analytic only on the P&L
+  expense line (never on stock valuation). Credit notes reverse on the same
   branch.
 * **POS-generated invoices** — inherit the analytic account from the POS
   configuration (header + lines), no manual selection required.

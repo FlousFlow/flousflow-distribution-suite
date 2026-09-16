@@ -25,13 +25,15 @@ class TestBranchAnalyticFlow(TestPoSCommon):
         # The sale order tests need the test user to be able to create sale
         # orders, so grant the salesman group before the infra creates the
         # independent company.
-        cls.env.user.groups_id |= cls.env.ref('sales_team.group_sale_salesman')
+        cls.env = cls.env(context={'duplicate_skip': True})
+        cls.env.user.group_ids |= cls.env.ref('sales_team.group_sale_salesman')
+        create_values.setdefault('phone', '01000000000')
         return super()._create_company(**create_values)
 
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env.user.groups_id |= cls.env.ref('point_of_sale.group_pos_manager')
+        cls.env.user.group_ids |= cls.env.ref('point_of_sale.group_pos_manager')
 
         plan = cls.env['account.analytic.plan'].search([], limit=1)
         if not plan:
@@ -276,6 +278,38 @@ class TestBranchAnalyticFlow(TestPoSCommon):
             self.assertEqual(line.analytic_distribution, {str(self.cairo.id): 100.0})
         for line in receivable | tax:
             self.assertFalse(line.analytic_distribution)
+
+    def test_04b_customer_invoice_stock_valuation_is_not_analytic(self):
+        """The analytic P&L must not include the balance-sheet stock line."""
+        invoice = self.env['account.move'].create({
+            'move_type': 'out_invoice',
+            'partner_id': self.customer.id,
+            'invoice_date': fields.Date.today(),
+            'analytic_account_id': self.cairo.id,
+            'invoice_line_ids': [(0, 0, {
+                'product_id': self.product.id,
+                'name': self.product.name,
+                'quantity': 1,
+                'price_unit': 100.0,
+            })],
+        })
+        invoice._apply_branch_analytic_distribution()
+        invoice.action_post()
+
+        stock_account = self.product.product_tmpl_id.get_product_accounts()['stock_valuation']
+        stock_lines = invoice.line_ids.filtered(
+            lambda line: line.display_type == 'cogs' and line.account_id == stock_account
+        )
+        expense_lines = invoice.line_ids.filtered(
+            lambda line: line.display_type == 'cogs' and line.account_id != stock_account
+        )
+        self.assertTrue(stock_lines, 'The stock valuation COGS line must exist')
+        self.assertTrue(expense_lines, 'The expense COGS line must exist')
+        self.assertTrue(all(not line.analytic_distribution for line in stock_lines))
+        self.assertTrue(all(
+            line.analytic_distribution == {str(self.cairo.id): 100.0}
+            for line in expense_lines
+        ))
 
     # ------------------------------------------------------------------
     # TEST 5 — Customer credit note

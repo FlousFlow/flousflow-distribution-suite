@@ -13,7 +13,7 @@ Revenue and COGS land on the same analytic account, while balance-sheet lines
 | POS configuration | Add an `Analytic Account` (branch) on each `pos.config` |
 | POS session close | Revenue, refunds, COGS and COGS reversals receive the POS analytic account (100%). Receivable/cash/bank/tax/stock-valuation lines are untouched. |
 | Customer invoice | Add an `Analytic Account` header (out_invoice / out_refund). Selecting it applies 100% to invoice product lines. |
-| Invoice COGS | Native `stock_account` copies `line.analytic_distribution` onto COGS lines automatically — no custom COGS code. |
+| Invoice COGS | Native `stock_account` creates the COGS pair; analytic is retained on the P&L expense line and removed from stock valuation. |
 | Credit notes | Same header behaviour; reversals net the branch back to zero. |
 | POS-generated invoice | Inherits the POS config analytic account on the header and lines automatically. |
 | Enforcement (optional) | Company settings to require an analytic account before closing a POS session / posting a customer invoice. |
@@ -25,6 +25,7 @@ No core files are modified. Only these hooks are used:
 - `pos.config` — new field `analytic_account_id`.
 - `pos.session._get_sale_vals()` — adds `analytic_distribution` to revenue/refund lines.
 - `pos.session._get_stock_expense_vals()` — adds `analytic_distribution` to COGS/COGS-reversal lines.
+- `account.move._stock_account_prepare_realtime_out_lines_vals()` — removes the copied distribution from the generated stock-valuation line while retaining it on the expense COGS line.
 - `pos.session._get_stock_valuation_vals()` — intentionally **not** overridden (balance-sheet).
 - `pos.session._validate_session()` — optional mandatory-analytic check.
 - `pos.order._prepare_invoice_vals()` / `_get_invoice_lines_values()` — inherit analytic on POS invoices.
@@ -33,9 +34,10 @@ No core files are modified. Only these hooks are used:
 - `res.company` / `res.config.settings` — the two enforcement flags.
 
 COGS on invoices is produced natively by
-`stock_account` (`_stock_account_prepare_realtime_out_lines_vals`), which already
-copies `analytic_distribution` from the invoice line — so the module only has to
-put the distribution on the invoice line.
+`stock_account` (`_stock_account_prepare_realtime_out_lines_vals`) creates both
+the stock-valuation and expense lines from the invoice line. The module keeps
+the distribution on the expense line only, so balance-sheet stock valuation
+does not pollute branch P&L.
 
 ## Install / Upgrade
 

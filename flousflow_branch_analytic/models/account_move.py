@@ -35,6 +35,30 @@ class AccountMove(models.Model):
         for line in self.line_ids.filtered(lambda l: l.display_type == 'product'):
             line.analytic_distribution = distribution
 
+    def _stock_account_prepare_realtime_out_lines_vals(self):
+        """Keep balance-sheet stock valuation lines out of analytic P&L.
+
+        ``stock_account`` copies an invoice line's analytic distribution to
+        both generated COGS lines: the expense line and the stock-valuation
+        (interim) line. The latter is a balance-sheet line and must remain
+        untagged. Keep the expense distribution intact and remove it only from
+        the valuation line, identified by its originating invoice line and
+        product account mapping.
+        """
+        lines_vals = super()._stock_account_prepare_realtime_out_lines_vals()
+        MoveLine = self.env['account.move.line']
+        for vals in lines_vals:
+            origin_line = MoveLine.browse(vals.get('cogs_origin_id')).exists()
+            if not origin_line or not origin_line.product_id:
+                continue
+            accounts = origin_line.product_id.product_tmpl_id.get_product_accounts(
+                fiscal_pos=origin_line.move_id.fiscal_position_id,
+            )
+            stock_account = accounts.get('stock_valuation')
+            if stock_account and vals.get('account_id') == stock_account.id:
+                vals.pop('analytic_distribution', None)
+        return lines_vals
+
     def _check_branch_analytic_required(self):
         for move in self:
             if (
