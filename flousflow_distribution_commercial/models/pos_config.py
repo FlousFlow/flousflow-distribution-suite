@@ -19,13 +19,25 @@ class PosConfig(models.Model):
     #: default (``[]``) would leave the frontend with almost no data and
     #: crash (e.g. ``TypeError: Cannot read properties of undefined
     #: (reading 'currency_id')``, ``config.raw.trusted_config_ids is not
-    #: iterable``). ``pos.config`` is a single record, so loading **all**
-    #: fields is cheap and future-proof: any field the POS frontend reads
-    #: (currency_id, trusted_config_ids, ...) is always present, whatever
-    #: optional POS modules are installed.
+    #: iterable``). ``pos.config`` is a single record, so loading the
+    #: configuration fields is cheap and future-proof.  The employee access
+    #: fields added by ``pos_hr`` are the exception: they traverse
+    #: ``hr.employee`` and can expose restricted payroll/vehicle fields when
+    #: employee login is disabled.  Do not load those relations unless the
+    #: POS explicitly uses employee login.
     def _load_pos_data_fields(self, config):
-        fields = super()._load_pos_data_fields(config)
-        fields += [f for f in self._fields if f not in fields]
+        fields = list(super()._load_pos_data_fields(config))
+        excluded = set()
+        if not config.module_pos_hr:
+            excluded.update({
+                'minimal_employee_ids',
+                'basic_employee_ids',
+                'advanced_employee_ids',
+            })
+        fields += [
+            name for name in self._fields
+            if name not in fields and name not in excluded
+        ]
         return fields
 
     def open_ui(self):
