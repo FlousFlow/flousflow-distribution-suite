@@ -67,6 +67,40 @@ export class PartnerLocationButtons extends Component {
         return this.props.record;
     }
 
+    /**
+     * POS may render this widget on a reduced partner record. Updating a
+     * field that is not present makes Odoo 19's relational model dereference
+     * an undefined field while preprocessing changes.
+     */
+    async _updateRecord(changes) {
+        const fields = this.record.fields;
+        const safeChanges = fields
+            ? Object.fromEntries(
+                  Object.entries(changes).filter(([name]) => fields[name])
+              )
+            : changes;
+        if (!Object.keys(safeChanges).length) {
+            return;
+        }
+        return this.record.update(safeChanges);
+    }
+
+    _many2oneValue(value) {
+        if (!value) {
+            return false;
+        }
+        if (Array.isArray(value)) {
+            const [id, displayName] = value;
+            return id ? { resId: id, displayName } : false;
+        }
+        if (typeof value === "number") {
+            return { resId: value };
+        }
+        return value.resId || value.id
+            ? { resId: value.resId || value.id, displayName: value.displayName || value.display_name }
+            : false;
+    }
+
     get hasCoords() {
         const data = this.record.data;
         return Boolean(data.partner_latitude) || Boolean(data.partner_longitude);
@@ -107,7 +141,7 @@ export class PartnerLocationButtons extends Component {
             }
         }
         try {
-            await this.record.update(charVals);
+            await this._updateRecord(charVals);
         } catch (e) {
             this.notification.add(
                 _t("Address fields could not be filled automatically."),
@@ -119,7 +153,7 @@ export class PartnerLocationButtons extends Component {
                 continue;
             }
             try {
-                await this.record.update({ [fname]: [value[0], value[1]] });
+                await this._updateRecord({ [fname]: this._many2oneValue(value) });
             } catch {
                 this.notification.add(
                     _t("Could not set %(field)s automatically.", { field: fname }),
@@ -133,7 +167,7 @@ export class PartnerLocationButtons extends Component {
         try {
             const position = await getPosition();
             const coords = position.coords;
-            await this.record.update({
+            await this._updateRecord({
                 partner_latitude: coords.latitude,
                 partner_longitude: coords.longitude,
                 location_accuracy: coords.accuracy !== undefined ? coords.accuracy : false,
@@ -170,7 +204,7 @@ export class PartnerLocationButtons extends Component {
         }
         try {
             const result = await this.orm.call("res.partner", "extract_coordinates", [url]);
-            await this.record.update({
+            await this._updateRecord({
                 partner_latitude: result.latitude,
                 partner_longitude: result.longitude,
                 location_url: url,
@@ -254,7 +288,7 @@ export class PartnerLocationButtons extends Component {
             const address = await this.orm.call(
                 "res.partner", "get_address_from_location", [lat, lng]
             );
-            await this.record.update({
+            await this._updateRecord({
                 street: address.street,
                 street2: address.street2,
                 city: address.city,
@@ -284,7 +318,7 @@ export class PartnerLocationButtons extends Component {
         if (!confirmed) {
             return;
         }
-        await this.record.update({
+        await this._updateRecord({
             partner_latitude: false,
             partner_longitude: false,
             location_accuracy: false,
