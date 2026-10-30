@@ -68,7 +68,7 @@ class TestDistributionRouteBase(TransactionCase):
         self.assertEqual(area.parent_id, self.Area)
 
     def test_02_area_code_unique_per_company(self):
-        # Enforced by the SQL constraint (Odoo 19 raises the raw DB error in ORM;
+        # Enforced by the SQL constraint (Odoo 20 raises the raw DB error in ORM;
         # the service layer converts it to a ValidationError for real users).
         with self.assertRaises(psycopg2.errors.UniqueViolation):
             self.Area.create({'name': 'Cairo Duplicate', 'code': 'CAI'})

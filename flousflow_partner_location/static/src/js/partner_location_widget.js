@@ -69,7 +69,7 @@ export class PartnerLocationButtons extends Component {
 
     /**
      * POS may render this widget on a reduced partner record. Updating a
-     * field that is not present makes Odoo 19's relational model dereference
+     * field that is not present makes Odoo 20's relational model dereference
      * an undefined field while preprocessing changes.
      */
     async _updateRecord(changes) {

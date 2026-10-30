@@ -49,9 +49,7 @@ class PosSession(models.Model):
                     pos=record.config_id.name,
                 ))
 
-    def _validate_session(self, balancing_account=False, amount_to_balance=0,
-                          bank_payment_method_diffs=None):
+    def _validate_session_accounting(self):
+        """Enforce branch analytics at Odoo 20 session accounting close."""
         self._check_branch_analytic_required()
-        return super()._validate_session(
-            balancing_account, amount_to_balance, bank_payment_method_diffs,
-        )
+        return super()._validate_session_accounting()

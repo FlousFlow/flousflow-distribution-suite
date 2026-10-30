@@ -108,18 +108,18 @@
                 <templates>
                     <t t-name="card">
                         <div class="d-flex justify-content-between align-items-start mb-1">
-                            <strong t-esc="record.partner_id.value or 'No customer'"/>
+                            <strong t-out="record.partner_id.value or 'No customer'"/>
                         </div>
                         <div class="text-muted small mb-2">
-                            <t t-esc="record.visit_type_id.value"/>
+                            <t t-out="record.visit_type_id.value"/>
                         </div>
                         <div class="small">
                             <t t-if="record.planned_datetime.value">
-                                <t t-esc="record.planned_datetime.value"/>
+                                <t t-out="record.planned_datetime.value"/>
                             </t>
                         </div>
                         <div class="small mt-1" t-if="record.result_id.value">
-                            Result: <t t-esc="record.result_id.value"/>
+                            Result: <t t-out="record.result_id.value"/>
                         </div>
                     </t>
                 </templates>

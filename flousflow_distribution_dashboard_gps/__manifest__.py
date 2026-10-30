@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Dashboard - GPS Analytics',
-    'version': '19.0.1.0.0',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'GPS compliance section and GPS analysis reporting for the '
                'distribution dashboard',

@@ -5,7 +5,7 @@ from odoo.exceptions import ValidationError
 class PosConfig(models.Model):
     """POS → Warehouse assignment.
 
-    Every Point of Sale configuration is assigned to a warehouse. Odoo 19
+    Every Point of Sale configuration is assigned to a warehouse. Odoo 20
     already routes every POS order through ``pos.config.picking_type_id`` — an
     outgoing operation type whose source location is the assigned warehouse's
     stock location (``stock.warehouse.pos_type_id``). This module makes the

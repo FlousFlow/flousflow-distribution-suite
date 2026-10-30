@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Dashboard - Vehicle Analytics',
-    'version': '19.0.1.0.0',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'Vehicle section and vehicle analysis reporting for the '
                'distribution dashboard',

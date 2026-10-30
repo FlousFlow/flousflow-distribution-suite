@@ -1,0 +1,4 @@
+id,name,model_id,group_id/id,operation,domain
+access_distribution_visit_gps_event_user,distribution.visit.gps.event.user,distribution.visit.gps.event,flousflow_distribution_route_base.group_distribution_route_user,r,
+access_distribution_visit_gps_event_manager,distribution.visit.gps.event.manager,distribution.visit.gps.event,flousflow_distribution_route_base.group_distribution_route_manager,r,
+access_distribution_gps_override_wizard_manager,distribution.gps.override.wizard.manager,distribution.gps.override.wizard,flousflow_distribution_route_base.group_distribution_route_manager,crud,

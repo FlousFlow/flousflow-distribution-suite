@@ -1,9 +1,9 @@
 # Customer Geo Location
 
-Save the exact geographic location of a customer / contact in Odoo 19, and
+Save the exact geographic location of a customer / contact in Odoo 20, and
 reuse it instantly — open it in Google Maps or get turn-by-turn directions.
 
-> Flous Flow — Odoo 19 module. No Google Maps API key required.
+> Flous Flow — Odoo 20 module. No Google Maps API key required.
 
 ## Features
 

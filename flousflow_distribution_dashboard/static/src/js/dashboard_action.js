@@ -1,5 +1,5 @@
 /** @odoo-module **/
-/* Distribution Performance Dashboard — read-only client action (Odoo 19 OWL).
+/* Distribution Performance Dashboard — read-only client action (Odoo 20 OWL).
  * All figures come from a single RPC to distribution.dashboard.data.
  * Every card/table cell drills down through the SAME server domain builder
  * used for aggregation, so card numbers always equal list counts. */

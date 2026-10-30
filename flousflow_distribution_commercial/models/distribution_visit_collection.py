@@ -262,7 +262,7 @@ class DistributionVisitCollection(models.Model):
                     "(receipt, transfer proof) on customer collections."))
             # Ownership check via the visit's stored user_id column —
             # reading employee private fields is not allowed for
-            # non-HR profiles (Odoo 19).
+            # non-HR profiles (Odoo 20).
             if collection.visit_id.user_id and \
                     collection.visit_id.user_id.id != self.env.uid and \
                     not (self.env.su or self._is_distribution_manager()):

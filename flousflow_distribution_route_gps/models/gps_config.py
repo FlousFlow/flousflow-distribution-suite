@@ -18,7 +18,7 @@ class GpsConfig(models.AbstractModel):
         icp = self.env['ir.config_parameter'].sudo()
 
         def f(key, default):
-            # Odoo 19: get_param returns False (not None) when missing.
+            # Odoo 20: get_param returns False (not None) when missing.
             value = icp.get_param(PARAM_PREFIX + key)
             if value in (None, False, ''):
                 return default

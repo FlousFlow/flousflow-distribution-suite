@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Vehicle Route Integration',
-    'version': '19.0.1.0.0',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'Bind route plans to the representative\'s assigned vehicle, '
                'warehouse and POS (historical snapshot at confirm)',
@@ -38,7 +38,7 @@ fuel, accounting, collections, commissions, dashboards.
     ],
     'data': [
         'security/security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'views/res_config_settings_views.xml',
         'views/distribution_route_plan_views.xml',
     ],

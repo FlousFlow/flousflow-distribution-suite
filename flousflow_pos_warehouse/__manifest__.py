@@ -1,6 +1,6 @@
 {
     'name': 'POS Warehouse Assignment',
-    'version': '19.0.1.3.0',
+    'version': '20.0.1.3.0',
     'category': 'Sales/Point of Sale',
     'sequence': 10,
     'summary': 'Assign each Point of Sale to a specific warehouse so POS sales deduct from that warehouse only.',
@@ -54,7 +54,7 @@ Configuration
 Compatibility
 =============
 
-Verified against Odoo 19 (Community Edition).
+Verified against Odoo 20 (Community Edition).
 """,
     'author': 'Flous Flow',
     'website': 'https://flousflow.com',
@@ -66,7 +66,7 @@ Verified against Odoo 19 (Community Edition).
         'static/description/icon.png',
     ],
     'license': 'LGPL-3',
-    'depends': ['point_of_sale', 'stock'],
+    'depends': ['point_of_sale', 'pos_stock', 'stock'],
     'data': [
         'views/pos_config_views.xml',
     ],

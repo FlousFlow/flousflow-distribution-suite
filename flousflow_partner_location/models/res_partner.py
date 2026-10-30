@@ -315,7 +315,7 @@ class ResPartner(models.Model):
                     'lon': lng,
                     'addressdetails': 1,
                 }),
-                {'User-Agent': 'flousflow_partner_location/19.0 (https://flousflow.com)',
+                {'User-Agent': 'flousflow_partner_location/20.0 (https://flousflow.com)',
                  'Accept': 'application/json'},
             ))
         providers.append((
@@ -327,7 +327,7 @@ class ResPartner(models.Model):
                 'zoom': 18,
                 'addressdetails': 1,
             }),
-            {'User-Agent': 'flousflow_partner_location/19.0 (https://flousflow.com)',
+            {'User-Agent': 'flousflow_partner_location/20.0 (https://flousflow.com)',
              'Accept': 'application/json'},
         ))
         last_error = None

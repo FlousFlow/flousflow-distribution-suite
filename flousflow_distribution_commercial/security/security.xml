@@ -37,40 +37,45 @@
     </record>
 
     <!-- Record rules -->
-    <record id="rule_collection_user_own" model="ir.rule">
+    <record id="rule_collection_user_own" model="ir.access">
         <field name="name">Collection: own records only</field>
         <field name="model_id" ref="model_distribution_visit_collection"/>
-        <field name="groups" eval="[(4, ref('group_distribution_collection_user'))]"/>
-        <field name="domain_force">['|',
+        <field name="group_id" ref="group_distribution_collection_user"/>
+        <field name="operation">cru</field>
+        <field name="domain">['|',
             ('employee_id.user_id', '=', user.id),
             ('create_uid', '=', user.id)]</field>
     </record>
 
-    <record id="rule_collection_validator_company" model="ir.rule">
+    <record id="rule_collection_validator_company" model="ir.access">
         <field name="name">Collection: validator company access</field>
         <field name="model_id" ref="model_distribution_visit_collection"/>
-        <field name="groups" eval="[(4, ref('group_distribution_collection_validator'))]"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="group_id" ref="group_distribution_collection_validator"/>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
-    <record id="rule_collection_route_manager_company" model="ir.rule">
+    <record id="rule_collection_route_manager_company" model="ir.access">
         <field name="name">Collection: route manager company access</field>
         <field name="model_id" ref="model_distribution_visit_collection"/>
-        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_manager'))]"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="group_id" ref="flousflow_distribution_route_base.group_distribution_route_manager"/>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
-    <record id="rule_collection_accounting_company" model="ir.rule">
+    <record id="rule_collection_accounting_company" model="ir.access">
         <field name="name">Collection: accounting company access</field>
         <field name="model_id" ref="model_distribution_visit_collection"/>
-        <field name="groups" eval="[(4, ref('account.group_account_invoice'))]"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="group_id" ref="account.group_account_invoice"/>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
-    <record id="rule_collection_company" model="ir.rule">
+    <record id="rule_collection_company" model="ir.access">
         <field name="name">Collection: multi-company</field>
         <field name="model_id" ref="model_distribution_visit_collection"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
 </odoo>

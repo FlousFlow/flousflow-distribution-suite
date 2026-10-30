@@ -134,19 +134,19 @@
                 <templates>
                     <t t-name="card">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <strong t-esc="record.name.value"/>
+                            <strong t-out="record.name.value"/>
                         </div>
                         <div class="text-muted small mb-2">
-                            <t t-esc="record.employee_id.value"/>
-                            <t t-if="record.area_id.value"> • <t t-esc="record.area_id.value"/></t>
+                            <t t-out="record.employee_id.value"/>
+                            <t t-if="record.area_id.value"> • <t t-out="record.area_id.value"/></t>
                         </div>
                         <div class="mb-2">
                             <field name="activity_ids" widget="kanban_activity"/>
                         </div>
                         <div class="d-flex justify-content-between align-items-end">
                             <div class="small">
-                                <span class="fw-bold"><t t-esc="record.done_visit_count.value"/></span>
-                                / <t t-esc="record.visit_count.value"/> visits
+                                <span class="fw-bold"><t t-out="record.done_visit_count.value"/></span>
+                                / <t t-out="record.visit_count.value"/> visits
                             </div>
                             <field name="execution_rate" widget="progressbar" readonly="1" width="100px"/>
                         </div>

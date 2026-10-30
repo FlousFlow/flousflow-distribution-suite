@@ -8,7 +8,7 @@ standard `stock.picking` / `stock.move` flow — and every return goes back to
 that same warehouse. The warehouse belongs to the **POS configuration**, not to
 the cashier, so any cashier working at the same POS uses the same warehouse.
 
-> **Odoo 19 · Community Edition**
+> **Odoo 20 · Community Edition**
 > No core files are modified. No parallel inventory engine: the module reuses
 > the standard `pos.config.warehouse_id`, `stock.warehouse.pos_type_id` and
 > Odoo's normal picking architecture.
@@ -29,7 +29,7 @@ Point of Sale  →  pos.config
                   POS order → stock.picking → assigned warehouse stock
 ```
 
-Odoo 19 already routes every POS order through `pos.config.picking_type_id`:
+Odoo 20 already routes every POS order through `pos.config.picking_type_id`:
 an outgoing operation type whose **source location is the warehouse's stock
 location**. This module makes the **warehouse** the primary, user-facing
 setting and derives the operation type automatically.

@@ -1,7 +1,7 @@
 # Distribution Route Management (FlousFlow)
 
 **Technical name:** `flousflow_distribution_route_management`
-**Version:** 19.0.1.0.0 · **Odoo:** 19.0 Community · **License:** LGPL-3
+**Version:** 20.0.1.1.0 · **Odoo:** 20.0 Community · **License:** LGPL-3
 **Author:** Flous Flow — https://flousflow.com
 
 Operational route planning and visit execution for distribution

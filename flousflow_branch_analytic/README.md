@@ -1,6 +1,6 @@
 # flousflow_branch_analytic
 
-Branch / Profit Center analytic tracking for Odoo 19 **Community** — POS + Customer Invoices.
+Branch / Profit Center analytic tracking for Odoo 20 **Community** — POS + Customer Invoices.
 
 The goal: make Odoo Analytic Accounting work as a **per-branch P&L** system where
 Revenue and COGS land on the same analytic account, while balance-sheet lines

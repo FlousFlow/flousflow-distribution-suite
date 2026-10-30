@@ -1,7 +1,7 @@
 # Distribution Route GPS & Geofence (FlousFlow)
 
 **Technical name:** `flousflow_distribution_route_gps`
-**Version:** 19.0.1.0.0 · **Odoo:** 19.0 Community · **License:** LGPL-3
+**Version:** 20.0.1.1.0 · **Odoo:** 20.0 Community · **License:** LGPL-3
 **Author:** Flous Flow — https://flousflow.com
 
 Extension module for the FlousFlow Distribution Management suite. Adds

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Performance Dashboard',
-    'version': '19.0.1.0.0',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'Management dashboard and analytics for distribution routes, '
                'visits, employees, areas and customers (read-only)',

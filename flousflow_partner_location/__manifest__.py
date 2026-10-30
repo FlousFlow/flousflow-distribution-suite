@@ -1,10 +1,10 @@
 {
     "name": "Customer Geo Location",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Sales/CRM",
     "summary": "Save customer GPS locations and open them in Google Maps",
     "description": """
-Customer Geo Location (Odoo 19)
+Customer Geo Location (Odoo 20)
 ===============================
 
 Capture and reuse the exact geographic location of a customer / contact.

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Sales & Collection Integration',
-    'version': '19.0.1.0.0',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'Link Route Visits to Sales Orders, POS Sales and Customer '
                'Collections with an operational-to-accounting workflow',
@@ -36,7 +36,7 @@ account.move models. Linking, validation, workflow, audit only.
     ],
     'data': [
         'security/security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'data/ir_sequence_data.xml',
         'views/distribution_visit_collection_views.xml',
         'views/distribution_route_visit_views.xml',

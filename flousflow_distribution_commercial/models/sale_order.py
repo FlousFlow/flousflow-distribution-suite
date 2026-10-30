@@ -34,7 +34,7 @@ class SaleOrder(models.Model):
     @api.constrains('distribution_visit_id', 'company_id',
                     'distribution_route_id')
     def _check_distribution_visit_consistency(self):
-        """Hard data-integrity checks (spec #10). NOTE: Odoo 19 runs
+        """Hard data-integrity checks (spec #10). NOTE: Odoo 20 runs
         @api.constrains as sudo, so permission-dependent logic (the
         manager override on the customer rule) lives in the explicit
         create/write overrides below — env.su inside a constrains is

@@ -1,6 +1,6 @@
 # Distribution Route Base
 
-**FlousFlow Distribution Management — Foundation Module** for Odoo 19 Community.
+**FlousFlow Distribution Management — Foundation Module** for Odoo 20 Community.
 
 This module is the **core master data layer** of the FlousFlow Distribution
 Management suite. It provides the foundation that all future distribution

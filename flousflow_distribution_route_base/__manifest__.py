@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Route Base',
-    'version': '19.0.1.1.0',
+    'version': '20.0.1.1.0',
     'category': 'Sales/Distribution',
     'summary': 'Distribution master data foundation: areas, visit types, employee and customer configuration',
     'description': """
@@ -26,7 +26,7 @@ foundation.
     'depends': ['base', 'hr'],
     'data': [
         'security/security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'data/distribution_visit_type_data.xml',
         'views/distribution_area_views.xml',
         'views/distribution_visit_type_views.xml',

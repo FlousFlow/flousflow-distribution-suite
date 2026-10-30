@@ -4,22 +4,25 @@
     <!-- ============================================================ -->
     <!-- Global multi-company rules (apply to everyone)               -->
     <!-- ============================================================ -->
-    <record id="rule_distribution_route_plan_company" model="ir.rule">
+    <record id="rule_distribution_route_plan_company" model="ir.access">
         <field name="name">Route Plan: multi-company</field>
         <field name="model_id" ref="model_distribution_route_plan"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
-    <record id="rule_distribution_route_visit_company" model="ir.rule">
+    <record id="rule_distribution_route_visit_company" model="ir.access">
         <field name="name">Route Visit: multi-company</field>
         <field name="model_id" ref="model_distribution_route_visit"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
-    <record id="rule_distribution_visit_result_company" model="ir.rule">
+    <record id="rule_distribution_visit_result_company" model="ir.access">
         <field name="name">Visit Result: multi-company</field>
         <field name="model_id" ref="model_distribution_visit_result"/>
-        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        <field name="operation">crud</field>
+        <field name="domain">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
     </record>
 
     <!-- ============================================================ -->
@@ -27,43 +30,45 @@
     <!-- ============================================================ -->
 
     <!-- User: only their own routes (via the employee of the current user) -->
-    <record id="rule_distribution_route_plan_own" model="ir.rule">
+    <record id="rule_distribution_route_plan_own" model="ir.access">
         <field name="name">Route Plan: own routes only</field>
         <field name="model_id" ref="model_distribution_route_plan"/>
-        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_user'))]"/>
-        <field name="domain_force">[('employee_id', 'in', user.employee_ids.ids)]</field>
+        <field name="group_id" ref="flousflow_distribution_route_base.group_distribution_route_user"/>
+        <field name="operation">cru</field>
+        <field name="domain">[('employee_id', 'in', user.employee_ids.ids)]</field>
     </record>
 
     <!-- User: only their own visits -->
-    <record id="rule_distribution_route_visit_own" model="ir.rule">
+    <record id="rule_distribution_route_visit_own" model="ir.access">
         <field name="name">Route Visit: own visits only</field>
         <field name="model_id" ref="model_distribution_route_visit"/>
-        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_user'))]"/>
-        <field name="domain_force">[('employee_id', 'in', user.employee_ids.ids)]</field>
+        <field name="group_id" ref="flousflow_distribution_route_base.group_distribution_route_user"/>
+        <field name="operation">cru</field>
+        <field name="domain">[('employee_id', 'in', user.employee_ids.ids)]</field>
     </record>
 
     <!-- Manager: full visibility within allowed companies -->
-    <record id="rule_distribution_route_plan_manager" model="ir.rule">
+    <record id="rule_distribution_route_plan_manager" model="ir.access">
         <field name="name">Route Plan: manager full access</field>
         <field name="model_id" ref="model_distribution_route_plan"/>
-        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_manager'))]"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="group_id" ref="flousflow_distribution_route_base.group_distribution_route_manager"/>
+        <field name="operation">crud</field>
     </record>
 
-    <record id="rule_distribution_route_visit_manager" model="ir.rule">
+    <record id="rule_distribution_route_visit_manager" model="ir.access">
         <field name="name">Route Visit: manager full access</field>
         <field name="model_id" ref="model_distribution_route_visit"/>
-        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_manager'))]"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="group_id" ref="flousflow_distribution_route_base.group_distribution_route_manager"/>
+        <field name="operation">crud</field>
     </record>
 
     <!-- Visit Result: shared records (company_id empty) visible to all,
          company records visible within company (global rule above). -->
-    <record id="rule_distribution_visit_result_manager" model="ir.rule">
+    <record id="rule_distribution_visit_result_manager" model="ir.access">
         <field name="name">Visit Result: manager full access</field>
         <field name="model_id" ref="model_distribution_visit_result"/>
-        <field name="groups" eval="[(4, ref('flousflow_distribution_route_base.group_distribution_route_manager'))]"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="group_id" ref="flousflow_distribution_route_base.group_distribution_route_manager"/>
+        <field name="operation">crud</field>
     </record>
 
 </odoo>

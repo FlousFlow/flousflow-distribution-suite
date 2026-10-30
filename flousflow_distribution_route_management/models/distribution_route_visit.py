@@ -62,7 +62,7 @@ class DistributionRouteVisit(models.Model):
     )
     # Stored on this table so permission checks read a plain column instead
     # of crossing the hr.employee relation (which is restricted for non-HR
-    # users in Odoo 19).
+    # users in Odoo 20).
     user_id = fields.Many2one(
         related='route_id.user_id',
         store=True,

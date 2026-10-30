@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Vehicle (Fleet ↔ Warehouse ↔ POS)',
-    'version': '19.0.1.1.0',
+    'version': '20.0.1.1.0',
     'category': 'Sales/Distribution',
     'summary': 'Dedicated warehouse and POS per distribution vehicle, loading/unloading and employee assignments',
     'description': """
@@ -34,7 +34,7 @@ fleet/stock/POS models. No direct quant manipulation, no core changes.
         'flousflow_pos_warehouse', 'flousflow_branch_analytic',],
     'data': [
         'security/security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'views/fleet_vehicle_views.xml',
         'views/hr_employee_views.xml',
         'views/pos_views.xml',

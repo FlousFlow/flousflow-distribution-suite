@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Route Management',
-    'version': '19.0.1.1.0',
+    'version': '20.0.1.1.0',
     'category': 'Sales/Distribution',
     'summary': 'Route planning and visit execution for distribution representatives',
     'description': """
@@ -31,7 +31,7 @@ inherit these models without architectural changes.
         'mail',
     ],
     'data': [
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'security/security.xml',
         'data/ir_sequence_data.xml',
         'data/distribution_visit_result_data.xml',

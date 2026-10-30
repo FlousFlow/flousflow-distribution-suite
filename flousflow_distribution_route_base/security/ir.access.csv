@@ -1,0 +1,5 @@
+id,name,model_id,group_id/id,operation,domain
+access_distribution_area_user,distribution.area.user,distribution.area,group_distribution_route_user,r,
+access_distribution_area_manager,distribution.area.manager,distribution.area,group_distribution_route_manager,crud,
+access_distribution_visit_type_user,distribution.visit.type.user,distribution.visit.type,group_distribution_route_user,r,
+access_distribution_visit_type_manager,distribution.visit.type.manager,distribution.visit.type,group_distribution_route_manager,crud,

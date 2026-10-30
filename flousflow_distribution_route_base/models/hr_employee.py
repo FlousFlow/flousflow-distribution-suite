@@ -7,7 +7,7 @@ class HrEmployeePublic(models.Model):
     """Mirror distribution fields on the public employee profile so that
     non-HR users (e.g. distribution representatives and managers) can read
     them. Without this, these fields are treated as private and raise an
-    AccessError when read by non-HR users (Odoo 19 behaviour).
+    AccessError when read by non-HR users (Odoo 20 behaviour).
 
     They are declared as non-stored related fields on purpose: the
     hr.employee.public SQL view is rebuilt when the hr module loads, which

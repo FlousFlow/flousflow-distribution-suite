@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Privilege (Odoo 19 group category) -->
+    <!-- Privilege -->
     <record model="res.groups.privilege" id="res_groups_privilege_distribution_route">
         <field name="name">Distribution Route</field>
         <field name="sequence">26</field>
@@ -26,17 +26,19 @@
     </record>
 
     <!-- Multi-company record rules: Distribution Areas -->
-    <record id="rule_distribution_area_company" model="ir.rule">
+    <record id="rule_distribution_area_company" model="ir.access">
         <field name="name">Distribution Area: multi-company</field>
         <field name="model_id" ref="model_distribution_area"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
     <!-- Multi-company record rules: Visit Types -->
-    <record id="rule_distribution_visit_type_company" model="ir.rule">
+    <record id="rule_distribution_visit_type_company" model="ir.access">
         <field name="name">Distribution Visit Type: multi-company</field>
         <field name="model_id" ref="model_distribution_visit_type"/>
-        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="operation">crud</field>
+        <field name="domain">[('company_id', 'in', company_ids)]</field>
     </record>
 
 </odoo>
