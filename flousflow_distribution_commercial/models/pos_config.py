@@ -36,9 +36,21 @@ class PosConfig(models.Model):
                 'basic_employee_ids',
                 'advanced_employee_ids',
             })
+        # A broad list of all pos.config fields can include fields that
+        # are intentionally restricted to administrators (for example,
+        # POS visibility controls). POS loading runs as the cashier, so only
+        # send fields that this user is allowed to read.
+        fields = [
+            name for name in fields
+            if name in self._fields
+            and (not self._fields[name].groups
+                 or self.env.user.has_group(self._fields[name].groups))
+        ]
         fields += [
-            name for name in self._fields
-            if name not in fields and name not in excluded
+            name for name, field in self._fields.items()
+            if name not in fields
+            and name not in excluded
+            and (not field.groups or self.env.user.has_group(field.groups))
         ]
         return fields
 
