@@ -28,7 +28,9 @@ class PosConfig(models.Model):
     def _load_pos_data_fields(self, config):
         fields = list(super()._load_pos_data_fields(config))
         excluded = set()
-        if not config.module_pos_hr:
+        # Odoo 20 builds pos.config metadata before its record is loaded, so
+        # it can call this method with config=None during the initial load.
+        if config and not config.module_pos_hr:
             excluded.update({
                 'minimal_employee_ids',
                 'basic_employee_ids',

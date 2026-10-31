@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Sales & Collection Integration',
-    'version': '20.0.1.0.0',
+    'version': '20.0.1.0.1',
     'category': 'Sales/Distribution',
     'summary': 'Link Route Visits to Sales Orders, POS Sales and Customer '
                'Collections with an operational-to-accounting workflow',
