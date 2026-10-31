@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Distribution Vehicle (Fleet ↔ Warehouse ↔ POS)',
-    'version': '20.0.1.1.0',
+    'version': '20.0.1.1.1',
     'category': 'Sales/Distribution',
     'summary': 'Dedicated warehouse and POS per distribution vehicle, loading/unloading and employee assignments',
     'description': """

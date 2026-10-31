@@ -8,6 +8,9 @@ class HrEmployee(models.Model):
     current_distribution_vehicle_id = fields.Many2one(
         'fleet.vehicle', compute='_compute_current_distribution_vehicle',
         string='Current Distribution Vehicle', store=True, index=True,
+        # Keep this private field out of implicit hr.employee.public fallback
+        # reads used by POS users without full HR employee access.
+        prefetch=False,
         help="Vehicle on which this employee currently has an open "
              "assignment.")
     distribution_assignment_ids = fields.One2many(
